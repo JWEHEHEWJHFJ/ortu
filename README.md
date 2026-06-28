@@ -1,2 +1,1 @@
-# ortu
-aplikasi
+looollll
