@@ -3,7 +3,7 @@
  * File ini di-generate otomatis oleh upload_datasiswa.gs
  * ⚠️  Jangan edit manual — gunakan script upload untuk memperbarui.
  *
- * Terakhir diperbarui: 2026-07-08 10:49:28
+ * Terakhir diperbarui: 2026-07-08 10:54:18
  */
 
 window.SISWA_DATA = {
