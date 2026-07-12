@@ -10,18 +10,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script>
 <script>
-// ══════════════════════════════════════════════════════════════════
-//  SISTEM KEAMANAN DATA SISWA
-//  ► datasiswa.js di-fetch setiap buka/refresh (no-cache)
-//  ► Data didekripsi di memori → window.SISWA_DATA
-//  ► window.__SP5P dihapus segera setelah decrypt
-//  ► window.SISWA_DATA dihapus setelah login berhasil
-//  ► Anti-DevTools: detect F12 → hapus data dari memori
-// ══════════════════════════════════════════════════════════════════
 
 const _SP5P_KEY = "sp5p_enc_2025_sman5pinrang_secure!";
 
-// Bangun keystream SHA-256 counter mode (identik dengan Apps Script)
+
 async function _sp5p_keystream(ptLen) {
   const keyHash  = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(_SP5P_KEY));
   const keyBytes = new Uint8Array(keyHash);
@@ -36,8 +28,7 @@ async function _sp5p_keystream(ptLen) {
   return ks;
 }
 
-// Dekripsi base64 → plaintext string
-// Format binary: IV(12) | Tag(16) | CT(n)
+
 async function _sp5p_dec(b64) {
   try {
     const raw   = atob(b64);
@@ -50,16 +41,14 @@ async function _sp5p_dec(b64) {
   } catch(e) { return null; }
 }
 
-// Fetch datasiswa.js fresh setiap kali (no-cache) → decrypt → set SISWA_DATA
+
 const _sp5p_loadData = async () => {
   try {
-    const res = await fetch("datasiswa.js?v=" + Date.now(), {
-      cache:   "no-store",
-      headers: { "Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache" }
-    });
+    const res = await fetch("ds.js?v=" + Date.now(), {
+  cache: "no-store"
+});
     if (!res.ok) throw new Error("HTTP " + res.status);
     const js = await res.text();
-
     const marker = 'window.__SP5P="';
     const idx    = js.indexOf(marker);
 
@@ -75,7 +64,7 @@ const _sp5p_loadData = async () => {
       const fn = new Function(js + "; return window.SISWA_DATA;");
       window.SISWA_DATA = fn();
     } else {
-      throw new Error("Format datasiswa.js tidak dikenal.");
+      throw new Error("telolet");
     }
 
     // Bersihkan raw ciphertext dari window
@@ -87,7 +76,7 @@ const _sp5p_loadData = async () => {
   }
 };
 
-// Anti-DevTools: hapus SISWA_DATA jika DevTools terbuka
+
 (function() {
   const _clear = () => {
     try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null;      }
@@ -120,9 +109,8 @@ const _sp5p_loadData = async () => {
 const _sp5p_loadConfig = async () => {
   try {
     const res = await fetch("config.js?v=" + Date.now(), {
-      cache:   "no-store",
-      headers: { "Cache-Control": "no-cache, no-store, must-revalidate", "Pragma": "no-cache" }
-    });
+  cache: "no-store"
+});
     if (!res.ok) return;
     const js = await res.text();
     const marker = 'window.__CFG="';
@@ -139,8 +127,35 @@ const _sp5p_loadConfig = async () => {
   } catch(e) { window.GITHUB_CONFIG = {}; }
 };
 
-// Mulai load datasiswa.js + config.js secara paralel
-window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
+const _sp5p_loadKalender = async (semester) => {
+  try {
+    const fileName = (semester === 'GENAP') ? 'kalendergenap.js' : 'kalenderganjil.js';
+    const res = await fetch(fileName + "?v=" + Date.now(), {
+  cache: "no-store"
+});
+    if (!res.ok) { window.KALENDER_DATA = null; return; }
+    const js = await res.text();
+    const fn = new Function(js + "; return (typeof kalender !== 'undefined') ? kalender : null;");
+    window.KALENDER_DATA = fn();
+  } catch(e) {
+    window.KALENDER_DATA = null;
+  }
+};
+
+window._sp5p_loadData     = _sp5p_loadData;
+window._sp5p_loadConfig   = _sp5p_loadConfig;
+window._sp5p_loadKalender = _sp5p_loadKalender;
+
+
+const _sp5p_defaultSemesterMonth = new Date().getMonth() + 1;
+const _sp5p_defaultSemester = (_sp5p_defaultSemesterMonth >= 1 && _sp5p_defaultSemesterMonth <= 6) ? 'GENAP' : 'GANJIL';
+
+
+window._sp5pReady = Promise.all([
+  _sp5p_loadData(),
+  _sp5p_loadConfig(),
+  _sp5p_loadKalender(_sp5p_defaultSemester)
+]);
 </script>
 <style>
   :root {
@@ -221,7 +236,7 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
     100%{transform:scaleX(1);}
   }
 
-  /* ─── LOGIN PAGE ─── */
+ 
   .login-page {
     min-height: 100vh;
     display: flex;
@@ -623,6 +638,7 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
   .tab-btn.active-attendance { color: #34d399; }
   .tab-btn.active-assessment { color: #c084fc; }
   .tab-btn.active-notes { color: #fbbf24; }
+  .tab-btn.active-agenda { color: #22d3ee; }
   .tab-btn.active-server { color: #f87171; }
 
   .sidebar {
@@ -664,6 +680,7 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
   .sidebar-btn.active-attendance { background: #ecfdf5; color: #059669; }
   .sidebar-btn.active-assessment { background: #faf5ff; color: #7c3aed; }
   .sidebar-btn.active-notes { background: #fffbeb; color: #d97706; }
+  .sidebar-btn.active-agenda { background: #ecfeff; color: #0891b2; }
 
   .content-area {
     flex: 1; overflow-y: auto;
@@ -993,6 +1010,69 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
     background: #f9fafb; border-radius: 10px; padding: 12px;
   }
 
+  /* ─── AGENDA TAB ─── */
+  .agenda-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+  }
+  .agenda-card {
+    background: white; border-radius: 18px;
+    padding: 18px; border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    animation: fadeSlideUp 0.4s ease both;
+  }
+  .agenda-card-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px; font-weight: 700; color: #0e7490;
+    margin-bottom: 14px; text-align: center;
+    padding-bottom: 10px; border-bottom: 1px solid #f3f4f6;
+  }
+  .agenda-weekdays {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+    margin-bottom: 6px;
+  }
+  .agenda-weekdays span {
+    text-align: center; font-size: 11px; font-weight: 700;
+    color: #6b7280; text-transform: uppercase; letter-spacing: 0.5px;
+    padding: 4px 0;
+  }
+  .agenda-weekdays span.wd-sunday { color: #dc2626; }
+  .agenda-week {
+    display: grid; grid-template-columns: repeat(7, 1fr);
+  }
+  .agenda-day {
+    text-align: center; font-size: 13px; font-weight: 600;
+    color: #1f2937; padding: 7px 0; border-radius: 8px;
+    position: relative; cursor: default;
+    display: flex; flex-direction: column; align-items: center; justify-content: flex-start;
+    min-height: 40px;
+    transition: all 0.2s;
+  }
+  .agenda-day-empty { color: transparent; }
+  .agenda-day-sunday { color: #dc2626; font-weight: 800; }
+  .agenda-day-has-event {
+  cursor: pointer;
+  background: #fff7ed;
+  color: #c2410c;
+  font-weight: 800;
+}
+.agenda-day-has-event:hover {
+  background: #ffedd5;
+  transform: translateY(-1px);
+}
+.agenda-day-sunday.agenda-day-has-event { color: #be123c; background: #fff1f2; }
+.agenda-day-sunday.agenda-day-has-event:hover { background: #ffe4e6; }
+.agenda-dots {
+  display: flex; align-items: center; justify-content: center;
+  gap: 2px; margin-top: 2px; flex-wrap: wrap; max-width: 28px;
+}
+.agenda-dot {
+  width: 5px; height: 5px; border-radius: 50%;
+  background: #ea580c; flex-shrink: 0;
+}
+.agenda-day-sunday .agenda-dot { background: #e11d48; }
+
   /* ─── MODAL ─── */
   .modal-overlay {
     position: fixed; inset: 0; z-index: 1000;
@@ -1055,6 +1135,57 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
     padding: 4px 12px; border-radius: 8px;
     font-size: 12px; font-weight: 700;
   }
+
+  /* ─── AGENDA MODAL (carousel) ─── */
+  .agenda-modal-nav {
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 12px; margin-bottom: 18px;
+  }
+  .agenda-nav-btn {
+    width: 38px; height: 38px; border-radius: 12px;
+    border: 1px solid #e5e7eb; background: #f9fafb;
+    color: #374151; font-size: 15px; cursor: pointer;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0; transition: all 0.2s;
+  }
+  .agenda-nav-btn:hover:not(:disabled) {
+    background: #0891b2; border-color: #0891b2; color: white;
+    transform: scale(1.06);
+  }
+  .agenda-nav-btn:disabled { opacity: 0.3; cursor: not-allowed; }
+  .agenda-nav-counter {
+    font-size: 12px; font-weight: 700; color: #6b7280;
+    background: #f3f4f6; padding: 6px 14px; border-radius: 20px;
+    letter-spacing: 0.5px; white-space: nowrap;
+  }
+  .agenda-item-card {
+    animation: fadeSlideUp 0.25s ease;
+  }
+  .agenda-item-header {
+    display: flex; align-items: center; gap: 12px;
+    background: linear-gradient(135deg, #0e7490, #0891b2);
+    border-radius: 16px; padding: 16px;
+    margin-bottom: 16px; color: white;
+  }
+  .agenda-item-icon {
+    width: 42px; height: 42px; border-radius: 12px;
+    background: rgba(255,255,255,0.18);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 18px; flex-shrink: 0;
+  }
+  .agenda-item-mapel { font-weight: 700; font-size: 15px; line-height: 1.3; }
+  .agenda-item-tanggal { font-size: 12px; opacity: 0.8; margin-top: 2px; }
+  .agenda-detail-row {
+    background: #f9fafb; border-radius: 12px; padding: 12px 14px;
+    margin-bottom: 10px;
+  }
+  .agenda-detail-label {
+    font-size: 11px; font-weight: 700; text-transform: uppercase;
+    letter-spacing: 1px; color: #9ca3af; margin-bottom: 4px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .agenda-detail-value { font-size: 14px; color: #1f2937; line-height: 1.6; }
+  .agenda-detail-value.is-empty { color: #d1d5db; font-style: italic; }
 
   /* ─── SERVER PANEL ─── */
   .server-panel { padding: 4px 0; }
@@ -1604,9 +1735,14 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
             </div>
           </div>
 
-          <div class="section-title">
-            <i class="fas fa-calendar-day"></i> Jadwal Pelajaran Hari Ini
-          </div>
+          <div style="margin-bottom:16px">
+  <div class="section-title" style="margin-bottom:4px">
+    <i class="fas fa-calendar-day"></i> Jadwal Pelajaran Hari Ini
+  </div>
+  <div style="padding-left:26px;font-weight:700;font-style:italic;color:#2563eb;font-size:14px">
+    {{ todayLabel }}
+  </div>
+</div>
 
           <div v-if="parsedSchedule.length === 0" class="empty-state">
             <i class="fas fa-calendar-times"></i>
@@ -1955,13 +2091,13 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
             </div>
           </div>
 
-          <div v-if="parsedNotes.length === 0" class="empty-state">
-            <i class="fas fa-sticky-note"></i>
-            <p>Belum ada catatan dari guru</p>
-          </div>
+          <div v-if="visibleNotes.length === 0" class="empty-state">
+  <i class="fas fa-sticky-note"></i>
+  <p>Belum ada catatan dari guru</p>
+</div>
 
-          <div class="notes-grid" v-else>
-            <div v-for="(note, idx) in parsedNotes" :key="idx"
+<div class="notes-grid" v-else>
+  <div v-for="(note, idx) in visibleNotes" :key="idx"
               class="note-card"
               :class="'animate-delay-' + Math.min(idx+1,5)"
               :style="{ borderTopColor: note.border, boxShadow: '0 4px 18px ' + note.shadow }">
@@ -1985,7 +2121,81 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
           </div>
         </div>
 
-        <!-- SERVER -->
+        <!-- AGENDA -->
+        <div v-if="currentTab === 'agenda'">
+          <div class="page-header">
+            <div>
+              <div class="ph-title">Agenda</div>
+              <div class="ph-sub">Kalender Semester {{ agendaYearLabel }}</div>
+            </div>
+            <div class="ph-icon" style="background:#ecfeff;color:#0891b2">
+              <i class="fas fa-calendar-alt"></i>
+            </div>
+          </div>
+
+          <!-- NAVIGASI BULAN (khusus mobile) -->
+<div class="agenda-mobile-nav">
+  <button class="agenda-nav-btn" @click="agendaMobilePrev" :disabled="agendaMobileIndex === 0" title="Bulan sebelumnya">
+    <i class="fas fa-chevron-left"></i>
+  </button>
+  <div class="agenda-nav-counter">
+    <i class="fas fa-calendar-alt" style="margin-right:6px"></i>
+    {{ agendaCalendars[agendaMobileIndex] ? agendaCalendars[agendaMobileIndex].label + ' ' + agendaCalendars[agendaMobileIndex].year : '' }}
+  </div>
+  <button class="agenda-nav-btn" @click="agendaMobileNext" :disabled="agendaMobileIndex === agendaCalendars.length - 1" title="Bulan selanjutnya">
+    <i class="fas fa-chevron-right"></i>
+  </button>
+</div>
+
+<div class="agenda-grid">
+  <div v-for="(cal, calIdx) in agendaCalendars" :key="cal.label + cal.year"
+    class="agenda-card" :class="{ 'agenda-card-active': calIdx === agendaMobileIndex }">
+    <div class="agenda-card-title">{{ cal.label }} {{ cal.year }}</div>
+              <div class="agenda-weekdays">
+                <span v-for="(wd, wi) in weekdayLabels" :key="wi" :class="{ 'wd-sunday': wi === 0 }">{{ wd }}</span>
+              </div>
+              <div class="agenda-week" v-for="(week, wi) in cal.weeks" :key="wi">
+                <span v-for="(cell, ci) in week" :key="ci"
+  class="agenda-day"
+  :class="{
+    'agenda-day-empty': !cell.day,
+    'agenda-day-sunday': cell.isSunday && cell.day,
+    'agenda-day-has-event': cell.day && hasAgenda(cell.day, cal.monthNum),
+    'agenda-day-libur': cell.day && getAkademikStatus(cell.day, cal.monthNum) === 'L',
+    'agenda-day-tidaklibur': cell.day && getAkademikStatus(cell.day, cal.monthNum) === 'TL',
+    'agenda-day-past': cell.day && isPastDate(cell.day, cal.monthNum, cal.year)
+  }"
+  @click="cell.day && openAgendaDetail(cell.day, cal.monthNum, cal.year)">
+                  <span>{{ cell.day || '•' }}</span>
+                  <span v-if="cell.day && hasAgenda(cell.day, cal.monthNum)" class="agenda-dots">
+                    <span v-for="n in Math.min(getAgendaCount(cell.day, cal.monthNum), 4)" :key="n" class="agenda-dot"></span>
+                  </span>
+                </span>
+              </div>
+          </div>
+        </div>
+
+        <!-- KETERANGAN WARNA (di bawah kalender) -->
+        <div style="background:white;border-radius:16px;padding:16px 20px;border:1px solid #e5e7eb;box-shadow:0 2px 8px rgba(0,0,0,0.04);margin-top:20px;display:flex;flex-wrap:wrap;gap:18px;align-items:center">
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="width:14px;height:14px;border-radius:4px;background:#fff7ed;border:1.5px solid #ea580c;display:inline-block"></span>
+            <span style="font-size:13px;color:#374151">Agenda Pelajaran</span>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="width:12px;height:12px;border-radius:50%;background:#dc2626;display:inline-block"></span>
+            <span style="font-size:13px;color:#374151">Libur</span>
+          </div>
+
+          <div style="display:flex;align-items:center;gap:8px">
+            <span style="width:12px;height:12px;border-radius:50%;background:#2563eb;display:inline-block"></span>
+            <span style="font-size:13px;color:#374151">Agenda Sekolah</span>
+          </div>
+
+          </div>
+      </div>
+
+      <!-- SERVER -->
         <div v-if="currentTab === 'server'" class="server-panel">
           <div class="server-section-title">Akun</div>
           <div class="server-menu-card">
@@ -2011,33 +2221,7 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
             </button>
           </div>
 
-          <div class="server-section-title">Sekolah</div>
-          <div class="server-menu-card">
-            <button class="server-menu-item" @click="openSub('visimisi')">
-              <div class="server-menu-icon" style="background:#f0fdf4;color:#16a34a"><i class="fas fa-bullseye"></i></div>
-              <div class="server-menu-text">
-                <div class="server-menu-label">Visi &amp; Misi</div>
-                <div class="server-menu-desc">Visi dan misi SMAN 5 Pinrang</div>
-              </div>
-              <i class="fas fa-chevron-right server-menu-arrow"></i>
-            </button>
-            <button class="server-menu-item" @click="openSub('medsos')">
-              <div class="server-menu-icon" style="background:#fff7ed;color:#ea580c"><i class="fas fa-share-alt"></i></div>
-              <div class="server-menu-text">
-                <div class="server-menu-label">Media Sosial</div>
-                <div class="server-menu-desc">Ikuti kami di media sosial</div>
-              </div>
-              <i class="fas fa-chevron-right server-menu-arrow"></i>
-            </button>
-            <button class="server-menu-item" @click="openSub('ekonsul')">
-              <div class="server-menu-icon" style="background:#fdf4ff;color:#9333ea"><i class="fas fa-comments"></i></div>
-              <div class="server-menu-text">
-                <div class="server-menu-label">E-Konsul</div>
-                <div class="server-menu-desc">Konsultasi online dengan guru BK</div>
-              </div>
-              <i class="fas fa-chevron-right server-menu-arrow"></i>
-            </button>
-          </div>
+          
         </div>
 
       </main>
@@ -2256,15 +2440,28 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
             </div>
             <button class="modal-close" @click="closeModal"><i class="fas fa-times"></i></button>
           </div>
-          <div style="background:linear-gradient(135deg,#faf5ff,#ede9fe);border-radius:14px;padding:16px;margin-bottom:16px;display:flex;align-items:center;gap:12px">
-            <div style="width:48px;height:48px;border-radius:14px;background:#7c3aed;color:white;display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;font-size:20px;font-weight:700">
-              {{ selectedAssessment.remaining }}
-            </div>
-            <div>
-              <div style="font-weight:700;color:#4c1d95">{{ selectedAssessment.remaining === 0 ? 'Semua tugas selesai!' : 'Tugas tersisa' }}</div>
-              <div style="font-size:12px;color:#7c3aed">Nilai ambang: {{ studentData.nilaiAmbang }}</div>
-            </div>
-          </div>
+          <div :style="{
+  background: selectedAssessment.remaining > 0 ? 'linear-gradient(135deg,#fef2f2,#fee2e2)' : 'linear-gradient(135deg,#faf5ff,#ede9fe)',
+  borderRadius: '14px', padding: '16px', marginBottom: '16px',
+  display: 'flex', alignItems: 'center', gap: '12px'
+}">
+  <div :style="{
+    width: '48px', height: '48px', borderRadius: '14px',
+    background: selectedAssessment.remaining > 0 ? '#dc2626' : '#7c3aed',
+    color: 'white', display: 'flex', alignItems: 'center', justifyContent: 'center',
+    fontFamily: 'Playfair Display, serif', fontSize: '20px', fontWeight: '700'
+  }">
+    {{ selectedAssessment.remaining }}
+  </div>
+  <div>
+    <div :style="{ fontWeight: '700', color: selectedAssessment.remaining > 0 ? '#991b1b' : '#4c1d95' }">
+      {{ selectedAssessment.remaining === 0 ? 'Semua tugas selesai!' : 'Tugas tersisa' }}
+    </div>
+    <div :style="{ fontSize: '12px', color: selectedAssessment.remaining > 0 ? '#dc2626' : '#7c3aed' }">
+      Nilai ambang: {{ studentData.nilaiAmbang }}
+    </div>
+  </div>
+</div>
           <div style="border-top:2px solid #f3f4f6;margin-bottom:0"></div>
         </div>
         <div class="modal-scroll">
@@ -2288,6 +2485,90 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
       </div>
     </div>
 
+    <!-- AGENDA MODAL -->
+    <div v-if="showAgendaModal" class="modal-overlay" @click.self="closeAgendaModal">
+      <div class="modal-box">
+        <div class="modal-static">
+          <div class="modal-header">
+            <div>
+              <div class="modal-title">Agenda</div>
+              <div class="modal-sub">{{ selectedAgendaLabel }}</div>
+            </div>
+            <button class="modal-close" @click="closeAgendaModal"><i class="fas fa-times"></i></button>
+          </div>
+<div v-if="akademikInfoForSelected" style="margin: 0 0 16px; padding: 14px 16px; border-radius: 14px;"
+  :style="{
+    background: akademikInfoForSelected.status === 'L' ? '#fef2f2' : '#eff6ff',
+    border: '1px solid ' + (akademikInfoForSelected.status === 'L' ? '#fecaca' : '#bfdbfe')
+  }">
+  <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px"
+    :style="{ color: akademikInfoForSelected.status === 'L' ? '#dc2626' : '#2563eb' }">
+    <i class="fas fa-calendar-day" style="margin-right:6px"></i>
+    {{ akademikInfoForSelected.status === 'L' ? 'Libur' : 'Tidak Libur' }}
+  </div>
+  <div v-for="(it, idx) in akademikInfoForSelected.items" :key="idx"
+    style="font-size:14px;color:#1f2937;line-height:1.6">
+    • {{ it.deskripsi }}
+  </div>
+</div>
+          <div v-if="selectedAgendaItems.length > 1" class="agenda-modal-nav">
+            <button class="agenda-nav-btn" @click="agendaPrev" :disabled="selectedAgendaIndex === 0" title="Sebelumnya">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="agenda-nav-counter">
+              <i class="fas fa-layer-group" style="margin-right:5px"></i>
+              {{ selectedAgendaIndex + 1 }} / {{ selectedAgendaItems.length }} Mapel
+            </div>
+            <button class="agenda-nav-btn" @click="agendaNext" :disabled="selectedAgendaIndex === selectedAgendaItems.length - 1" title="Selanjutnya">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+
+        <div class="modal-scroll">
+          <div v-if="selectedAgendaItems.length === 0" style="text-align:center;color:#9ca3af;padding:24px">
+            <i class="fas fa-calendar-day" style="font-size:24px;margin-bottom:8px;opacity:0.3;display:block"></i>
+            Tidak ada agenda pada tanggal ini
+          </div>
+
+          <div v-else-if="currentAgendaItem" class="agenda-item-card" :key="selectedAgendaIndex">
+            <div class="agenda-item-header">
+              <div class="agenda-item-icon"><i class="fas fa-book"></i></div>
+              <div>
+                <div class="agenda-item-mapel">{{ currentAgendaItem.mapel }}</div>
+                <div class="agenda-item-tanggal"><i class="fas fa-calendar-alt" style="margin-right:5px"></i>{{ selectedAgendaLabel }}</div>
+              </div>
+            </div>
+
+            <div class="agenda-detail-row">
+  <div class="agenda-detail-label"><i class="fas fa-book-open"></i> Materi</div>
+  <div class="agenda-detail-value" :class="{ 'is-empty': !currentAgendaItem.materi }">
+    {{ currentAgendaItem.materi || '-' }}
+  </div>
+</div>
+<div class="agenda-detail-row">
+  <div class="agenda-detail-label"><i class="fas fa-bullseye"></i> Tujuan</div>
+  <div class="agenda-detail-value" :class="{ 'is-empty': !currentAgendaItem.tujuan }">
+    {{ currentAgendaItem.tujuan || '-' }}
+  </div>
+</div>
+<div class="agenda-detail-row">
+  <div class="agenda-detail-label"><i class="fas fa-tasks"></i> Tugas</div>
+              <div class="agenda-detail-value" :class="{ 'is-empty': !currentAgendaItem.tugas }">
+                {{ currentAgendaItem.tugas || '-' }}
+              </div>
+            </div>
+            <div class="agenda-detail-row">
+              <div class="agenda-detail-label"><i class="fas fa-sticky-note"></i> Catatan</div>
+              <div class="agenda-detail-value" :class="{ 'is-empty': !currentAgendaItem.catatan }">
+                {{ currentAgendaItem.catatan || '-' }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
 
 </div>
@@ -2295,32 +2576,41 @@ window._sp5pReady = Promise.all([_sp5p_loadData(), _sp5p_loadConfig()]);
 <script>
 const { createApp, ref, computed, watch } = Vue;
 
-const LOGO_URL     = 'https://www.sman5pinrang.web.id/logo.png';
-const LOGO_CACHE_KEY = 'sp5p_logo_b64';
+const LOGO_URL        = 'https://www.sman5pinrang.web.id/logo.png';//foto logo
+const LOGO_CACHE_KEY  = 'sp5p_logo_b64';
+const LOGO_URL_KEY    = 'sp5p_logo_url';
 
 async function loadLogo() {
-  const cached = localStorage.getItem(LOGO_CACHE_KEY);
-  if (cached) return cached;
+  const cachedUrl  = localStorage.getItem(LOGO_URL_KEY);
+  const cachedData = localStorage.getItem(LOGO_CACHE_KEY);
+
+  if (cachedData && cachedUrl === LOGO_URL) return cachedData;
+
   try {
-    const resp = await fetch(LOGO_URL);
-    if (!resp.ok) return LOGO_URL;
+    const resp = await fetch(LOGO_URL + (LOGO_URL.includes('?') ? '&' : '?') + 'v=' + Date.now(), {
+  cache: 'no-store'
+});
+    if (!resp.ok) return cachedData || LOGO_URL;
     const blob = await resp.blob();
     return new Promise((resolve) => {
       const reader = new FileReader();
       reader.onloadend = () => {
         const b64 = reader.result;
-        try { localStorage.setItem(LOGO_CACHE_KEY, b64); } catch {}
+        try {
+          localStorage.setItem(LOGO_CACHE_KEY, b64);
+          localStorage.setItem(LOGO_URL_KEY, LOGO_URL);
+        } catch {}
         resolve(b64);
       };
-      reader.onerror = () => resolve(LOGO_URL);
+      reader.onerror = () => resolve(cachedData || LOGO_URL);
       reader.readAsDataURL(blob);
     });
   } catch {
-    return cached || LOGO_URL;
+    return cachedData || LOGO_URL;
   }
 }
 
-const BG_IMAGE_URL = 'https://www.sman5pinrang.web.id/image1.jpg';
+const BG_IMAGE_URL = 'https://www.sman5pinrang.web.id/image1.jpg'; // foto background
 const BG_IDB_DB    = 'sp5p_cache';
 const BG_IDB_STORE = 'images';
 const BG_IDB_KEY   = 'bg_image1';
@@ -2362,20 +2652,23 @@ function _idbSet(key, value) {
 }
 
 async function loadBgImage() {
-  const cached = await _idbGet(BG_IDB_KEY);
-  if (cached) return cached;
+  const cached = await _idbGet(BG_IDB_KEY); // { url, data } atau null
+
+  // Pakai cache HANYA jika url sumber sama dengan yang tersimpan
+  if (cached && cached.url === BG_IMAGE_URL && cached.data) return cached.data;
+
   try {
     const resp = await fetch(BG_IMAGE_URL);
-    if (!resp.ok) return BG_IMAGE_URL;
+    if (!resp.ok) return (cached && cached.data) || BG_IMAGE_URL;
     const blob = await resp.blob();
     return new Promise((resolve) => {
       const reader = new FileReader();
       reader.onloadend = async () => {
         const b64 = reader.result;
-        await _idbSet(BG_IDB_KEY, b64);
+        await _idbSet(BG_IDB_KEY, { url: BG_IMAGE_URL, data: b64 });
         resolve(b64);
       };
-      reader.onerror = () => resolve(BG_IMAGE_URL);
+      reader.onerror = () => resolve((cached && cached.data) || BG_IMAGE_URL);
       reader.readAsDataURL(blob);
     });
   } catch {
@@ -2385,14 +2678,20 @@ async function loadBgImage() {
 
 createApp({
   setup() {
-    const logoSrc = ref(localStorage.getItem(LOGO_CACHE_KEY) || LOGO_URL);
-    loadLogo().then(src => { logoSrc.value = src; });
+    const logoSrc = ref(
+  (localStorage.getItem(LOGO_URL_KEY) === LOGO_URL && localStorage.getItem(LOGO_CACHE_KEY))
+    || LOGO_URL
+);
+loadLogo().then(src => { logoSrc.value = src; });
 
     const bgImageSrc = ref('');
-    _idbGet(BG_IDB_KEY).then(cached => {
-      if (cached) { bgImageSrc.value = cached; }
-      else { loadBgImage().then(src => { bgImageSrc.value = src; }); }
-    });
+_idbGet(BG_IDB_KEY).then(cached => {
+  if (cached && cached.url === BG_IMAGE_URL && cached.data) {
+    bgImageSrc.value = cached.data;
+  } else {
+    loadBgImage().then(src => { bgImageSrc.value = src; });
+  }
+});
 
     const loggedIn      = ref(false);
     const loading       = ref(false);
@@ -2404,7 +2703,10 @@ createApp({
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
     const showGenapOption   = computed(() => currentMonth >= 1 && currentMonth <= 6);
-
+// Muat ulang kalenderganjil.js / kalendergenap.js setiap kali semester berubah
+watch(selectedSemester, async (newSem) => {
+  await window._sp5p_loadKalender(newSem);
+});
     const STORE_KEY = 'sp5p_session';
 
     const showDownloadConfirm = ref(false);
@@ -2504,6 +2806,7 @@ createApp({
       { id: 'attendance', name: 'Kehadiran', icon: 'fas fa-check-circle'  },
       { id: 'assessment', name: 'Penilaian', icon: 'fas fa-star'          },
       { id: 'notes',      name: 'Catatan',   icon: 'fas fa-sticky-note'   },
+      { id: 'agenda',     name: 'Agenda',    icon: 'fas fa-calendar-alt'  },
       { id: 'server',     name: 'Server',    icon: 'fas fa-server'        },
     ];
 
@@ -2556,7 +2859,11 @@ createApp({
         // Hapus data sensitif & reload data + config baru dari server
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
         try { delete window.GITHUB_CONFIG; } catch(e) { window.GITHUB_CONFIG = {};   }
-        window._sp5pReady = Promise.all([window._sp5p_loadData(), window._sp5p_loadConfig()]);
+        window._sp5pReady = Promise.all([
+  window._sp5p_loadData(),
+  window._sp5p_loadConfig(),
+  window._sp5p_loadKalender ? window._sp5p_loadKalender(selectedSemester.value) : Promise.resolve()
+]);
 
       } catch (e) {
         window.location.reload();
@@ -2667,29 +2974,24 @@ createApp({
       }
     };
 
+
     const downloadPdf = () => {
       const d = studentData.value;
 
-      const getAssessmentDetailForMapel = (mapelName) => {
+        const getAssessmentDetailForMapel = (mapelName) => {
         const idx = parsedAssessment.value.findIndex(a => a.mapel === mapelName);
         if (idx === -1) return [];
         const raw = d.nlList ? d.nlList[idx] : '';
         if (!raw) return [];
-        const parts = raw.split(',').map(s => s.trim());
+        const parts      = raw.split(',').map(s => s.trim());
         if (parts.length < 2) return [];
-        const tugasList = parts[0].split('@').filter(s => s);
-        const nilaiList = parts[1].split('@').filter(s => s);
-        const len = Math.max(tugasList.length, nilaiList.length);
-        const ambang = parseFloat(d.nilaiAmbang) || 0;
-        return Array.from({ length: len }, (_, i) => {
-          const nilaiStr = tugasList[i] || '';
-          const patokan  = nilaiList[i] !== undefined ? (parseFloat(nilaiList[i]) || 0) : (parseFloat(nilaiStr) || 0);
-          let keterangan;
-          if (isNaN(patokan) || patokan === 0 || nilaiStr === '') keterangan = 'Belum Dinilai';
-          else if (patokan <= ambang) keterangan = 'Perlu Perbaikan';
-          else keterangan = 'Sudah Dinilai';
-          return { nilai: nilaiStr, keterangan };
-        });
+        const tugasList  = parts[0].split('@').filter(s => s);
+        const statusList = parts[1].split('@').filter(s => s);
+        const len = Math.max(tugasList.length, statusList.length);
+        return Array.from({ length: len }, (_, i) => ({
+          nilai:      tugasList[i] || '',
+          keterangan: getNilaiKeterangan(statusList[i])
+        }));
       };
 
       const mapelSet = new Set();
@@ -2813,6 +3115,8 @@ createApp({
         const db = window.SISWA_DATA;
         const semester     = selectedSemester.value || 'GANJIL';
         const semesterData = db[semester];
+        // Pastikan data kalender yang termuat sesuai semester yang dipilih saat login
+await window._sp5p_loadKalender(semester);
         if (!semesterData) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
 
         const nisnStr = nisnInput.value.toString().trim();
@@ -2865,7 +3169,265 @@ createApp({
       }
     };
 
+const HARI_ID  = ['Minggu','Senin','Selasa','Rabu','Kamis','Jumat','Sabtu'];
+const BULAN_ID = ['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+const WEEKDAY_LABELS = ['Ahad','Sen','Sel','Rab','Kam','Jum','Sab'];
 
+const todayLabel = computed(() => {
+  const now = new Date();
+  const hari  = HARI_ID[now.getDay()];
+  const tgl   = String(now.getDate()).padStart(2, '0');
+  const bulan = BULAN_ID[now.getMonth()];
+  const tahun = now.getFullYear();
+  return `${hari}, ${tgl} - ${bulan} - ${tahun}`;
+});
+
+    // ── AGENDA / KALENDER ──
+    const weekdayLabels = WEEKDAY_LABELS;
+
+    // Membangun grid kalender satu bulan, dimulai dari hari Ahad (Minggu = 0)
+    const buildMonthCalendar = (year, monthIndex) => {
+      const firstDayOfWeek = new Date(year, monthIndex, 1).getDay(); // 0 = Ahad
+      const daysInMonth    = new Date(year, monthIndex + 1, 0).getDate();
+
+      const cells = [];
+      for (let i = 0; i < firstDayOfWeek; i++) cells.push({ day: null, isSunday: false });
+      for (let d = 1; d <= daysInMonth; d++) {
+        const dow = (firstDayOfWeek + d - 1) % 7;
+        cells.push({ day: d, isSunday: dow === 0 });
+      }
+      while (cells.length % 7 !== 0) cells.push({ day: null, isSunday: false });
+
+      const weeks = [];
+      for (let i = 0; i < cells.length; i += 7) weeks.push(cells.slice(i, i + 7));
+      return weeks;
+    };
+
+
+    const agendaCalendars = computed(() => {
+  const isGanjil = selectedSemester.value === 'GANJIL';
+  const monthsRange = isGanjil ? [6,7,8,9,10,11] : [0,1,2,3,4,5];
+
+  // Ambil tahun dari index TERAKHIR baris kelas di kalenderganjil.js / kalendergenap.js
+  const raw   = window.KALENDER_DATA;
+  const kelas = (studentData.value.kelas || '').trim();
+  let year = isGanjil ? 2026 : 2027; // fallback kalau data belum termuat / kelas tidak ketemu
+  if (raw && kelas) {
+    const row = raw.find(r => (r[0] || '').trim() === kelas);
+    if (row && row.length > 0) {
+      const parsedYear = parseInt(row[row.length - 1], 10);
+      if (!isNaN(parsedYear)) year = parsedYear;
+    }
+  }
+
+  return monthsRange.map(m => ({
+    label: BULAN_ID[m],
+    year,
+    monthNum: m + 1,
+    weeks: buildMonthCalendar(year, m)
+  }));
+});
+
+const agendaMobileIndex = ref(0);
+
+const _setDefaultAgendaMobileIndex = () => {
+  const now = new Date();
+  const idx = agendaCalendars.value.findIndex(
+    c => c.monthNum === now.getMonth() + 1 && c.year === now.getFullYear()
+  );
+  agendaMobileIndex.value = idx !== -1 ? idx : 0;
+};
+
+// Set ulang bulan aktif setiap kali daftar kalender berubah (mis. ganti semester)
+watch(agendaCalendars, () => { _setDefaultAgendaMobileIndex(); }, { immediate: true });
+
+const agendaMobilePrev = () => {
+  if (agendaMobileIndex.value > 0) agendaMobileIndex.value--;
+};
+const agendaMobileNext = () => {
+  if (agendaMobileIndex.value < agendaCalendars.value.length - 1) agendaMobileIndex.value++;
+};
+
+
+const agendaYearLabel = computed(() => {
+  const cals = agendaCalendars.value;
+  if (!cals.length) return '';
+  const year = cals[0].year;
+  return selectedSemester.value === 'GANJIL'
+    ? `Ganjil (Juli - Desember ${year})`
+    : `Genap (Januari - Juni ${year})`;
+});
+
+
+
+
+
+
+
+
+    // ── PARSER AGENDA (kalender.js) ──
+    const AGENDA_SEP_ENTRY = '🫏';
+    const AGENDA_SEP_FIELD = '☯️';
+
+    const splitLimit = (str, sep, limit) => {
+      const parts = str.split(sep);
+      if (parts.length <= limit) return parts;
+      const head = parts.slice(0, limit - 1);
+      const tail = parts.slice(limit - 1).join(sep);
+      return [...head, tail];
+    };
+
+    const parseAgendaCell = (raw) => {
+  if (!raw || !raw.trim()) return [];
+  return raw.split(AGENDA_SEP_ENTRY).filter(s => s.trim()).map(entry => {
+    const f = splitLimit(entry.trim(), AGENDA_SEP_FIELD, 6);
+    return {
+      mapel:   (f[0] || '-').trim(),
+      tanggal: (f[1] || '').trim(),
+      materi:  (f[2] || '').trim(),
+      tujuan:  (f[3] || '').trim(),
+      tugas:   (f[4] || '').trim(),
+      catatan: (f[5] || '').trim(),
+    };
+  });
+};
+// ── PARSER KALENDER AKADEMIK (kolom terakhir) ──
+// Format: "Deskripsi☯️STATUS🫏Deskripsi☯️STATUS🫏..." berurutan mulai 1 Juli s/d 31 Desember
+const AKADEMIK_START_MONTH = 7;    // Juli
+const AKADEMIK_START_YEAR  = 2026; // sesuai tahun kalender Semester Ganjil
+
+const AGENDA_SEP_SAMEDAY = '🐸'; // pemisah beberapa event dalam TANGGAL YANG SAMA
+
+const parseAkademikKalender = (raw) => {
+  if (!raw || !raw.trim()) return [];
+  // Level 1: split by 🫏 → tiap hasil = 1 HARI (positional, mulai 1 Juli)
+  return raw.split(AGENDA_SEP_ENTRY).map(entry => {
+    // Level 2: split by 🐸 → tiap hasil = 1 EVENT dalam hari yang sama
+    const subItems = entry.trim().split(AGENDA_SEP_SAMEDAY)
+      .map(s => s.trim())
+      .filter(s => s);
+
+    const parsedSub = subItems.map(sub => {
+      const f = sub.split(AGENDA_SEP_FIELD);
+      return {
+        deskripsi: (f[0] || '').trim(),
+        status:    (f[1] || '').trim().toUpperCase(),
+      };
+    });
+
+    return {
+      items:  parsedSub,                                   // semua event di hari itu
+      status: parsedSub.length ? parsedSub[0].status : '',  // status diambil dari EVENT PERTAMA saja
+    };
+  });
+};
+
+// { "8/7": { deskripsi, status } }
+const akademikByDate = computed(() => {
+  const map   = {};
+  if (selectedSemester.value !== 'GANJIL') return map; // data ini cakupannya Juli-Desember
+
+  const raw   = window.KALENDER_DATA;
+  const kelas = (studentData.value.kelas || '').trim();
+  if (!raw || !kelas) return map;
+
+  const row = raw.find(r => (r[0] || '').trim() === kelas);
+if (!row || row.length < 2) return map;
+
+// Index TERAKHIR baris = tahun kalender (mis. 2026)
+// Index SEBELUM terakhir = string data kalender akademik
+const yearFromRow = parseInt(row[row.length - 1], 10);
+const startYear    = !isNaN(yearFromRow) ? yearFromRow : AKADEMIK_START_YEAR;
+const lastCell      = row[row.length - 2];
+const entries  = parseAkademikKalender(lastCell);
+if (!entries.length) return map;
+
+const curDate = new Date(startYear, AKADEMIK_START_MONTH - 1, 1); // 1 Juli
+entries.forEach(item => {
+  const hasContent = item.items.some(it => it.deskripsi && it.deskripsi !== '-');
+  if (hasContent) {
+    const key = curDate.getDate() + '/' + (curDate.getMonth() + 1);
+    map[key] = item; // { items: [...], status: status dari event pertama }
+  }
+  curDate.setDate(curDate.getDate() + 1);
+});
+return map;
+});
+
+const getAkademikStatus = (day, monthNum) => {
+  const item = akademikByDate.value[day + '/' + monthNum];
+  return item ? item.status : null;
+};
+
+const isPastDate = (day, monthNum, year) => {
+  const cellDate = new Date(year, monthNum - 1, day);
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+  cellDate.setHours(0, 0, 0, 0);
+  return cellDate < today;
+};
+
+const akademikInfoForSelected = computed(() => {
+  return akademikByDate.value[selectedAgendaKey.value] || null;
+});
+
+    // { "10/7": [ {mapel, tanggal, materi, tugas, catatan}, ... ] }
+    const agendaByDate = computed(() => {
+      const map   = {};
+      const raw   = window.KALENDER_DATA;
+      const kelas = (studentData.value.kelas || '').trim();
+      if (!raw || !kelas) return map;
+
+      const row = raw.find(r => (r[0] || '').trim() === kelas);
+      if (!row) return map;
+
+      for (let i = 1; i < row.length - 1; i++) {
+  const cell = row[i];
+  if (!cell) continue;
+  parseAgendaCell(cell).forEach(item => {
+    if (!item.tanggal) return;
+    if (!map[item.tanggal]) map[item.tanggal] = [];
+    map[item.tanggal].push(item);
+  });
+}
+      return map;
+    });
+
+    const hasAgenda = (day, monthNum) => {
+      const key = day + '/' + monthNum;
+      return !!(agendaByDate.value[key] && agendaByDate.value[key].length);
+    };
+
+    const getAgendaCount = (day, monthNum) => {
+      const key = day + '/' + monthNum;
+      return (agendaByDate.value[key] || []).length;
+    };
+
+    const showAgendaModal     = ref(false);
+    const selectedAgendaKey   = ref('');
+    const selectedAgendaLabel = ref('');
+    const selectedAgendaIndex = ref(0);
+
+    const selectedAgendaItems = computed(() => agendaByDate.value[selectedAgendaKey.value] || []);
+    const currentAgendaItem   = computed(() => selectedAgendaItems.value[selectedAgendaIndex.value] || null);
+
+    const openAgendaDetail = (day, monthNum, year) => {
+      selectedAgendaKey.value   = day + '/' + monthNum;
+      selectedAgendaLabel.value = day + ' ' + BULAN_ID[monthNum - 1] + ' ' + year;
+      selectedAgendaIndex.value = 0;
+      showAgendaModal.value = true;
+      document.body.style.overflow = 'hidden';
+    };
+    const closeAgendaModal = () => {
+      showAgendaModal.value = false;
+      document.body.style.overflow = '';
+    };
+    const agendaPrev = () => {
+      if (selectedAgendaIndex.value > 0) selectedAgendaIndex.value--;
+    };
+    const agendaNext = () => {
+      if (selectedAgendaIndex.value < selectedAgendaItems.value.length - 1) selectedAgendaIndex.value++;
+    };
 
     // ── PARSED DATA ──
     const parsedSchedule = computed(() => {
@@ -2897,24 +3459,21 @@ createApp({
         return { mapel:parts[0]||'Mata Pelajaran', guru:parts[1]||'Guru', h,ht,i,s,a,b, percentage:pct };
       });
     });
-
+const NILAI_STATUS_MAP = { 'T': 'Sudah Dinilai', 'R': 'Perlu Perbaikan' };
+const getNilaiKeterangan = (kode) => NILAI_STATUS_MAP[(kode || '').trim().toUpperCase()] || 'Belum Dinilai';
     const parsedAssessment = computed(() => {
       if (!studentData.value.rawAssessmentData) return [];
-      const ambang = parseFloat(studentData.value.nilaiAmbang) || 0;
       return studentData.value.rawAssessmentData.split('#').filter(i => i.trim()).map((entry, idx) => {
         const parts = entry.split('@');
         const raw   = studentData.value.nlList?.[idx] || '';
         let remaining = 0;
         if (raw) {
-          const nlParts   = raw.split(',').map(s => s.trim());
-          const tugasList = (nlParts[0] || '').split('@').filter(s => s);
-          const nilaiList = (nlParts[1] || '').split('@').filter(s => s);
-          const len = Math.max(tugasList.length, nilaiList.length);
+          const nlParts    = raw.split(',').map(s => s.trim());
+          const tugasList  = (nlParts[0] || '').split('@').filter(s => s);
+          const statusList = (nlParts[1] || '').split('@').filter(s => s);
+          const len = Math.max(tugasList.length, statusList.length);
           for (let i = 0; i < len; i++) {
-            const nilaiStr = tugasList[i] || '';
-            const patokan  = nilaiList[i] !== undefined ? (parseFloat(nilaiList[i]) || 0) : (parseFloat(nilaiStr) || 0);
-            if (isNaN(patokan) || patokan === 0 || nilaiStr === '') remaining++;
-            else if (patokan <= ambang) remaining++;
+            if (getNilaiKeterangan(statusList[i]) !== 'Sudah Dinilai') remaining++;
           }
         }
         return { mapel: parts[0] || 'Mata Pelajaran', guru: parts[1] || 'Guru', remaining };
@@ -2958,6 +3517,11 @@ createApp({
         };
       });
     });
+
+const visibleNotes = computed(() => {
+  return parsedNotes.value.filter(n => n.content && n.content.trim() !== '-');
+});
+
 
     const ALL_MONTHS = [
       { num:'01', label:'Januari' },  { num:'02', label:'Februari' },
@@ -3148,21 +3712,15 @@ createApp({
       if (selectedAssessmentIndex.value === null) return [];
       const raw = studentData.value.nlList?.[selectedAssessmentIndex.value];
       if (!raw) return [];
-      const parts     = raw.split(',').map(s => s.trim());
+      const parts      = raw.split(',').map(s => s.trim());
       if (parts.length < 2) return [];
-      const tugasList = parts[0].split('@').filter(s=>s);
-      const nilaiList = parts[1].split('@').filter(s=>s);
-      const len       = Math.max(tugasList.length, nilaiList.length);
-      const ambang    = parseFloat(studentData.value.nilaiAmbang) || 0;
-      return Array.from({length:len}, (_,i) => {
-        const nilaiStr  = tugasList[i]||'';
-        const patokan   = nilaiList[i] !== undefined ? (parseFloat(nilaiList[i])||0) : (parseFloat(nilaiStr)||0);
-        let keterangan;
-        if (isNaN(patokan)||patokan===0||nilaiStr==='') keterangan='Belum Dinilai';
-        else if (patokan <= ambang) keterangan='Perlu Perbaikan';
-        else keterangan='Sudah Dinilai';
-        return { nilai:nilaiStr, keterangan };
-      });
+      const tugasList  = parts[0].split('@').filter(s=>s);
+      const statusList = parts[1].split('@').filter(s=>s);
+      const len        = Math.max(tugasList.length, statusList.length);
+      return Array.from({length:len}, (_,i) => ({
+        nilai:      tugasList[i] || '',
+        keterangan: getNilaiKeterangan(statusList[i])
+      }));
     });
 
     const getStatusBadgeClass = (code) => {
@@ -3179,7 +3737,7 @@ createApp({
       loggedIn, loading, nisnInput, passwordInput, errorMessage, studentData,
       logoSrc, bgImageSrc, showDownloadConfirm, showResetConfirm, resetAllData,
       currentTab, tabs, login, switchTab,
-      parsedSchedule, parsedAttendance, parsedAssessment, parsedNotes,
+      parsedSchedule, parsedAttendance, parsedAssessment, parsedNotes, todayLabel, visibleNotes,
       getStatusBadgeClass, attendanceTotal, attendancePercentage,
       showAttendanceModal, showAssessmentModal,
       openAttendanceDetail, openAssessmentDetail, closeModal,
@@ -3195,11 +3753,55 @@ createApp({
       showPwOld, showPwNew, showPwConfirm,
       doChangePassword, downloadPdf,
       selectedSemester, showGenapOption,
+      weekdayLabels, agendaCalendars,
+      agendaByDate, hasAgenda, getAgendaCount,
+      showAgendaModal, selectedAgendaLabel, selectedAgendaItems, selectedAgendaIndex, currentAgendaItem,
+      openAgendaDetail, closeAgendaModal, agendaPrev, agendaNext,akademikByDate, getAkademikStatus, akademikInfoForSelected,isPastDate,agendaMobileIndex, agendaMobilePrev, agendaMobileNext,
     };
   }
 }).mount('#app');
 </script>
 <style>
+
+.agenda-mobile-nav {
+  display: none;
+}
+@media (max-width: 899px) {
+  .agenda-mobile-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 16px;
+    background: white;
+    border-radius: 16px;
+    padding: 12px 16px;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  }
+  .agenda-grid {
+    grid-template-columns: 1fr;
+  }
+  .agenda-card {
+    display: none;
+  }
+  .agenda-card.agenda-card-active {
+    display: block;
+    animation: fadeSlideUp 0.25s ease;
+  }
+}
+
+
+
+
+
+
+
+  .agenda-day-libur      { color: #dc2626 !important; font-weight: 800; }
+.agenda-day-tidaklibur { color: #2563eb !important; font-weight: 800; }
+.agenda-day-past { opacity: 0.4; }
+.agenda-day-past.agenda-day-has-event { opacity: 0.6; }
+
 .bg-green  { background:#ecfdf5!important; color:#059669!important; border-radius:8px; }
 .bg-purple { background:#f5f3ff!important; color:#7c3aed!important; border-radius:8px; }
 .bg-blue   { background:#eff6ff!important; color:#2563eb!important; border-radius:8px; }
