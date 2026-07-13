@@ -1,6 +1,6 @@
 // File ini di-generate otomatis dari Google Sheets.
 // Jangan edit manual, perubahan akan tertimpa.
-// Terakhir diperbarui: 2026-07-13T00:14:56.564Z
+// Terakhir diperbarui: 2026-07-13T00:19:57.938Z
 
 var kalender = [
   [
@@ -1337,14 +1337,14 @@ var kalender = [
     "",
     "PENDIDIKAN AGAMA ISLAM☯️8/7☯️BVC☯️☯️☯️",
     "PENDIDIKAN AGAMA ISLAM☯️9/7☯️FGDG☯️GFD☯️GFD☯️",
-    "PENDIDIKAN AGAMA ISLAM☯️10/7☯️Jsjsjs☯️☯️☯️🫏IPA (KIMIA)☯️10/7☯️dffsgd☯️dgdgd☯️gdgdgd☯️gdsgdgdfg",
+    "PENDIDIKAN AGAMA ISLAM☯️10/7☯️Jsjsjs☯️☯️☯️",
     "",
     "",
     "",
     "",
     "",
     "PENDIDIKAN AGAMA ISLAM☯️16/7☯️tret☯️☯️☯️",
-    "PENDIDIKAN AGAMA ISLAM☯️17/7☯️sgdsgd☯️gdfgd☯️dfg☯️dfgdfg🫏27☯️17/7☯️fdssdf☯️fdsfsdfsdfsd☯️fsdfsdfgsdg☯️dsgdsgss dasdsafsaf fasfsa\"Real\" dalam bahasa gaul memiliki arti \"asli\", \"beneran\", \"nyata\", atau \"relate banget\" terhadap suatu situasi. Ketika orang mengatakan \"real ada yang begini\" atau sekadar mengiyakan sebuah konten/pernyataan dengan kata \"real\", mereka sedang menegaskan bahwa situasi tersebut memang benar-benar terjadi di kehidupan nyata atau sangat menggambarkan perasaan mereka.Kata ini sering menjadi bagian dari bahasa prokem (slang) generasi Z dan sering disingkat menjadi \"FR\" (for real) di media sosial.Berikut adalah beberapa konteks penggunaan kata \"real\" yang sering kamu temukan:1. Menyetujui Suatu Pernyataan (Agreement)Digunakan untuk memvalidasi opini orang lain yang dianggap sangat akurat atau sesuai kenyataan.Contoh: \"Capek banget kerja minggu ini.\" dijawab dengan \"Real.\" (Artinya: \"Asli, bener banget/sama banget\").2. Menegaskan Keberadaan Sesuatu (Validation)Digunakan untuk menunjukkan bahwa suatu fenomena, sifat orang, atau barang yang unik/aneh itu memang benar-benar ada dan bukan sekadar fiksi atau dibuat-buat.Contoh: \"Real ada cowok secuek itu ya ternyata.\"3. Singkatan yang Mirip di Media SosialSelain kata \"real\" yang berdiri sendiri, anak muda juga sering menggunakan beberapa singkatan bahasa Inggris berbasis kata ini:FR (For Real): Digunakan untuk meyakinkan orang lain (\"beneran deh\") atau bertanya untuk memastikan (\"seriusan?\").NGL (Not Gonna Lie): Sering disandingkan dengan real untuk menyatakan kejujuran yang apa adanya.Jika kamu sedang mencari konteks spesifik, beritahu saya di mana kamu membaca kata tersebut (misalnya di kolom komentar TikTok, Twitter, atau teks tertentu)? Saya bisa bantu menjelaskan makna tepatnya sesuai kalimat tersebut.",
+    "PENDIDIKAN AGAMA ISLAM☯️17/7☯️sgdsgd☯️gdfgd☯️dfg☯️dfgdfg",
     "",
     "",
     "",
