@@ -1,6 +1,6 @@
 // File ini di-generate otomatis dari Google Sheets.
 // Jangan edit manual, perubahan akan tertimpa.
-// Terakhir diperbarui: 2026-07-13T04:19:57.301Z
+// Terakhir diperbarui: 2026-07-13T04:24:56.673Z
 
 var kalender = [
   [
@@ -1342,7 +1342,7 @@ var kalender = [
     "",
     "",
     "",
-    "IPA (KIMIA)☯️15/7☯️Ejkekekke☯️Wjwjwk☯️Sjkajjwk☯️Akakwkkwk",
+    "",
     "PENDIDIKAN AGAMA ISLAM☯️16/7☯️tret☯️☯️☯️",
     "PENDIDIKAN AGAMA ISLAM☯️17/7☯️sgdsgd☯️gdfgd☯️dfg☯️dfgdfg",
     "",
@@ -1529,7 +1529,7 @@ var kalender = [
     "",
     "",
     "",
-    "Kimia Minat☯️13/7☯️Ejkekekke☯️Wjwjwk☯️Sjkajjwk☯️Akakwkkwk",
+    "",
     "",
     "",
     "",
