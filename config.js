@@ -1,4 +1,4 @@
 window.GITHUB_CONFIG = {
   
-  gasUrl: "https://script.google.com/macros/s/AKfycbwQZG0iybCgifR_31UEUcEeCzQ8w-BMMUb5MiphAM0Heja8-G8y_gs3Oi9F-NrLHS-c/exec",   //pass    
+  gasUrl: "https://script.google.com/macros/s/AKfycbyCJP2pymmqwQRFI6_-gY6r7hh8AgNWIsqIEanE2Ix6A36LekclA1Map6PtUg90-R3q/exec",   //pass    
 };
