@@ -2913,6 +2913,8 @@ watch(selectedSemester, async (newSem) => {
         // ⚠️ passwordInput TIDAK diubah — tetap password lama di textbox login
         if (window.SISWA_DATA?.[saved?.nisn]) {
           window.SISWA_DATA[saved.nisn].password = pwNew.value;
+        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[saved?.nisn]) {
+          window.SISWA_DATA[selectedSemester.value][saved.nisn].password = pwNew.value;
         }
         pwLoading.value = false;
         pwMsgType.value = 'ok';
@@ -2953,6 +2955,8 @@ watch(selectedSemester, async (newSem) => {
         // supaya siswa masih bisa login dengan password lama sampai server konfirmasi
         if (window.SISWA_DATA?.[nisn]) {
           window.SISWA_DATA[nisn].password = pwNew.value;
+        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[nisn]) {
+          window.SISWA_DATA[selectedSemester.value][nisn].password = pwNew.value;
         }
 
         pwLoading.value = false;
@@ -3124,7 +3128,13 @@ watch(selectedSemester, async (newSem) => {
         if (!db) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
 
         const nisnStr = nisnInput.value.toString().trim();
-        const row     = db[nisnStr];
+        // Dukung dua kemungkinan format:
+        // 1) Format baru (per file semester): db langsung berisi { nisn: {...} }
+        // 2) Format lama (masih bersarang semester): db = { GANJIL: {...}, GENAP: {...} }
+        let row = db[nisnStr];
+        if (!row && db[semester] && typeof db[semester] === 'object') {
+          row = db[semester][nisnStr];
+        }
 
         if (!row) {
           loading.value = false;
