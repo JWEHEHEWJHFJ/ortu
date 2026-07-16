@@ -42,9 +42,10 @@ async function _sp5p_dec(b64) {
 }
 
 
-const _sp5p_loadData = async () => {
+const _sp5p_loadData = async (semester) => {
   try {
-    const res = await fetch("ds.js?v=" + Date.now(), {
+    const fileName = (semester === 'GENAP') ? 'dsgen.js' : 'dsgan.js';
+    const res = await fetch(fileName + "?v=" + Date.now(), {
   cache: "no-store"
 });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -129,7 +130,7 @@ const _sp5p_loadConfig = async () => {
 
 const _sp5p_loadKalender = async (semester) => {
   try {
-    const fileName = (semester === 'GENAP') ? 'kalendergenap.js' : 'kalenderganjil.js';
+    const fileName = (semester === 'GENAP') ? 'kalgen.js' : 'kalgan.js';
     const res = await fetch(fileName + "?v=" + Date.now(), {
   cache: "no-store"
 });
@@ -152,7 +153,7 @@ const _sp5p_defaultSemester = (_sp5p_defaultSemesterMonth >= 1 && _sp5p_defaultS
 
 
 window._sp5pReady = Promise.all([
-  _sp5p_loadData(),
+  _sp5p_loadData(_sp5p_defaultSemester),
   _sp5p_loadConfig(),
   _sp5p_loadKalender(_sp5p_defaultSemester)
 ]);
@@ -2703,9 +2704,12 @@ _idbGet(BG_IDB_KEY).then(cached => {
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
     const showGenapOption   = computed(() => currentMonth >= 1 && currentMonth <= 6);
-// Muat ulang kalenderganjil.js / kalendergenap.js setiap kali semester berubah
+// Muat ulang dsgan.js/dsgen.js (data siswa) & kalgan.js/kalgen.js (kalender) setiap kali semester berubah
 watch(selectedSemester, async (newSem) => {
-  await window._sp5p_loadKalender(newSem);
+  await Promise.all([
+    window._sp5p_loadData(newSem),
+    window._sp5p_loadKalender(newSem)
+  ]);
 });
     const STORE_KEY = 'sp5p_session';
 
@@ -2860,7 +2864,7 @@ watch(selectedSemester, async (newSem) => {
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
         try { delete window.GITHUB_CONFIG; } catch(e) { window.GITHUB_CONFIG = {};   }
         window._sp5pReady = Promise.all([
-  window._sp5p_loadData(),
+  window._sp5p_loadData(selectedSemester.value),
   window._sp5p_loadConfig(),
   window._sp5p_loadKalender ? window._sp5p_loadKalender(selectedSemester.value) : Promise.resolve()
 ]);
@@ -2907,11 +2911,9 @@ watch(selectedSemester, async (newSem) => {
         // Tidak ada gasUrl → simpan lokal saja (mode offline)
         await saveSession(saved?.nisn || '', saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput TIDAK diubah — tetap password lama di textbox login
-        ['GANJIL','GENAP'].forEach(sem => {
-          if (window.SISWA_DATA?.[sem]?.[saved?.nisn]) {
-            window.SISWA_DATA[sem][saved.nisn].password = pwNew.value;
-          }
-        });
+        if (window.SISWA_DATA?.[saved?.nisn]) {
+          window.SISWA_DATA[saved.nisn].password = pwNew.value;
+        }
         pwLoading.value = false;
         pwMsgType.value = 'ok';
         pwMsg.value = '✅ Password berhasil diganti. Tunggu 10 sampai 15 menit agar password benar-benar terganti di server untuk disetujui oleh admin.';
@@ -2949,11 +2951,9 @@ watch(selectedSemester, async (newSem) => {
         await saveSession(nisn, saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput di halaman login TIDAK diubah — tetap password lama
         // supaya siswa masih bisa login dengan password lama sampai server konfirmasi
-        ['GANJIL','GENAP'].forEach(sem => {
-          if (window.SISWA_DATA?.[sem]?.[nisn]) {
-            window.SISWA_DATA[sem][nisn].password = pwNew.value;
-          }
-        });
+        if (window.SISWA_DATA?.[nisn]) {
+          window.SISWA_DATA[nisn].password = pwNew.value;
+        }
 
         pwLoading.value = false;
         pwMsgType.value = 'ok';
@@ -3104,7 +3104,7 @@ watch(selectedSemester, async (newSem) => {
 
         // Jika SISWA_DATA masih null (gagal load), coba reload sekali
         if (!window.SISWA_DATA) {
-          const ok = await window._sp5p_loadData();
+          const ok = await window._sp5p_loadData(selectedSemester.value || 'GANJIL');
           if (!ok || !window.SISWA_DATA) {
             loading.value = false;
             errorMessage.value = 'Gagal memuat data. Periksa koneksi internet dan coba lagi.';
@@ -3112,15 +3112,19 @@ watch(selectedSemester, async (newSem) => {
           }
         }
 
+        const semester = selectedSemester.value || 'GANJIL';
+        // Pastikan data siswa (dsgan.js/dsgen.js) & kalender (kalgan.js/kalgen.js)
+        // yang termuat sesuai semester yang dipilih saat login
+        await Promise.all([
+          window._sp5p_loadData(semester),
+          window._sp5p_loadKalender(semester)
+        ]);
+
         const db = window.SISWA_DATA;
-        const semester     = selectedSemester.value || 'GANJIL';
-        const semesterData = db[semester];
-        // Pastikan data kalender yang termuat sesuai semester yang dipilih saat login
-await window._sp5p_loadKalender(semester);
-        if (!semesterData) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
+        if (!db) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
 
         const nisnStr = nisnInput.value.toString().trim();
-        const row     = semesterData[nisnStr];
+        const row     = db[nisnStr];
 
         if (!row) {
           loading.value = false;
