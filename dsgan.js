@@ -23556,8 +23556,8 @@ window.SISWA_DATA = {
     "0086622136": {
       "nisn": "0086622136",
       "password": "",
-      "rawSchedule": "08.00 - 10.15@Kimia minat@Jayadi. S.Pd.@H#10.15 - 11.45@Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@*#######",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia minat@Jayadi. S.Pd.@1@0@0@0@0@0#Bhs. Arab Minat@Dahlia Saidi Jaya. S.Ag.@0@0@0@0@0@0#IPS (Sejarah)@Hatifa NB. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "08.00 - 10.15@Kimia minat@Jayadi. S.Pd.@A#10.15 - 11.45@Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@*#######",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia minat@Jayadi. S.Pd.@0@0@0@0@1@0#Bhs. Arab Minat@Dahlia Saidi Jaya. S.Ag.@0@0@0@0@0@0#IPS (Sejarah)@Hatifa NB. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia minat@Jayadi. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@Dahlia Saidi Jaya. S.Ag.@0@0@0@0@0@0#IPS (Sejarah)@Hatifa NB. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia minat@Jayadi. S.Pd.@N#-%Bhs. Arab Minat@Dahlia Saidi Jaya. S.Ag.@N#-%IPS (Sejarah)@Hatifa NB. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -23570,7 +23570,7 @@ window.SISWA_DATA = {
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
-        "Jul/17/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
+        "Jul/17/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0086622136@A. MUH. ABD. RAHMAN",
@@ -41155,7 +41155,7 @@ window.SISWA_DATA = {
     },
     "0088661329": {
       "nisn": "0088661329",
-      "password": "1234",
+      "password": "88661329",
       "rawSchedule": "08.00 - 10.15@Kimia Minat@Aisyah. S.Pd.@*#10.15 - 11.45@Matematika Wajib@Jufri. S.Pd..M.Pd@*#######",
       "rawAttendanceData": "Pendidikan Agama Islam@Darna. S.PdI.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Gasrum. ST. MM@0@0@0@0@0@0#Bahasa Indonesia Tingkat Lanjut@Nurhalima H. S.Pd.@0@0@0@0@0@0#Seni Budaya@Hj. Suriati. S.Pd. MM@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Muhammad Anas@0@0@0@0@0@0#Bahasa Indonesia@Rahma. S.S@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Biologi Minat@Hasniati. S.Pd.@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Sejarah Wajib@Drs. H. Abd. Rahman@0@0@0@0@0@0#Matematika Wajib@Jufri. S.Pd..M.Pd@0@0@0@0@0@0#Geografi Minat@Andi Fatimah Azzarah.@0@0@0@0@0@0#Bhs. Inggris Tingkat Lanjut@Mursalim Alias. S.Pd@0@0@0@0@0@0###########",
       "rawAssessmentData": "Pendidikan Agama Islam@Darna. S.PdI.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Gasrum. ST. MM@0@0@0@0@0@0#Bahasa Indonesia Tingkat Lanjut@Nurhalima H. S.Pd.@0@0@0@0@0@0#Seni Budaya@Hj. Suriati. S.Pd. MM@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Muhammad Anas@0@0@0@0@0@0#Bahasa Indonesia@Rahma. S.S@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Biologi Minat@Hasniati. S.Pd.@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Sejarah Wajib@Drs. H. Abd. Rahman@0@0@0@0@0@0#Matematika Wajib@Jufri. S.Pd..M.Pd@0@0@0@0@0@0#Geografi Minat@Andi Fatimah Azzarah.@0@0@0@0@0@0#Bhs. Inggris Tingkat Lanjut@Mursalim Alias. S.Pd@0@0@0@0@0@0###########",
