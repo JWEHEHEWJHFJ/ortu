@@ -82,7 +82,7 @@ const _sp5p_loadData = async (semester) => {
   const _clear = () => {
     try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null;      }
     try { delete window.__SP5P;        } catch(e) { window.__SP5P        = undefined; }
-    try { delete window.GITHUB_CONFIG; } catch(e) { window.GITHUB_CONFIG = {};        }
+    try { delete window.CONFIG; } catch(e) { window.CONFIG = {};        }
     try { delete window.__CFG;         } catch(e) { window.__CFG         = undefined; }
   };
   let _wasOpen = false;
