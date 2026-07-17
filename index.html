@@ -82,7 +82,7 @@ const _sp5p_loadData = async (semester) => {
   const _clear = () => {
     try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null;      }
     try { delete window.__SP5P;        } catch(e) { window.__SP5P        = undefined; }
-    try { delete window.CONFIG; } catch(e) { window.CONFIG = {};        }
+    try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};        }
     try { delete window.__CFG;         } catch(e) { window.__CFG         = undefined; }
   };
   let _wasOpen = false;
@@ -119,13 +119,13 @@ const _sp5p_loadConfig = async () => {
     if (idx !== -1) {
       const b64   = js.substring(idx + marker.length, js.indexOf('"', idx + marker.length));
       const plain = await _sp5p_dec(b64);
-      if (plain) window.GITHUB_CONFIG = JSON.parse(plain);
-    } else if (js.indexOf("window.GITHUB_CONFIG") !== -1) {
+      if (plain) window.CONFIG = JSON.parse(plain);
+    } else if (js.indexOf("window.CONFIG") !== -1) {
       // Fallback format lama (plaintext)
-      window.GITHUB_CONFIG = (new Function(js + "; return window.GITHUB_CONFIG;"))();
+      window.CONFIG = (new Function(js + "; return window.CONFIG;"))();
     }
     try { delete window.__CFG; } catch(e) { window.__CFG = undefined; }
-  } catch(e) { window.GITHUB_CONFIG = {}; }
+  } catch(e) { window.CONFIG = {}; }
 };
 
 const _sp5p_loadKalender = async (semester) => {
@@ -2862,7 +2862,7 @@ watch(selectedSemester, async (newSem) => {
 
         // Hapus data sensitif & reload data + config baru dari server
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
-        try { delete window.GITHUB_CONFIG; } catch(e) { window.GITHUB_CONFIG = {};   }
+        try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
         window._sp5pReady = Promise.all([
   window._sp5p_loadData(selectedSemester.value),
   window._sp5p_loadConfig(),
@@ -2905,7 +2905,7 @@ watch(selectedSemester, async (newSem) => {
       }
 
       // ── Ambil gasUrl dari config.js ─────────────────────────────────
-      const gasUrl = (window.GITHUB_CONFIG || {}).gasUrl || '';
+      const gasUrl = (window.CONFIG || {}).gasUrl || '';
 
       if (!gasUrl) {
         // Tidak ada gasUrl → simpan lokal saja (mode offline)
