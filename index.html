@@ -103,7 +103,11 @@ const _sp5p_loadData = async (semester) => {
   }, true);
 
   // Metode 3: disable right-click
-  document.addEventListener("contextmenu", e => e.preventDefault());
+  document.addEventListener("contextmenu", e => {
+  const tag = e.target.tagName;
+  if (tag === 'INPUT' || tag === 'TEXTAREA') return; // izinkan klik-kanan (copy/paste) di field
+  e.preventDefault();
+});
 })();
 
 // ── Fetch + decrypt config.js (no-cache, tidak terlihat di F12 Sources) ──
@@ -1576,10 +1580,9 @@ window._sp5pReady = Promise.all([
             <div class="field-wrap">
               <i class="fas fa-lock field-icon"></i>
               <input class="field-input" id="password" name="password" type="password"
-                autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-                placeholder="Masukkan password kamu..."
-                v-model="passwordInput" @keyup.enter="login"
-                @copy.prevent @cut.prevent @contextmenu.prevent />
+  autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
+  placeholder="Masukkan password kamu..."
+  v-model="passwordInput" @keyup.enter="login" />
             </div>
           </div>
 
@@ -1963,7 +1966,7 @@ window._sp5pReady = Promise.all([
             <div v-for="(item, idx) in parsedAttendance" :key="idx"
               class="att-card"
               :class="'animate-delay-' + Math.min(idx+1,5)"
-              @click="openAttendanceDetail(idx)">
+              @click="openAttendanceDetail(item.originalIndex)">
               <div class="att-card-top">
                 <div class="att-card-icon" :style="{
                   background: item.percentage > 79 ? '#ecfdf5' : item.percentage >= 75 ? '#fffbeb' : item.percentage > 0 ? '#fef2f2' : '#f3f4f6',
@@ -2043,8 +2046,8 @@ window._sp5pReady = Promise.all([
             <div v-for="(item, idx) in parsedAssessment" :key="idx"
               class="asmnt-card"
               :class="'animate-delay-' + Math.min(idx+1,5)"
-              @click="openAssessmentDetail(idx)">
-              <div class="asmnt-card-top">
+              >
+              <div class="asmnt@click="openAssessmentDetail(item.originalIndex)"-card-top">
                 <div class="asmnt-icon" :style="{
                   background: item.remaining === 0 ? '#faf5ff' : '#fff7ed',
                   color: item.remaining === 0 ? '#7c3aed' : '#ea580c'
@@ -2239,45 +2242,47 @@ window._sp5pReady = Promise.all([
             <button class="modal-close" @click="closeSub"><i class="fas fa-times"></i></button>
           </div>
           <div class="sub-scroll">
-            <div class="pw-field">
-              <label class="pw-label">Password Lama</label>
-              <div style="position:relative">
-                <input class="pw-input" :type="showPwOld ? 'text' : 'password'" v-model="pwOld"
-                  placeholder="Masukkan password lama..."
-                  @copy.prevent @cut.prevent @contextmenu.prevent
-                  style="padding-right:44px" />
-                <button type="button" @click="showPwOld = !showPwOld"
-                  style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
-                  <i :class="showPwOld ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
-                </button>
-              </div>
-            </div>
-            <div class="pw-field">
-              <label class="pw-label">Password Baru</label>
-              <div style="position:relative">
-                <input class="pw-input" :type="showPwNew ? 'text' : 'password'" v-model="pwNew"
-                  placeholder="Masukkan password baru..."
-                  @copy.prevent @cut.prevent @contextmenu.prevent
-                  style="padding-right:44px" />
-                <button type="button" @click="showPwNew = !showPwNew"
-                  style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
-                  <i :class="showPwNew ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
-                </button>
-              </div>
-            </div>
-            <div class="pw-field">
-              <label class="pw-label">Konfirmasi Password Baru</label>
-              <div style="position:relative">
-                <input class="pw-input" :type="showPwConfirm ? 'text' : 'password'" v-model="pwConfirm"
-                  placeholder="Ulangi password baru..."
-                  @copy.prevent @cut.prevent @contextmenu.prevent
-                  style="padding-right:44px" />
-                <button type="button" @click="showPwConfirm = !showPwConfirm"
-                  style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
-                  <i :class="showPwConfirm ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
-                </button>
-              </div>
-            </div>
+            <!-- Password Lama -->
+<div class="pw-field">
+  <label class="pw-label">Password Lama</label>
+  <div style="position:relative">
+    <input class="pw-input" :type="showPwAll ? 'text' : 'password'" v-model="pwOld"
+      placeholder="Masukkan password lama..."
+      style="padding-right:44px" />
+    <button type="button" @click="showPwAll = !showPwAll"
+      style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
+      <i :class="showPwAll ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Password Baru -->
+<div class="pw-field">
+  <label class="pw-label">Password Baru</label>
+  <div style="position:relative">
+    <input class="pw-input" :type="showPwAll ? 'text' : 'password'" v-model="pwNew"
+      placeholder="Masukkan password baru..."
+      style="padding-right:44px" />
+    <button type="button" @click="showPwAll = !showPwAll"
+      style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
+      <i :class="showPwAll ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+    </button>
+  </div>
+</div>
+
+<!-- Konfirmasi Password Baru -->
+<div class="pw-field">
+  <label class="pw-label">Konfirmasi Password Baru</label>
+  <div style="position:relative">
+    <input class="pw-input" :type="showPwAll ? 'text' : 'password'" v-model="pwConfirm"
+      placeholder="Ulangi password baru..."
+      style="padding-right:44px" />
+    <button type="button" @click="showPwAll = !showPwAll"
+      style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
+      <i :class="showPwAll ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+    </button>
+  </div>
+</div>
             <div v-if="pwMsg" class="pw-msg" :class="pwMsgType">
               <i :class="pwMsgType === 'ok' ? 'fas fa-check-circle' : 'fas fa-exclamation-circle'" style="margin-right:6px"></i>
               {{ pwMsg }}
@@ -2826,18 +2831,16 @@ watch(selectedSemester, async (newSem) => {
     const pwMsg         = ref('');
     const pwMsgType     = ref('ok');
     const pwLoading     = ref(false);
-    const showPwOld     = ref(false);
-    const showPwNew     = ref(false);
-    const showPwConfirm = ref(false);
+    const showPwAll = ref(false);
 
     const openSub  = (name) => { activeSub.value = name; document.body.style.overflow = 'hidden'; };
     const closeSub = () => {
-      activeSub.value = null;
-      pwOld.value = ''; pwNew.value = ''; pwConfirm.value = '';
-      pwMsg.value = ''; pwLoading.value = false;
-      showPwOld.value = false; showPwNew.value = false; showPwConfirm.value = false;
-      document.body.style.overflow = '';
-    };
+  activeSub.value = null;
+  pwOld.value = ''; pwNew.value = ''; pwConfirm.value = '';
+  pwMsg.value = ''; pwLoading.value = false;
+  showPwAll.value = false; // reset satu-satunya toggle
+  document.body.style.overflow = '';
+};
 
     const resetAllData = () => {
       try {
@@ -2983,20 +2986,20 @@ watch(selectedSemester, async (newSem) => {
       const d = studentData.value;
 
         const getAssessmentDetailForMapel = (mapelName) => {
-        const idx = parsedAssessment.value.findIndex(a => a.mapel === mapelName);
-        if (idx === -1) return [];
-        const raw = d.nlList ? d.nlList[idx] : '';
-        if (!raw) return [];
-        const parts      = raw.split(',').map(s => s.trim());
-        if (parts.length < 2) return [];
-        const tugasList  = parts[0].split('@').filter(s => s);
-        const statusList = parts[1].split('@').filter(s => s);
-        const len = Math.max(tugasList.length, statusList.length);
-        return Array.from({ length: len }, (_, i) => ({
-          nilai:      tugasList[i] || '',
-          keterangan: getNilaiKeterangan(statusList[i])
-        }));
-      };
+  const item = parsedAssessment.value.find(a => a.mapel === mapelName);
+  if (!item) return [];
+  const raw = d.nlList ? d.nlList[item.originalIndex] : '';
+  if (!raw) return [];
+  const parts      = raw.split(',').map(s => s.trim());
+  if (parts.length < 2) return [];
+  const tugasList  = parts[0].split('@').filter(s => s);
+  const statusList = parts[1].split('@').filter(s => s);
+  const len = Math.max(tugasList.length, statusList.length);
+  return Array.from({ length: len }, (_, i) => ({
+    nilai:      tugasList[i] || '',
+    keterangan: getNilaiKeterangan(statusList[i])
+  }));
+};
 
       const mapelSet = new Set();
       parsedAttendance.value.forEach(a => mapelSet.add(a.mapel));
@@ -3463,36 +3466,41 @@ const akademikInfoForSelected = computed(() => {
     });
 
     const parsedAttendance = computed(() => {
-      if (!studentData.value.rawAttendanceData) return [];
-      return studentData.value.rawAttendanceData.split('#').filter(i => i.trim()).map((entry) => {
-        const parts = entry.split('@');
-        const h=parseInt(parts[2]||'0'), ht=parseInt(parts[3]||'0'), i=parseInt(parts[4]||'0'), s=parseInt(parts[5]||'0'), a=parseInt(parts[6]||'0'), b=parseInt(parts[7]||'0');
-        const totalHadir = h+ht+i+s;
-        const totalAll   = totalHadir+a+b;
-        const pct        = totalAll > 0 ? (totalHadir/totalAll)*100 : 0;
-        return { mapel:parts[0]||'Mata Pelajaran', guru:parts[1]||'Guru', h,ht,i,s,a,b, percentage:pct };
-      });
-    });
+  if (!studentData.value.rawAttendanceData) return [];
+  const list = studentData.value.rawAttendanceData.split('#').filter(i => i.trim()).map((entry, idx) => {
+    const parts = entry.split('@');
+    const h=parseInt(parts[2]||'0'), ht=parseInt(parts[3]||'0'), i=parseInt(parts[4]||'0'),
+          s=parseInt(parts[5]||'0'), a=parseInt(parts[6]||'0'), b=parseInt(parts[7]||'0');
+    const totalHadir = h+ht+i+s;
+    const totalAll   = totalHadir+a+b;
+    const pct        = totalAll > 0 ? (totalHadir/totalAll)*100 : 0;
+    return { mapel:parts[0]||'Mata Pelajaran', guru:parts[1]||'Guru', h,ht,i,s,a,b, percentage:pct, originalIndex: idx };
+  });
+  // Persentase kehadiran terendah tampil paling atas
+  return list.slice().sort((a, b) => a.percentage - b.percentage);
+});
 const NILAI_STATUS_MAP = { 'T': 'Sudah Dinilai', 'R': 'Perlu Perbaikan' };
 const getNilaiKeterangan = (kode) => NILAI_STATUS_MAP[(kode || '').trim().toUpperCase()] || 'Belum Dinilai';
     const parsedAssessment = computed(() => {
-      if (!studentData.value.rawAssessmentData) return [];
-      return studentData.value.rawAssessmentData.split('#').filter(i => i.trim()).map((entry, idx) => {
-        const parts = entry.split('@');
-        const raw   = studentData.value.nlList?.[idx] || '';
-        let remaining = 0;
-        if (raw) {
-          const nlParts    = raw.split(',').map(s => s.trim());
-          const tugasList  = (nlParts[0] || '').split('@').filter(s => s);
-          const statusList = (nlParts[1] || '').split('@').filter(s => s);
-          const len = Math.max(tugasList.length, statusList.length);
-          for (let i = 0; i < len; i++) {
-            if (getNilaiKeterangan(statusList[i]) !== 'Sudah Dinilai') remaining++;
-          }
-        }
-        return { mapel: parts[0] || 'Mata Pelajaran', guru: parts[1] || 'Guru', remaining };
-      });
-    });
+  if (!studentData.value.rawAssessmentData) return [];
+  const list = studentData.value.rawAssessmentData.split('#').filter(i => i.trim()).map((entry, idx) => {
+    const parts = entry.split('@');
+    const raw   = studentData.value.nlList?.[idx] || '';
+    let remaining = 0;
+    if (raw) {
+      const nlParts    = raw.split(',').map(s => s.trim());
+      const tugasList  = (nlParts[0] || '').split('@').filter(s => s);
+      const statusList = (nlParts[1] || '').split('@').filter(s => s);
+      const len = Math.max(tugasList.length, statusList.length);
+      for (let i = 0; i < len; i++) {
+        if (getNilaiKeterangan(statusList[i]) !== 'Sudah Dinilai') remaining++;
+      }
+    }
+    return { mapel: parts[0] || 'Mata Pelajaran', guru: parts[1] || 'Guru', remaining, originalIndex: idx };
+  });
+  // Belum lengkap (remaining terbesar) tampil paling atas
+  return list.slice().sort((a, b) => b.remaining - a.remaining);
+});
 
     const NOTE_TYPE = {
       'AP': { label:'Apresiasi',        icon:'fas fa-award',             border:'#10b981', bg:'#ecfdf5', color:'#059669', shadow:'rgba(16,185,129,0.18)'  },
@@ -3697,14 +3705,18 @@ const visibleNotes = computed(() => {
     });
 
     const selectedAttendance = computed(() => {
-      if (selectedAttendanceIndex.value !== null) return parsedAttendance.value[selectedAttendanceIndex.value] || null;
-      return null;
-    });
+  if (selectedAttendanceIndex.value !== null) {
+    return parsedAttendance.value.find(a => a.originalIndex === selectedAttendanceIndex.value) || null;
+  }
+  return null;
+});
 
     const selectedAssessment = computed(() => {
-      if (selectedAssessmentIndex.value !== null) return parsedAssessment.value[selectedAssessmentIndex.value] || null;
-      return null;
-    });
+  if (selectedAssessmentIndex.value !== null) {
+    return parsedAssessment.value.find(a => a.originalIndex === selectedAssessmentIndex.value) || null;
+  }
+  return null;
+});
 
     const attendanceDetailParsed = computed(() => {
       if (selectedAttendanceIndex.value === null) return [];
@@ -3764,7 +3776,7 @@ const visibleNotes = computed(() => {
       hoveredBar, monthlyAttendanceStats,
       activeSub, openSub, closeSub,
       pwOld, pwNew, pwConfirm, pwMsg, pwMsgType, pwLoading,
-      showPwOld, showPwNew, showPwConfirm,
+      showPwAll,
       doChangePassword, downloadPdf,
       selectedSemester, showGenapOption,
       weekdayLabels, agendaCalendars,
