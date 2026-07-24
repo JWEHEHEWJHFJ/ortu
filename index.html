@@ -42,10 +42,9 @@ async function _sp5p_dec(b64) {
 }
 
 
-const _sp5p_loadData = async (semester) => {
+const _sp5p_loadData = async () => {
   try {
-    const fileName = (semester === 'GENAP') ? 'dsgen.js' : 'dsgan.js';
-    const res = await fetch(fileName + "?v=" + Date.now(), {
+    const res = await fetch("ds.js?v=" + Date.now(), {
   cache: "no-store"
 });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -82,7 +81,7 @@ const _sp5p_loadData = async (semester) => {
   const _clear = () => {
     try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null;      }
     try { delete window.__SP5P;        } catch(e) { window.__SP5P        = undefined; }
-    try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};        }
+    try { delete window.GITHUB_CONFIG; } catch(e) { window.GITHUB_CONFIG = {};        }
     try { delete window.__CFG;         } catch(e) { window.__CFG         = undefined; }
   };
   let _wasOpen = false;
@@ -102,8 +101,12 @@ const _sp5p_loadData = async (semester) => {
     if (e.ctrlKey && e.keyCode === 85) { e.preventDefault(); return false; }
   }, true);
 
-  // Metode 3: disable right-click
-  document.addEventListener("contextmenu", e => e.preventDefault());
+  // Metode 3: blokir right-click, KECUALI pada input/textarea agar copy-paste tetap bisa
+  document.addEventListener("contextmenu", e => {
+    const tag = (e.target && e.target.tagName) || '';
+    if (tag === 'INPUT' || tag === 'TEXTAREA') return;
+    e.preventDefault();
+  });
 })();
 
 // ── Fetch + decrypt config.js (no-cache, tidak terlihat di F12 Sources) ──
@@ -119,18 +122,18 @@ const _sp5p_loadConfig = async () => {
     if (idx !== -1) {
       const b64   = js.substring(idx + marker.length, js.indexOf('"', idx + marker.length));
       const plain = await _sp5p_dec(b64);
-      if (plain) window.CONFIG = JSON.parse(plain);
-    } else if (js.indexOf("window.CONFIG") !== -1) {
+      if (plain) window.GITHUB_CONFIG = JSON.parse(plain);
+    } else if (js.indexOf("window.GITHUB_CONFIG") !== -1) {
       // Fallback format lama (plaintext)
-      window.CONFIG = (new Function(js + "; return window.CONFIG;"))();
+      window.GITHUB_CONFIG = (new Function(js + "; return window.GITHUB_CONFIG;"))();
     }
     try { delete window.__CFG; } catch(e) { window.__CFG = undefined; }
-  } catch(e) { window.CONFIG = {}; }
+  } catch(e) { window.GITHUB_CONFIG = {}; }
 };
 
 const _sp5p_loadKalender = async (semester) => {
   try {
-    const fileName = (semester === 'GENAP') ? 'kalgen.js' : 'kalgan.js';
+    const fileName = (semester === 'GENAP') ? 'kalendergenap.js' : 'kalenderganjil.js';
     const res = await fetch(fileName + "?v=" + Date.now(), {
   cache: "no-store"
 });
@@ -153,7 +156,7 @@ const _sp5p_defaultSemester = (_sp5p_defaultSemesterMonth >= 1 && _sp5p_defaultS
 
 
 window._sp5pReady = Promise.all([
-  _sp5p_loadData(_sp5p_defaultSemester),
+  _sp5p_loadData(),
   _sp5p_loadConfig(),
   _sp5p_loadKalender(_sp5p_defaultSemester)
 ]);
@@ -201,6 +204,7 @@ window._sp5pReady = Promise.all([
     -webkit-user-select: text;
     -moz-user-select: text;
     -ms-user-select: text;
+    -webkit-touch-callout: default;
   }
   @keyframes float {
     0%,100%{transform:translateY(0) rotate(0deg);}
@@ -1578,8 +1582,7 @@ window._sp5pReady = Promise.all([
               <input class="field-input" id="password" name="password" type="password"
                 autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                 placeholder="Masukkan password kamu..."
-                v-model="passwordInput" @keyup.enter="login"
-                @copy.prevent @cut.prevent @contextmenu.prevent />
+                v-model="passwordInput" @keyup.enter="login" />
             </div>
           </div>
 
@@ -1932,7 +1935,7 @@ window._sp5pReady = Promise.all([
           <div class="page-header">
             <div>
               <div class="ph-title">Rekap Kehadiran</div>
-              <div class="ph-sub">Data kehadiran per mata pelajaran</div>
+              <div class="ph-sub">Data kehadiran per mata pelajaran (persentase terendah lebih dulu)</div>
             </div>
             <div class="ph-icon" style="background:#ecfdf5;color:#059669">
               <i class="fas fa-check-circle"></i>
@@ -1960,10 +1963,10 @@ window._sp5pReady = Promise.all([
           </div>
 
           <div class="attendance-grid" v-else>
-            <div v-for="(item, idx) in parsedAttendance" :key="idx"
+            <div v-for="(item, idx) in parsedAttendance" :key="item.idx"
               class="att-card"
               :class="'animate-delay-' + Math.min(idx+1,5)"
-              @click="openAttendanceDetail(idx)">
+              @click="openAttendanceDetail(item.idx)">
               <div class="att-card-top">
                 <div class="att-card-icon" :style="{
                   background: item.percentage > 79 ? '#ecfdf5' : item.percentage >= 75 ? '#fffbeb' : item.percentage > 0 ? '#fef2f2' : '#f3f4f6',
@@ -2012,7 +2015,7 @@ window._sp5pReady = Promise.all([
           <div class="page-header">
             <div>
               <div class="ph-title">Penilaian Tugas</div>
-              <div class="ph-sub">Status pengumpulan per mata pelajaran</div>
+              <div class="ph-sub">Mapel dengan tugas belum lengkap ditampilkan lebih dulu</div>
             </div>
             <div class="ph-icon" style="background:#faf5ff;color:#7c3aed">
               <i class="fas fa-star"></i>
@@ -2040,10 +2043,10 @@ window._sp5pReady = Promise.all([
           </div>
 
           <div class="assessment-grid" v-else>
-            <div v-for="(item, idx) in parsedAssessment" :key="idx"
+            <div v-for="(item, idx) in parsedAssessment" :key="item.idx"
               class="asmnt-card"
               :class="'animate-delay-' + Math.min(idx+1,5)"
-              @click="openAssessmentDetail(idx)">
+              @click="openAssessmentDetail(item.idx)">
               <div class="asmnt-card-top">
                 <div class="asmnt-icon" :style="{
                   background: item.remaining === 0 ? '#faf5ff' : '#fff7ed',
@@ -2242,39 +2245,36 @@ window._sp5pReady = Promise.all([
             <div class="pw-field">
               <label class="pw-label">Password Lama</label>
               <div style="position:relative">
-                <input class="pw-input" :type="showPwOld ? 'text' : 'password'" v-model="pwOld"
+                <input class="pw-input" :type="showPwAll ? 'text' : 'password'" v-model="pwOld"
                   placeholder="Masukkan password lama..."
-                  @copy.prevent @cut.prevent @contextmenu.prevent
                   style="padding-right:44px" />
-                <button type="button" @click="showPwOld = !showPwOld"
+                <button type="button" @click="togglePwVisibility"
                   style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
-                  <i :class="showPwOld ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                  <i :class="showPwAll ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
                 </button>
               </div>
             </div>
             <div class="pw-field">
               <label class="pw-label">Password Baru</label>
               <div style="position:relative">
-                <input class="pw-input" :type="showPwNew ? 'text' : 'password'" v-model="pwNew"
+                <input class="pw-input" :type="showPwAll ? 'text' : 'password'" v-model="pwNew"
                   placeholder="Masukkan password baru..."
-                  @copy.prevent @cut.prevent @contextmenu.prevent
                   style="padding-right:44px" />
-                <button type="button" @click="showPwNew = !showPwNew"
+                <button type="button" @click="togglePwVisibility"
                   style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
-                  <i :class="showPwNew ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                  <i :class="showPwAll ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
                 </button>
               </div>
             </div>
             <div class="pw-field">
               <label class="pw-label">Konfirmasi Password Baru</label>
               <div style="position:relative">
-                <input class="pw-input" :type="showPwConfirm ? 'text' : 'password'" v-model="pwConfirm"
+                <input class="pw-input" :type="showPwAll ? 'text' : 'password'" v-model="pwConfirm"
                   placeholder="Ulangi password baru..."
-                  @copy.prevent @cut.prevent @contextmenu.prevent
                   style="padding-right:44px" />
-                <button type="button" @click="showPwConfirm = !showPwConfirm"
+                <button type="button" @click="togglePwVisibility"
                   style="position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;color:#9ca3af;font-size:15px;padding:0">
-                  <i :class="showPwConfirm ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
+                  <i :class="showPwAll ? 'fas fa-eye-slash' : 'fas fa-eye'"></i>
                 </button>
               </div>
             </div>
@@ -2704,12 +2704,9 @@ _idbGet(BG_IDB_KEY).then(cached => {
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
     const showGenapOption   = computed(() => currentMonth >= 1 && currentMonth <= 6);
-// Muat ulang dsgan.js/dsgen.js (data siswa) & kalgan.js/kalgen.js (kalender) setiap kali semester berubah
+// Muat ulang kalenderganjil.js / kalendergenap.js setiap kali semester berubah
 watch(selectedSemester, async (newSem) => {
-  await Promise.all([
-    window._sp5p_loadData(newSem),
-    window._sp5p_loadKalender(newSem)
-  ]);
+  await window._sp5p_loadKalender(newSem);
 });
     const STORE_KEY = 'sp5p_session';
 
@@ -2826,16 +2823,17 @@ watch(selectedSemester, async (newSem) => {
     const pwMsg         = ref('');
     const pwMsgType     = ref('ok');
     const pwLoading     = ref(false);
-    const showPwOld     = ref(false);
-    const showPwNew     = ref(false);
-    const showPwConfirm = ref(false);
+    // Satu toggle tunggal untuk ketiga field password — saat salah satu
+    // di-klik, ketiganya ikut berubah (tampil/sembunyi) bersamaan.
+    const showPwAll     = ref(false);
+    const togglePwVisibility = () => { showPwAll.value = !showPwAll.value; };
 
     const openSub  = (name) => { activeSub.value = name; document.body.style.overflow = 'hidden'; };
     const closeSub = () => {
       activeSub.value = null;
       pwOld.value = ''; pwNew.value = ''; pwConfirm.value = '';
       pwMsg.value = ''; pwLoading.value = false;
-      showPwOld.value = false; showPwNew.value = false; showPwConfirm.value = false;
+      showPwAll.value = false;
       document.body.style.overflow = '';
     };
 
@@ -2862,9 +2860,9 @@ watch(selectedSemester, async (newSem) => {
 
         // Hapus data sensitif & reload data + config baru dari server
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
-        try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
+        try { delete window.GITHUB_CONFIG; } catch(e) { window.GITHUB_CONFIG = {};   }
         window._sp5pReady = Promise.all([
-  window._sp5p_loadData(selectedSemester.value),
+  window._sp5p_loadData(),
   window._sp5p_loadConfig(),
   window._sp5p_loadKalender ? window._sp5p_loadKalender(selectedSemester.value) : Promise.resolve()
 ]);
@@ -2905,17 +2903,17 @@ watch(selectedSemester, async (newSem) => {
       }
 
       // ── Ambil gasUrl dari config.js ─────────────────────────────────
-      const gasUrl = (window.CONFIG || {}).gasUrl || '';
+      const gasUrl = (window.GITHUB_CONFIG || {}).gasUrl || '';
 
       if (!gasUrl) {
         // Tidak ada gasUrl → simpan lokal saja (mode offline)
         await saveSession(saved?.nisn || '', saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput TIDAK diubah — tetap password lama di textbox login
-        if (window.SISWA_DATA?.[saved?.nisn]) {
-          window.SISWA_DATA[saved.nisn].password = pwNew.value;
-        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[saved?.nisn]) {
-          window.SISWA_DATA[selectedSemester.value][saved.nisn].password = pwNew.value;
-        }
+        ['GANJIL','GENAP'].forEach(sem => {
+          if (window.SISWA_DATA?.[sem]?.[saved?.nisn]) {
+            window.SISWA_DATA[sem][saved.nisn].password = pwNew.value;
+          }
+        });
         pwLoading.value = false;
         pwMsgType.value = 'ok';
         pwMsg.value = '✅ Password berhasil diganti. Tunggu 10 sampai 15 menit agar password benar-benar terganti di server untuk disetujui oleh admin.';
@@ -2953,11 +2951,11 @@ watch(selectedSemester, async (newSem) => {
         await saveSession(nisn, saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput di halaman login TIDAK diubah — tetap password lama
         // supaya siswa masih bisa login dengan password lama sampai server konfirmasi
-        if (window.SISWA_DATA?.[nisn]) {
-          window.SISWA_DATA[nisn].password = pwNew.value;
-        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[nisn]) {
-          window.SISWA_DATA[selectedSemester.value][nisn].password = pwNew.value;
-        }
+        ['GANJIL','GENAP'].forEach(sem => {
+          if (window.SISWA_DATA?.[sem]?.[nisn]) {
+            window.SISWA_DATA[sem][nisn].password = pwNew.value;
+          }
+        });
 
         pwLoading.value = false;
         pwMsgType.value = 'ok';
@@ -2983,9 +2981,9 @@ watch(selectedSemester, async (newSem) => {
       const d = studentData.value;
 
         const getAssessmentDetailForMapel = (mapelName) => {
-        const idx = parsedAssessment.value.findIndex(a => a.mapel === mapelName);
-        if (idx === -1) return [];
-        const raw = d.nlList ? d.nlList[idx] : '';
+        const item = parsedAssessment.value.find(a => a.mapel === mapelName);
+        if (!item) return [];
+        const raw = d.nlList ? d.nlList[item.idx] : '';
         if (!raw) return [];
         const parts      = raw.split(',').map(s => s.trim());
         if (parts.length < 2) return [];
@@ -3108,7 +3106,7 @@ watch(selectedSemester, async (newSem) => {
 
         // Jika SISWA_DATA masih null (gagal load), coba reload sekali
         if (!window.SISWA_DATA) {
-          const ok = await window._sp5p_loadData(selectedSemester.value || 'GANJIL');
+          const ok = await window._sp5p_loadData();
           if (!ok || !window.SISWA_DATA) {
             loading.value = false;
             errorMessage.value = 'Gagal memuat data. Periksa koneksi internet dan coba lagi.';
@@ -3116,25 +3114,15 @@ watch(selectedSemester, async (newSem) => {
           }
         }
 
-        const semester = selectedSemester.value || 'GANJIL';
-        // Pastikan data siswa (dsgan.js/dsgen.js) & kalender (kalgan.js/kalgen.js)
-        // yang termuat sesuai semester yang dipilih saat login
-        await Promise.all([
-          window._sp5p_loadData(semester),
-          window._sp5p_loadKalender(semester)
-        ]);
-
         const db = window.SISWA_DATA;
-        if (!db) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
+        const semester     = selectedSemester.value || 'GANJIL';
+        const semesterData = db[semester];
+        // Pastikan data kalender yang termuat sesuai semester yang dipilih saat login
+await window._sp5p_loadKalender(semester);
+        if (!semesterData) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
 
         const nisnStr = nisnInput.value.toString().trim();
-        // Dukung dua kemungkinan format:
-        // 1) Format baru (per file semester): db langsung berisi { nisn: {...} }
-        // 2) Format lama (masih bersarang semester): db = { GANJIL: {...}, GENAP: {...} }
-        let row = db[nisnStr];
-        if (!row && db[semester] && typeof db[semester] === 'object') {
-          row = db[semester][nisnStr];
-        }
+        const row     = semesterData[nisnStr];
 
         if (!row) {
           loading.value = false;
@@ -3462,19 +3450,23 @@ const akademikInfoForSelected = computed(() => {
       });
     });
 
+    // Kehadiran: urutkan dari PERSENTASE TERENDAH ke tertinggi.
+    // idx original disimpan supaya lookup detail (abList) tetap tepat sasaran.
     const parsedAttendance = computed(() => {
       if (!studentData.value.rawAttendanceData) return [];
-      return studentData.value.rawAttendanceData.split('#').filter(i => i.trim()).map((entry) => {
+      return studentData.value.rawAttendanceData.split('#').filter(i => i.trim()).map((entry, idx) => {
         const parts = entry.split('@');
         const h=parseInt(parts[2]||'0'), ht=parseInt(parts[3]||'0'), i=parseInt(parts[4]||'0'), s=parseInt(parts[5]||'0'), a=parseInt(parts[6]||'0'), b=parseInt(parts[7]||'0');
         const totalHadir = h+ht+i+s;
         const totalAll   = totalHadir+a+b;
         const pct        = totalAll > 0 ? (totalHadir/totalAll)*100 : 0;
-        return { mapel:parts[0]||'Mata Pelajaran', guru:parts[1]||'Guru', h,ht,i,s,a,b, percentage:pct };
-      });
+        return { idx, mapel:parts[0]||'Mata Pelajaran', guru:parts[1]||'Guru', h,ht,i,s,a,b, percentage:pct };
+      }).sort((a, b) => a.percentage - b.percentage);
     });
 const NILAI_STATUS_MAP = { 'T': 'Sudah Dinilai', 'R': 'Perlu Perbaikan' };
 const getNilaiKeterangan = (kode) => NILAI_STATUS_MAP[(kode || '').trim().toUpperCase()] || 'Belum Dinilai';
+    // Penilaian: urutkan mapel dengan tugas BELUM LENGKAP (remaining terbanyak) lebih dulu.
+    // idx original disimpan supaya lookup detail (nlList) tetap tepat sasaran.
     const parsedAssessment = computed(() => {
       if (!studentData.value.rawAssessmentData) return [];
       return studentData.value.rawAssessmentData.split('#').filter(i => i.trim()).map((entry, idx) => {
@@ -3490,8 +3482,8 @@ const getNilaiKeterangan = (kode) => NILAI_STATUS_MAP[(kode || '').trim().toUppe
             if (getNilaiKeterangan(statusList[i]) !== 'Sudah Dinilai') remaining++;
           }
         }
-        return { mapel: parts[0] || 'Mata Pelajaran', guru: parts[1] || 'Guru', remaining };
-      });
+        return { idx, mapel: parts[0] || 'Mata Pelajaran', guru: parts[1] || 'Guru', remaining };
+      }).sort((a, b) => b.remaining - a.remaining);
     });
 
     const NOTE_TYPE = {
@@ -3697,12 +3689,12 @@ const visibleNotes = computed(() => {
     });
 
     const selectedAttendance = computed(() => {
-      if (selectedAttendanceIndex.value !== null) return parsedAttendance.value[selectedAttendanceIndex.value] || null;
+      if (selectedAttendanceIndex.value !== null) return parsedAttendance.value.find(a => a.idx === selectedAttendanceIndex.value) || null;
       return null;
     });
 
     const selectedAssessment = computed(() => {
-      if (selectedAssessmentIndex.value !== null) return parsedAssessment.value[selectedAssessmentIndex.value] || null;
+      if (selectedAssessmentIndex.value !== null) return parsedAssessment.value.find(a => a.idx === selectedAssessmentIndex.value) || null;
       return null;
     });
 
@@ -3764,7 +3756,7 @@ const visibleNotes = computed(() => {
       hoveredBar, monthlyAttendanceStats,
       activeSub, openSub, closeSub,
       pwOld, pwNew, pwConfirm, pwMsg, pwMsgType, pwLoading,
-      showPwOld, showPwNew, showPwConfirm,
+      showPwAll, togglePwVisibility,
       doChangePassword, downloadPdf,
       selectedSemester, showGenapOption,
       weekdayLabels, agendaCalendars,
