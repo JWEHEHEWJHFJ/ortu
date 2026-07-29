@@ -1860,8 +1860,8 @@ window.SISWA_DATA = {
     "3097990679": {
       "nisn": "3097990679",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@1@0@1@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@1@0@1@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -1870,7 +1870,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3097990679@NURUL FIFI NATASYA MUH. YAMIN",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3097990679@NURUL FIFI NATASYA MUH. YAMIN",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3097990679@NURUL FIFI NATASYA MUH. YAMIN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3097990679@NURUL FIFI NATASYA MUH. YAMIN",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3097990679@NURUL FIFI NATASYA MUH. YAMIN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3097990679@NURUL FIFI NATASYA MUH. YAMIN",
@@ -3460,8 +3460,8 @@ window.SISWA_DATA = {
     "3104441865": {
       "nisn": "3104441865",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -3470,7 +3470,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3104441865@NAFIZAH NUR AFNI",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3104441865@NAFIZAH NUR AFNI",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3104441865@NAFIZAH NUR AFNI",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3104441865@NAFIZAH NUR AFNI",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3104441865@NAFIZAH NUR AFNI",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,3104441865@NAFIZAH NUR AFNI",
@@ -21700,8 +21700,8 @@ window.SISWA_DATA = {
     "0106549292": {
       "nisn": "0106549292",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -21710,7 +21710,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0106549292@ABDUL RAHMAN",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0106549292@ABDUL RAHMAN",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0106549292@ABDUL RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0106549292@ABDUL RAHMAN",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0106549292@ABDUL RAHMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0106549292@ABDUL RAHMAN",
@@ -21764,8 +21764,8 @@ window.SISWA_DATA = {
     "0108699117": {
       "nisn": "0108699117",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@1@0@0@0@1@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@HT#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@1@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@1@0@0@0@1@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -21774,7 +21774,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0108699117@AIDIL RUSLI TANRO",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0108699117@AIDIL RUSLI TANRO",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,HT@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0108699117@AIDIL RUSLI TANRO",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0108699117@AIDIL RUSLI TANRO",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0108699117@AIDIL RUSLI TANRO",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0108699117@AIDIL RUSLI TANRO",
@@ -21828,8 +21828,8 @@ window.SISWA_DATA = {
     "0109895093": {
       "nisn": "0109895093",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -21838,7 +21838,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0109895093@AKSAR HIDAYAT",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0109895093@AKSAR HIDAYAT",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0109895093@AKSAR HIDAYAT",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0109895093@AKSAR HIDAYAT",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0109895093@AKSAR HIDAYAT",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0109895093@AKSAR HIDAYAT",
@@ -21892,8 +21892,8 @@ window.SISWA_DATA = {
     "0093829548": {
       "nisn": "0093829548",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -21902,7 +21902,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093829548@ARDIANA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093829548@ARDIANA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093829548@ARDIANA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093829548@ARDIANA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093829548@ARDIANA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093829548@ARDIANA",
@@ -21956,8 +21956,8 @@ window.SISWA_DATA = {
     "0102794481": {
       "nisn": "0102794481",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -21966,7 +21966,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102794481@ARSY SYARIF",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102794481@ARSY SYARIF",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102794481@ARSY SYARIF",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102794481@ARSY SYARIF",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102794481@ARSY SYARIF",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102794481@ARSY SYARIF",
@@ -22020,8 +22020,8 @@ window.SISWA_DATA = {
     "0091799250": {
       "nisn": "0091799250",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@1@0@0@0@1@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@1@0@0@0@1@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22030,7 +22030,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0091799250@AUREL ANASTASYA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0091799250@AUREL ANASTASYA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0091799250@AUREL ANASTASYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0091799250@AUREL ANASTASYA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0091799250@AUREL ANASTASYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0091799250@AUREL ANASTASYA",
@@ -22084,8 +22084,8 @@ window.SISWA_DATA = {
     "0093228603": {
       "nisn": "0093228603",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22094,7 +22094,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093228603@FAUZIA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093228603@FAUZIA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093228603@FAUZIA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093228603@FAUZIA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093228603@FAUZIA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0093228603@FAUZIA",
@@ -22148,8 +22148,8 @@ window.SISWA_DATA = {
     "0095887640": {
       "nisn": "0095887640",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22158,7 +22158,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095887640@HAFIZAH AWALIYA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095887640@HAFIZAH AWALIYA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095887640@HAFIZAH AWALIYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095887640@HAFIZAH AWALIYA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095887640@HAFIZAH AWALIYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095887640@HAFIZAH AWALIYA",
@@ -22212,8 +22212,8 @@ window.SISWA_DATA = {
     "0099126043": {
       "nisn": "0099126043",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22222,7 +22222,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099126043@HASMA. H",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099126043@HASMA. H",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099126043@HASMA. H",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099126043@HASMA. H",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099126043@HASMA. H",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099126043@HASMA. H",
@@ -22276,8 +22276,8 @@ window.SISWA_DATA = {
     "0096263130": {
       "nisn": "0096263130",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22286,7 +22286,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096263130@MUH. MASDAR USMAN",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096263130@MUH. MASDAR USMAN",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096263130@MUH. MASDAR USMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096263130@MUH. MASDAR USMAN",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096263130@MUH. MASDAR USMAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096263130@MUH. MASDAR USMAN",
@@ -22340,8 +22340,8 @@ window.SISWA_DATA = {
     "0099220839": {
       "nisn": "0099220839",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22350,7 +22350,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099220839@MUH. RAFLY",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099220839@MUH. RAFLY",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099220839@MUH. RAFLY",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099220839@MUH. RAFLY",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099220839@MUH. RAFLY",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0099220839@MUH. RAFLY",
@@ -22404,8 +22404,8 @@ window.SISWA_DATA = {
     "0096585904": {
       "nisn": "0096585904",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@A#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@1@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22414,7 +22414,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096585904@MUHAMMAD REIHAN",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096585904@MUHAMMAD REIHAN",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,A@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096585904@MUHAMMAD REIHAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096585904@MUHAMMAD REIHAN",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096585904@MUHAMMAD REIHAN",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0096585904@MUHAMMAD REIHAN",
@@ -22468,8 +22468,8 @@ window.SISWA_DATA = {
     "0102748809": {
       "nisn": "0102748809",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22478,7 +22478,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102748809@NUR AISYA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102748809@NUR AISYA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102748809@NUR AISYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102748809@NUR AISYA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102748809@NUR AISYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0102748809@NUR AISYA",
@@ -22532,8 +22532,8 @@ window.SISWA_DATA = {
     "0101523405": {
       "nisn": "0101523405",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22542,7 +22542,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101523405@NUR FAIZAH",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101523405@NUR FAIZAH",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101523405@NUR FAIZAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101523405@NUR FAIZAH",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101523405@NUR FAIZAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101523405@NUR FAIZAH",
@@ -22596,8 +22596,8 @@ window.SISWA_DATA = {
     "0083633117": {
       "nisn": "0083633117",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@2@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@2@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22606,7 +22606,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0083633117@NUR GALBI",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0083633117@NUR GALBI",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0083633117@NUR GALBI",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0083633117@NUR GALBI",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0083633117@NUR GALBI",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0083633117@NUR GALBI",
@@ -22660,8 +22660,8 @@ window.SISWA_DATA = {
     "0101336033": {
       "nisn": "0101336033",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22670,7 +22670,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101336033@NUR ZIDA SYAHIRAH",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101336033@NUR ZIDA SYAHIRAH",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101336033@NUR ZIDA SYAHIRAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101336033@NUR ZIDA SYAHIRAH",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101336033@NUR ZIDA SYAHIRAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0101336033@NUR ZIDA SYAHIRAH",
@@ -22724,8 +22724,8 @@ window.SISWA_DATA = {
     "0104035768": {
       "nisn": "0104035768",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22734,7 +22734,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104035768@NURUL AUREL KHUMAIRAH",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104035768@NURUL AUREL KHUMAIRAH",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104035768@NURUL AUREL KHUMAIRAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104035768@NURUL AUREL KHUMAIRAH",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104035768@NURUL AUREL KHUMAIRAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104035768@NURUL AUREL KHUMAIRAH",
@@ -22788,8 +22788,8 @@ window.SISWA_DATA = {
     "0092876159": {
       "nisn": "0092876159",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@HT#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@1@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22798,7 +22798,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092876159@RAHMAT",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092876159@RAHMAT",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,HT@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092876159@RAHMAT",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092876159@RAHMAT",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092876159@RAHMAT",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092876159@RAHMAT",
@@ -22852,8 +22852,8 @@ window.SISWA_DATA = {
     "0104930092": {
       "nisn": "0104930092",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22862,7 +22862,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104930092@RAMA SAPUTRA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104930092@RAMA SAPUTRA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104930092@RAMA SAPUTRA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104930092@RAMA SAPUTRA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104930092@RAMA SAPUTRA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104930092@RAMA SAPUTRA",
@@ -22916,8 +22916,8 @@ window.SISWA_DATA = {
     "0092118079": {
       "nisn": "0092118079",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22926,7 +22926,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092118079@SETI NUR",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092118079@SETI NUR",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092118079@SETI NUR",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092118079@SETI NUR",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092118079@SETI NUR",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0092118079@SETI NUR",
@@ -22980,8 +22980,8 @@ window.SISWA_DATA = {
     "0104422342": {
       "nisn": "0104422342",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -22990,7 +22990,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104422342@SITTI NURVASHYLA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104422342@SITTI NURVASHYLA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104422342@SITTI NURVASHYLA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104422342@SITTI NURVASHYLA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104422342@SITTI NURVASHYLA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0104422342@SITTI NURVASHYLA",
@@ -23044,8 +23044,8 @@ window.SISWA_DATA = {
     "0095645216": {
       "nisn": "0095645216",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -23054,7 +23054,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095645216@SRI HINAYAH",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095645216@SRI HINAYAH",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095645216@SRI HINAYAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095645216@SRI HINAYAH",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095645216@SRI HINAYAH",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0095645216@SRI HINAYAH",
@@ -23108,8 +23108,8 @@ window.SISWA_DATA = {
     "0094441455": {
       "nisn": "0094441455",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -23118,7 +23118,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0094441455@ZAFITRA RAMADHANI",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0094441455@ZAFITRA RAMADHANI",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0094441455@ZAFITRA RAMADHANI",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0094441455@ZAFITRA RAMADHANI",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0094441455@ZAFITRA RAMADHANI",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0094441455@ZAFITRA RAMADHANI",
@@ -23172,8 +23172,8 @@ window.SISWA_DATA = {
     "0103799767": {
       "nisn": "0103799767",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@1@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@2@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -23182,7 +23182,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103799767@ZULFIKAR",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103799767@ZULFIKAR",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103799767@ZULFIKAR",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103799767@ZULFIKAR",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103799767@ZULFIKAR",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103799767@ZULFIKAR",
@@ -23236,8 +23236,8 @@ window.SISWA_DATA = {
     "0103173882": {
       "nisn": "0103173882",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -23246,7 +23246,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103173882@NUR AISYA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103173882@NUR AISYA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103173882@NUR AISYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103173882@NUR AISYA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103173882@NUR AISYA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0103173882@NUR AISYA",
@@ -23300,8 +23300,8 @@ window.SISWA_DATA = {
     "0105332970": {
       "nisn": "0105332970",
       "password": "",
-      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@*#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
-      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
+      "rawSchedule": "07.45 - 09.00@Bahasa Indonesia@St. Rohani. S.Pd@H#09.00 - 10.30@Seni Budaya@Hamnan. S.Pd.@*#10.45 - 12.15@Fisika Minat@Rahmawati Said. S.Si@*#13.15 - 14.30@Pendidikan Kewarganegaraan@Iskandar. S.Pd@*#14.30 - 15.30@Bahasa Inggris@Haisa Tamrin.S.Pd@*####",
+      "rawAttendanceData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@1@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawAssessmentData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@St. Rohani. S.Pd@0@0@0@0@0@0#Biologi Minat@Mariana. S.Pd.@0@0@0@0@0@0#Prakarya dan Kewirausahaan@Hamnan. S.Pd.@0@0@0@0@0@0#Fisika Minat@Rahmawati Said. S.Si@0@0@0@0@0@0#Kimia Minat@Aisyah. S.Pd.@0@0@0@0@0@0#Bhs. Arab Minat@@0@0@0@0@0@0#IPS (Sejarah)@@0@0@0@0@0@0#Seni Budaya@Hamnan. S.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Iskandar. S.Pd@0@0@0@0@0@0#Bahasa Inggris@Haisa Tamrin.S.Pd@0@0@0@0@0@0#Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@0@0@0@0@0@0#Pendidikan Agama Islam@Dra. Nurhayati@0@0@0@0@0@0###########",
       "rawNotesData": "Matematika Wajib@Muhammad Akhzan Waris. S.Pd.@N#-%Bahasa Indonesia@St. Rohani. S.Pd@N#-%Biologi Minat@Mariana. S.Pd.@N#-%Prakarya dan Kewirausahaan@Hamnan. S.Pd.@N#-%Fisika Minat@Rahmawati Said. S.Si@N#-%Kimia Minat@Aisyah. S.Pd.@N#-%Bhs. Arab Minat@@N#-%IPS (Sejarah)@@N#-%Seni Budaya@Hamnan. S.Pd.@N#-%Pendidikan Kewarganegaraan@Iskandar. S.Pd@N#-%Bahasa Inggris@Haisa Tamrin.S.Pd@N#-%Pendidikan Jasmani. Olahraga. dan Kesehatan@Drs. Nasri@N#-%Pendidikan Agama Islam@Dra. Nurhayati@N#-%%%%%%%%%%%",
       "nilaiAmbang": "65",
@@ -23310,7 +23310,7 @@ window.SISWA_DATA = {
       "kehadiranAmbang": "80",
       "abList": [
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0105332970@NUR PAIZA",
-        "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0105332970@NUR PAIZA",
+        "Jul/29/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,H@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0105332970@NUR PAIZA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0105332970@NUR PAIZA",
         "Jul/27/2026@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0105332970@NUR PAIZA",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,0105332970@NUR PAIZA",
