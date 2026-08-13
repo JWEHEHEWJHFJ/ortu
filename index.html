@@ -3112,7 +3112,7 @@ watch(selectedSemester, async (newSem) => {
           const ok = await window._sp5p_loadData(selectedSemester.value || 'GANJIL');
           if (!ok || !window.SISWA_DATA) {
             loading.value = false;
-            errorMessage.value = 'Gagal memuat data. Periksa koneksi internet dan coba lagi.';
+            errorMessage.value = 'Token Berakhir, Coba tekan icon Memuat data atau tekan F5';
             return;
           }
         }
