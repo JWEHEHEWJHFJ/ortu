@@ -45,7 +45,7 @@ async function _sp5p_dec(b64) {
 const _sp5p_loadData = async (semester) => {
   try {
     const fileName = (semester === 'GENAP') ? 'dsgen.js' : 'dsgan.js';
-    const res = await fetch(fileName + "?v=" + Date.now(), {
+    const res = await fetch(fileName, {
   cache: "no-store"
 });
     if (!res.ok) throw new Error("HTTP " + res.status);
@@ -169,7 +169,7 @@ const _sp5p_loadData = async (semester) => {
 // ── Fetch + decrypt config.js (no-cache, tidak terlihat di F12 Sources) ──
 const _sp5p_loadConfig = async () => {
   try {
-    const res = await fetch("config.js?v=" + Date.now(), {
+    const res = await fetch("config.js", {
   cache: "no-store"
 });
     if (!res.ok) return;
@@ -191,7 +191,7 @@ const _sp5p_loadConfig = async () => {
 const _sp5p_loadKalender = async (semester) => {
   try {
     const fileName = (semester === 'GENAP') ? 'kalgen.js' : 'kalgan.js';
-    const res = await fetch(fileName + "?v=" + Date.now(), {
+    const res = await fetch(fileName, {
   cache: "no-store"
 });
     if (!res.ok) { window.KALENDER_DATA = null; return; }
@@ -218,25 +218,32 @@ window._sp5pReady = Promise.all([
   _sp5p_loadKalender(_sp5p_defaultSemester)
 ]);
 
-// ── Auto-reload saat cache 5 menit di proxy Vercel kedaluwarsa ──
-// Supaya user yang membuka halaman lama tidak melihat data basi, halaman
-// akan reload sendiri begitu window cache 5 menit itu habis (server yang
-// tahu persis sisa waktu cache lewat header X-Cache-Expires-In).
+// ── Auto-reload saat cache 5 menit di Edge Vercel kedaluwarsa ──
+// Supaya user yang membiarkan tab terbuka tidak melihat data basi, halaman
+// akan reload sendiri kira-kira setiap 5 menit (samain dengan CACHE_TTL_MS
+// di server). Ini timer murni di client — TIDAK ada request tambahan ke
+// server cuma buat ngecek, biar tidak nambah kuota Vercel sia-sia.
+// Reload juga ditunda kalau tab sedang di background (tidak dilihat user),
+// supaya tab yang ditinggal lama tidak reload berkali-kali tanpa guna.
 (function _sp5pAutoRefresh() {
-  const DEFAULT_TTL_MS = 5 * 60 * 1000;
+  const TTL_MS = 5 * 60 * 1000;
+  let pendingReload = false;
 
-  const scheduleReload = (ms) => {
-    // beri sedikit buffer (1 detik) supaya cache di server sudah pasti expired
-    setTimeout(() => location.reload(), Math.max(1000, ms) + 1000);
-  };
+  const doReload = () => location.reload();
 
-  fetch(location.pathname + location.search, { method: 'HEAD', cache: 'no-store' })
-    .then(res => {
-      const header = res.headers.get('X-Cache-Expires-In');
-      const ms = header ? parseInt(header, 10) : DEFAULT_TTL_MS;
-      scheduleReload(isNaN(ms) ? DEFAULT_TTL_MS : ms);
-    })
-    .catch(() => scheduleReload(DEFAULT_TTL_MS));
+  setTimeout(function scheduleCheck() {
+    if (document.visibilityState === 'visible') {
+      doReload();
+    } else {
+      pendingReload = true;
+    }
+  }, TTL_MS);
+
+  document.addEventListener('visibilitychange', () => {
+    if (pendingReload && document.visibilityState === 'visible') {
+      doReload();
+    }
+  });
 })();
 </script>
 <style>
