@@ -79,26 +79,82 @@ const _sp5p_loadData = async (semester) => {
 
 
 (function() {
+  // Key ini dipakai bareng dengan skrip anti-debug yang disuntik proxy Vercel
+  // (api/index.js), supaya status lockout konsisten walau salah satu lapisan
+  // yang mendeteksi duluan.
+  const LOCK_KEY = 'sp5p_lockout_until';
+  const LOCK_MS  = 5 * 60 * 1000; // 5 menit
+  let _lockTicking = false;
+
   const _clear = () => {
     try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null;      }
     try { delete window.__SP5P;        } catch(e) { window.__SP5P        = undefined; }
     try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};        }
     try { delete window.__CFG;         } catch(e) { window.__CFG         = undefined; }
+    try { sessionStorage.removeItem('sp5p_session'); } catch(e) {}
+    try { localStorage.removeItem('sp5p_session'); } catch(e) {}
   };
+
+  const _fmt = (ms) => {
+    const totalSec = Math.max(0, Math.ceil(ms / 1000));
+    const m = Math.floor(totalSec / 60);
+    const s = totalSec % 60;
+    return m + ' menit ' + (s < 10 ? '0' : '') + s + ' detik';
+  };
+
+  const _showLockScreen = (untilTs) => {
+    try {
+      document.documentElement.innerHTML =
+        '<body style="margin:0;display:flex;align-items:center;justify-content:center;' +
+        'height:100vh;font-family:sans-serif;background:#111;color:#eee;text-align:center;padding:24px;box-sizing:border-box;">' +
+        '<div><h2 style="margin-bottom:12px;">Maaf, Anda mencoba melakukan kesalahan</h2>' +
+        '<p style="opacity:.8;margin-bottom:6px;">Akses sementara dibatasi. Silakan coba lagi dalam:</p>' +
+        '<p id="sp5p-lock-timer" style="font-size:1.4em;font-weight:700;">' + _fmt(untilTs - Date.now()) + '</p></div></body>';
+    } catch(e) {}
+
+    if (_lockTicking) return;
+    _lockTicking = true;
+    (function tick() {
+      const remaining = untilTs - Date.now();
+      const el = document.getElementById('sp5p-lock-timer');
+      if (remaining <= 0) {
+        try { localStorage.removeItem(LOCK_KEY); } catch(e) {}
+        location.reload();
+        return;
+      }
+      if (el) el.textContent = _fmt(remaining);
+      setTimeout(tick, 1000);
+    })();
+  };
+
+  const _triggerLockout = () => {
+    const until = Date.now() + LOCK_MS;
+    try { localStorage.setItem(LOCK_KEY, String(until)); } catch(e) {}
+    _clear();
+    _showLockScreen(until);
+  };
+
+  // Kalau lockout dari lapisan lain (skrip proxy) masih aktif, langsung tahan di sini juga.
+  (function checkExistingLockout() {
+    let until = 0;
+    try { until = parseInt(localStorage.getItem(LOCK_KEY) || '0', 10); } catch(e) {}
+    if (until && until > Date.now()) { _showLockScreen(until); }
+  })();
+
   let _wasOpen = false;
 
   // Metode 1: window size diff
   setInterval(() => {
     const open = (window.outerWidth - window.innerWidth > 160) ||
                  (window.outerHeight - window.innerHeight > 160);
-    if (open && !_wasOpen) { _wasOpen = true; _clear(); }
+    if (open && !_wasOpen) { _wasOpen = true; _triggerLockout(); }
     if (!open) _wasOpen = false;
   }, 1500);
 
   // Metode 2: blokir shortcut keyboard DevTools
   document.addEventListener("keydown", e => {
-    if (e.keyCode === 123) { e.preventDefault(); return false; }
-    if (e.ctrlKey && e.shiftKey && [73,74,67].includes(e.keyCode)) { e.preventDefault(); return false; }
+    if (e.keyCode === 123) { e.preventDefault(); _triggerLockout(); return false; }
+    if (e.ctrlKey && e.shiftKey && [73,74,67].includes(e.keyCode)) { e.preventDefault(); _triggerLockout(); return false; }
     if (e.ctrlKey && e.keyCode === 85) { e.preventDefault(); return false; }
   }, true);
 
@@ -161,6 +217,27 @@ window._sp5pReady = Promise.all([
   _sp5p_loadConfig(),
   _sp5p_loadKalender(_sp5p_defaultSemester)
 ]);
+
+// ── Auto-reload saat cache 5 menit di proxy Vercel kedaluwarsa ──
+// Supaya user yang membuka halaman lama tidak melihat data basi, halaman
+// akan reload sendiri begitu window cache 5 menit itu habis (server yang
+// tahu persis sisa waktu cache lewat header X-Cache-Expires-In).
+(function _sp5pAutoRefresh() {
+  const DEFAULT_TTL_MS = 5 * 60 * 1000;
+
+  const scheduleReload = (ms) => {
+    // beri sedikit buffer (1 detik) supaya cache di server sudah pasti expired
+    setTimeout(() => location.reload(), Math.max(1000, ms) + 1000);
+  };
+
+  fetch(location.pathname + location.search, { method: 'HEAD', cache: 'no-store' })
+    .then(res => {
+      const header = res.headers.get('X-Cache-Expires-In');
+      const ms = header ? parseInt(header, 10) : DEFAULT_TTL_MS;
+      scheduleReload(isNaN(ms) ? DEFAULT_TTL_MS : ms);
+    })
+    .catch(() => scheduleReload(DEFAULT_TTL_MS));
+})();
 </script>
 <style>
   :root {
@@ -3112,7 +3189,7 @@ watch(selectedSemester, async (newSem) => {
           const ok = await window._sp5p_loadData(selectedSemester.value || 'GANJIL');
           if (!ok || !window.SISWA_DATA) {
             loading.value = false;
-            errorMessage.value = 'Token Berakhir, Coba tekan icon Memuat data atau tekan F5';
+            errorMessage.value = 'Gagal memuat data. Periksa koneksi internet dan coba lagi.';
             return;
           }
         }
