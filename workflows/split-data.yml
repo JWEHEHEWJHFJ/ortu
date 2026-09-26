@@ -1,0 +1,45 @@
+name: Auto-split dsgan.js & kalgan.js
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "dsgan.js"
+      - "dsgen.js"
+      - "kalgan.js"
+      - "kalgen.js"
+      - "scripts/split-dsgan.js"
+      - "scripts/split-kalgan.js"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+# Cegah dua run saling tabrak kalau ada beberapa push beruntun.
+concurrency:
+  group: split-data
+  cancel-in-progress: true
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Pecah dsgan.js -> per NISN (folder siswa/)
+        run: node scripts/split-dsgan.js
+
+      - name: Pecah kalgan.js -> per kelas (folder kelas/)
+        run: node scripts/split-kalgan.js
+
+      - name: Commit & push hasil split (kalau ada perubahan)
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: auto-generate file per NISN (siswa/) & per kelas (kelas/)"
+          file_pattern: "siswa/** kelas/**"
