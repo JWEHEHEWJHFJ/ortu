@@ -1,5 +1,4 @@
 name: Auto-split dsgan.js & kalgan.js
-
 on:
   push:
     branches: ["main"]
