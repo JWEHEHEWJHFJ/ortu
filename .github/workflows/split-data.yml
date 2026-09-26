@@ -1,0 +1,46 @@
+name: Pecah Data Siswa & Kelas
+
+# Jalan otomatis setiap data/dsgan.js atau data/kalgan.js berubah
+# (misalnya saat Apps Script commit data terbaru ke GitHub),
+# dan bisa juga dijalankan manual lewat tab Actions > Run workflow.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/dsgan.js'
+      - 'data/kalgan.js'
+  workflow_dispatch: {}
+
+# Wajib "write" supaya job ini boleh push balik hasil pecahan ke repo
+permissions:
+  contents: write
+
+jobs:
+  split-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Pecah data/dsgan.js -> datasiswa/{nisn}.js
+        run: node scripts/split-siswa.js
+
+      - name: Pecah data/kalgan.js -> datakelas/{kelas}.js
+        run: node scripts/split-kelas.js
+
+      - name: Commit & push hasil pecahan
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add datasiswa datakelas
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan pada hasil pecahan."
+          else
+            git commit -m "chore: auto-split dsgan.js & kalgan.js [skip ci]"
+            git push
+          fi
