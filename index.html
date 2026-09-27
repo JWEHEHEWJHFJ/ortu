@@ -42,16 +42,30 @@ async function _sp5p_dec(b64) {
 }
 
 
-const _sp5p_loadData = async (semester) => {
+// Format kelas → nama file, mis. "X4" -> "X.4", "XI2" -> "XI.2"
+function _sp5p_formatKelasFile(kelas) {
+  const k = (kelas || '').toString().trim();
+  if (!k) return '';
+  const m = k.match(/^([^\d]+?)[\s\-_.]*(\d+.*)$/);
+  if (m) return (m[1].trim() + '.' + m[2].trim());
+  return k;
+}
+window._sp5p_formatKelasFile = _sp5p_formatKelasFile;
+
+// Ambil data SATU siswa berdasarkan NISN, dari data/nisn/{NISN}.js
+const _sp5p_loadStudentData = async (nisn) => {
   try {
-    const fileName = (semester === 'GENAP') ? 'dsgen.js' : 'dsgan.js';
+    const nisnStr  = (nisn || '').toString().trim();
+    if (!nisnStr) return null;
+    const fileName = 'data/nisn/' + encodeURIComponent(nisnStr) + '.js';
     const res = await fetch(fileName, {
   cache: "no-store"
 });
-    if (!res.ok) throw new Error("HTTP " + res.status);
+    if (!res.ok) return null;
     const js = await res.text();
     const marker = 'window.__SP5P="';
     const idx    = js.indexOf(marker);
+    let data = null;
 
     if (idx !== -1) {
       // Format baru — terenkripsi
@@ -59,21 +73,20 @@ const _sp5p_loadData = async (semester) => {
       const b64End   = js.indexOf('"', b64Start);
       const plain    = await _sp5p_dec(js.substring(b64Start, b64End));
       if (!plain) throw new Error("Dekripsi gagal.");
-      window.SISWA_DATA = JSON.parse(plain);
+      data = JSON.parse(plain);
     } else if (js.indexOf("window.SISWA_DATA") !== -1) {
       // Fallback format lama (plaintext) — sementara migrasi
       const fn = new Function(js + "; return window.SISWA_DATA;");
-      window.SISWA_DATA = fn();
+      data = fn();
     } else {
       throw new Error("telolet");
     }
 
     // Bersihkan raw ciphertext dari window
     try { delete window.__SP5P; } catch(e) { window.__SP5P = undefined; }
-    return true;
+    return data;
   } catch(err) {
-    window.SISWA_DATA = null;
-    return false;
+    return null;
   }
 };
 
@@ -188,35 +201,35 @@ const _sp5p_loadConfig = async () => {
   } catch(e) { window.CONFIG = {}; }
 };
 
-const _sp5p_loadKalender = async (semester) => {
+// Ambil data kalender SATU kelas, dari data/kelas/{X.4}.js (nama file dari _sp5p_formatKelasFile)
+const _sp5p_loadKelasData = async (kelasFile) => {
   try {
-    const fileName = (semester === 'GENAP') ? 'kalgen.js' : 'kalgan.js';
+    const kf = (kelasFile || '').toString().trim();
+    if (!kf) { window.KALENDER_DATA = null; return null; }
+    const fileName = 'data/kelas/' + encodeURIComponent(kf) + '.js';
     const res = await fetch(fileName, {
   cache: "no-store"
 });
-    if (!res.ok) { window.KALENDER_DATA = null; return; }
+    if (!res.ok) { window.KALENDER_DATA = null; return null; }
     const js = await res.text();
     const fn = new Function(js + "; return (typeof kalender !== 'undefined') ? kalender : null;");
     window.KALENDER_DATA = fn();
+    return window.KALENDER_DATA;
   } catch(e) {
     window.KALENDER_DATA = null;
+    return null;
   }
 };
 
-window._sp5p_loadData     = _sp5p_loadData;
-window._sp5p_loadConfig   = _sp5p_loadConfig;
-window._sp5p_loadKalender = _sp5p_loadKalender;
+window._sp5p_loadStudentData = _sp5p_loadStudentData;
+window._sp5p_loadConfig      = _sp5p_loadConfig;
+window._sp5p_loadKelasData   = _sp5p_loadKelasData;
 
 
-const _sp5p_defaultSemesterMonth = new Date().getMonth() + 1;
-const _sp5p_defaultSemester = (_sp5p_defaultSemesterMonth >= 1 && _sp5p_defaultSemesterMonth <= 6) ? 'GENAP' : 'GANJIL';
-
-
-window._sp5pReady = Promise.all([
-  _sp5p_loadData(_sp5p_defaultSemester),
-  _sp5p_loadConfig(),
-  _sp5p_loadKalender(_sp5p_defaultSemester)
-]);
+// Sebelum login, hanya config.js yang perlu dimuat lebih dulu —
+// data siswa (data/nisn/{NISN}.js) & data kelas (data/kelas/{kelas}.js)
+// baru diambil setelah NISN diketahui, yaitu saat submit login.
+window._sp5pReady = _sp5p_loadConfig();
 
 // ── Auto-reload saat cache 5 menit di Edge Vercel kedaluwarsa ──
 // Supaya user yang membiarkan tab terbuka tidak melihat data basi, halaman
@@ -2793,13 +2806,9 @@ _idbGet(BG_IDB_KEY).then(cached => {
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
     const showGenapOption   = computed(() => currentMonth >= 1 && currentMonth <= 6);
-// Muat ulang dsgan.js/dsgen.js (data siswa) & kalgan.js/kalgen.js (kalender) setiap kali semester berubah
-watch(selectedSemester, async (newSem) => {
-  await Promise.all([
-    window._sp5p_loadData(newSem),
-    window._sp5p_loadKalender(newSem)
-  ]);
-});
+    // Catatan: tidak ada lagi preload data per-semester di sini — data siswa
+    // (data/nisn/{NISN}.js) dan data kelas (data/kelas/{kelas}.js) baru
+    // diambil saat submit login (lihat fungsi login()).
     const STORE_KEY = 'sp5p_session';
 
     const showDownloadConfirm = ref(false);
@@ -2947,14 +2956,11 @@ watch(selectedSemester, async (newSem) => {
           abList: [], nlList: []
         };
 
-        // Hapus data sensitif & reload data + config baru dari server
+        // Hapus data sensitif & reload config baru dari server
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
         try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
-        window._sp5pReady = Promise.all([
-  window._sp5p_loadData(selectedSemester.value),
-  window._sp5p_loadConfig(),
-  window._sp5p_loadKalender ? window._sp5p_loadKalender(selectedSemester.value) : Promise.resolve()
-]);
+        window.KALENDER_DATA = null;
+        window._sp5pReady = window._sp5p_loadConfig();
 
       } catch (e) {
         window.location.reload();
@@ -2998,11 +3004,7 @@ watch(selectedSemester, async (newSem) => {
         // Tidak ada gasUrl → simpan lokal saja (mode offline)
         await saveSession(saved?.nisn || '', saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput TIDAK diubah — tetap password lama di textbox login
-        if (window.SISWA_DATA?.[saved?.nisn]) {
-          window.SISWA_DATA[saved.nisn].password = pwNew.value;
-        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[saved?.nisn]) {
-          window.SISWA_DATA[selectedSemester.value][saved.nisn].password = pwNew.value;
-        }
+        studentData.value.password = pwNew.value;
         pwLoading.value = false;
         pwMsgType.value = 'ok';
         pwMsg.value = '✅ Password berhasil diganti. Tunggu 10 sampai 15 menit agar password benar-benar terganti di server untuk disetujui oleh admin.';
@@ -3040,11 +3042,7 @@ watch(selectedSemester, async (newSem) => {
         await saveSession(nisn, saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput di halaman login TIDAK diubah — tetap password lama
         // supaya siswa masih bisa login dengan password lama sampai server konfirmasi
-        if (window.SISWA_DATA?.[nisn]) {
-          window.SISWA_DATA[nisn].password = pwNew.value;
-        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[nisn]) {
-          window.SISWA_DATA[selectedSemester.value][nisn].password = pwNew.value;
-        }
+        studentData.value.password = pwNew.value;
 
         pwLoading.value = false;
         pwMsgType.value = 'ok';
@@ -3188,48 +3186,23 @@ watch(selectedSemester, async (newSem) => {
       errorMessage.value = '';
 
       try {
-        // ── Pastikan datasiswa.js sudah ter-load & ter-decrypt ──────
+        // ── Pastikan config.js sudah ter-load & ter-decrypt ──────
         // window._sp5pReady adalah Promise yang dimulai saat halaman load.
         // Jika sudah selesai, await langsung resolve. Jika belum, tunggu.
         await window._sp5pReady;
 
-        // Jika SISWA_DATA masih null (gagal load), coba reload sekali
-        if (!window.SISWA_DATA) {
-          const ok = await window._sp5p_loadData(selectedSemester.value || 'GANJIL');
-          if (!ok || !window.SISWA_DATA) {
-            loading.value = false;
-            errorMessage.value = 'Gagal memuat data. Periksa koneksi internet dan coba lagi.';
-            return;
-          }
-        }
-
-        const semester = selectedSemester.value || 'GANJIL';
-        // Pastikan data siswa (dsgan.js/dsgen.js) & kalender (kalgan.js/kalgen.js)
-        // yang termuat sesuai semester yang dipilih saat login
-        await Promise.all([
-          window._sp5p_loadData(semester),
-          window._sp5p_loadKalender(semester)
-        ]);
-
-        const db = window.SISWA_DATA;
-        if (!db) throw new Error('Data semester ' + semester + ' tidak ditemukan.');
-
         const nisnStr = nisnInput.value.toString().trim();
-        // Dukung dua kemungkinan format:
-        // 1) Format baru (per file semester): db langsung berisi { nisn: {...} }
-        // 2) Format lama (masih bersarang semester): db = { GANJIL: {...}, GENAP: {...} }
-        let row = db[nisnStr];
-        if (!row && db[semester] && typeof db[semester] === 'object') {
-          row = db[semester][nisnStr];
-        }
+        const semester = selectedSemester.value || 'GANJIL';
 
-        if (!row) {
+        // ── Ambil data SATU siswa dari data/nisn/{NISN}.js ──────────
+        const record = await window._sp5p_loadStudentData(nisnStr);
+        if (!record) {
           loading.value = false;
           errorMessage.value = 'NISN tidak ditemukan.';
           return;
         }
 
-        const storedPassword = (row.password || '').trim();
+        const storedPassword = (record.password || '').trim();
         const validPassword  = storedPassword === '' ? nisnStr : storedPassword;
 
         if (passwordInput.value !== validPassword) {
@@ -3238,19 +3211,35 @@ watch(selectedSemester, async (newSem) => {
           return;
         }
 
+        // Data akademik per-semester boleh bersarang di dalam file nisn
+        // (record.GANJIL / record.GENAP); kalau tidak ada nesting, pakai
+        // record itu sendiri sebagai data semester berjalan.
+        const semData = (record[semester] && typeof record[semester] === 'object')
+          ? record[semester]
+          : record;
+
+        // ── Ambil data kalender kelas dari data/kelas/{kelas}.js ────
+        const kelasFile = window._sp5p_formatKelasFile(record.kelas || '');
+        if (kelasFile) {
+          await window._sp5p_loadKelasData(kelasFile);
+        } else {
+          window.KALENDER_DATA = null;
+        }
+
         const result = {
           success:           true,
           nisn:              nisnStr,
-          rawSchedule:       row.rawSchedule       || '',
-          rawAttendanceData: row.rawAttendanceData  || '',
-          rawAssessmentData: row.rawAssessmentData  || '',
-          rawNotesData:      row.rawNotesData       || '',
-          nilaiAmbang:       row.nilaiAmbang        || '',
-          nama:              row.nama               || '',
-          kelas:             row.kelas              || '',
-          kehadiranAmbang:   row.kehadiranAmbang    || '',
-          abList:            row.abList             || [],
-          nlList:            row.nlList             || [],
+          rawSchedule:       semData.rawSchedule       || '',
+          rawAttendanceData: semData.rawAttendanceData || '',
+          rawAssessmentData: semData.rawAssessmentData || '',
+          rawNotesData:      semData.rawNotesData      || '',
+          nilaiAmbang:       record.nilaiAmbang        || '',
+          nama:              record.nama               || '',
+          kelas:             record.kelas              || '',
+          kehadiranAmbang:   record.kehadiranAmbang    || '',
+          abList:            semData.abList            || [],
+          nlList:            semData.nlList            || [],
+          password:          storedPassword,
         };
 
         studentData.value = result;
