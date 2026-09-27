@@ -1,23 +1,19 @@
-name: Pecah Data Siswa & Kelas
+name: Split Data (NISN & Kelas)
 
-# Jalan otomatis setiap data/dsgan.js atau data/kalgan.js berubah
-# (misalnya saat Apps Script commit data terbaru ke GitHub),
-# dan bisa juga dijalankan manual lewat tab Actions > Run workflow.
+# Jalan otomatis setiap kali dsgan.js atau kalgan.js berubah (misal dari Apps Script),
+# atau bisa dijalankan manual lewat tab "Actions" di GitHub.
 on:
   push:
-    branches: [main]
     paths:
-      - 'data/dsgan.js'
-      - 'data/kalgan.js'
-  workflow_dispatch: {}
-
-# Wajib "write" supaya job ini boleh push balik hasil pecahan ke repo
-permissions:
-  contents: write
+      - 'dsgan.js'
+      - 'kalgan.js'
+  workflow_dispatch:
 
 jobs:
-  split-data:
+  split:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -27,20 +23,20 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Pecah data/dsgan.js -> datasiswa/{nisn}.js
-        run: node scripts/split-siswa.js
+      - name: Split dsgan.js -> data/nisn/*.js
+        run: node scripts/split-dsgan.js dsgan.js data/nisn
 
-      - name: Pecah data/kalgan.js -> datakelas/{kelas}.js
-        run: node scripts/split-kelas.js
+      - name: Split kalgan.js -> data/kelas/*.js
+        run: node scripts/split-kalgan.js kalgan.js data/kelas
 
-      - name: Commit & push hasil pecahan
+      - name: Commit & push hasil split
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add datasiswa datakelas
-          if git diff --cached --quiet; then
-            echo "Tidak ada perubahan pada hasil pecahan."
+          git add data/nisn data/kelas
+          if git diff --staged --quiet; then
+            echo "Tidak ada perubahan data."
           else
-            git commit -m "chore: auto-split dsgan.js & kalgan.js [skip ci]"
+            git commit -m "Auto: pecah data nisn & kelas [skip ci]"
             git push
           fi
