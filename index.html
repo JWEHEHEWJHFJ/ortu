@@ -41,17 +41,11 @@ async function _sp5p_dec(b64) {
   } catch(e) { return null; }
 }
 
-// ── Muat data siswa berdasarkan NISN (username) ──
-// File diambil dari: data/nisn/{NISN}.js
-// Isi file (setelah didekripsi / atau plaintext lama) adalah OBJEK satu siswa,
-// BUKAN dictionary banyak siswa — karena nama file sudah spesifik per-NISN.
-// Contoh isi (plaintext lama, untuk migrasi):
-//   window.SISWA_DATA = { password:"", nama:"...", kelas:"X4", ... };
-const _sp5p_loadStudentData = async (nisn) => {
+
+const _sp5p_loadData = async (nisn) => {
   try {
-    const nisnStr = (nisn || '').toString().trim();
-    if (!nisnStr) throw new Error("NISN kosong.");
-    const fileName = 'data/nisn/' + encodeURIComponent(nisnStr) + '.js';
+    // Username (NISN) menjadi acuan file: data/nisn/{NISN}.js
+    const fileName = `data/nisn/${encodeURIComponent(nisn)}.js`;
     const res = await fetch(fileName, {
   cache: "no-store"
 });
@@ -195,54 +189,46 @@ const _sp5p_loadConfig = async () => {
   } catch(e) { window.CONFIG = {}; }
 };
 
-// ── Muat kalender/agenda berdasarkan KELAS (bukan semester lagi) ──
-// File diambil dari: data/kelas/{SLUG}.js, mis. kelas "X4" -> data/kelas/X.4.js
-// Isi file (variabel `kalender`) adalah SATU ROW data kelas tsb, contoh:
-//   var kalender = ["X4", "<agendaCell mapel1>", "<agendaCell mapel2>", ..., "<akademikCell>", 2026];
-const _sp5p_kelasToSlug = (kelas) => {
-  let slug = (kelas || '').toString().trim();
-  if (!slug) return '';
-  // Spasi jadi titik dulu (mis. "XI IPA 1" -> "XI.IPA.1")
-  slug = slug.replace(/\s+/g, '.');
-  // Kalau belum ada titik sama sekali, sisipkan titik antara huruf depan & sisanya angka (mis. "X4" -> "X.4")
-  if (!slug.includes('.')) {
-    const m = slug.match(/^([A-Za-z]+)(.+)$/);
-    if (m) slug = m[1] + '.' + m[2];
-  }
-  return slug;
-};
-
-const _sp5p_loadKalenderByKelas = async (kelas) => {
+const _sp5p_loadKelasKalender = async (kelas) => {
   try {
-    const slug = _sp5p_kelasToSlug(kelas);
-    if (!slug) { window.KALENDER_DATA = null; return false; }
-    const fileName = 'data/kelas/' + slug + '.js';
+    // Kalender kini per-kelas (bukan per-semester): data/kelas/{kelas}.js
+    const fileName = `data/kelas/${encodeURIComponent(kelas)}.js`;
     const res = await fetch(fileName, {
   cache: "no-store"
 });
     if (!res.ok) { window.KALENDER_DATA = null; return false; }
     const js = await res.text();
-    const fn = new Function(js + "; return (typeof kalender !== 'undefined') ? kalender : null;");
-    window.KALENDER_DATA = fn();
-    return !!window.KALENDER_DATA;
+
+    // Nama variabel di file kelas mengikuti pola kalender_<kelas, simbol non-alfanumerik jadi "_">
+    // Contoh kelas "X.4" → variabel "kalender_X_4"
+    const varSuffix = kelas.replace(/[^a-zA-Z0-9]+/g, '_');
+    const varName   = 'kalender_' + varSuffix;
+
+    const fn = new Function(
+      js + "; return (typeof " + varName + " !== 'undefined') ? " + varName +
+        " : (typeof kalender !== 'undefined' ? kalender : null);"
+    );
+    const result = fn();
+
+    if (!result) { window.KALENDER_DATA = null; return false; }
+
+    // File baru berisi SATU baris (kelas tunggal). Bungkus jadi array-of-rows
+    // supaya kompatibel dengan kode lama yang melakukan raw.find(r => r[0]===kelas).
+    window.KALENDER_DATA = Array.isArray(result[0]) ? result : [result];
+    return true;
   } catch(e) {
     window.KALENDER_DATA = null;
     return false;
   }
 };
 
-window._sp5p_loadStudentData     = _sp5p_loadStudentData;
+window._sp5p_loadData            = _sp5p_loadData;
 window._sp5p_loadConfig          = _sp5p_loadConfig;
-window._sp5p_loadKalenderByKelas = _sp5p_loadKalenderByKelas;
-window._sp5p_kelasToSlug         = _sp5p_kelasToSlug;
+window._sp5p_loadKelasKalender   = _sp5p_loadKelasKalender;
 
-// Sebelum login, tidak ada data siswa/kelas spesifik yang bisa dimuat —
-// data siswa (data/nisn/{NISN}.js) & data kelas (data/kelas/{KELAS}.js) baru
-// diambil SETELAH NISN diketahui (lihat fungsi login()). Yang dimuat lebih
-// dulu cukup config.js saja.
-window._sp5pReady = Promise.all([
-  _sp5p_loadConfig()
-]);
+// Data siswa (per NISN) & kalender (per kelas) baru diketahui setelah proses
+// login, jadi saat halaman dimuat cukup siapkan config global saja.
+window._sp5pReady = _sp5p_loadConfig();
 
 // ── Auto-reload saat cache 5 menit di Edge Vercel kedaluwarsa ──
 // Supaya user yang membiarkan tab terbuka tidak melihat data basi, halaman
@@ -2819,10 +2805,9 @@ _idbGet(BG_IDB_KEY).then(cached => {
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
     const showGenapOption   = computed(() => currentMonth >= 1 && currentMonth <= 6);
-// Catatan: data siswa (data/nisn/{NISN}.js) & kalender kelas (data/kelas/{KELAS}.js)
-// masing-masing hanya diambil SEKALI, saat login. Mengganti pilihan semester di
-// sini hanya mengganti TAMPILAN (rentang bulan grafik/agenda), bukan memicu
-// fetch ulang — karena satu file per-NISN & per-kelas sudah mencakup datanya.
+    // Catatan: data siswa (data/nisn/{nisn}.js) & kalender (data/kelas/{kelas}.js)
+    // sekarang dimuat sekali saat login (butuh NISN & kelas), bukan lagi
+    // dimuat ulang setiap kali dropdown semester berubah.
     const STORE_KEY = 'sp5p_session';
 
     const showDownloadConfirm = ref(false);
@@ -2970,15 +2955,13 @@ _idbGet(BG_IDB_KEY).then(cached => {
           abList: [], nlList: []
         };
 
-        // Hapus data sensitif & reload config baru dari server
-        // (data siswa & kalender kelas TIDAK di-preload lagi — baru diambil
-        // lagi saat login berikutnya, berdasarkan NISN/kelas yang dimasukkan)
+        // Hapus data sensitif & reload config baru dari server.
+        // Data siswa & kalender tidak di-reload di sini karena NISN/kelas
+        // belum diketahui lagi setelah logout — akan dimuat ulang saat login berikutnya.
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
-        try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
         try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
-        window._sp5pReady = Promise.all([
-          window._sp5p_loadConfig()
-        ]);
+        try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
+        window._sp5pReady = window._sp5p_loadConfig();
 
       } catch (e) {
         window.location.reload();
@@ -3022,8 +3005,10 @@ _idbGet(BG_IDB_KEY).then(cached => {
         // Tidak ada gasUrl → simpan lokal saja (mode offline)
         await saveSession(saved?.nisn || '', saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput TIDAK diubah — tetap password lama di textbox login
-        if (window.SISWA_DATA && (saved?.nisn === studentData.value.nisn)) {
-          window.SISWA_DATA.password = pwNew.value;
+        if (window.SISWA_DATA?.[saved?.nisn]) {
+          window.SISWA_DATA[saved.nisn].password = pwNew.value;
+        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[saved?.nisn]) {
+          window.SISWA_DATA[selectedSemester.value][saved.nisn].password = pwNew.value;
         }
         pwLoading.value = false;
         pwMsgType.value = 'ok';
@@ -3062,8 +3047,10 @@ _idbGet(BG_IDB_KEY).then(cached => {
         await saveSession(nisn, saved?.kelas || '', pwNew.value);
         // ⚠️ passwordInput di halaman login TIDAK diubah — tetap password lama
         // supaya siswa masih bisa login dengan password lama sampai server konfirmasi
-        if (window.SISWA_DATA && nisn === studentData.value.nisn) {
-          window.SISWA_DATA.password = pwNew.value;
+        if (window.SISWA_DATA?.[nisn]) {
+          window.SISWA_DATA[nisn].password = pwNew.value;
+        } else if (window.SISWA_DATA?.[selectedSemester.value]?.[nisn]) {
+          window.SISWA_DATA[selectedSemester.value][nisn].password = pwNew.value;
         }
 
         pwLoading.value = false;
@@ -3208,28 +3195,48 @@ _idbGet(BG_IDB_KEY).then(cached => {
       errorMessage.value = '';
 
       try {
-        // Pastikan config.js sudah termuat (dipakai utk gasUrl ganti password, dll)
+        // ── Pastikan config.js sudah ter-load ──────
+        // window._sp5pReady adalah Promise yang dimulai saat halaman load.
         await window._sp5pReady;
 
-        const nisnStr = nisnInput.value.toString().trim();
+        const nisnStr  = nisnInput.value.toString().trim();
+        const semester = selectedSemester.value || 'GANJIL';
 
-        // ── Ambil data siswa langsung dari data/nisn/{NISN}.js ──
-        const ok = await window._sp5p_loadStudentData(nisnStr);
+        // ── Muat data siswa berdasarkan NISN (username) ──
+        // Username jadi acuan file: data/nisn/{NISN}.js
+        const ok = await window._sp5p_loadData(nisnStr);
         if (!ok || !window.SISWA_DATA) {
           loading.value = false;
           errorMessage.value = 'NISN tidak ditemukan.';
           return;
         }
 
-        const row = window.SISWA_DATA;
+        const db = window.SISWA_DATA;
+        // Struktur file: { GANJIL: { nisn: {...} }, GENAP: { nisn: {...} } }
+        // dengan fallback jika suatu saat data diletakkan langsung di root.
+        let row = (db[semester] && db[semester][nisnStr]) || db[nisnStr];
+
+        if (!row) {
+          loading.value = false;
+          errorMessage.value = 'Data semester ' + semester + ' untuk NISN ini tidak ditemukan.';
+          return;
+        }
 
         const storedPassword = (row.password || '').trim();
+        // Password kosong → password = NISN. Password terisi → harus cocok persis.
         const validPassword  = storedPassword === '' ? nisnStr : storedPassword;
 
         if (passwordInput.value !== validPassword) {
           loading.value = false;
           errorMessage.value = 'Password salah.';
           return;
+        }
+
+        // ── Muat kalender KELAS siswa: data/kelas/{kelas}.js ──
+        if (row.kelas) {
+          await window._sp5p_loadKelasKalender(row.kelas);
+        } else {
+          window.KALENDER_DATA = null;
         }
 
         const result = {
@@ -3251,9 +3258,6 @@ _idbGet(BG_IDB_KEY).then(cached => {
         loggedIn.value    = true;
         loading.value     = false;
         await saveSession(nisnInput.value, result.kelas || '', passwordInput.value);
-
-        // ── Muat kalender/agenda sesuai KELAS siswa (data/kelas/{KELAS}.js) ──
-        await window._sp5p_loadKalenderByKelas(result.kelas);
 
         // ── Hapus SISWA_DATA dari memori setelah data siswa tersimpan di Vue ──
         // Data sensitif sudah ada di studentData ref, tidak perlu lagi di window
@@ -3302,19 +3306,20 @@ const todayLabel = computed(() => {
     };
 
 
-    // Data kalender sekarang per-KELAS (data/kelas/{KELAS}.js, lihat
-    // window._sp5p_loadKalenderByKelas di <head>). window.KALENDER_DATA berisi
-    // SATU row: [kelas, agendaCell1, agendaCell2, ..., akademikCell, tahun] —
-    // sudah spesifik untuk kelas siswa yang login, jadi tidak perlu .find() lagi.
     const agendaCalendars = computed(() => {
   const isGanjil = selectedSemester.value === 'GANJIL';
   const monthsRange = isGanjil ? [6,7,8,9,10,11] : [0,1,2,3,4,5];
 
-  const row = window.KALENDER_DATA;
-  let year = isGanjil ? 2026 : 2027; // fallback kalau data belum termuat
-  if (row && row.length > 0) {
-    const parsedYear = parseInt(row[row.length - 1], 10);
-    if (!isNaN(parsedYear)) year = parsedYear;
+  // Ambil tahun dari index TERAKHIR baris kelas di kalenderganjil.js / kalendergenap.js
+  const raw   = window.KALENDER_DATA;
+  const kelas = (studentData.value.kelas || '').trim();
+  let year = isGanjil ? 2026 : 2027; // fallback kalau data belum termuat / kelas tidak ketemu
+  if (raw && kelas) {
+    const row = raw.find(r => (r[0] || '').trim() === kelas);
+    if (row && row.length > 0) {
+      const parsedYear = parseInt(row[row.length - 1], 10);
+      if (!isNaN(parsedYear)) year = parsedYear;
+    }
   }
 
   return monthsRange.map(m => ({
@@ -3421,30 +3426,34 @@ const parseAkademikKalender = (raw) => {
 
 // { "8/7": { deskripsi, status } }
 const akademikByDate = computed(() => {
-  const map = {};
+  const map   = {};
   if (selectedSemester.value !== 'GANJIL') return map; // data ini cakupannya Juli-Desember
 
-  const row = window.KALENDER_DATA;
-  if (!row || row.length < 2) return map;
+  const raw   = window.KALENDER_DATA;
+  const kelas = (studentData.value.kelas || '').trim();
+  if (!raw || !kelas) return map;
 
-  // Index TERAKHIR row = tahun kalender (mis. 2026)
-  // Index SEBELUM terakhir = string data kalender akademik
-  const yearFromRow = parseInt(row[row.length - 1], 10);
-  const startYear    = !isNaN(yearFromRow) ? yearFromRow : AKADEMIK_START_YEAR;
-  const lastCell      = row[row.length - 2];
-  const entries  = parseAkademikKalender(lastCell);
-  if (!entries.length) return map;
+  const row = raw.find(r => (r[0] || '').trim() === kelas);
+if (!row || row.length < 2) return map;
 
-  const curDate = new Date(startYear, AKADEMIK_START_MONTH - 1, 1); // 1 Juli
-  entries.forEach(item => {
-    const hasContent = item.items.some(it => it.deskripsi && it.deskripsi !== '-');
-    if (hasContent) {
-      const key = curDate.getDate() + '/' + (curDate.getMonth() + 1);
-      map[key] = item; // { items: [...], status: status dari event pertama }
-    }
-    curDate.setDate(curDate.getDate() + 1);
-  });
-  return map;
+// Index TERAKHIR baris = tahun kalender (mis. 2026)
+// Index SEBELUM terakhir = string data kalender akademik
+const yearFromRow = parseInt(row[row.length - 1], 10);
+const startYear    = !isNaN(yearFromRow) ? yearFromRow : AKADEMIK_START_YEAR;
+const lastCell      = row[row.length - 2];
+const entries  = parseAkademikKalender(lastCell);
+if (!entries.length) return map;
+
+const curDate = new Date(startYear, AKADEMIK_START_MONTH - 1, 1); // 1 Juli
+entries.forEach(item => {
+  const hasContent = item.items.some(it => it.deskripsi && it.deskripsi !== '-');
+  if (hasContent) {
+    const key = curDate.getDate() + '/' + (curDate.getMonth() + 1);
+    map[key] = item; // { items: [...], status: status dari event pertama }
+  }
+  curDate.setDate(curDate.getDate() + 1);
+});
+return map;
 });
 
 const getAkademikStatus = (day, monthNum) => {
@@ -3466,8 +3475,12 @@ const akademikInfoForSelected = computed(() => {
 
     // { "10/7": [ {mapel, tanggal, materi, tugas, catatan}, ... ] }
     const agendaByDate = computed(() => {
-      const map = {};
-      const row = window.KALENDER_DATA;
+      const map   = {};
+      const raw   = window.KALENDER_DATA;
+      const kelas = (studentData.value.kelas || '').trim();
+      if (!raw || !kelas) return map;
+
+      const row = raw.find(r => (r[0] || '').trim() === kelas);
       if (!row) return map;
 
       for (let i = 1; i < row.length - 1; i++) {
