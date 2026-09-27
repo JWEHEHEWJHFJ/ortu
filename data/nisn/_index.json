@@ -1,0 +1,3452 @@
+{
+  "12345": {
+    "semester": "GANJIL",
+    "nama": "ARDAN",
+    "kelas": "X.3"
+  },
+  "266715": {
+    "semester": "GANJIL",
+    "nama": "AINUN MAKMUR",
+    "kelas": "X.1"
+  },
+  "266749": {
+    "semester": "GANJIL",
+    "nama": "CITRA QIRAAH MAULUD FIRASA",
+    "kelas": "X.8"
+  },
+  "266764": {
+    "semester": "GANJIL",
+    "nama": "HAIKAL FAIZ",
+    "kelas": "X.2"
+  },
+  "266780": {
+    "semester": "GANJIL",
+    "nama": "JUMAATI",
+    "kelas": "X.5"
+  },
+  "266784": {
+    "semester": "GANJIL",
+    "nama": "KHAIRUL NIZAM",
+    "kelas": "X.7"
+  },
+  "266798": {
+    "semester": "GANJIL",
+    "nama": "MUH. ABID",
+    "kelas": "X.6"
+  },
+  "266803": {
+    "semester": "GANJIL",
+    "nama": "MUH. AQIL ISHAQ",
+    "kelas": "X.1"
+  },
+  "266804": {
+    "semester": "GANJIL",
+    "nama": "MUH. ARIF",
+    "kelas": "X.5"
+  },
+  "266950": {
+    "semester": "GANJIL",
+    "nama": "SURYA ADITYA BASRI",
+    "kelas": "X.8"
+  },
+  "266962": {
+    "semester": "GANJIL",
+    "nama": "MUH. SAPUTRA",
+    "kelas": "X.3"
+  },
+  "92460027": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD RISAL",
+    "kelas": "XI.6"
+  },
+  "95498277": {
+    "semester": "GANJIL",
+    "nama": "MUH. FYTRAH RAMADHAN RUSLAN",
+    "kelas": "XI.7"
+  },
+  "97394766": {
+    "semester": "GANJIL",
+    "nama": "SRI WAHYUNI",
+    "kelas": "XI.1"
+  },
+  "101297878": {
+    "semester": "GANJIL",
+    "nama": "NURFAINNA",
+    "kelas": "X.3"
+  },
+  "101461790": {
+    "semester": "GANJIL",
+    "nama": "NUR AZISA",
+    "kelas": "X.4"
+  },
+  "103961411": {
+    "semester": "GANJIL",
+    "nama": "FARHAN NURDIN",
+    "kelas": "XI.4"
+  },
+  "109895093": {
+    "semester": "GANJIL",
+    "nama": "AKSAR HIDAYAT",
+    "kelas": "XI.3"
+  },
+  "112638019": {
+    "semester": "GANJIL",
+    "nama": "SYUHAILA",
+    "kelas": "X.7"
+  },
+  "115216546": {
+    "semester": "GANJIL",
+    "nama": "SRI MULIANI NURENG",
+    "kelas": "X.8"
+  },
+  "118731171": {
+    "semester": "GANJIL",
+    "nama": "NUR SAKINAH",
+    "kelas": "X.5"
+  },
+  "3077427560": {
+    "semester": "GANJIL",
+    "nama": "NURFASIRAH",
+    "kelas": "XII.6"
+  },
+  "3085200752": {
+    "semester": "GANJIL",
+    "nama": "RASYA NOOR",
+    "kelas": "XII.4"
+  },
+  "3085626606": {
+    "semester": "GANJIL",
+    "nama": "NURUL AL AIDA",
+    "kelas": "XII.4"
+  },
+  "3085685944": {
+    "semester": "GANJIL",
+    "nama": "SAIPUL",
+    "kelas": "X.8"
+  },
+  "3085913408": {
+    "semester": "GANJIL",
+    "nama": "MUH. FAUZAN",
+    "kelas": "XII.6"
+  },
+  "3088079014": {
+    "semester": "GANJIL",
+    "nama": "DIMAS PRATAMA",
+    "kelas": "XII.5"
+  },
+  "3088088491": {
+    "semester": "GANJIL",
+    "nama": "NURHALISA",
+    "kelas": "XI.4"
+  },
+  "3088651654": {
+    "semester": "GANJIL",
+    "nama": "M.AZZAY AL GAFALI UMAR",
+    "kelas": "XII.3"
+  },
+  "3088848152": {
+    "semester": "GANJIL",
+    "nama": "SRI MULYANI",
+    "kelas": "XII.1"
+  },
+  "3090358142": {
+    "semester": "GANJIL",
+    "nama": "MISRAN",
+    "kelas": "XII.1"
+  },
+  "3090938788": {
+    "semester": "GANJIL",
+    "nama": "MUH. YUSUF",
+    "kelas": "XI.6"
+  },
+  "3090951683": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD REGA ABRAM",
+    "kelas": "XI.2"
+  },
+  "3090961369": {
+    "semester": "GANJIL",
+    "nama": "ALFIAN ARAS",
+    "kelas": "XI.5"
+  },
+  "3091471051": {
+    "semester": "GANJIL",
+    "nama": "NURJANNA",
+    "kelas": "XI.2"
+  },
+  "3091494481": {
+    "semester": "GANJIL",
+    "nama": "NUR HELDA",
+    "kelas": "XI.6"
+  },
+  "3091692313": {
+    "semester": "GANJIL",
+    "nama": "ASLAN",
+    "kelas": "XII.1"
+  },
+  "3092376057": {
+    "semester": "GANJIL",
+    "nama": "CHINDY ANGGREANI",
+    "kelas": "XII.1"
+  },
+  "3092404924": {
+    "semester": "GANJIL",
+    "nama": "ALIFAH YASMIN",
+    "kelas": "XII.1"
+  },
+  "3092651351": {
+    "semester": "GANJIL",
+    "nama": "ALIAH MUKHBITA",
+    "kelas": "XII.1"
+  },
+  "3093263088": {
+    "semester": "GANJIL",
+    "nama": "AHMAD FANDI",
+    "kelas": "XII.5"
+  },
+  "3093417183": {
+    "semester": "GANJIL",
+    "nama": "REZKY AULIA",
+    "kelas": "XII.4"
+  },
+  "3094057563": {
+    "semester": "GANJIL",
+    "nama": "RANI",
+    "kelas": "XI.6"
+  },
+  "3094639786": {
+    "semester": "GANJIL",
+    "nama": "MUH.SAFRIL",
+    "kelas": "X.5"
+  },
+  "3095393957": {
+    "semester": "GANJIL",
+    "nama": "NUR ARISAH",
+    "kelas": "XI.7"
+  },
+  "3096600267": {
+    "semester": "GANJIL",
+    "nama": "DYNA OCTHAVIA",
+    "kelas": "XI.2"
+  },
+  "3097125988": {
+    "semester": "GANJIL",
+    "nama": "BAYU HIDAYAT",
+    "kelas": "XII.1"
+  },
+  "3097416685": {
+    "semester": "GANJIL",
+    "nama": "RISMAYANTI",
+    "kelas": "XII.3"
+  },
+  "3097776542": {
+    "semester": "GANJIL",
+    "nama": "MUH.AIDIL AKBAR",
+    "kelas": "XI.1"
+  },
+  "3097990679": {
+    "semester": "GANJIL",
+    "nama": "NURUL FIFI NATASYA MUH. YAMIN",
+    "kelas": "XI.3"
+  },
+  "3098495979": {
+    "semester": "GANJIL",
+    "nama": "NUR HIDAYAH",
+    "kelas": "XI.7"
+  },
+  "3098982847": {
+    "semester": "GANJIL",
+    "nama": "NUR RAHZIQAH",
+    "kelas": "XII.3"
+  },
+  "3099280920": {
+    "semester": "GANJIL",
+    "nama": "RIFQI ALFIAN. Q",
+    "kelas": "XII.4"
+  },
+  "3099412957": {
+    "semester": "GANJIL",
+    "nama": "MITRA AULIA. H",
+    "kelas": "XI.5"
+  },
+  "3099475192": {
+    "semester": "GANJIL",
+    "nama": "AKBAR GIFFARIL",
+    "kelas": "XI.4"
+  },
+  "3099795596": {
+    "semester": "GANJIL",
+    "nama": "M. IQRAM DARWIS",
+    "kelas": "XII.4"
+  },
+  "3099810087": {
+    "semester": "GANJIL",
+    "nama": "AZRIFA ALMAQHFIRA SYAMSUL",
+    "kelas": "XII.5"
+  },
+  "3100016581": {
+    "semester": "GANJIL",
+    "nama": "SALMAN AMMAR. M",
+    "kelas": "XI.1"
+  },
+  "3100154158": {
+    "semester": "GANJIL",
+    "nama": "SAYRA",
+    "kelas": "X.3"
+  },
+  "3100193738": {
+    "semester": "GANJIL",
+    "nama": "SELFIANI",
+    "kelas": "X.8"
+  },
+  "3100501444": {
+    "semester": "GANJIL",
+    "nama": "YAZIR ARAFAT",
+    "kelas": "X.6"
+  },
+  "3100758766": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SAZILI",
+    "kelas": "X.1"
+  },
+  "3100991255": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ZAKY",
+    "kelas": "X.1"
+  },
+  "3101611646": {
+    "semester": "GANJIL",
+    "nama": "ZAHRA",
+    "kelas": "X.6"
+  },
+  "3101758295": {
+    "semester": "GANJIL",
+    "nama": "MUH. IQBAL",
+    "kelas": "XI.2"
+  },
+  "3101898170": {
+    "semester": "GANJIL",
+    "nama": "AHMAD AL - HABSYI",
+    "kelas": "XI.7"
+  },
+  "3101957407": {
+    "semester": "GANJIL",
+    "nama": "MUH. ARIFANDI",
+    "kelas": "XI.6"
+  },
+  "3102075357": {
+    "semester": "GANJIL",
+    "nama": "ASRIANI",
+    "kelas": "X.8"
+  },
+  "3102322385": {
+    "semester": "GANJIL",
+    "nama": "MUH. NASWAN ALFIAN",
+    "kelas": "X.6"
+  },
+  "3102428813": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FATIH FARHAT",
+    "kelas": "X.6"
+  },
+  "3103058344": {
+    "semester": "GANJIL",
+    "nama": "MISNA",
+    "kelas": "XI.2"
+  },
+  "3103070727": {
+    "semester": "GANJIL",
+    "nama": "MARIANI",
+    "kelas": "X.5"
+  },
+  "3103083142": {
+    "semester": "GANJIL",
+    "nama": "NOR AZLINA RUSDI",
+    "kelas": "X.1"
+  },
+  "3103527343": {
+    "semester": "GANJIL",
+    "nama": "FITRIANA",
+    "kelas": "X.5"
+  },
+  "3104163412": {
+    "semester": "GANJIL",
+    "nama": "ASWAN FADIL",
+    "kelas": "X.6"
+  },
+  "3104273302": {
+    "semester": "GANJIL",
+    "nama": "NUR HALIMA",
+    "kelas": "X.8"
+  },
+  "3104441865": {
+    "semester": "GANJIL",
+    "nama": "NAFIZAH NUR AFNI",
+    "kelas": "XI.3"
+  },
+  "3104569047": {
+    "semester": "GANJIL",
+    "nama": "NURUL SAKARIA",
+    "kelas": "XI.5"
+  },
+  "3104826758": {
+    "semester": "GANJIL",
+    "nama": "ATIQA ZALFA",
+    "kelas": "XI.2"
+  },
+  "3105328971": {
+    "semester": "GANJIL",
+    "nama": "AMELIA",
+    "kelas": "XI.5"
+  },
+  "3105503871": {
+    "semester": "GANJIL",
+    "nama": "MAHIRA AZHARA",
+    "kelas": "XI.7"
+  },
+  "3105616974": {
+    "semester": "GANJIL",
+    "nama": "AWALUDDIN",
+    "kelas": "X.5"
+  },
+  "3106048573": {
+    "semester": "GANJIL",
+    "nama": "MUTMAINNA",
+    "kelas": "X.6"
+  },
+  "3106314539": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYARIF",
+    "kelas": "XI.4"
+  },
+  "3106431197": {
+    "semester": "GANJIL",
+    "nama": "NUR ZAKIA",
+    "kelas": "X.2"
+  },
+  "3107050520": {
+    "semester": "GANJIL",
+    "nama": "WAQIFA AZZAHRA",
+    "kelas": "X.2"
+  },
+  "3107058476": {
+    "semester": "GANJIL",
+    "nama": "NAISYLA PUTRY",
+    "kelas": "X.6"
+  },
+  "3107086108": {
+    "semester": "GANJIL",
+    "nama": "CAHYANI",
+    "kelas": "X.4"
+  },
+  "3107232488": {
+    "semester": "GANJIL",
+    "nama": "ALIF ADRIAN",
+    "kelas": "X.6"
+  },
+  "3108553807": {
+    "semester": "GANJIL",
+    "nama": "NORIZZAH MELANI",
+    "kelas": "XI.5"
+  },
+  "3108664481": {
+    "semester": "GANJIL",
+    "nama": "MUH. RAYYAN MUMTAZD",
+    "kelas": "XI.6"
+  },
+  "3109001852": {
+    "semester": "GANJIL",
+    "nama": "SHAFIRA SANDRA",
+    "kelas": "X.5"
+  },
+  "3109226668": {
+    "semester": "GANJIL",
+    "nama": "AHMAD NUR SYAFIQ SYAMSUL",
+    "kelas": "XI.4"
+  },
+  "3109600343": {
+    "semester": "GANJIL",
+    "nama": "IKHRAM",
+    "kelas": "XI.5"
+  },
+  "3109605920": {
+    "semester": "GANJIL",
+    "nama": "PUTRI MAHYUNI NASRINA",
+    "kelas": "X.2"
+  },
+  "3109704271": {
+    "semester": "GANJIL",
+    "nama": "MUH. ALDIANSYAH",
+    "kelas": "X.5"
+  },
+  "3109714407": {
+    "semester": "GANJIL",
+    "nama": "SALWA",
+    "kelas": "X.3"
+  },
+  "3110460753": {
+    "semester": "GANJIL",
+    "nama": "SITTI KHADIJAH IRWAN",
+    "kelas": "X.3"
+  },
+  "3110639550": {
+    "semester": "GANJIL",
+    "nama": "ATIFAH DEBY PURWANTI",
+    "kelas": "X.2"
+  },
+  "3111711191": {
+    "semester": "GANJIL",
+    "nama": "DEWA APRILLIO",
+    "kelas": "X.6"
+  },
+  "3112103451": {
+    "semester": "GANJIL",
+    "nama": "NURUL SYAHIRA",
+    "kelas": "X.7"
+  },
+  "3113213905": {
+    "semester": "GANJIL",
+    "nama": "ASHRAF HAKIM",
+    "kelas": "X.2"
+  },
+  "3114088394": {
+    "semester": "GANJIL",
+    "nama": "MUH. SAHRIL SAPUTRA",
+    "kelas": "X.2"
+  },
+  "3114541838": {
+    "semester": "GANJIL",
+    "nama": "HUMAERA",
+    "kelas": "X.7"
+  },
+  "3115007525": {
+    "semester": "GANJIL",
+    "nama": "NUR ZULAIKA FATIHA",
+    "kelas": "X.5"
+  },
+  "3115146623": {
+    "semester": "GANJIL",
+    "nama": "NUR AZIZAH",
+    "kelas": "X.5"
+  },
+  "3115416020": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAFIKAH",
+    "kelas": "XI.4"
+  },
+  "3116112430": {
+    "semester": "GANJIL",
+    "nama": "NAJMA TUL AMRUH",
+    "kelas": "X.6"
+  },
+  "3116463041": {
+    "semester": "GANJIL",
+    "nama": "AIMAN NASRULLAH",
+    "kelas": "X.1"
+  },
+  "3116517131": {
+    "semester": "GANJIL",
+    "nama": "NURUL SYUHADAH",
+    "kelas": "X.4"
+  },
+  "3116550933": {
+    "semester": "GANJIL",
+    "nama": "NUR'AINI",
+    "kelas": "X.5"
+  },
+  "3117838396": {
+    "semester": "GANJIL",
+    "nama": "MUH.MUKAMMIL NUR",
+    "kelas": "X.2"
+  },
+  "3118445126": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD NUR RASYA MASKUR",
+    "kelas": "X.2"
+  },
+  "3118552230": {
+    "semester": "GANJIL",
+    "nama": "NUR HIKMA",
+    "kelas": "X.7"
+  },
+  "3118940651": {
+    "semester": "GANJIL",
+    "nama": "A. NUR ANGRENI PUTRI",
+    "kelas": "X.4"
+  },
+  "3119121314": {
+    "semester": "GANJIL",
+    "nama": "NURLIANITA",
+    "kelas": "X.4"
+  },
+  "3119375249": {
+    "semester": "GANJIL",
+    "nama": "NOOR AFIZA",
+    "kelas": "X.4"
+  },
+  "3119589932": {
+    "semester": "GANJIL",
+    "nama": "AHMAD FIQRI",
+    "kelas": "X.1"
+  },
+  "3119997451": {
+    "semester": "GANJIL",
+    "nama": "SUSI JULIANA MURSALIM",
+    "kelas": "X.6"
+  },
+  "0107886737": {
+    "semester": "GANJIL",
+    "nama": "A. ANISA",
+    "kelas": "X.1"
+  },
+  "0114567221": {
+    "semester": "GANJIL",
+    "nama": "AHMAD RAFLI",
+    "kelas": "X.1"
+  },
+  "0104511584": {
+    "semester": "GANJIL",
+    "nama": "AINUN ANUGRAH ADHA",
+    "kelas": "X.1"
+  },
+  "0119417446": {
+    "semester": "GANJIL",
+    "nama": "AIRIN NURANNISYAH",
+    "kelas": "X.1"
+  },
+  "0119100203": {
+    "semester": "GANJIL",
+    "nama": "AKHLAQUL KARIMAH",
+    "kelas": "X.1"
+  },
+  "0107246879": {
+    "semester": "GANJIL",
+    "nama": "ANDI AYATUL HUSNA AL-BAHARI",
+    "kelas": "X.1"
+  },
+  "0104459487": {
+    "semester": "GANJIL",
+    "nama": "AQMAR HIDAYATULLAH",
+    "kelas": "X.1"
+  },
+  "0117204188": {
+    "semester": "GANJIL",
+    "nama": "ATIRA",
+    "kelas": "X.1"
+  },
+  "011628060": {
+    "semester": "GANJIL",
+    "nama": "FATIHATUL WIQAYA",
+    "kelas": "X.1"
+  },
+  "0104284535": {
+    "semester": "GANJIL",
+    "nama": "HANIFAH ALYYAH",
+    "kelas": "X.1"
+  },
+  "0111955594": {
+    "semester": "GANJIL",
+    "nama": "HAYATUL HUSNA",
+    "kelas": "X.1"
+  },
+  "0111313456": {
+    "semester": "GANJIL",
+    "nama": "IKRAAM MAULANA",
+    "kelas": "X.1"
+  },
+  "0104144572": {
+    "semester": "GANJIL",
+    "nama": "IQBAL",
+    "kelas": "X.1"
+  },
+  "0104971305": {
+    "semester": "GANJIL",
+    "nama": "MUH ALIF",
+    "kelas": "X.1"
+  },
+  "0111664008": {
+    "semester": "GANJIL",
+    "nama": "MUH. AKBAR",
+    "kelas": "X.1"
+  },
+  "0109797112": {
+    "semester": "GANJIL",
+    "nama": "MUH. FARHAN FAUZAN S",
+    "kelas": "X.1"
+  },
+  "0112384531": {
+    "semester": "GANJIL",
+    "nama": "NABILA FARAH",
+    "kelas": "X.1"
+  },
+  "0115874363": {
+    "semester": "GANJIL",
+    "nama": "NASMA",
+    "kelas": "X.1"
+  },
+  "0119982262": {
+    "semester": "GANJIL",
+    "nama": "NUR AYNI ZAKIA",
+    "kelas": "X.1"
+  },
+  "0115014371": {
+    "semester": "GANJIL",
+    "nama": "NUR FAHIRA",
+    "kelas": "X.1"
+  },
+  "0105011581": {
+    "semester": "GANJIL",
+    "nama": "NURUL MAULIDA",
+    "kelas": "X.1"
+  },
+  "0099717676": {
+    "semester": "GANJIL",
+    "nama": "NURUL SYAZWA NABILA",
+    "kelas": "X.1"
+  },
+  "0106651252": {
+    "semester": "GANJIL",
+    "nama": "RISTY AMIRAH KALILA DEEBA",
+    "kelas": "X.1"
+  },
+  "0107564489": {
+    "semester": "GANJIL",
+    "nama": "SITI ASYA",
+    "kelas": "X.1"
+  },
+  "0118156246": {
+    "semester": "GANJIL",
+    "nama": "SITTI KHADIJAH",
+    "kelas": "X.1"
+  },
+  "0104463375": {
+    "semester": "GANJIL",
+    "nama": "ZULKARNAIN",
+    "kelas": "X.1"
+  },
+  "0104935272": {
+    "semester": "GANJIL",
+    "nama": "ABD HAFID",
+    "kelas": "X.2"
+  },
+  "0106567925": {
+    "semester": "GANJIL",
+    "nama": "ARGEA RAMADANI",
+    "kelas": "X.2"
+  },
+  "0106693774": {
+    "semester": "GANJIL",
+    "nama": "HASBI MN",
+    "kelas": "X.2"
+  },
+  "0113417154": {
+    "semester": "GANJIL",
+    "nama": "INAYAH NURQIRANIH",
+    "kelas": "X.2"
+  },
+  "0101423127": {
+    "semester": "GANJIL",
+    "nama": "IRWANDI",
+    "kelas": "X.2"
+  },
+  "0118246440": {
+    "semester": "GANJIL",
+    "nama": "KHAYRUNNISA",
+    "kelas": "X.2"
+  },
+  "0096122627": {
+    "semester": "GANJIL",
+    "nama": "MOHAMMAD ROSYAM BIN HAROT",
+    "kelas": "X.2"
+  },
+  "0117706366": {
+    "semester": "GANJIL",
+    "nama": "MUH AQRAM",
+    "kelas": "X.2"
+  },
+  "0119243449": {
+    "semester": "GANJIL",
+    "nama": "MUH RIFKI AIDIL",
+    "kelas": "X.2"
+  },
+  "0105594796": {
+    "semester": "GANJIL",
+    "nama": "MUH. FIKRAM",
+    "kelas": "X.2"
+  },
+  "0103095718": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ADY PUTRA",
+    "kelas": "X.2"
+  },
+  "0112094689": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD AIMAN",
+    "kelas": "X.2"
+  },
+  "0101404753": {
+    "semester": "GANJIL",
+    "nama": "NUR ASYIFA",
+    "kelas": "X.2"
+  },
+  "0113533862": {
+    "semester": "GANJIL",
+    "nama": "NUR NADIA M",
+    "kelas": "X.2"
+  },
+  "0118689474": {
+    "semester": "GANJIL",
+    "nama": "NUR RAMADHANI HAS",
+    "kelas": "X.2"
+  },
+  "0105191243": {
+    "semester": "GANJIL",
+    "nama": "NUR SHAFINA",
+    "kelas": "X.2"
+  },
+  "0112226565": {
+    "semester": "GANJIL",
+    "nama": "PUTRI NABILA",
+    "kelas": "X.2"
+  },
+  "0102259758": {
+    "semester": "GANJIL",
+    "nama": "RAHMA FADILLA",
+    "kelas": "X.2"
+  },
+  "0101529263": {
+    "semester": "GANJIL",
+    "nama": "RINA HARYANI.S",
+    "kelas": "X.2"
+  },
+  "0109941948": {
+    "semester": "GANJIL",
+    "nama": "SALSABILA RAMADHANI",
+    "kelas": "X.2"
+  },
+  "0117542695": {
+    "semester": "GANJIL",
+    "nama": "SINTA DEVI",
+    "kelas": "X.2"
+  },
+  "0105021235": {
+    "semester": "GANJIL",
+    "nama": "SITI JUMAERA.T",
+    "kelas": "X.2"
+  },
+  "0102565120": {
+    "semester": "GANJIL",
+    "nama": "ST. APRATUL.QAYYUM",
+    "kelas": "X.2"
+  },
+  "0101249537": {
+    "semester": "GANJIL",
+    "nama": "UMMU KULSTUM FAUZIYYAH YUSUF",
+    "kelas": "X.2"
+  },
+  "0114095066": {
+    "semester": "GANJIL",
+    "nama": "WILDA NASIR",
+    "kelas": "X.2"
+  },
+  "0103455951": {
+    "semester": "GANJIL",
+    "nama": "AINUN RAMADANI",
+    "kelas": "X.3"
+  },
+  "0102617421": {
+    "semester": "GANJIL",
+    "nama": "ARMAN",
+    "kelas": "X.3"
+  },
+  "0116549635": {
+    "semester": "GANJIL",
+    "nama": "AVNER ADHEREZKHY",
+    "kelas": "X.3"
+  },
+  "0102201762": {
+    "semester": "GANJIL",
+    "nama": "AYU WANDIRA",
+    "kelas": "X.3"
+  },
+  "0106481377": {
+    "semester": "GANJIL",
+    "nama": "BUNGA DEA",
+    "kelas": "X.3"
+  },
+  "0118696654": {
+    "semester": "GANJIL",
+    "nama": "CHELSA ALIA PUTRI",
+    "kelas": "X.3"
+  },
+  "0102620157": {
+    "semester": "GANJIL",
+    "nama": "DESVITA AULIA",
+    "kelas": "X.3"
+  },
+  "0103192242": {
+    "semester": "GANJIL",
+    "nama": "FADLAN.S",
+    "kelas": "X.3"
+  },
+  "0095113095": {
+    "semester": "GANJIL",
+    "nama": "HASRIANI",
+    "kelas": "X.3"
+  },
+  "0104408869": {
+    "semester": "GANJIL",
+    "nama": "JUMAHIRA",
+    "kelas": "X.3"
+  },
+  "0116765472": {
+    "semester": "GANJIL",
+    "nama": "KHADIJAH AZIZAH",
+    "kelas": "X.3"
+  },
+  "0117963457": {
+    "semester": "GANJIL",
+    "nama": "KHAIRUNISA SALSABILA HERY",
+    "kelas": "X.3"
+  },
+  "0113808156": {
+    "semester": "GANJIL",
+    "nama": "MUH SYAM",
+    "kelas": "X.3"
+  },
+  "0105693539": {
+    "semester": "GANJIL",
+    "nama": "MUH. WAHYU",
+    "kelas": "X.3"
+  },
+  "0112328224": {
+    "semester": "GANJIL",
+    "nama": "MUH.RIFQI ANUGRAH",
+    "kelas": "X.3"
+  },
+  "0114132916": {
+    "semester": "GANJIL",
+    "nama": "MUH.SATRIA.GUNAWAN",
+    "kelas": "X.3"
+  },
+  "0119301126": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ARFAH",
+    "kelas": "X.3"
+  },
+  "0104878148": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FATIR ANUGRAH",
+    "kelas": "X.3"
+  },
+  "0115756802": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD IDLAN HAKIMI",
+    "kelas": "X.3"
+  },
+  "0108511614": {
+    "semester": "GANJIL",
+    "nama": "NABIL ALGHANI",
+    "kelas": "X.3"
+  },
+  "0109401648": {
+    "semester": "GANJIL",
+    "nama": "NADILA",
+    "kelas": "X.3"
+  },
+  "0117738423": {
+    "semester": "GANJIL",
+    "nama": "NASRIL ILHAQ",
+    "kelas": "X.3"
+  },
+  "0119458706": {
+    "semester": "GANJIL",
+    "nama": "NUR AINDAH",
+    "kelas": "X.3"
+  },
+  "0104667969": {
+    "semester": "GANJIL",
+    "nama": "NUR FAISA",
+    "kelas": "X.3"
+  },
+  "0114885851": {
+    "semester": "GANJIL",
+    "nama": "NURFATIHA",
+    "kelas": "X.3"
+  },
+  "0101446880": {
+    "semester": "GANJIL",
+    "nama": "RANGGA AQSAN MALIK",
+    "kelas": "X.3"
+  },
+  "0111196498": {
+    "semester": "GANJIL",
+    "nama": "REVAN SAPUTRA",
+    "kelas": "X.3"
+  },
+  "0102985778": {
+    "semester": "GANJIL",
+    "nama": "SAKINA",
+    "kelas": "X.3"
+  },
+  "0108509065": {
+    "semester": "GANJIL",
+    "nama": "SARPINA",
+    "kelas": "X.3"
+  },
+  "0114107238": {
+    "semester": "GANJIL",
+    "nama": "A.NINDY NURASIFAH",
+    "kelas": "X.4"
+  },
+  "0104659982": {
+    "semester": "GANJIL",
+    "nama": "ASHRIANI KADIR",
+    "kelas": "X.4"
+  },
+  "0118853018": {
+    "semester": "GANJIL",
+    "nama": "BELLA SAFIRA",
+    "kelas": "X.4"
+  },
+  "0105559326": {
+    "semester": "GANJIL",
+    "nama": "FIRMAN",
+    "kelas": "X.4"
+  },
+  "0116148053": {
+    "semester": "GANJIL",
+    "nama": "HERIYANTI",
+    "kelas": "X.4"
+  },
+  "0089264355": {
+    "semester": "GANJIL",
+    "nama": "MUH. RAHUL B",
+    "kelas": "X.4"
+  },
+  "0112609757": {
+    "semester": "GANJIL",
+    "nama": "MUH. RISKI",
+    "kelas": "X.4"
+  },
+  "0105697198": {
+    "semester": "GANJIL",
+    "nama": "MUH. ZHAFRAN. ARWAN",
+    "kelas": "X.4"
+  },
+  "0111487993": {
+    "semester": "GANJIL",
+    "nama": "MUH.YUSUF",
+    "kelas": "X.4"
+  },
+  "0106613736": {
+    "semester": "GANJIL",
+    "nama": "MUH.ZULKIFLI",
+    "kelas": "X.4"
+  },
+  "0109173794": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALIF",
+    "kelas": "X.4"
+  },
+  "0112670646": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FIKRI",
+    "kelas": "X.4"
+  },
+  "0107551816": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD MIFDHAL.M",
+    "kelas": "X.4"
+  },
+  "0093982150": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYAHRIZAN",
+    "kelas": "X.4"
+  },
+  "0103752479": {
+    "semester": "GANJIL",
+    "nama": "MULIATI",
+    "kelas": "X.4"
+  },
+  "0107437229": {
+    "semester": "GANJIL",
+    "nama": "NAURA ATIKAH",
+    "kelas": "X.4"
+  },
+  "0101713694": {
+    "semester": "GANJIL",
+    "nama": "NUR ALIA FATIMA",
+    "kelas": "X.4"
+  },
+  "0111846425": {
+    "semester": "GANJIL",
+    "nama": "NUR AZIZAH",
+    "kelas": "X.4"
+  },
+  "0115249008": {
+    "semester": "GANJIL",
+    "nama": "REYZAH AFRIANSYAH",
+    "kelas": "X.4"
+  },
+  "0111131310": {
+    "semester": "GANJIL",
+    "nama": "SALWA ARLI",
+    "kelas": "X.4"
+  },
+  "0112599890": {
+    "semester": "GANJIL",
+    "nama": "SITI FAHRIYANI",
+    "kelas": "X.4"
+  },
+  "0046677004": {
+    "semester": "GANJIL",
+    "nama": "SRI ARIANARTI",
+    "kelas": "X.4"
+  },
+  "0114288570": {
+    "semester": "GANJIL",
+    "nama": "SUCI RAHMADHANI",
+    "kelas": "X.4"
+  },
+  "0106685534": {
+    "semester": "GANJIL",
+    "nama": "SUL AYU RAMADHANI",
+    "kelas": "X.4"
+  },
+  "0116840941": {
+    "semester": "GANJIL",
+    "nama": "YORDANIEL ANDONY",
+    "kelas": "X.4"
+  },
+  "0109815345": {
+    "semester": "GANJIL",
+    "nama": "ABDUL GANI",
+    "kelas": "X.5"
+  },
+  "0118253242": {
+    "semester": "GANJIL",
+    "nama": "AFDAL",
+    "kelas": "X.5"
+  },
+  "0114298606": {
+    "semester": "GANJIL",
+    "nama": "AINUN CHAIRUN NISA",
+    "kelas": "X.5"
+  },
+  "0118989313": {
+    "semester": "GANJIL",
+    "nama": "AIRAH FRIANDA PUTRI",
+    "kelas": "X.5"
+  },
+  "0112072647": {
+    "semester": "GANJIL",
+    "nama": "CAHYA HILYA SYABANI",
+    "kelas": "X.5"
+  },
+  "0117048776": {
+    "semester": "GANJIL",
+    "nama": "IQRA ABDILAH",
+    "kelas": "X.5"
+  },
+  "0095814782": {
+    "semester": "GANJIL",
+    "nama": "IRWAN",
+    "kelas": "X.5"
+  },
+  "0112796662": {
+    "semester": "GANJIL",
+    "nama": "KEYSA",
+    "kelas": "X.5"
+  },
+  "0117179964": {
+    "semester": "GANJIL",
+    "nama": "MUH. ASRAB",
+    "kelas": "X.5"
+  },
+  "0116111421": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD JASRIL",
+    "kelas": "X.5"
+  },
+  "0108757639": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD. FADIL. M",
+    "kelas": "X.5"
+  },
+  "0111573112": {
+    "semester": "GANJIL",
+    "nama": "NAILAH ADELIA",
+    "kelas": "X.5"
+  },
+  "0119967686": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAHIRAH",
+    "kelas": "X.5"
+  },
+  "0114201216": {
+    "semester": "GANJIL",
+    "nama": "NUR.ANNISA.S",
+    "kelas": "X.5"
+  },
+  "0112109691": {
+    "semester": "GANJIL",
+    "nama": "NURAMELIA RAMADHANI",
+    "kelas": "X.5"
+  },
+  "0116749686": {
+    "semester": "GANJIL",
+    "nama": "NURUL HAFIZA",
+    "kelas": "X.5"
+  },
+  "0118362204": {
+    "semester": "GANJIL",
+    "nama": "RESKI AULIA",
+    "kelas": "X.5"
+  },
+  "0102230059": {
+    "semester": "GANJIL",
+    "nama": "SAIPUL AHMAD",
+    "kelas": "X.5"
+  },
+  "0114726657": {
+    "semester": "GANJIL",
+    "nama": "SARIYANI",
+    "kelas": "X.5"
+  },
+  "0109253401": {
+    "semester": "GANJIL",
+    "nama": "TIARA",
+    "kelas": "X.5"
+  },
+  "0101935609": {
+    "semester": "GANJIL",
+    "nama": "A. ASIPA ANDUNG",
+    "kelas": "X.6"
+  },
+  "0115287294": {
+    "semester": "GANJIL",
+    "nama": "ADITYA",
+    "kelas": "X.6"
+  },
+  "0117785414": {
+    "semester": "GANJIL",
+    "nama": "ALSA SALSABILLA",
+    "kelas": "X.6"
+  },
+  "0109902779": {
+    "semester": "GANJIL",
+    "nama": "ANDIN",
+    "kelas": "X.6"
+  },
+  "0107630865": {
+    "semester": "GANJIL",
+    "nama": "FARIKHA UMNIYATUL MUNA",
+    "kelas": "X.6"
+  },
+  "0112500588": {
+    "semester": "GANJIL",
+    "nama": "FATIMAH AZZAHRAH",
+    "kelas": "X.6"
+  },
+  "0102062543": {
+    "semester": "GANJIL",
+    "nama": "JUM RAHMADANI",
+    "kelas": "X.6"
+  },
+  "0119076652": {
+    "semester": "GANJIL",
+    "nama": "KIRANI",
+    "kelas": "X.6"
+  },
+  "0109876866": {
+    "semester": "GANJIL",
+    "nama": "MUH. ARYA RAMADITYA",
+    "kelas": "X.6"
+  },
+  "0113943052": {
+    "semester": "GANJIL",
+    "nama": "MUH.YASIR",
+    "kelas": "X.6"
+  },
+  "0102232272": {
+    "semester": "GANJIL",
+    "nama": "MUH.ZULKIFLI",
+    "kelas": "X.6"
+  },
+  "0114019504": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SAIPUL",
+    "kelas": "X.6"
+  },
+  "0116993445": {
+    "semester": "GANJIL",
+    "nama": "NASRI ILHAM",
+    "kelas": "X.6"
+  },
+  "0108142455": {
+    "semester": "GANJIL",
+    "nama": "NASYILA",
+    "kelas": "X.6"
+  },
+  "0119949593": {
+    "semester": "GANJIL",
+    "nama": "NUR AMELIA",
+    "kelas": "X.6"
+  },
+  "0112623987": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAHIRA",
+    "kelas": "X.6"
+  },
+  "0114526266": {
+    "semester": "GANJIL",
+    "nama": "RAHMATULLAH",
+    "kelas": "X.6"
+  },
+  "0091291923": {
+    "semester": "GANJIL",
+    "nama": "SRI RESKY AMALIA",
+    "kelas": "X.6"
+  },
+  "0114941603": {
+    "semester": "GANJIL",
+    "nama": "ST.KHADIJAH",
+    "kelas": "X.6"
+  },
+  "0118993061": {
+    "semester": "GANJIL",
+    "nama": "SUCIATI MUSTAPA",
+    "kelas": "X.6"
+  },
+  "0112190946": {
+    "semester": "GANJIL",
+    "nama": "ZHAFIRAH HAMZAH",
+    "kelas": "X.6"
+  },
+  "0111464034": {
+    "semester": "GANJIL",
+    "nama": "AHMAD RIDHO YUNANI",
+    "kelas": "X.7"
+  },
+  "0113822033": {
+    "semester": "GANJIL",
+    "nama": "ANDIRA",
+    "kelas": "X.7"
+  },
+  "0111083683": {
+    "semester": "GANJIL",
+    "nama": "ASYAM ABDILLAH",
+    "kelas": "X.7"
+  },
+  "0098354579": {
+    "semester": "GANJIL",
+    "nama": "DEWI RAHMAH",
+    "kelas": "X.7"
+  },
+  "0104079054": {
+    "semester": "GANJIL",
+    "nama": "FARHAN",
+    "kelas": "X.7"
+  },
+  "0105775751": {
+    "semester": "GANJIL",
+    "nama": "FARIS NAUFAL",
+    "kelas": "X.7"
+  },
+  "0105103988": {
+    "semester": "GANJIL",
+    "nama": "GEISHA",
+    "kelas": "X.7"
+  },
+  "0102751525": {
+    "semester": "GANJIL",
+    "nama": "IRMAYANTI",
+    "kelas": "X.7"
+  },
+  "0106337403": {
+    "semester": "GANJIL",
+    "nama": "KIKI AULIA ISMAIL",
+    "kelas": "X.7"
+  },
+  "0109605664": {
+    "semester": "GANJIL",
+    "nama": "MUH. FADLAN",
+    "kelas": "X.7"
+  },
+  "0104047984": {
+    "semester": "GANJIL",
+    "nama": "MUH.FADHIL.M",
+    "kelas": "X.7"
+  },
+  "0108088505": {
+    "semester": "GANJIL",
+    "nama": "MUH.FAHRI ASRI",
+    "kelas": "X.7"
+  },
+  "0112596763": {
+    "semester": "GANJIL",
+    "nama": "MUH.YASIN BUSRAH",
+    "kelas": "X.7"
+  },
+  "0116686126": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD AL FATIR",
+    "kelas": "X.7"
+  },
+  "0111242946": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ASSIDDIQIE AL FIRDAUS",
+    "kelas": "X.7"
+  },
+  "0115592864": {
+    "semester": "GANJIL",
+    "nama": "NADILA NATRA",
+    "kelas": "X.7"
+  },
+  "0117809707": {
+    "semester": "GANJIL",
+    "nama": "NAZWA AULIA AZ-ZAHRA",
+    "kelas": "X.7"
+  },
+  "0111926843": {
+    "semester": "GANJIL",
+    "nama": "NUR ALYA",
+    "kelas": "X.7"
+  },
+  "0114752991": {
+    "semester": "GANJIL",
+    "nama": "NUR FATIMAH",
+    "kelas": "X.7"
+  },
+  "01010268959": {
+    "semester": "GANJIL",
+    "nama": "NUR JANNAH",
+    "kelas": "X.7"
+  },
+  "0119063002": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAKILA",
+    "kelas": "X.7"
+  },
+  "0102914595": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAZ WANI",
+    "kelas": "X.7"
+  },
+  "0109632027": {
+    "semester": "GANJIL",
+    "nama": "NUR UMMAIRAH",
+    "kelas": "X.7"
+  },
+  "0112836858": {
+    "semester": "GANJIL",
+    "nama": "NUR WAHIDA",
+    "kelas": "X.7"
+  },
+  "0116781991": {
+    "semester": "GANJIL",
+    "nama": "NURFATIN SYAHIRA",
+    "kelas": "X.7"
+  },
+  "0112015300": {
+    "semester": "GANJIL",
+    "nama": "RADIANFAL ALFIAN R YANDEDAY",
+    "kelas": "X.7"
+  },
+  "0117935399": {
+    "semester": "GANJIL",
+    "nama": "SALSABILAH",
+    "kelas": "X.7"
+  },
+  "0119846158": {
+    "semester": "GANJIL",
+    "nama": "SITTI FATIMAH",
+    "kelas": "X.7"
+  },
+  "0118644119": {
+    "semester": "GANJIL",
+    "nama": "ABD RASID",
+    "kelas": "X.8"
+  },
+  "0116117137": {
+    "semester": "GANJIL",
+    "nama": "AHMAD RENALDI S",
+    "kelas": "X.8"
+  },
+  "0104370269": {
+    "semester": "GANJIL",
+    "nama": "ALFIYYAH NABILAH TAHIR",
+    "kelas": "X.8"
+  },
+  "0111585954": {
+    "semester": "GANJIL",
+    "nama": "AMELIA",
+    "kelas": "X.8"
+  },
+  "0106557802": {
+    "semester": "GANJIL",
+    "nama": "ANDIKA",
+    "kelas": "X.8"
+  },
+  "0105932201": {
+    "semester": "GANJIL",
+    "nama": "ARINA ALHIDAYAH",
+    "kelas": "X.8"
+  },
+  "0115912992": {
+    "semester": "GANJIL",
+    "nama": "AYU NINGSIH",
+    "kelas": "X.8"
+  },
+  "0107462762": {
+    "semester": "GANJIL",
+    "nama": "AYU WIDIYA",
+    "kelas": "X.8"
+  },
+  "0118570161": {
+    "semester": "GANJIL",
+    "nama": "ELYA AZZHRA",
+    "kelas": "X.8"
+  },
+  "0106100622": {
+    "semester": "GANJIL",
+    "nama": "FIQRI RAMADHAN",
+    "kelas": "X.8"
+  },
+  "0105575796": {
+    "semester": "GANJIL",
+    "nama": "HENRA SETIYAWAN",
+    "kelas": "X.8"
+  },
+  "0114629092": {
+    "semester": "GANJIL",
+    "nama": "M.NAZRIL ILHAM",
+    "kelas": "X.8"
+  },
+  "0111571141": {
+    "semester": "GANJIL",
+    "nama": "MUH ANSWAR",
+    "kelas": "X.8"
+  },
+  "0117536030": {
+    "semester": "GANJIL",
+    "nama": "MUH SAFI'I",
+    "kelas": "X.8"
+  },
+  "0103773236": {
+    "semester": "GANJIL",
+    "nama": "MUH. AL GAZALI",
+    "kelas": "X.8"
+  },
+  "0115268898": {
+    "semester": "GANJIL",
+    "nama": "MUH.ZUL JALALI WAL IQRA",
+    "kelas": "X.8"
+  },
+  "0108290671": {
+    "semester": "GANJIL",
+    "nama": "NAZRIL",
+    "kelas": "X.8"
+  },
+  "0115216546": {
+    "semester": "GANJIL",
+    "nama": "NUR AULIA",
+    "kelas": "X.8"
+  },
+  "0117662018": {
+    "semester": "GANJIL",
+    "nama": "NUR AZIZA",
+    "kelas": "X.8"
+  },
+  "0105441326": {
+    "semester": "GANJIL",
+    "nama": "NURHALISHA",
+    "kelas": "X.8"
+  },
+  "0098143839": {
+    "semester": "GANJIL",
+    "nama": "NURSUHANA",
+    "kelas": "X.8"
+  },
+  "0112715113": {
+    "semester": "GANJIL",
+    "nama": "NURUL NATASYA",
+    "kelas": "X.8"
+  },
+  "0105906258": {
+    "semester": "GANJIL",
+    "nama": "PUTRI ADHELIA NORIS",
+    "kelas": "X.8"
+  },
+  "0106445655": {
+    "semester": "GANJIL",
+    "nama": "REZKIANA",
+    "kelas": "X.8"
+  },
+  "0105270657": {
+    "semester": "GANJIL",
+    "nama": "SAKTIAWAN",
+    "kelas": "X.8"
+  },
+  "0091401973": {
+    "semester": "GANJIL",
+    "nama": "AMIRUL HADI TUWO",
+    "kelas": "XI.1"
+  },
+  "0102427467": {
+    "semester": "GANJIL",
+    "nama": "DELVI",
+    "kelas": "XI.1"
+  },
+  "0102167380": {
+    "semester": "GANJIL",
+    "nama": "FARHANA ANAS",
+    "kelas": "XI.1"
+  },
+  "0104215594": {
+    "semester": "GANJIL",
+    "nama": "INAYAH ZAHRA AULIYA",
+    "kelas": "XI.1"
+  },
+  "0092605824": {
+    "semester": "GANJIL",
+    "nama": "JIHAN NUR AFIFA",
+    "kelas": "XI.1"
+  },
+  "0109230498": {
+    "semester": "GANJIL",
+    "nama": "KHAIRAH NAJWA LENGKANG",
+    "kelas": "XI.1"
+  },
+  "0094843455": {
+    "semester": "GANJIL",
+    "nama": "LULU LATIFA A.PALLAJARANG",
+    "kelas": "XI.1"
+  },
+  "0103457367": {
+    "semester": "GANJIL",
+    "nama": "MIFTA ARIYIN MALLARANGI",
+    "kelas": "XI.1"
+  },
+  "0109956563": {
+    "semester": "GANJIL",
+    "nama": "MUH. HAJAR ASWADT",
+    "kelas": "XI.1"
+  },
+  "0103730660": {
+    "semester": "GANJIL",
+    "nama": "MUH. PAHRUL",
+    "kelas": "XI.1"
+  },
+  "0108812038": {
+    "semester": "GANJIL",
+    "nama": "MUH. RASYA",
+    "kelas": "XI.1"
+  },
+  "0092609087": {
+    "semester": "GANJIL",
+    "nama": "MUH. SATRIA MAHAPUTRA",
+    "kelas": "XI.1"
+  },
+  "0095352110": {
+    "semester": "GANJIL",
+    "nama": "MUH. YUSUF RAHMAN AHMAD",
+    "kelas": "XI.1"
+  },
+  "0095937605": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ADAM ASHRAF",
+    "kelas": "XI.1"
+  },
+  "0098013765": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ADLAN JASWADI",
+    "kelas": "XI.1"
+  },
+  "0096085526": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ARDAN SAPUTRA",
+    "kelas": "XI.1"
+  },
+  "0107483898": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FADHIL FAITH",
+    "kelas": "XI.1"
+  },
+  "0102655925": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FADHIL IBRAHIM",
+    "kelas": "XI.1"
+  },
+  "0089444113": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD HILMI KHADZIM",
+    "kelas": "XI.1"
+  },
+  "0095921382": {
+    "semester": "GANJIL",
+    "nama": "NANDA AULIA",
+    "kelas": "XI.1"
+  },
+  "0104177542": {
+    "semester": "GANJIL",
+    "nama": "NAURAH AFIFAH",
+    "kelas": "XI.1"
+  },
+  "0108355551": {
+    "semester": "GANJIL",
+    "nama": "NUR APNI ARIS",
+    "kelas": "XI.1"
+  },
+  "0105479191": {
+    "semester": "GANJIL",
+    "nama": "NUR ASMIRA",
+    "kelas": "XI.1"
+  },
+  "0104671961": {
+    "semester": "GANJIL",
+    "nama": "PAJAR SIDIK",
+    "kelas": "XI.1"
+  },
+  "0101880425": {
+    "semester": "GANJIL",
+    "nama": "PUPUT ANGRENI",
+    "kelas": "XI.1"
+  },
+  "0107489089": {
+    "semester": "GANJIL",
+    "nama": "RANGGA YUDHA PRATAMA",
+    "kelas": "XI.1"
+  },
+  "0103186324": {
+    "semester": "GANJIL",
+    "nama": "SITI KOMARIAH",
+    "kelas": "XI.1"
+  },
+  "0107605804": {
+    "semester": "GANJIL",
+    "nama": "SYAFIRA BT AHMAD",
+    "kelas": "XI.1"
+  },
+  "0109065216": {
+    "semester": "GANJIL",
+    "nama": "SYAHRATUL SYTA",
+    "kelas": "XI.1"
+  },
+  "0105307559": {
+    "semester": "GANJIL",
+    "nama": "SYAZWANA AZZAHRA",
+    "kelas": "XI.1"
+  },
+  "0101717234": {
+    "semester": "GANJIL",
+    "nama": "FAHRI MAUHLIDAN",
+    "kelas": "XI.1"
+  },
+  "0096231929": {
+    "semester": "GANJIL",
+    "nama": "ALDY SAPUTRA",
+    "kelas": "XI.2"
+  },
+  "0103714827": {
+    "semester": "GANJIL",
+    "nama": "ANDINI",
+    "kelas": "XI.2"
+  },
+  "0106715431": {
+    "semester": "GANJIL",
+    "nama": "ANISA ZAHRANI",
+    "kelas": "XI.2"
+  },
+  "0084605599": {
+    "semester": "GANJIL",
+    "nama": "ARIEL. M",
+    "kelas": "XI.2"
+  },
+  "0107480370": {
+    "semester": "GANJIL",
+    "nama": "ATIMATUL ZAHRA",
+    "kelas": "XI.2"
+  },
+  "0095031001": {
+    "semester": "GANJIL",
+    "nama": "AULIA NUR AHRAENI",
+    "kelas": "XI.2"
+  },
+  "0097228766": {
+    "semester": "GANJIL",
+    "nama": "DAFA AL FAHREZA SAHRIR",
+    "kelas": "XI.2"
+  },
+  "0093866142": {
+    "semester": "GANJIL",
+    "nama": "FAJARUDDIN",
+    "kelas": "XI.2"
+  },
+  "0106371241": {
+    "semester": "GANJIL",
+    "nama": "M. PATIR MUBARAK",
+    "kelas": "XI.2"
+  },
+  "0106185404": {
+    "semester": "GANJIL",
+    "nama": "MIFTAHHUL JANNAH",
+    "kelas": "XI.2"
+  },
+  "0108907740": {
+    "semester": "GANJIL",
+    "nama": "MIFTAHUL JANNAH",
+    "kelas": "XI.2"
+  },
+  "0102379998": {
+    "semester": "GANJIL",
+    "nama": "MIFTAHUL KHAYRUNNISA",
+    "kelas": "XI.2"
+  },
+  "0103316602": {
+    "semester": "GANJIL",
+    "nama": "MUH. AKMAL",
+    "kelas": "XI.2"
+  },
+  "0102493042": {
+    "semester": "GANJIL",
+    "nama": "MUH. AZRIY AZRAN",
+    "kelas": "XI.2"
+  },
+  "0104498452": {
+    "semester": "GANJIL",
+    "nama": "MUH. SANDY",
+    "kelas": "XI.2"
+  },
+  "0093103303": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAUZAN ILHAM",
+    "kelas": "XI.2"
+  },
+  "0092999944": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD HIDAYATULLAH",
+    "kelas": "XI.2"
+  },
+  "0091306673": {
+    "semester": "GANJIL",
+    "nama": "NUR AENI",
+    "kelas": "XI.2"
+  },
+  "0103173882": {
+    "semester": "GANJIL",
+    "nama": "NUR AISYA",
+    "kelas": "XI.2"
+  },
+  "0099394367": {
+    "semester": "GANJIL",
+    "nama": "NUR ASYA",
+    "kelas": "XI.2"
+  },
+  "0103503402": {
+    "semester": "GANJIL",
+    "nama": "NUR FADHILAH RAMADHANI",
+    "kelas": "XI.2"
+  },
+  "0095712134": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAHIDAH",
+    "kelas": "XI.2"
+  },
+  "0098552367": {
+    "semester": "GANJIL",
+    "nama": "NURFADILLA",
+    "kelas": "XI.2"
+  },
+  "0094744422": {
+    "semester": "GANJIL",
+    "nama": "NURHIKMA",
+    "kelas": "XI.2"
+  },
+  "0106743627": {
+    "semester": "GANJIL",
+    "nama": "SYAHRA NUR AISYAH",
+    "kelas": "XI.2"
+  },
+  "0099012327": {
+    "semester": "GANJIL",
+    "nama": "MICHAEL DELANO",
+    "kelas": "XI.2"
+  },
+  "0106549292": {
+    "semester": "GANJIL",
+    "nama": "ABDUL RAHMAN",
+    "kelas": "XI.3"
+  },
+  "0108699117": {
+    "semester": "GANJIL",
+    "nama": "AIDIL RUSLI TANRO",
+    "kelas": "XI.3"
+  },
+  "0092058932": {
+    "semester": "GANJIL",
+    "nama": "ALWI SYAMSUL",
+    "kelas": "XI.3"
+  },
+  "0093829548": {
+    "semester": "GANJIL",
+    "nama": "ARDIANA",
+    "kelas": "XI.3"
+  },
+  "0102794481": {
+    "semester": "GANJIL",
+    "nama": "ARSY SYARIF",
+    "kelas": "XI.3"
+  },
+  "0091799250": {
+    "semester": "GANJIL",
+    "nama": "AUREL ANASTASYA",
+    "kelas": "XI.3"
+  },
+  "0093228603": {
+    "semester": "GANJIL",
+    "nama": "FAUZIA",
+    "kelas": "XI.3"
+  },
+  "0095887640": {
+    "semester": "GANJIL",
+    "nama": "HAFIZAH AWALIYA",
+    "kelas": "XI.3"
+  },
+  "0099126043": {
+    "semester": "GANJIL",
+    "nama": "HASMA. H",
+    "kelas": "XI.3"
+  },
+  "0093831590": {
+    "semester": "GANJIL",
+    "nama": "ILDI SYAMDI",
+    "kelas": "XI.3"
+  },
+  "0092888217": {
+    "semester": "GANJIL",
+    "nama": "MUH. FAHRY RAMADHAN",
+    "kelas": "XI.3"
+  },
+  "0096263130": {
+    "semester": "GANJIL",
+    "nama": "MUH. MASDAR USMAN",
+    "kelas": "XI.3"
+  },
+  "0099220839": {
+    "semester": "GANJIL",
+    "nama": "MUH. RAFLY",
+    "kelas": "XI.3"
+  },
+  "0106316280": {
+    "semester": "GANJIL",
+    "nama": "MUH.FIRDAUS.D",
+    "kelas": "XI.3"
+  },
+  "0091746957": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD RAIHAN BADO",
+    "kelas": "XI.3"
+  },
+  "0096585904": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD REIHAN",
+    "kelas": "XI.3"
+  },
+  "0102748809": {
+    "semester": "GANJIL",
+    "nama": "NUR AISYA",
+    "kelas": "XI.3"
+  },
+  "0101523405": {
+    "semester": "GANJIL",
+    "nama": "NUR FAIZAH",
+    "kelas": "XI.3"
+  },
+  "0083633117": {
+    "semester": "GANJIL",
+    "nama": "NUR GALBI",
+    "kelas": "XI.3"
+  },
+  "0105332970": {
+    "semester": "GANJIL",
+    "nama": "NUR PAIZA",
+    "kelas": "XI.3"
+  },
+  "0104422342": {
+    "semester": "GANJIL",
+    "nama": "SITTI NURVASHYLA",
+    "kelas": "XI.3"
+  },
+  "0101336033": {
+    "semester": "GANJIL",
+    "nama": "NUR ZIDA SYAHIRAH",
+    "kelas": "XI.3"
+  },
+  "0104035768": {
+    "semester": "GANJIL",
+    "nama": "NURUL AUREL KHUMAIRAH",
+    "kelas": "XI.3"
+  },
+  "0092876159": {
+    "semester": "GANJIL",
+    "nama": "RAHMAT",
+    "kelas": "XI.3"
+  },
+  "0104930092": {
+    "semester": "GANJIL",
+    "nama": "RAMA SAPUTRA",
+    "kelas": "XI.3"
+  },
+  "0096274884": {
+    "semester": "GANJIL",
+    "nama": "RIAN",
+    "kelas": "XI.3"
+  },
+  "0092347597": {
+    "semester": "GANJIL",
+    "nama": "RIFKY",
+    "kelas": "XI.3"
+  },
+  "0092118079": {
+    "semester": "GANJIL",
+    "nama": "SETI NUR",
+    "kelas": "XI.3"
+  },
+  "0095645216": {
+    "semester": "GANJIL",
+    "nama": "SRI HINAYAH",
+    "kelas": "XI.3"
+  },
+  "0094441455": {
+    "semester": "GANJIL",
+    "nama": "ZAFITRA RAMADHANI",
+    "kelas": "XI.3"
+  },
+  "0103799767": {
+    "semester": "GANJIL",
+    "nama": "ZULFIKAR",
+    "kelas": "XI.3"
+  },
+  "0109890096": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALIF",
+    "kelas": "XI.3"
+  },
+  "0106782429": {
+    "semester": "GANJIL",
+    "nama": "AHMAD CHAIRIL",
+    "kelas": "XI.4"
+  },
+  "0098141477": {
+    "semester": "GANJIL",
+    "nama": "AGUS PRASETYO.B",
+    "kelas": "XI.4"
+  },
+  "0095336699": {
+    "semester": "GANJIL",
+    "nama": "AKBAR ARIFIN",
+    "kelas": "XI.4"
+  },
+  "0102867716": {
+    "semester": "GANJIL",
+    "nama": "ALWIYAH",
+    "kelas": "XI.4"
+  },
+  "0091569010": {
+    "semester": "GANJIL",
+    "nama": "AMIRAH",
+    "kelas": "XI.4"
+  },
+  "0097782487": {
+    "semester": "GANJIL",
+    "nama": "ASLAM MAULANA",
+    "kelas": "XI.4"
+  },
+  "0104121154": {
+    "semester": "GANJIL",
+    "nama": "ASRAM",
+    "kelas": "XI.4"
+  },
+  "0094865478": {
+    "semester": "GANJIL",
+    "nama": "FIKI",
+    "kelas": "XI.4"
+  },
+  "0095723609": {
+    "semester": "GANJIL",
+    "nama": "KASMAWATI",
+    "kelas": "XI.4"
+  },
+  "0104866347": {
+    "semester": "GANJIL",
+    "nama": "KHAERUNNISA",
+    "kelas": "XI.4"
+  },
+  "0106817712": {
+    "semester": "GANJIL",
+    "nama": "KHUSNUL KHATIMA",
+    "kelas": "XI.4"
+  },
+  "0101311525": {
+    "semester": "GANJIL",
+    "nama": "MUH. ALFIAN",
+    "kelas": "XI.4"
+  },
+  "0097860457": {
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL",
+    "kelas": "XI.4"
+  },
+  "0104699338": {
+    "semester": "GANJIL",
+    "nama": "MUH. ISRA",
+    "kelas": "XI.4"
+  },
+  "0107877317": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALI IMRAN",
+    "kelas": "XI.4"
+  },
+  "0097286797": {
+    "semester": "GANJIL",
+    "nama": "MUHRIMA",
+    "kelas": "XI.4"
+  },
+  "0108486796": {
+    "semester": "GANJIL",
+    "nama": "NUR AINI BT FARID",
+    "kelas": "XI.4"
+  },
+  "0105087855": {
+    "semester": "GANJIL",
+    "nama": "NUR ATASYA",
+    "kelas": "XI.4"
+  },
+  "0104614609": {
+    "semester": "GANJIL",
+    "nama": "NUR AZIZAH",
+    "kelas": "XI.4"
+  },
+  "0102878794": {
+    "semester": "GANJIL",
+    "nama": "NUR ZYAKILAH REGINA PUTRI",
+    "kelas": "XI.4"
+  },
+  "0109882849": {
+    "semester": "GANJIL",
+    "nama": "NURUL SYUHADA",
+    "kelas": "XI.4"
+  },
+  "0094670285": {
+    "semester": "GANJIL",
+    "nama": "RAHMAT HIDAYAT",
+    "kelas": "XI.4"
+  },
+  "0095932045": {
+    "semester": "GANJIL",
+    "nama": "SASKI AMALIYAH",
+    "kelas": "XI.4"
+  },
+  "0109743988": {
+    "semester": "GANJIL",
+    "nama": "SHAQILA PUTERI MAHARANI",
+    "kelas": "XI.4"
+  },
+  "0103555751": {
+    "semester": "GANJIL",
+    "nama": "NUR SYAFIKA",
+    "kelas": "XI.4"
+  },
+  "0091809707": {
+    "semester": "GANJIL",
+    "nama": "SRI ALYA ALI",
+    "kelas": "XI.4"
+  },
+  "0094873722": {
+    "semester": "GANJIL",
+    "nama": "TYA RAHMITA",
+    "kelas": "XI.4"
+  },
+  "0106024786": {
+    "semester": "GANJIL",
+    "nama": "ZHINY VELICA NAJLA AILYA",
+    "kelas": "XI.4"
+  },
+  "0098240006": {
+    "semester": "GANJIL",
+    "nama": "AFA SYERA ASILA",
+    "kelas": "XI.5"
+  },
+  "0104215724": {
+    "semester": "GANJIL",
+    "nama": "AHLIM ADIFAN",
+    "kelas": "XI.5"
+  },
+  "0094196811": {
+    "semester": "GANJIL",
+    "nama": "ANDI AIZAH HANONO",
+    "kelas": "XI.5"
+  },
+  "0109908567": {
+    "semester": "GANJIL",
+    "nama": "ASYIFAH KALILA SAHIR",
+    "kelas": "XI.5"
+  },
+  "0104100099": {
+    "semester": "GANJIL",
+    "nama": "AYIRUL",
+    "kelas": "XI.5"
+  },
+  "0101900531": {
+    "semester": "GANJIL",
+    "nama": "AYUNI MUFIDAH",
+    "kelas": "XI.5"
+  },
+  "0098067395": {
+    "semester": "GANJIL",
+    "nama": "DIA CANTIKA LUTHFIAH",
+    "kelas": "XI.5"
+  },
+  "0108542052": {
+    "semester": "GANJIL",
+    "nama": "DIZA ADILA FITRI",
+    "kelas": "XI.5"
+  },
+  "0097757736": {
+    "semester": "GANJIL",
+    "nama": "IFFAH FARAH NABILA",
+    "kelas": "XI.5"
+  },
+  "0096005418": {
+    "semester": "GANJIL",
+    "nama": "JULIANA",
+    "kelas": "XI.5"
+  },
+  "0091885926": {
+    "semester": "GANJIL",
+    "nama": "KEVIN KAMARUDDING",
+    "kelas": "XI.5"
+  },
+  "0101631672": {
+    "semester": "GANJIL",
+    "nama": "MUH. ADHIT SAPUTRA",
+    "kelas": "XI.5"
+  },
+  "0095730612": {
+    "semester": "GANJIL",
+    "nama": "MUH. FADIL",
+    "kelas": "XI.5"
+  },
+  "0101594631": {
+    "semester": "GANJIL",
+    "nama": "MUH. ILHAM",
+    "kelas": "XI.5"
+  },
+  "0097287243": {
+    "semester": "GANJIL",
+    "nama": "MUH. LUTFHI",
+    "kelas": "XI.5"
+  },
+  "0094338383": {
+    "semester": "GANJIL",
+    "nama": "MUH.RISAL",
+    "kelas": "XI.5"
+  },
+  "0096384118": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAUZI ILHAM",
+    "kelas": "XI.5"
+  },
+  "0105201888": {
+    "semester": "GANJIL",
+    "nama": "NASRIL ILHAM RAMADHAN",
+    "kelas": "XI.5"
+  },
+  "0092778831": {
+    "semester": "GANJIL",
+    "nama": "NILAM CAHYA",
+    "kelas": "XI.5"
+  },
+  "0092204373": {
+    "semester": "GANJIL",
+    "nama": "NURUL SHAFA",
+    "kelas": "XI.5"
+  },
+  "0096718389": {
+    "semester": "GANJIL",
+    "nama": "PUAN MAHARANI",
+    "kelas": "XI.5"
+  },
+  "0106957218": {
+    "semester": "GANJIL",
+    "nama": "RAHMAT",
+    "kelas": "XI.5"
+  },
+  "0101625305": {
+    "semester": "GANJIL",
+    "nama": "RARA RAHMADANI",
+    "kelas": "XI.5"
+  },
+  "0094083155": {
+    "semester": "GANJIL",
+    "nama": "RESKI AMALIA",
+    "kelas": "XI.5"
+  },
+  "0108531734": {
+    "semester": "GANJIL",
+    "nama": "SINAR MUSTIKA",
+    "kelas": "XI.5"
+  },
+  "0102580691": {
+    "semester": "GANJIL",
+    "nama": "SITI AMINAH",
+    "kelas": "XI.5"
+  },
+  "0101007640": {
+    "semester": "GANJIL",
+    "nama": "SITI NUR AISYA",
+    "kelas": "XI.5"
+  },
+  "0104645972": {
+    "semester": "GANJIL",
+    "nama": "SYAHRANI",
+    "kelas": "XI.5"
+  },
+  "0107751124": {
+    "semester": "GANJIL",
+    "nama": "ANISA UMAR",
+    "kelas": "XI.6"
+  },
+  "0099864617": {
+    "semester": "GANJIL",
+    "nama": "ARIL",
+    "kelas": "XI.6"
+  },
+  "0098970396": {
+    "semester": "GANJIL",
+    "nama": "AURA SYIPA",
+    "kelas": "XI.6"
+  },
+  "0106511673": {
+    "semester": "GANJIL",
+    "nama": "FATHIR DWI PUTRA",
+    "kelas": "XI.6"
+  },
+  "0109988487": {
+    "semester": "GANJIL",
+    "nama": "HENDRA ADITYA SAPUTRA",
+    "kelas": "XI.6"
+  },
+  "0096968965": {
+    "semester": "GANJIL",
+    "nama": "INDRA KURNIAWAN",
+    "kelas": "XI.6"
+  },
+  "0094539642": {
+    "semester": "GANJIL",
+    "nama": "LISMA",
+    "kelas": "XI.6"
+  },
+  "0104262842": {
+    "semester": "GANJIL",
+    "nama": "MAWAR PAIRI'",
+    "kelas": "XI.6"
+  },
+  "0102394932": {
+    "semester": "GANJIL",
+    "nama": "MUH. FAHRI",
+    "kelas": "XI.6"
+  },
+  "0092855611": {
+    "semester": "GANJIL",
+    "nama": "MUH. IKHSAN RAMADHAN",
+    "kelas": "XI.6"
+  },
+  "0108436647": {
+    "semester": "GANJIL",
+    "nama": "MUH. ILHAM RIANTO",
+    "kelas": "XI.6"
+  },
+  "0093940960": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAHRI",
+    "kelas": "XI.6"
+  },
+  "0092011300": {
+    "semester": "GANJIL",
+    "nama": "MUSLIMA",
+    "kelas": "XI.6"
+  },
+  "076052576": {
+    "semester": "GANJIL",
+    "nama": "NASRIANI",
+    "kelas": "XI.6"
+  },
+  "0094572583": {
+    "semester": "GANJIL",
+    "nama": "NIRWANA",
+    "kelas": "XI.6"
+  },
+  "0092791514": {
+    "semester": "GANJIL",
+    "nama": "NUR FADYLAWATI",
+    "kelas": "XI.6"
+  },
+  "0092057149": {
+    "semester": "GANJIL",
+    "nama": "NUR HIKMAWATI",
+    "kelas": "XI.6"
+  },
+  "0098284072": {
+    "semester": "GANJIL",
+    "nama": "NURHIDAYAH",
+    "kelas": "XI.6"
+  },
+  "0101962933": {
+    "semester": "GANJIL",
+    "nama": "PUTRI DAMAYANTI",
+    "kelas": "XI.6"
+  },
+  "0093130818": {
+    "semester": "GANJIL",
+    "nama": "RAHIMA",
+    "kelas": "XI.6"
+  },
+  "0105249445": {
+    "semester": "GANJIL",
+    "nama": "SHINTIAH",
+    "kelas": "XI.6"
+  },
+  "0102252548": {
+    "semester": "GANJIL",
+    "nama": "SILFA DAMAYANTI",
+    "kelas": "XI.6"
+  },
+  "0093133613": {
+    "semester": "GANJIL",
+    "nama": "SITI NOOR AENI",
+    "kelas": "XI.6"
+  },
+  "0109815633": {
+    "semester": "GANJIL",
+    "nama": "SUCI RAHMADANI",
+    "kelas": "XI.6"
+  },
+  "0096556928": {
+    "semester": "GANJIL",
+    "nama": "SULTAN",
+    "kelas": "XI.6"
+  },
+  "0091039731": {
+    "semester": "GANJIL",
+    "nama": "USMAN THALIB",
+    "kelas": "XI.6"
+  },
+  "0102738436": {
+    "semester": "GANJIL",
+    "nama": "WANDA",
+    "kelas": "XI.6"
+  },
+  "0108735016": {
+    "semester": "GANJIL",
+    "nama": "AHMAD SYAMSANULLAH",
+    "kelas": "XI.7"
+  },
+  "0091211516": {
+    "semester": "GANJIL",
+    "nama": "AISYAH ZAHRAH",
+    "kelas": "XI.7"
+  },
+  "0092442767": {
+    "semester": "GANJIL",
+    "nama": "AJID ARAMAY",
+    "kelas": "XI.7"
+  },
+  "0102958950": {
+    "semester": "GANJIL",
+    "nama": "ANISA MUKTI",
+    "kelas": "XI.7"
+  },
+  "0107751795": {
+    "semester": "GANJIL",
+    "nama": "AYU RAHMA HASHAR",
+    "kelas": "XI.7"
+  },
+  "0091952125": {
+    "semester": "GANJIL",
+    "nama": "INDAH",
+    "kelas": "XI.7"
+  },
+  "0105929106": {
+    "semester": "GANJIL",
+    "nama": "IRIANI",
+    "kelas": "XI.7"
+  },
+  "0085339352": {
+    "semester": "GANJIL",
+    "nama": "IRMA",
+    "kelas": "XI.7"
+  },
+  "0053735329": {
+    "semester": "GANJIL",
+    "nama": "JUWANDA",
+    "kelas": "XI.7"
+  },
+  "0102901095": {
+    "semester": "GANJIL",
+    "nama": "KELVIN ERWIJAYA",
+    "kelas": "XI.7"
+  },
+  "0106873544": {
+    "semester": "GANJIL",
+    "nama": "KIKI ALFIAH KADIR",
+    "kelas": "XI.7"
+  },
+  "0095147634": {
+    "semester": "GANJIL",
+    "nama": "MUH. ASHRAF HAIQAL",
+    "kelas": "XI.7"
+  },
+  "0095673718": {
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL",
+    "kelas": "XI.7"
+  },
+  "0108759643": {
+    "semester": "GANJIL",
+    "nama": "MUH. SYAHRUL",
+    "kelas": "XI.7"
+  },
+  "0109856014": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALFIQRI",
+    "kelas": "XI.7"
+  },
+  "0102533117": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYAHREZA",
+    "kelas": "XI.7"
+  },
+  "0104726021": {
+    "semester": "GANJIL",
+    "nama": "MUQRIMAH TUN NISYA",
+    "kelas": "XI.7"
+  },
+  "0106641574": {
+    "semester": "GANJIL",
+    "nama": "NAJIRA",
+    "kelas": "XI.7"
+  },
+  "0094387076": {
+    "semester": "GANJIL",
+    "nama": "NASILA",
+    "kelas": "XI.7"
+  },
+  "0094603381": {
+    "semester": "GANJIL",
+    "nama": "NUR ALYAH USMAN",
+    "kelas": "XI.7"
+  },
+  "0106975413": {
+    "semester": "GANJIL",
+    "nama": "NUR KHALIZAH. D",
+    "kelas": "XI.7"
+  },
+  "0102346082": {
+    "semester": "GANJIL",
+    "nama": "NURAMELIA",
+    "kelas": "XI.7"
+  },
+  "0106402073": {
+    "semester": "GANJIL",
+    "nama": "NURHAFIZAH ABBAS",
+    "kelas": "XI.7"
+  },
+  "0101614382": {
+    "semester": "GANJIL",
+    "nama": "NURLELA YUNITA",
+    "kelas": "XI.7"
+  },
+  "0103754217": {
+    "semester": "GANJIL",
+    "nama": "NURUL AZKIAH",
+    "kelas": "XI.7"
+  },
+  "0099585933": {
+    "semester": "GANJIL",
+    "nama": "PATIMA AL AMIN",
+    "kelas": "XI.7"
+  },
+  "0103689698": {
+    "semester": "GANJIL",
+    "nama": "PUTRA ABYAN",
+    "kelas": "XI.7"
+  },
+  "0106332699": {
+    "semester": "GANJIL",
+    "nama": "REHAN TRI PUTRA WAWAN",
+    "kelas": "XI.7"
+  },
+  "0102831134": {
+    "semester": "GANJIL",
+    "nama": "URWA ASRA MIRAJE",
+    "kelas": "XI.7"
+  },
+  "0087363555": {
+    "semester": "GANJIL",
+    "nama": "YANTI",
+    "kelas": "XI.7"
+  },
+  "0082319839": {
+    "semester": "GANJIL",
+    "nama": "AHMAD FAUZAN",
+    "kelas": "XII.1"
+  },
+  "0091910951": {
+    "semester": "GANJIL",
+    "nama": "ALIF ANUGRA",
+    "kelas": "XII.1"
+  },
+  "0082513050": {
+    "semester": "GANJIL",
+    "nama": "ASRULLAH",
+    "kelas": "XII.1"
+  },
+  "0095650465": {
+    "semester": "GANJIL",
+    "nama": "AURA TRI SULTAN",
+    "kelas": "XII.1"
+  },
+  "0093073275": {
+    "semester": "GANJIL",
+    "nama": "CITRA THAMRIN",
+    "kelas": "XII.1"
+  },
+  "0098969830": {
+    "semester": "GANJIL",
+    "nama": "DINDA ANGRENI",
+    "kelas": "XII.1"
+  },
+  "0099825823": {
+    "semester": "GANJIL",
+    "nama": "HAFZA AULIA NINGSI M.",
+    "kelas": "XII.1"
+  },
+  "0072608407": {
+    "semester": "GANJIL",
+    "nama": "HALIAH AMANAH",
+    "kelas": "XII.1"
+  },
+  "0098366116": {
+    "semester": "GANJIL",
+    "nama": "KASMAWATI",
+    "kelas": "XII.1"
+  },
+  "0088782946": {
+    "semester": "GANJIL",
+    "nama": "NASRULLAH",
+    "kelas": "XII.1"
+  },
+  "0084234560": {
+    "semester": "GANJIL",
+    "nama": "MUH. AFDAL APRILANSYAH",
+    "kelas": "XII.1"
+  },
+  "0096668744": {
+    "semester": "GANJIL",
+    "nama": "MUH. AKBAR",
+    "kelas": "XII.1"
+  },
+  "0082801247": {
+    "semester": "GANJIL",
+    "nama": "MUH. DANIS ISMAIL",
+    "kelas": "XII.1"
+  },
+  "0084733166": {
+    "semester": "GANJIL",
+    "nama": "MUH. FAREL",
+    "kelas": "XII.1"
+  },
+  "0096711159": {
+    "semester": "GANJIL",
+    "nama": "MUH. RIZKY ALFATTAH",
+    "kelas": "XII.1"
+  },
+  "0093690319": {
+    "semester": "GANJIL",
+    "nama": "NAJWA AZISA",
+    "kelas": "XII.1"
+  },
+  "0098346157": {
+    "semester": "GANJIL",
+    "nama": "NUR HALISA S.",
+    "kelas": "XII.1"
+  },
+  "0093369401": {
+    "semester": "GANJIL",
+    "nama": "NUR JANNA",
+    "kelas": "XII.1"
+  },
+  "0095424994": {
+    "semester": "GANJIL",
+    "nama": "PUTRI AISYAH",
+    "kelas": "XII.1"
+  },
+  "0093777287": {
+    "semester": "GANJIL",
+    "nama": "RASTI AZIS",
+    "kelas": "XII.1"
+  },
+  "0093977088": {
+    "semester": "GANJIL",
+    "nama": "RESKY YULIANI",
+    "kelas": "XII.1"
+  },
+  "0092698459": {
+    "semester": "GANJIL",
+    "nama": "REZA ISMAIL",
+    "kelas": "XII.1"
+  },
+  "0081381340": {
+    "semester": "GANJIL",
+    "nama": "RIZKI JAYA",
+    "kelas": "XII.1"
+  },
+  "0095961511": {
+    "semester": "GANJIL",
+    "nama": "SUKMA",
+    "kelas": "XII.1"
+  },
+  "0086498048": {
+    "semester": "GANJIL",
+    "nama": "YULAIKA PUTRI",
+    "kelas": "XII.1"
+  },
+  "0082977000": {
+    "semester": "GANJIL",
+    "nama": "AFGAN ZENESAH",
+    "kelas": "XII.2"
+  },
+  "0099557393": {
+    "semester": "GANJIL",
+    "nama": "ANITA NOVIANTI A.",
+    "kelas": "XII.2"
+  },
+  "0099861229": {
+    "semester": "GANJIL",
+    "nama": "AL FURQAM ARSAP",
+    "kelas": "XII.2"
+  },
+  "0092881664": {
+    "semester": "GANJIL",
+    "nama": "ARJUANSA",
+    "kelas": "XII.2"
+  },
+  "0081840979": {
+    "semester": "GANJIL",
+    "nama": "AYU RESKI SABRINA",
+    "kelas": "XII.2"
+  },
+  "0095278314": {
+    "semester": "GANJIL",
+    "nama": "AZZAH DZALLIFAH HASAN",
+    "kelas": "XII.2"
+  },
+  "0086857053": {
+    "semester": "GANJIL",
+    "nama": "DEVI SRIYANTI",
+    "kelas": "XII.2"
+  },
+  "0093752623": {
+    "semester": "GANJIL",
+    "nama": "FEBY FEBRIAH",
+    "kelas": "XII.2"
+  },
+  "0085869214": {
+    "semester": "GANJIL",
+    "nama": "FITRA DAYANTI",
+    "kelas": "XII.2"
+  },
+  "0095892625": {
+    "semester": "GANJIL",
+    "nama": "IKSAN",
+    "kelas": "XII.2"
+  },
+  "0099403060": {
+    "semester": "GANJIL",
+    "nama": "INTAN",
+    "kelas": "XII.2"
+  },
+  "0091070099": {
+    "semester": "GANJIL",
+    "nama": "KRISTIANO AGUNG RANTE TASAK",
+    "kelas": "XII.2"
+  },
+  "0099323798": {
+    "semester": "GANJIL",
+    "nama": "M. QAUSAR SAHUR",
+    "kelas": "XII.2"
+  },
+  "0096444885": {
+    "semester": "GANJIL",
+    "nama": "M. TAUFIQ HERNAN",
+    "kelas": "XII.2"
+  },
+  "0092570456": {
+    "semester": "GANJIL",
+    "nama": "MARSYA PUTRI",
+    "kelas": "XII.2"
+  },
+  "0097075312": {
+    "semester": "GANJIL",
+    "nama": "MELATI",
+    "kelas": "XII.2"
+  },
+  "0096998235": {
+    "semester": "GANJIL",
+    "nama": "MUH. FARID",
+    "kelas": "XII.2"
+  },
+  "0099123976": {
+    "semester": "GANJIL",
+    "nama": "MUH. MUHAIMIN",
+    "kelas": "XII.2"
+  },
+  "0095623594": {
+    "semester": "GANJIL",
+    "nama": "MUH.FAUZAN THAHIR",
+    "kelas": "XII.2"
+  },
+  "0085740505": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SAHRIL",
+    "kelas": "XII.2"
+  },
+  "0093650065": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYAIFUL",
+    "kelas": "XII.2"
+  },
+  "0091315521": {
+    "semester": "GANJIL",
+    "nama": "NABIL RAHMATULLAH",
+    "kelas": "XII.2"
+  },
+  "0091005720": {
+    "semester": "GANJIL",
+    "nama": "NUR HIKMA",
+    "kelas": "XII.2"
+  },
+  "0097132418": {
+    "semester": "GANJIL",
+    "nama": "NURHALIZAH",
+    "kelas": "XII.2"
+  },
+  "0084714959": {
+    "semester": "GANJIL",
+    "nama": "NURUL UMAIRA IZATI SAMIMI",
+    "kelas": "XII.2"
+  },
+  "0098373608": {
+    "semester": "GANJIL",
+    "nama": "PUTRI AMALIAH",
+    "kelas": "XII.2"
+  },
+  "0096852570": {
+    "semester": "GANJIL",
+    "nama": "QUMAIRAH",
+    "kelas": "XII.2"
+  },
+  "0094182798": {
+    "semester": "GANJIL",
+    "nama": "REHAN",
+    "kelas": "XII.2"
+  },
+  "0088500775": {
+    "semester": "GANJIL",
+    "nama": "RESTU ADITYA",
+    "kelas": "XII.2"
+  },
+  "0099235291": {
+    "semester": "GANJIL",
+    "nama": "RISMA. S",
+    "kelas": "XII.2"
+  },
+  "0093939017": {
+    "semester": "GANJIL",
+    "nama": "SAHMYRANDA WANDINI",
+    "kelas": "XII.2"
+  },
+  "0092089197": {
+    "semester": "GANJIL",
+    "nama": "WAHYU ANUGERAH",
+    "kelas": "XII.2"
+  },
+  "0095745305": {
+    "semester": "GANJIL",
+    "nama": "A.NAZRIL IHRAM",
+    "kelas": "XII.3"
+  },
+  "0086622136": {
+    "semester": "GANJIL",
+    "nama": "A. MUH.ABD.RAHMAN",
+    "kelas": "XII.3"
+  },
+  "0091413550": {
+    "semester": "GANJIL",
+    "nama": "ADRIAN",
+    "kelas": "XII.3"
+  },
+  "0097858861": {
+    "semester": "GANJIL",
+    "nama": "ALIF ARMANSYAH",
+    "kelas": "XII.3"
+  },
+  "0064151712": {
+    "semester": "GANJIL",
+    "nama": "ANIS SURAYA",
+    "kelas": "XII.3"
+  },
+  "0085322657": {
+    "semester": "GANJIL",
+    "nama": "BAIM",
+    "kelas": "XII.3"
+  },
+  "0095449422": {
+    "semester": "GANJIL",
+    "nama": "DEWI",
+    "kelas": "XII.3"
+  },
+  "0098867216": {
+    "semester": "GANJIL",
+    "nama": "ISA SAPUTRI",
+    "kelas": "XII.3"
+  },
+  "0097820457": {
+    "semester": "GANJIL",
+    "nama": "MAHARANI KAMALUDDIN",
+    "kelas": "XII.3"
+  },
+  "0098527970": {
+    "semester": "GANJIL",
+    "nama": "MUH AGUNG HIDAYAT",
+    "kelas": "XII.3"
+  },
+  "0095023715": {
+    "semester": "GANJIL",
+    "nama": "MUH. LUTHFY SALMAN",
+    "kelas": "XII.3"
+  },
+  "0098206808": {
+    "semester": "GANJIL",
+    "nama": "MUH. WAFIQ MAGSURA",
+    "kelas": "XII.3"
+  },
+  "0094455256": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ASSIDIQ",
+    "kelas": "XII.3"
+  },
+  "0082735698": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FIRMAN",
+    "kelas": "XII.3"
+  },
+  "0098610825": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD HASBI AS SHIDIQ",
+    "kelas": "XII.3"
+  },
+  "0084205521": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD IKHWAN SAFIE",
+    "kelas": "XII.3"
+  },
+  "0097865625": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD WILDAM",
+    "kelas": "XII.3"
+  },
+  "0096459817": {
+    "semester": "GANJIL",
+    "nama": "NAURAH KAMILAH ASYAM",
+    "kelas": "XII.3"
+  },
+  "0081975860": {
+    "semester": "GANJIL",
+    "nama": "NAZHAR",
+    "kelas": "XII.3"
+  },
+  "0088235530": {
+    "semester": "GANJIL",
+    "nama": "NUR FASILA",
+    "kelas": "XII.3"
+  },
+  "0092545077": {
+    "semester": "GANJIL",
+    "nama": "NUR WIDYANINGSIH",
+    "kelas": "XII.3"
+  },
+  "0092336386": {
+    "semester": "GANJIL",
+    "nama": "NURAINI",
+    "kelas": "XII.3"
+  },
+  "0094724021": {
+    "semester": "GANJIL",
+    "nama": "PUTRI AUREL RAMADHANI",
+    "kelas": "XII.3"
+  },
+  "0081207664": {
+    "semester": "GANJIL",
+    "nama": "RAHMANIAR.H",
+    "kelas": "XII.3"
+  },
+  "0099124362": {
+    "semester": "GANJIL",
+    "nama": "RIFQAH JAMAL",
+    "kelas": "XII.3"
+  },
+  "0096803886": {
+    "semester": "GANJIL",
+    "nama": "SALSABILA ISLAMIYAH",
+    "kelas": "XII.3"
+  },
+  "0087652144": {
+    "semester": "GANJIL",
+    "nama": "SHIREN ANDREA SAGITA",
+    "kelas": "XII.3"
+  },
+  "0098140407": {
+    "semester": "GANJIL",
+    "nama": "SRI SYARIFAINI",
+    "kelas": "XII.3"
+  },
+  "0082011209": {
+    "semester": "GANJIL",
+    "nama": "SYAFIKA KIRANIA",
+    "kelas": "XII.3"
+  },
+  "0097745301": {
+    "semester": "GANJIL",
+    "nama": "ZAHRA SAFRIANI",
+    "kelas": "XII.3"
+  },
+  "0092175768": {
+    "semester": "GANJIL",
+    "nama": "RAFI MAHDI",
+    "kelas": "XII.3"
+  },
+  "0081351356": {
+    "semester": "GANJIL",
+    "nama": "A. NANDA JIHAN PERMATASARI",
+    "kelas": "XII.4"
+  },
+  "0087065316": {
+    "semester": "GANJIL",
+    "nama": "AHMAD FHARIEL",
+    "kelas": "XII.4"
+  },
+  "0084291268": {
+    "semester": "GANJIL",
+    "nama": "AISYA KURMA RAMADHANI",
+    "kelas": "XII.4"
+  },
+  "0097637467": {
+    "semester": "GANJIL",
+    "nama": "ALFIAN MASRY",
+    "kelas": "XII.4"
+  },
+  "0082887020": {
+    "semester": "GANJIL",
+    "nama": "ASLAM SYA",
+    "kelas": "XII.4"
+  },
+  "0081903268": {
+    "semester": "GANJIL",
+    "nama": "AYATI SUARDI",
+    "kelas": "XII.4"
+  },
+  "0098877333": {
+    "semester": "GANJIL",
+    "nama": "BAYU DWI SETIAWAN",
+    "kelas": "XII.4"
+  },
+  "0084185950": {
+    "semester": "GANJIL",
+    "nama": "BRIGITA ALMARIO",
+    "kelas": "XII.4"
+  },
+  "0082780549": {
+    "semester": "GANJIL",
+    "nama": "HASRIANI YUVITA HAMID",
+    "kelas": "XII.4"
+  },
+  "0098999775": {
+    "semester": "GANJIL",
+    "nama": "IBNU ATTAMIMI AL FIRDAUS",
+    "kelas": "XII.4"
+  },
+  "0098676266": {
+    "semester": "GANJIL",
+    "nama": "IRFAN IS",
+    "kelas": "XII.4"
+  },
+  "0098080432": {
+    "semester": "GANJIL",
+    "nama": "KARTIKA MAULIA APRIANTI",
+    "kelas": "XII.4"
+  },
+  "0092622462": {
+    "semester": "GANJIL",
+    "nama": "KHALIL",
+    "kelas": "XII.4"
+  },
+  "0098956635": {
+    "semester": "GANJIL",
+    "nama": "MANOHARA RHATU ODELIA",
+    "kelas": "XII.4"
+  },
+  "0093157706": {
+    "semester": "GANJIL",
+    "nama": "MUH. AL FARIQ RUSLI",
+    "kelas": "XII.4"
+  },
+  "0081267240": {
+    "semester": "GANJIL",
+    "nama": "MUH. HARDI",
+    "kelas": "XII.4"
+  },
+  "0096237093": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD RISKI",
+    "kelas": "XII.4"
+  },
+  "0098986391": {
+    "semester": "GANJIL",
+    "nama": "NATASYA",
+    "kelas": "XII.4"
+  },
+  "0093248858": {
+    "semester": "GANJIL",
+    "nama": "NUR ASSYIFA SYAHIRA",
+    "kelas": "XII.4"
+  },
+  "0087013785": {
+    "semester": "GANJIL",
+    "nama": "NUR FAUZIAH W.",
+    "kelas": "XII.4"
+  },
+  "0094687537": {
+    "semester": "GANJIL",
+    "nama": "NUR SALIANA",
+    "kelas": "XII.4"
+  },
+  "0093033771": {
+    "semester": "GANJIL",
+    "nama": "NUR SOFHIYA",
+    "kelas": "XII.4"
+  },
+  "0095577250": {
+    "semester": "GANJIL",
+    "nama": "NURALYA SYAFIQAH",
+    "kelas": "XII.4"
+  },
+  "0087600232": {
+    "semester": "GANJIL",
+    "nama": "SAFIRA ORIZA",
+    "kelas": "XII.4"
+  },
+  "0081220752": {
+    "semester": "GANJIL",
+    "nama": "SATRIANI",
+    "kelas": "XII.4"
+  },
+  "0099667547": {
+    "semester": "GANJIL",
+    "nama": "SITTI NURUL AISYAH",
+    "kelas": "XII.4"
+  },
+  "0095718517": {
+    "semester": "GANJIL",
+    "nama": "SUBUHAN",
+    "kelas": "XII.4"
+  },
+  "0096416467": {
+    "semester": "GANJIL",
+    "nama": "SYAWAL",
+    "kelas": "XII.4"
+  },
+  "0092622577": {
+    "semester": "GANJIL",
+    "nama": "WILDA BURTI",
+    "kelas": "XII.4"
+  },
+  "0092275605": {
+    "semester": "GANJIL",
+    "nama": "ZHICA NUR ARIQAH",
+    "kelas": "XII.4"
+  },
+  "0097704528": {
+    "semester": "GANJIL",
+    "nama": "AHMAD ALFIN",
+    "kelas": "XII.5"
+  },
+  "0098936568": {
+    "semester": "GANJIL",
+    "nama": "AURA MEY HURAIRA. S",
+    "kelas": "XII.5"
+  },
+  "0098115477": {
+    "semester": "GANJIL",
+    "nama": "FARHAN IRAWAN",
+    "kelas": "XII.5"
+  },
+  "0096979793": {
+    "semester": "GANJIL",
+    "nama": "FINZA NURARIFANAZUA",
+    "kelas": "XII.5"
+  },
+  "0097864326": {
+    "semester": "GANJIL",
+    "nama": "INDAH ATTAYA ALTAFUNIZAH",
+    "kelas": "XII.5"
+  },
+  "0089123160": {
+    "semester": "GANJIL",
+    "nama": "JUMRIATI",
+    "kelas": "XII.5"
+  },
+  "0094936840": {
+    "semester": "GANJIL",
+    "nama": "MAHRANI",
+    "kelas": "XII.5"
+  },
+  "0092707497": {
+    "semester": "GANJIL",
+    "nama": "MAHSYA NUR FADILAH",
+    "kelas": "XII.5"
+  },
+  "0097768144": {
+    "semester": "GANJIL",
+    "nama": "MUH. DAVA BANGSAWAN SAH",
+    "kelas": "XII.5"
+  },
+  "0089646185": {
+    "semester": "GANJIL",
+    "nama": "MUH. FADLI",
+    "kelas": "XII.5"
+  },
+  "0098640318": {
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL",
+    "kelas": "XII.5"
+  },
+  "0084830584": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAREL",
+    "kelas": "XII.5"
+  },
+  "0083443152": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD YASSIN",
+    "kelas": "XII.5"
+  },
+  "0097197817": {
+    "semester": "GANJIL",
+    "nama": "NUR HIKMAH HIDAYAH",
+    "kelas": "XII.5"
+  },
+  "0082990694": {
+    "semester": "GANJIL",
+    "nama": "NUR OKTAVIA",
+    "kelas": "XII.5"
+  },
+  "0096590847": {
+    "semester": "GANJIL",
+    "nama": "NURHALISA L.",
+    "kelas": "XII.5"
+  },
+  "0091472584": {
+    "semester": "GANJIL",
+    "nama": "NURUL ALISA",
+    "kelas": "XII.5"
+  },
+  "0094680956": {
+    "semester": "GANJIL",
+    "nama": "NURUL FADILLAH ARIEF",
+    "kelas": "XII.5"
+  },
+  "0092115167": {
+    "semester": "GANJIL",
+    "nama": "PUTRI NAJURA NURHIDAYA",
+    "kelas": "XII.5"
+  },
+  "0096835843": {
+    "semester": "GANJIL",
+    "nama": "RASMAYANTI",
+    "kelas": "XII.5"
+  },
+  "0097266898": {
+    "semester": "GANJIL",
+    "nama": "RASNI",
+    "kelas": "XII.5"
+  },
+  "0084010700": {
+    "semester": "GANJIL",
+    "nama": "RESTU SEPTRIASA N",
+    "kelas": "XII.5"
+  },
+  "0097181345": {
+    "semester": "GANJIL",
+    "nama": "RIRIN ALFIAN",
+    "kelas": "XII.5"
+  },
+  "0095650738": {
+    "semester": "GANJIL",
+    "nama": "SABRINA. A",
+    "kelas": "XII.5"
+  },
+  "0075986269": {
+    "semester": "GANJIL",
+    "nama": "SARIPUDIN",
+    "kelas": "XII.5"
+  },
+  "0093781414": {
+    "semester": "GANJIL",
+    "nama": "ZULJALALI",
+    "kelas": "XII.5"
+  },
+  "0095687097": {
+    "semester": "GANJIL",
+    "nama": "NUR AZIRA",
+    "kelas": "XII.5"
+  },
+  "0086384403": {
+    "semester": "GANJIL",
+    "nama": "ALWIRA CAHYA PUTRI",
+    "kelas": "XII.6"
+  },
+  "0087934958": {
+    "semester": "GANJIL",
+    "nama": "AQILA MUTMAINNA",
+    "kelas": "XII.6"
+  },
+  "0087077685": {
+    "semester": "GANJIL",
+    "nama": "ASLAN",
+    "kelas": "XII.6"
+  },
+  "0099430284": {
+    "semester": "GANJIL",
+    "nama": "ASPHY AZ-ZAHRA",
+    "kelas": "XII.6"
+  },
+  "0096444595": {
+    "semester": "GANJIL",
+    "nama": "FHYA ASYARAH",
+    "kelas": "XII.6"
+  },
+  "0083471656": {
+    "semester": "GANJIL",
+    "nama": "HAERUL",
+    "kelas": "XII.6"
+  },
+  "0085419206": {
+    "semester": "GANJIL",
+    "nama": "INDAR WAHYUNI",
+    "kelas": "XII.6"
+  },
+  "0095849885": {
+    "semester": "GANJIL",
+    "nama": "KARMILA",
+    "kelas": "XII.6"
+  },
+  "0084729936": {
+    "semester": "GANJIL",
+    "nama": "MUH. FAIZ AKSAN",
+    "kelas": "XII.6"
+  },
+  "0096719937": {
+    "semester": "GANJIL",
+    "nama": "MUH. FAUZAN TANRATU",
+    "kelas": "XII.6"
+  },
+  "0092969241": {
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL BIN HERMAN",
+    "kelas": "XII.6"
+  },
+  "0094603256": {
+    "semester": "GANJIL",
+    "nama": "MUH. NASYWAN",
+    "kelas": "XII.6"
+  },
+  "0086772664": {
+    "semester": "GANJIL",
+    "nama": "MUH.FAWZAAN USMAN",
+    "kelas": "XII.6"
+  },
+  "0097567415": {
+    "semester": "GANJIL",
+    "nama": "NASRULLAH ARSAN",
+    "kelas": "XII.6"
+  },
+  "0096726433": {
+    "semester": "GANJIL",
+    "nama": "NUR ALEEYA ASYIKIN",
+    "kelas": "XII.6"
+  },
+  "0094682693": {
+    "semester": "GANJIL",
+    "nama": "NUR ASVIRA",
+    "kelas": "XII.6"
+  },
+  "0097602355": {
+    "semester": "GANJIL",
+    "nama": "NUR AURELIA. S",
+    "kelas": "XII.6"
+  },
+  "0060137986": {
+    "semester": "GANJIL",
+    "nama": "OLIFIA APRILYANA",
+    "kelas": "XII.6"
+  },
+  "0097762899": {
+    "semester": "GANJIL",
+    "nama": "RAHSYA SALELA",
+    "kelas": "XII.6"
+  },
+  "0097341943": {
+    "semester": "GANJIL",
+    "nama": "REHAN",
+    "kelas": "XII.6"
+  },
+  "0091171407": {
+    "semester": "GANJIL",
+    "nama": "RISKY",
+    "kelas": "XII.6"
+  },
+  "0087765718": {
+    "semester": "GANJIL",
+    "nama": "TIARA",
+    "kelas": "XII.6"
+  },
+  "0097375856": {
+    "semester": "GANJIL",
+    "nama": "AFIFAH",
+    "kelas": "XII.6"
+  },
+  "0095994256": {
+    "semester": "GANJIL",
+    "nama": "MUH. DENIS",
+    "kelas": "XII.6"
+  },
+  "0084185564": {
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ILHAM SAPUTRA",
+    "kelas": "XII.6"
+  }
+}
