@@ -93,7 +93,7 @@ var kalender_XII_4 = [
   "",
   "",
   "",
-  "Kimia Minat☯️30/9☯️Tes aja☯️☯️☯️",
+  "",
   "",
   "",
   "",
