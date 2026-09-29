@@ -645,6 +645,24 @@ window._sp5pReady = _sp5p_loadConfig();
     font-size: 12px; color: rgba(255,255,255,0.3);
   }
 
+  /* ─── CAPTCHA ─── */
+  .captcha-row { display: flex; gap: 10px; align-items: stretch; margin-bottom: 10px; }
+  .captcha-img-wrap {
+    flex: 1; border-radius: 14px; overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.06);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .captcha-img-wrap img { width: 100%; height: 52px; display: block; pointer-events: none; }
+  .captcha-refresh {
+    width: 52px; border-radius: 14px; cursor: pointer;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.1);
+    color: rgba(255,255,255,0.7); font-size: 16px;
+    transition: all 0.25s;
+  }
+  .captcha-refresh:hover { background: rgba(0,180,216,0.15); border-color: var(--teal); color: var(--teal-light); transform: rotate(90deg); }
+
   /* ─── DASHBOARD ─── */
   .dashboard {
     min-height: 100vh;
@@ -1679,6 +1697,24 @@ window._sp5pReady = _sp5p_loadConfig();
                 autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
                 placeholder="Masukkan password kamu..."
                 v-model="passwordInput" @keyup.enter="login" />
+            </div>
+          </div>
+
+          <div class="field-group">
+            <label class="field-label">Captcha</label>
+            <div class="captcha-row">
+              <div class="captcha-img-wrap">
+                <img :src="captchaImg" alt="captcha" draggable="false">
+              </div>
+              <button type="button" class="captcha-refresh" @click="generateCaptcha" title="Ganti captcha">
+                <i class="fas fa-sync-alt"></i>
+              </button>
+            </div>
+            <div class="field-wrap">
+              <i class="fas fa-shield-alt field-icon"></i>
+              <input class="field-input" type="text" autocomplete="off" autocapitalize="off"
+                spellcheck="false" maxlength="5" placeholder="Ketik kode di atas..."
+                v-model="captchaInput" @keyup.enter="login" />
             </div>
           </div>
 
@@ -2801,6 +2837,48 @@ _idbGet(BG_IDB_KEY).then(cached => {
     const passwordInput = ref('');
     const errorMessage  = ref('');
 
+    // ── CAPTCHA ──
+    const captchaCode  = ref('');
+    const captchaImg   = ref('');
+    const captchaInput = ref('');
+
+    const generateCaptcha = () => {
+      // tanpa karakter yang mirip (0/O, 1/I/L)
+      const chars = 'ABCDEFGHJKMNPQRSTUVWXYZ23456789';
+      const rnd   = (n) => Math.floor(Math.random() * n);
+      let code = '';
+      for (let i = 0; i < 5; i++) code += chars[rnd(chars.length)];
+
+      const colors = ['#90e0ef', '#ffd166', '#06d6a0', '#ff8fab', '#ffffff'];
+      let svg = '<svg xmlns="http://www.w3.org/2000/svg" width="200" height="52" viewBox="0 0 200 52">';
+      svg += '<rect width="200" height="52" fill="#0a1628"/>';
+
+      for (let i = 0; i < 6; i++) {
+        svg += `<line x1="${rnd(200)}" y1="${rnd(52)}" x2="${rnd(200)}" y2="${rnd(52)}" ` +
+               `stroke="${colors[rnd(colors.length)]}" stroke-opacity="0.35" stroke-width="${1 + rnd(2)}"/>`;
+      }
+      for (let i = 0; i < 40; i++) {
+        svg += `<circle cx="${rnd(200)}" cy="${rnd(52)}" r="${(Math.random() * 1.5 + 0.5).toFixed(1)}" ` +
+               `fill="${colors[rnd(colors.length)]}" fill-opacity="0.45"/>`;
+      }
+      for (let i = 0; i < code.length; i++) {
+        const x = 22 + i * 32 + rnd(6);
+        const y = 34 + rnd(8) - 4;
+        const r = rnd(41) - 20;
+        svg += `<text x="${x}" y="${y}" font-size="${26 + rnd(6)}" font-weight="800" ` +
+               `font-family="monospace" fill="${colors[rnd(colors.length)]}" ` +
+               `transform="rotate(${r} ${x} ${y})">${code[i]}</text>`;
+      }
+      svg += '</svg>';
+
+      captchaCode.value  = code;
+      captchaImg.value   = 'data:image/svg+xml;utf8,' + encodeURIComponent(svg);
+      captchaInput.value = '';
+    };
+    generateCaptcha();
+    // ganti captcha otomatis setiap kali muncul pesan error login
+    watch(errorMessage, (v) => { if (v) generateCaptcha(); });
+
     const currentMonth = new Date().getMonth() + 1;
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
@@ -2962,6 +3040,7 @@ _idbGet(BG_IDB_KEY).then(cached => {
         try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
         try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
         window._sp5pReady = window._sp5p_loadConfig();
+        generateCaptcha();
 
       } catch (e) {
         window.location.reload();
@@ -3191,6 +3270,18 @@ _idbGet(BG_IDB_KEY).then(cached => {
         errorMessage.value = 'NISN dan Password harus diisi';
         return;
       }
+
+      // ── Validasi captcha (sebelum request ke server) ──
+      if (!captchaInput.value.trim()) {
+        errorMessage.value = 'Captcha harus diisi';
+        return;
+      }
+      if (captchaInput.value.trim().toUpperCase() !== captchaCode.value) {
+        errorMessage.value = 'Captcha salah, silakan coba lagi.';
+        generateCaptcha();
+        return;
+      }
+
       loading.value = true;
       errorMessage.value = '';
 
@@ -3853,6 +3944,7 @@ const visibleNotes = computed(() => {
     };
 
     return {
+      captchaImg, captchaInput, generateCaptcha,
       loggedIn, loading, nisnInput, passwordInput, errorMessage, studentData,
       logoSrc, bgImageSrc, showDownloadConfirm, showResetConfirm, resetAllData,
       currentTab, tabs, login, switchTab,
