@@ -9,6 +9,11 @@ on:
       - 'kalgan.js'
   workflow_dispatch:
 
+# Kalau Apps Script mengirim data berkali-kali, proses dijalankan satu per satu
+concurrency:
+  group: split-data
+  cancel-in-progress: false
+
 jobs:
   split:
     runs-on: ubuntu-latest
@@ -37,6 +42,8 @@ jobs:
           if git diff --staged --quiet; then
             echo "Tidak ada perubahan data."
           else
-            git commit -m "Auto: pecah data nisn & kelas [skip ci]"
+            # Tanpa [skip ci] supaya Vercel ikut deploy ulang membawa data terbaru
+            git commit -m "Auto: pecah data nisn & kelas"
+            git pull --rebase
             git push
           fi
