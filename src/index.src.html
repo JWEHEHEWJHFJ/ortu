@@ -7,8 +7,6 @@
 <title>SMAN 5 Pinrang — Portal Akademik Siswa</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script>
 <script>
 
@@ -47,9 +45,7 @@ const _sp5p_loadData = async (nisn) => {
   try {
     // Username (NISN) menjadi acuan file: data/nisn/{NISN}.js
     const fileName = `data/nisn/${encodeURIComponent(nisn)}.js`;
-    const res = await fetch(fileName, {
-  cache: "no-store"
-});
+    const res = await fetch(fileName);
     if (!res.ok) throw new Error("HTTP " + res.status);
     const js = await res.text();
     const marker = 'window.__SP5P="';
@@ -171,9 +167,7 @@ const _sp5p_loadData = async (nisn) => {
 // ── Fetch + decrypt config.js (no-cache, tidak terlihat di F12 Sources) ──
 const _sp5p_loadConfig = async () => {
   try {
-    const res = await fetch("config.js", {
-  cache: "no-store"
-});
+    const res = await fetch("config.js");
     if (!res.ok) return;
     const js = await res.text();
     const marker = 'window.__CFG="';
@@ -194,9 +188,7 @@ const _sp5p_loadKelasKalender = async (kelas) => {
   try {
     // Kalender kini per-kelas (bukan per-semester): data/kelas/{kelas}.js
     const fileName = `data/kelas/${encodeURIComponent(kelas)}.js`;
-    const res = await fetch(fileName, {
-  cache: "no-store"
-});
+    const res = await fetch(fileName);
     if (!res.ok) { window.KALENDER_DATA = null; return false; }
     const js = await res.text();
 
@@ -231,33 +223,8 @@ window._sp5p_loadKelasKalender   = _sp5p_loadKelasKalender;
 // login, jadi saat halaman dimuat cukup siapkan config global saja.
 window._sp5pReady = _sp5p_loadConfig();
 
-// ── Auto-reload saat cache 5 menit di Edge Vercel kedaluwarsa ──
-// Supaya user yang membiarkan tab terbuka tidak melihat data basi, halaman
-// akan reload sendiri kira-kira setiap 5 menit (samain dengan CACHE_TTL_MS
-// di server). Ini timer murni di client — TIDAK ada request tambahan ke
-// server cuma buat ngecek, biar tidak nambah kuota Vercel sia-sia.
-// Reload juga ditunda kalau tab sedang di background (tidak dilihat user),
-// supaya tab yang ditinggal lama tidak reload berkali-kali tanpa guna.
-(function _sp5pAutoRefresh() {
-  const TTL_MS = 5 * 60 * 1000;
-  let pendingReload = false;
-
-  const doReload = () => location.reload();
-
-  setTimeout(function scheduleCheck() {
-    if (document.visibilityState === 'visible') {
-      doReload();
-    } else {
-      pendingReload = true;
-    }
-  }, TTL_MS);
-
-  document.addEventListener('visibilitychange', () => {
-    if (pendingReload && document.visibilityState === 'visible') {
-      doReload();
-    }
-  });
-})();
+// (Auto-reload 5 menit dihapus: boros request & membuat siswa terlempar ke halaman login.
+//  Data dimuat saat login dan mengikuti cache HTTP 5 menit dari vercel.json.)
 </script>
 <style>
   :root {
@@ -2719,17 +2686,25 @@ const LOGO_URL        = 'https://www.sman5pinrang.web.id/logo.png';//foto logo
 const LOGO_CACHE_KEY  = 'sp5p_logo_b64';
 const LOGO_URL_KEY    = 'sp5p_logo_url';
 
+// Kalau fetch gambar gagal (mis. CORS), jangan dicoba lagi selama 24 jam;
+// <img>/CSS tetap memuat URL langsung dan browser menyimpannya di cache HTTP.
+const IMG_FAIL_KEY = 'sp5p_img_fail';
+const _imgFetchBlocked = () => {
+  try { return Date.now() - (parseInt(localStorage.getItem(IMG_FAIL_KEY) || '0', 10)) < 24 * 60 * 60 * 1000; }
+  catch { return false; }
+};
+const _markImgFail = () => { try { localStorage.setItem(IMG_FAIL_KEY, String(Date.now())); } catch {} };
+
 async function loadLogo() {
   const cachedUrl  = localStorage.getItem(LOGO_URL_KEY);
   const cachedData = localStorage.getItem(LOGO_CACHE_KEY);
 
   if (cachedData && cachedUrl === LOGO_URL) return cachedData;
+  if (_imgFetchBlocked()) return LOGO_URL;
 
   try {
-    const resp = await fetch(LOGO_URL + (LOGO_URL.includes('?') ? '&' : '?') + 'v=' + Date.now(), {
-  cache: 'no-store'
-});
-    if (!resp.ok) return cachedData || LOGO_URL;
+    const resp = await fetch(LOGO_URL);
+    if (!resp.ok) { _markImgFail(); return cachedData || LOGO_URL; }
     const blob = await resp.blob();
     return new Promise((resolve) => {
       const reader = new FileReader();
@@ -2745,6 +2720,7 @@ async function loadLogo() {
       reader.readAsDataURL(blob);
     });
   } catch {
+    _markImgFail();
     return cachedData || LOGO_URL;
   }
 }
@@ -2795,10 +2771,11 @@ async function loadBgImage() {
 
   // Pakai cache HANYA jika url sumber sama dengan yang tersimpan
   if (cached && cached.url === BG_IMAGE_URL && cached.data) return cached.data;
+  if (_imgFetchBlocked()) return BG_IMAGE_URL;
 
   try {
     const resp = await fetch(BG_IMAGE_URL);
-    if (!resp.ok) return (cached && cached.data) || BG_IMAGE_URL;
+    if (!resp.ok) { _markImgFail(); return (cached && cached.data) || BG_IMAGE_URL; }
     const blob = await resp.blob();
     return new Promise((resolve) => {
       const reader = new FileReader();
@@ -2811,6 +2788,7 @@ async function loadBgImage() {
       reader.readAsDataURL(blob);
     });
   } catch {
+    _markImgFail();
     return BG_IMAGE_URL;
   }
 }

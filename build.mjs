@@ -48,7 +48,13 @@ const bundle = `
 `;
 
 // 5. Obfuscate
+// Seed diturunkan dari isi sumber: kalau kode tidak berubah (misal deploy karena data siswa
+// berubah), hasil obfuscate identik -> nama file sama -> browser 1000 siswa tidak perlu
+// mengunduh ulang bundle. Tanpa seed, setiap build menghasilkan file berbeda.
+const seed = (parseInt(crypto.createHash('sha256').update(bundle).digest('hex').slice(0, 8), 16) % 2147483646) + 1;
+
 const obfuscated = JavaScriptObfuscator.obfuscate(bundle, {
+  seed,
   target: 'browser',
   compact: true,
   simplify: true,
@@ -101,7 +107,12 @@ fs.writeFileSync(path.join(OUT, 'index.html'), page);
 
 // 8. Salin file statis yang memang harus publik (dsgan.js, kalgan.js, src/, scripts/ TIDAK ikut)
 for (const f of ['config.js', 'data']) {
-  if (fs.existsSync(f)) fs.cpSync(f, path.join(OUT, f), { recursive: true });
+  if (fs.existsSync(f)) {
+    fs.cpSync(f, path.join(OUT, f), {
+      recursive: true,
+      filter: (src) => path.basename(src) !== '_index.json', // berisi daftar semua NISN & nama
+    });
+  }
 }
 
 console.log(`OK -> ${OUT}/index.html + ${OUT}/${jsName} (${(obfuscated.length / 1024).toFixed(0)} KB)`);
