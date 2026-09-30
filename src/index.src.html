@@ -1735,6 +1735,21 @@ window._sp5pReady = _sp5p_loadConfig();
       </div>
     </div>
 
+    <!-- MODAL KONFIRMASI LOGOUT -->
+    <div v-if="showLogoutConfirm" class="modal-overlay logout-confirm-overlay" @click.self="showLogoutConfirm = false" @keydown.esc="showLogoutConfirm = false">
+      <div class="modal-box logout-box" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
+        <div class="logout-icon"><i class="fas fa-right-from-bracket"></i></div>
+        <div id="logoutTitle" class="logout-title">Keluar dari akun?</div>
+        <p class="logout-text">
+          Kamu akan kembali ke halaman login. NISN dan password yang tersimpan di perangkat ini juga dihapus.
+        </p>
+        <div class="logout-actions">
+          <button type="button" class="logout-cancel" @click="showLogoutConfirm = false">Batal</button>
+          <button type="button" class="logout-ok" @click="logout()">Ya, Keluar</button>
+        </div>
+      </div>
+    </div>
+
     <!-- TOP BAR -->
     <nav class="topbar">
       <div class="topbar-left">
@@ -1751,7 +1766,10 @@ window._sp5pReady = _sp5p_loadConfig();
           <div class="user-avatar">{{ studentData.nama ? studentData.nama[0].toUpperCase() : 'S' }}</div>
           <span>{{ studentData.nama }}</span>
         </div>
-
+        <button type="button" class="btn-logout" @click="showLogoutConfirm = true" aria-label="Keluar dari akun" title="Keluar">
+          <i class="fas fa-right-from-bracket"></i>
+          <span class="btn-logout-text">Keluar</span>
+        </button>
       </div>
     </nav>
 
@@ -1793,6 +1811,12 @@ window._sp5pReady = _sp5p_loadConfig();
             <div style="font-size:13px;font-weight:600;color:#374151">{{ studentData.nisn }}</div>
           </div>
         </div>
+
+        <div class="sidebar-section-title" style="margin-top:24px">Akun</div>
+        <button type="button" class="sidebar-btn sidebar-logout" @click="showLogoutConfirm = true">
+          <i class="fas fa-right-from-bracket"></i>
+          Keluar
+        </button>
       </aside>
 
       <!-- CONTENT AREA -->
@@ -2868,6 +2892,7 @@ _idbGet(BG_IDB_KEY).then(cached => {
 
     const showDownloadConfirm = ref(false);
     const showResetConfirm    = ref(false);
+    const showLogoutConfirm   = ref(false);
 
     // ── Enkripsi AES-GCM ──
     const _ENC_SEED = 'sp5p@sman5pinrang!#2025$secure';
@@ -3020,6 +3045,48 @@ _idbGet(BG_IDB_KEY).then(cached => {
         window._sp5pReady = window._sp5p_loadConfig();
         generateCaptcha();
 
+      } catch (e) {
+        window.location.reload();
+      }
+    };
+
+    // ── LOGOUT: akhiri sesi, hapus kredensial tersimpan, kembali ke halaman login ──
+    const logout = () => {
+      try {
+        showLogoutConfirm.value = false;
+        showAttendanceModal.value = false;
+        showAssessmentModal.value = false;
+        activeSub.value = null;
+        pwOld.value = ''; pwNew.value = ''; pwConfirm.value = '';
+        pwMsg.value = ''; pwLoading.value = false; showPw.value = false;
+
+        try { localStorage.removeItem(STORE_KEY); } catch(e) {}
+        try { sessionStorage.removeItem(STORE_KEY); } catch(e) {}
+
+        nisnInput.value     = '';
+        passwordInput.value = '';
+        captchaInput.value  = '';
+        errorMessage.value  = '';
+        loading.value       = false;
+        loggedIn.value      = false;
+        currentTab.value    = 'home';
+        document.body.style.overflow = '';
+
+        studentData.value = {
+          nisn: '', nama: '', kelas: '',
+          nilaiAmbang: '', kehadiranAmbang: '',
+          rawSchedule: '', rawAttendanceData: '',
+          rawAssessmentData: '', rawNotesData: '',
+          abList: [], nlList: []
+        };
+
+        try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
+        try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
+        try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
+        window._sp5pReady = window._sp5p_loadConfig();
+
+        generateCaptcha();
+        window.scrollTo({ top: 0, behavior: 'instant' });
       } catch (e) {
         window.location.reload();
       }
@@ -3924,7 +3991,7 @@ const visibleNotes = computed(() => {
     return {
       captchaImg, captchaInput, generateCaptcha,
       loggedIn, loading, nisnInput, passwordInput, errorMessage, studentData,
-      logoSrc, bgImageSrc, showDownloadConfirm, showResetConfirm, resetAllData,
+      logoSrc, bgImageSrc, showDownloadConfirm, showResetConfirm, resetAllData, showLogoutConfirm, logout,
       currentTab, tabs, login, switchTab,
       parsedSchedule, parsedAttendance, parsedAssessment, parsedNotes, todayLabel, visibleNotes,
       getStatusBadgeClass, attendanceTotal, attendancePercentage,
@@ -4029,6 +4096,54 @@ html, body { width: 100%; max-width: none; margin: 0; padding: 0; overflow-x: hi
   .layout-body { margin-left: 240px; width: calc(100% - 240px); }
   .content-area { padding: 88px 32px 40px; }
 }
+
+/* ═══ LOGOUT ═══ */
+.btn-logout {
+  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+  height: 40px; min-width: 40px; padding: 0 14px;
+  border-radius: 40px; cursor: pointer;
+  background: rgba(239,71,111,0.12);
+  border: 1px solid rgba(239,71,111,0.35);
+  color: #ff8fab;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600;
+  transition: background .2s, color .2s, border-color .2s;
+  -webkit-tap-highlight-color: transparent;
+}
+.btn-logout i { font-size: 15px; }
+.btn-logout:hover, .btn-logout:focus-visible { background: #ef476f; border-color: #ef476f; color: #fff; outline: none; }
+.btn-logout:active { transform: scale(.96); }
+@media (max-width: 639px) {
+  .btn-logout { padding: 0; width: 40px; }
+  .btn-logout-text { display: none; }
+  .topbar-right { gap: 8px; }
+}
+
+.sidebar-logout { color: #dc2626; }
+.sidebar-logout:hover { background: #fef2f2; color: #b91c1c; }
+
+.logout-confirm-overlay { align-items: center !important; justify-content: center !important; padding: 20px; }
+.logout-box {
+  max-width: 380px; width: 100%; text-align: center;
+  padding: 32px 24px 24px; border-radius: 24px !important;
+  overflow: visible; max-height: none;
+}
+.logout-icon {
+  width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  background: #fef2f2; color: #dc2626; font-size: 22px;
+}
+.logout-title { font-size: 18px; font-weight: 700; color: #111827; margin-bottom: 8px; }
+.logout-text { font-size: 14px; line-height: 1.6; color: #6b7280; margin-bottom: 24px; }
+.logout-actions { display: flex; gap: 12px; }
+.logout-actions button {
+  flex: 1; padding: 12px 16px; border-radius: 12px; cursor: pointer;
+  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 600;
+}
+.logout-cancel { background: #fff; border: 1px solid #e5e7eb; color: #374151; }
+.logout-cancel:hover { background: #f9fafb; }
+.logout-ok { border: none; color: #fff; background: linear-gradient(135deg,#ef4444,#dc2626); box-shadow: 0 4px 12px rgba(239,68,68,.3); }
+.logout-ok:hover { filter: brightness(1.06); }
+@media (max-width: 380px) { .logout-actions { flex-direction: column-reverse; } }
 </style>
 </body>
 </html>
