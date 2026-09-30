@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <title>SMAN 5 Pinrang — Portal Akademik Siswa</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -4006,6 +4005,29 @@ const visibleNotes = computed(() => {
 .bar-tip-leave-to     { opacity: 0; transform: translateY(-4px) scale(0.97); }
 
 @media (min-width: 900px) {
+}
+
+/* ═══ FIX LAYOUT: paksa tampilan penuh di HP, tablet, dan desktop ═══ */
+html, body { width: 100%; max-width: none; margin: 0; padding: 0; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
+#app { display: block; width: 100%; max-width: none; margin: 0; padding: 0; zoom: 1; transform: none; }
+.login-page, .dashboard { width: 100%; max-width: none; margin: 0; min-height: 100vh; min-height: 100dvh; }
+.layout-body { display: flex; width: 100%; max-width: none; margin: 0; padding: 0; }
+.content-area { flex: 1 1 0%; width: 100%; min-width: 0; max-width: none; margin: 0; box-sizing: border-box; }
+.content-area > * { max-width: 100%; }
+.login-wrapper { width: 100%; max-width: none; margin: 0; box-sizing: border-box; }
+.topbar, .bottom-tab { width: 100%; box-sizing: border-box; }
+.topbar { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
+@media (max-width: 899px) {
+  .layout-body { margin-left: 0; }
+  .sidebar { display: none; }
+  .bottom-tab { display: flex; }
+  .content-area { padding: 88px 16px 96px; }
+}
+@media (min-width: 900px) {
+  .sidebar { display: block; }
+  .bottom-tab { display: none; }
+  .layout-body { margin-left: 240px; width: calc(100% - 240px); }
+  .content-area { padding: 88px 32px 40px; }
 }
 </style>
 </body>
