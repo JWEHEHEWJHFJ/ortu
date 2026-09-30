@@ -2,10 +2,12 @@
 <html lang="id">
 <head>
 <meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>SMAN 5 Pinrang — Portal Akademik Siswa</title>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;900&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.4.21/vue.global.prod.min.js"></script>
 <script>
 
@@ -40,11 +42,16 @@ async function _sp5p_dec(b64) {
 }
 
 
+// Basis URL data. Kosong = ambil dari domain ini (Vercel). Isi `dataBase` di config.js
+// (mis. "https://raw.githubusercontent.com/USER/REPO/main") supaya data siswa
+// diambil dari luar Vercel dan TIDAK memakai kuota Vercel.
+const _sp5p_dataBase = () => (((window.CONFIG || {}).dataBase || '') + '').replace(/\/+$/, '');
+
 const _sp5p_loadData = async (nisn) => {
   try {
     // Username (NISN) menjadi acuan file: data/nisn/{NISN}.js
-    const fileName = `data/nisn/${encodeURIComponent(nisn)}.js`;
-    const res = await fetch(fileName);
+    const fileName = (_sp5p_dataBase() ? _sp5p_dataBase() + '/' : '') + `data/nisn/${encodeURIComponent(nisn)}.js`;
+    const res = await fetch(fileName, );
     if (!res.ok) throw new Error("HTTP " + res.status);
     const js = await res.text();
     const marker = 'window.__SP5P="';
@@ -164,9 +171,11 @@ const _sp5p_loadData = async (nisn) => {
 })();
 
 // ── Fetch + decrypt config.js (no-cache, tidak terlihat di F12 Sources) ──
-const _sp5p_loadConfig = async () => {
+let _sp5p_cfgPromise = null;
+const _sp5p_loadConfig = () => (_sp5p_cfgPromise = _sp5p_cfgPromise || _sp5p_loadConfigReal());
+const _sp5p_loadConfigReal = async () => {
   try {
-    const res = await fetch("config.js");
+    const res = await fetch("config.js", );
     if (!res.ok) return;
     const js = await res.text();
     const marker = 'window.__CFG="';
@@ -186,8 +195,8 @@ const _sp5p_loadConfig = async () => {
 const _sp5p_loadKelasKalender = async (kelas) => {
   try {
     // Kalender kini per-kelas (bukan per-semester): data/kelas/{kelas}.js
-    const fileName = `data/kelas/${encodeURIComponent(kelas)}.js`;
-    const res = await fetch(fileName);
+    const fileName = (_sp5p_dataBase() ? _sp5p_dataBase() + '/' : '') + `data/kelas/${encodeURIComponent(kelas)}.js`;
+    const res = await fetch(fileName, );
     if (!res.ok) { window.KALENDER_DATA = null; return false; }
     const js = await res.text();
 
@@ -220,10 +229,9 @@ window._sp5p_loadKelasKalender   = _sp5p_loadKelasKalender;
 
 // Data siswa (per NISN) & kalender (per kelas) baru diketahui setelah proses
 // login, jadi saat halaman dimuat cukup siapkan config global saja.
-window._sp5pReady = _sp5p_loadConfig();
+window._sp5pReady = null; // config dimuat lazy (lihat _sp5p_loadConfig)
 
-// (Auto-reload 5 menit dihapus: boros request & membuat siswa terlempar ke halaman login.
-//  Data dimuat saat login dan mengikuti cache HTTP 5 menit dari vercel.json.)
+// (Auto-reload 5 menit dihapus: boros request & melempar siswa ke halaman login.)
 </script>
 <style>
   :root {
@@ -1735,21 +1743,6 @@ window._sp5pReady = _sp5p_loadConfig();
       </div>
     </div>
 
-    <!-- MODAL KONFIRMASI LOGOUT -->
-    <div v-if="showLogoutConfirm" class="modal-overlay logout-confirm-overlay" @click.self="showLogoutConfirm = false" @keydown.esc="showLogoutConfirm = false">
-      <div class="modal-box logout-box" role="dialog" aria-modal="true" aria-labelledby="logoutTitle">
-        <div class="logout-icon"><i class="fas fa-right-from-bracket"></i></div>
-        <div id="logoutTitle" class="logout-title">Keluar dari akun?</div>
-        <p class="logout-text">
-          Kamu akan kembali ke halaman login. NISN dan password yang tersimpan di perangkat ini juga dihapus.
-        </p>
-        <div class="logout-actions">
-          <button type="button" class="logout-cancel" @click="showLogoutConfirm = false">Batal</button>
-          <button type="button" class="logout-ok" @click="logout()">Ya, Keluar</button>
-        </div>
-      </div>
-    </div>
-
     <!-- TOP BAR -->
     <nav class="topbar">
       <div class="topbar-left">
@@ -1766,10 +1759,7 @@ window._sp5pReady = _sp5p_loadConfig();
           <div class="user-avatar">{{ studentData.nama ? studentData.nama[0].toUpperCase() : 'S' }}</div>
           <span>{{ studentData.nama }}</span>
         </div>
-        <button type="button" class="btn-logout" @click="showLogoutConfirm = true" aria-label="Keluar dari akun" title="Keluar">
-          <i class="fas fa-right-from-bracket"></i>
-          <span class="btn-logout-text">Keluar</span>
-        </button>
+
       </div>
     </nav>
 
@@ -1811,12 +1801,6 @@ window._sp5pReady = _sp5p_loadConfig();
             <div style="font-size:13px;font-weight:600;color:#374151">{{ studentData.nisn }}</div>
           </div>
         </div>
-
-        <div class="sidebar-section-title" style="margin-top:24px">Akun</div>
-        <button type="button" class="sidebar-btn sidebar-logout" @click="showLogoutConfirm = true">
-          <i class="fas fa-right-from-bracket"></i>
-          Keluar
-        </button>
       </aside>
 
       <!-- CONTENT AREA -->
@@ -2709,25 +2693,15 @@ const LOGO_URL        = 'https://www.sman5pinrang.web.id/logo.png';//foto logo
 const LOGO_CACHE_KEY  = 'sp5p_logo_b64';
 const LOGO_URL_KEY    = 'sp5p_logo_url';
 
-// Kalau fetch gambar gagal (mis. CORS), jangan dicoba lagi selama 24 jam;
-// <img>/CSS tetap memuat URL langsung dan browser menyimpannya di cache HTTP.
-const IMG_FAIL_KEY = 'sp5p_img_fail';
-const _imgFetchBlocked = () => {
-  try { return Date.now() - (parseInt(localStorage.getItem(IMG_FAIL_KEY) || '0', 10)) < 24 * 60 * 60 * 1000; }
-  catch { return false; }
-};
-const _markImgFail = () => { try { localStorage.setItem(IMG_FAIL_KEY, String(Date.now())); } catch {} };
-
 async function loadLogo() {
   const cachedUrl  = localStorage.getItem(LOGO_URL_KEY);
   const cachedData = localStorage.getItem(LOGO_CACHE_KEY);
 
   if (cachedData && cachedUrl === LOGO_URL) return cachedData;
-  if (_imgFetchBlocked()) return LOGO_URL;
 
   try {
     const resp = await fetch(LOGO_URL);
-    if (!resp.ok) { _markImgFail(); return cachedData || LOGO_URL; }
+    if (!resp.ok) return cachedData || LOGO_URL;
     const blob = await resp.blob();
     return new Promise((resolve) => {
       const reader = new FileReader();
@@ -2743,7 +2717,6 @@ async function loadLogo() {
       reader.readAsDataURL(blob);
     });
   } catch {
-    _markImgFail();
     return cachedData || LOGO_URL;
   }
 }
@@ -2794,11 +2767,10 @@ async function loadBgImage() {
 
   // Pakai cache HANYA jika url sumber sama dengan yang tersimpan
   if (cached && cached.url === BG_IMAGE_URL && cached.data) return cached.data;
-  if (_imgFetchBlocked()) return BG_IMAGE_URL;
 
   try {
     const resp = await fetch(BG_IMAGE_URL);
-    if (!resp.ok) { _markImgFail(); return (cached && cached.data) || BG_IMAGE_URL; }
+    if (!resp.ok) return (cached && cached.data) || BG_IMAGE_URL;
     const blob = await resp.blob();
     return new Promise((resolve) => {
       const reader = new FileReader();
@@ -2811,7 +2783,6 @@ async function loadBgImage() {
       reader.readAsDataURL(blob);
     });
   } catch {
-    _markImgFail();
     return BG_IMAGE_URL;
   }
 }
@@ -2892,7 +2863,6 @@ _idbGet(BG_IDB_KEY).then(cached => {
 
     const showDownloadConfirm = ref(false);
     const showResetConfirm    = ref(false);
-    const showLogoutConfirm   = ref(false);
 
     // ── Enkripsi AES-GCM ──
     const _ENC_SEED = 'sp5p@sman5pinrang!#2025$secure';
@@ -3042,51 +3012,9 @@ _idbGet(BG_IDB_KEY).then(cached => {
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
         try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
         try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
-        window._sp5pReady = window._sp5p_loadConfig();
+        
         generateCaptcha();
 
-      } catch (e) {
-        window.location.reload();
-      }
-    };
-
-    // ── LOGOUT: akhiri sesi, hapus kredensial tersimpan, kembali ke halaman login ──
-    const logout = () => {
-      try {
-        showLogoutConfirm.value = false;
-        showAttendanceModal.value = false;
-        showAssessmentModal.value = false;
-        activeSub.value = null;
-        pwOld.value = ''; pwNew.value = ''; pwConfirm.value = '';
-        pwMsg.value = ''; pwLoading.value = false; showPw.value = false;
-
-        try { localStorage.removeItem(STORE_KEY); } catch(e) {}
-        try { sessionStorage.removeItem(STORE_KEY); } catch(e) {}
-
-        nisnInput.value     = '';
-        passwordInput.value = '';
-        captchaInput.value  = '';
-        errorMessage.value  = '';
-        loading.value       = false;
-        loggedIn.value      = false;
-        currentTab.value    = 'home';
-        document.body.style.overflow = '';
-
-        studentData.value = {
-          nisn: '', nama: '', kelas: '',
-          nilaiAmbang: '', kehadiranAmbang: '',
-          rawSchedule: '', rawAttendanceData: '',
-          rawAssessmentData: '', rawNotesData: '',
-          abList: [], nlList: []
-        };
-
-        try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
-        try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
-        try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
-        window._sp5pReady = window._sp5p_loadConfig();
-
-        generateCaptcha();
-        window.scrollTo({ top: 0, behavior: 'instant' });
       } catch (e) {
         window.location.reload();
       }
@@ -3123,6 +3051,7 @@ _idbGet(BG_IDB_KEY).then(cached => {
       }
 
       // ── Ambil gasUrl dari config.js ─────────────────────────────────
+      await window._sp5p_loadConfig();
       const gasUrl = (window.CONFIG || {}).gasUrl || '';
 
       if (!gasUrl) {
@@ -3332,10 +3261,17 @@ _idbGet(BG_IDB_KEY).then(cached => {
 
       try {
         // ── Pastikan config.js sudah ter-load ──────
-        // window._sp5pReady adalah Promise yang dimulai saat halaman load.
-        await window._sp5pReady;
+        // config.js dimuat sekali per sesi halaman (hasilnya di-cache), hanya saat login.
+        await window._sp5p_loadConfig();
+        
 
         const nisnStr  = nisnInput.value.toString().trim();
+        // Cegah request sia-sia (bot/salah ketik) ke server untuk NISN yang jelas tidak valid
+        if (!/^\d{4,12}$/.test(nisnStr)) {
+          loading.value = false;
+          errorMessage.value = 'NISN tidak ditemukan.';
+          return;
+        }
         const semester = selectedSemester.value || 'GANJIL';
 
         // ── Muat data siswa berdasarkan NISN (username) ──
@@ -3991,7 +3927,7 @@ const visibleNotes = computed(() => {
     return {
       captchaImg, captchaInput, generateCaptcha,
       loggedIn, loading, nisnInput, passwordInput, errorMessage, studentData,
-      logoSrc, bgImageSrc, showDownloadConfirm, showResetConfirm, resetAllData, showLogoutConfirm, logout,
+      logoSrc, bgImageSrc, showDownloadConfirm, showResetConfirm, resetAllData,
       currentTab, tabs, login, switchTab,
       parsedSchedule, parsedAttendance, parsedAssessment, parsedNotes, todayLabel, visibleNotes,
       getStatusBadgeClass, attendanceTotal, attendancePercentage,
@@ -4073,77 +4009,6 @@ const visibleNotes = computed(() => {
 
 @media (min-width: 900px) {
 }
-
-/* ═══ FIX LAYOUT: paksa tampilan penuh di HP, tablet, dan desktop ═══ */
-html, body { width: 100%; max-width: none; margin: 0; padding: 0; overflow-x: hidden; -webkit-text-size-adjust: 100%; }
-#app { display: block; width: 100%; max-width: none; margin: 0; padding: 0; zoom: 1; transform: none; }
-.login-page, .dashboard { width: 100%; max-width: none; margin: 0; min-height: 100vh; min-height: 100dvh; }
-.layout-body { display: flex; width: 100%; max-width: none; margin: 0; padding: 0; }
-.content-area { flex: 1 1 0%; width: 100%; min-width: 0; max-width: none; margin: 0; box-sizing: border-box; }
-.content-area > * { max-width: 100%; }
-.login-wrapper { width: 100%; max-width: none; margin: 0; box-sizing: border-box; }
-.topbar, .bottom-tab { width: 100%; box-sizing: border-box; }
-.topbar { padding-left: max(24px, env(safe-area-inset-left)); padding-right: max(24px, env(safe-area-inset-right)); }
-@media (max-width: 899px) {
-  .layout-body { margin-left: 0; }
-  .sidebar { display: none; }
-  .bottom-tab { display: flex; }
-  .content-area { padding: 88px 16px 96px; }
-}
-@media (min-width: 900px) {
-  .sidebar { display: block; }
-  .bottom-tab { display: none; }
-  .layout-body { margin-left: 240px; width: calc(100% - 240px); }
-  .content-area { padding: 88px 32px 40px; }
-}
-
-/* ═══ LOGOUT ═══ */
-.btn-logout {
-  display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-  height: 40px; min-width: 40px; padding: 0 14px;
-  border-radius: 40px; cursor: pointer;
-  background: rgba(239,71,111,0.12);
-  border: 1px solid rgba(239,71,111,0.35);
-  color: #ff8fab;
-  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 600;
-  transition: background .2s, color .2s, border-color .2s;
-  -webkit-tap-highlight-color: transparent;
-}
-.btn-logout i { font-size: 15px; }
-.btn-logout:hover, .btn-logout:focus-visible { background: #ef476f; border-color: #ef476f; color: #fff; outline: none; }
-.btn-logout:active { transform: scale(.96); }
-@media (max-width: 639px) {
-  .btn-logout { padding: 0; width: 40px; }
-  .btn-logout-text { display: none; }
-  .topbar-right { gap: 8px; }
-}
-
-.sidebar-logout { color: #dc2626; }
-.sidebar-logout:hover { background: #fef2f2; color: #b91c1c; }
-
-.logout-confirm-overlay { align-items: center !important; justify-content: center !important; padding: 20px; }
-.logout-box {
-  max-width: 380px; width: 100%; text-align: center;
-  padding: 32px 24px 24px; border-radius: 24px !important;
-  overflow: visible; max-height: none;
-}
-.logout-icon {
-  width: 56px; height: 56px; margin: 0 auto 16px; border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  background: #fef2f2; color: #dc2626; font-size: 22px;
-}
-.logout-title { font-size: 18px; font-weight: 700; color: #111827; margin-bottom: 8px; }
-.logout-text { font-size: 14px; line-height: 1.6; color: #6b7280; margin-bottom: 24px; }
-.logout-actions { display: flex; gap: 12px; }
-.logout-actions button {
-  flex: 1; padding: 12px 16px; border-radius: 12px; cursor: pointer;
-  font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 600;
-}
-.logout-cancel { background: #fff; border: 1px solid #e5e7eb; color: #374151; }
-.logout-cancel:hover { background: #f9fafb; }
-.logout-ok { border: none; color: #fff; background: linear-gradient(135deg,#ef4444,#dc2626); box-shadow: 0 4px 12px rgba(239,68,68,.3); }
-.logout-ok:hover { filter: brightness(1.06); }
-@media (max-width: 380px) { .logout-actions { flex-direction: column-reverse; } }
 </style>
 </body>
 </html>
