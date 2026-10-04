@@ -98,7 +98,7 @@ var kalender_XII_1 = [
   "",
   "",
   "",
-  "",
+  "Kimia Minat☯️5/10☯️materi redoks☯️mampu memahami biloks setiap unsur☯️☯️",
   "",
   "",
   "",
