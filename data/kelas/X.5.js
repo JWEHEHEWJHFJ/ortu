@@ -107,7 +107,7 @@ var kalender_X_5 = [
   "",
   "",
   "",
-  "",
+  "IPA (KIMIA)☯️14/10☯️Ujian Konfigurasi elektron☯️☯️☯️",
   "",
   "",
   "",
