@@ -108,7 +108,7 @@ var kalender_X_2 = [
   "",
   "",
   "",
-  "",
+  "IPA (KIMIA)☯️15/10☯️Ulangan kimia konfigurasi elektron☯️☯️☯️",
   "",
   "",
   "",
