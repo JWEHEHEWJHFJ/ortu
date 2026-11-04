@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Portal Orang Tua</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<script src="config.js" onerror="void 0"></script>
+<style>
+:root{--bg:#f3f6fd;--card:#fff;--ink:#14213d;--mut:#6b7794;--line:#e6ebf6;--pri:#2563eb;--pri2:#7c3aed;--ok:#16a34a;--warn:#f59e0b;--bad:#ef4444;--r:20px;--sh:0 10px 30px -12px rgba(37,99,235,.18)}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{font-family:'Plus Jakarta Sans',system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(600px 400px at 85% -5%,#c7d8ff66,transparent),radial-gradient(500px 400px at -5% 100%,#e4d4ff66,transparent);pointer-events:none}
+button,input{font:inherit;color:inherit}
+button{cursor:pointer;border:0;background:none}
+:focus-visible{outline:3px solid #93b4ff;outline-offset:2px}
+.hide{display:none!important}
+/* login */
+#login{min-height:100%;display:grid;place-items:center;padding:20px;padding-top:max(20px,env(safe-area-inset-top))}
+.lg{position:relative;width:min(960px,100%);display:grid;grid-template-columns:1.05fr 1fr;background:var(--card);border-radius:28px;overflow:hidden;box-shadow:0 30px 70px -25px rgba(37,99,235,.35)}
+.lg-art{padding:44px;color:#fff;background:linear-gradient(135deg,#2563eb,#7c3aed 60%,#ec4899);background-size:200% 200%;animation:flow 12s ease infinite;display:flex;flex-direction:column;justify-content:space-between;gap:30px;position:relative;overflow:hidden}
+.lg-art::after{content:"";position:absolute;width:320px;height:320px;border-radius:50%;right:-90px;bottom:-90px;background:rgba(255,255,255,.14)}
+.lg-art h1{font-size:34px;line-height:1.15;font-weight:800;letter-spacing:-.02em}
+.lg-art p{opacity:.9;margin-top:12px;max-width:34ch;line-height:1.55}
+.chips{display:flex;gap:8px;flex-wrap:wrap;position:relative;z-index:1}
+.chips span{background:rgba(255,255,255,.2);backdrop-filter:blur(6px);padding:8px 14px;border-radius:99px;font-size:13px;font-weight:600}
+@keyframes flow{50%{background-position:100% 50%}}
+.lg-form{padding:44px}
+.lg-form h2{font-size:24px;font-weight:800}
+.lg-form .sub{color:var(--mut);margin:6px 0 22px;font-size:14px}
+label{display:block;font-size:13px;font-weight:600;margin:14px 0 6px}
+input{width:100%;padding:14px 16px;border:1.5px solid var(--line);border-radius:14px;background:#f8faff;font-size:15px}
+input:focus{border-color:var(--pri);background:#fff;outline:0;box-shadow:0 0 0 4px #2563eb22}
+.cap{display:flex;gap:10px;align-items:center}
+.cap canvas{border-radius:12px;border:1.5px solid var(--line);flex:none;cursor:pointer;background:#f8faff}
+.btn{width:100%;margin-top:20px;padding:15px;border-radius:14px;background:linear-gradient(135deg,var(--pri),var(--pri2));color:#fff;font-weight:700;font-size:15px;box-shadow:0 12px 24px -10px #2563eb99;transition:transform .15s}
+.btn:active{transform:scale(.98)}
+.btn[disabled]{opacity:.7}
+.err{margin-top:14px;padding:12px 14px;border-radius:12px;background:#fef2f2;color:#b91c1c;font-size:13.5px;font-weight:500}
+.hint{font-size:12px;color:var(--mut);margin-top:6px}
+/* app shell */
+#app{display:grid;grid-template-columns:250px 1fr;min-height:100%}
+aside{position:sticky;top:0;height:100vh;padding:22px 16px;background:#fff;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:18px}
+.brand{display:flex;gap:11px;align-items:center;font-weight:800;font-size:18px}
+.logo{width:42px;height:42px;border-radius:13px;background:linear-gradient(135deg,var(--pri),var(--pri2));display:grid;place-items:center;color:#fff;font-size:20px}
+.kid{padding:14px;border-radius:16px;background:linear-gradient(135deg,#2563eb,#4f46e5);color:#fff}
+.kid b{display:block;font-size:15px}.kid small{opacity:.85}
+nav{display:flex;flex-direction:column;gap:4px}
+nav button{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:12px;font-weight:600;font-size:14.5px;color:var(--mut);text-align:left;transition:.15s}
+nav button i{font-style:normal;font-size:18px;width:22px;text-align:center}
+nav button:hover{background:#f1f5ff;color:var(--ink)}
+nav button.on{background:#e8efff;color:var(--pri)}
+.out{margin-top:auto;padding:12px 14px;border-radius:12px;color:var(--bad);font-weight:600;text-align:left;background:#fef2f2}
+main{padding:24px 28px 40px;min-width:0}
+.top{display:flex;justify-content:space-between;align-items:center;margin-bottom:20px;gap:12px}
+.top h1{font-size:22px;font-weight:800}
+.pill{display:flex;gap:10px;align-items:center;background:#fff;padding:6px 14px 6px 6px;border-radius:99px;box-shadow:var(--sh);font-size:13px;font-weight:600}
+.av{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#f472b6,#8b5cf6);color:#fff;display:grid;place-items:center;font-weight:800}
+.grid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:20px;align-items:start}
+.col{display:flex;flex-direction:column;gap:20px;min-width:0}
+.card{background:var(--card);border-radius:var(--r);padding:20px;box-shadow:var(--sh);border:1px solid #fff}
+.card h3{font-size:16px;font-weight:800;margin-bottom:14px;display:flex;justify-content:space-between;align-items:center}
+.card h3 a{font-size:12px;color:var(--pri);font-weight:600;cursor:pointer}
+.hero{position:relative;overflow:hidden;border-radius:24px;padding:28px;color:#fff;background:linear-gradient(120deg,#1d4ed8,#6d28d9 55%,#db2777);background-size:220% 220%;animation:flow 14s ease infinite;display:flex;justify-content:space-between;align-items:center;gap:20px;min-height:190px}
+.hero h2{font-size:28px;font-weight:800;letter-spacing:-.02em;line-height:1.15}
+.hero p{margin-top:8px;opacity:.92;line-height:1.5;max-width:36ch}
+.hero .ring{flex:none;width:130px;height:130px;position:relative}
+.ring svg{width:100%;height:100%;transform:rotate(-90deg)}
+.ring .v{position:absolute;inset:0;display:grid;place-items:center;text-align:center;font-weight:800;font-size:28px;line-height:1}
+.ring .v small{display:block;font-size:11px;font-weight:600;opacity:.85;margin-top:4px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.st{border-radius:var(--r);padding:16px;background:var(--card);box-shadow:var(--sh);position:relative;overflow:hidden}
+.st::before{content:"";position:absolute;inset:0 0 auto 0;height:4px;background:var(--c)}
+.st small{color:var(--mut);font-weight:600;font-size:12.5px}
+.st b{display:block;font-size:30px;font-weight:800;margin:6px 0 2px}
+.st span{font-size:12px;color:var(--mut)}
+.st .ic{position:absolute;right:12px;top:14px;font-size:22px;opacity:.9}
+.bars{display:flex;align-items:flex-end;gap:12px;height:150px;padding-top:10px}
+.bar{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end;min-width:0}
+.bar div{width:100%;max-width:38px;border-radius:10px 10px 4px 4px;background:linear-gradient(var(--pri),#60a5fa);transition:height .9s cubic-bezier(.2,.8,.2,1)}
+.bar em{font-style:normal;font-size:11px;color:var(--mut);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%}
+.bar b{font-size:12px}
+.list{display:flex;flex-direction:column;gap:10px}
+.it{display:flex;gap:12px;align-items:center;padding:12px 14px;border-radius:14px;background:#f8faff;border-left:4px solid var(--pri)}
+.it .d{min-width:46px;text-align:center;font-weight:800;line-height:1.1}.it .d small{display:block;font-size:11px;color:var(--mut);font-weight:600}
+.it div:last-child{min-width:0}.it b{font-size:14px;display:block}.it span{font-size:12.5px;color:var(--mut)}
+.cal-h{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px;font-weight:800}
+.cal-h button{width:32px;height:32px;border-radius:10px;background:#f1f5ff;font-weight:800}
+.cal{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;text-align:center;font-size:13px}
+.cal .w{font-size:11px;color:var(--mut);font-weight:700;padding:4px 0}
+.cal .c{aspect-ratio:1;display:grid;place-items:center;border-radius:50%;position:relative;font-weight:600}
+.cal .c.ev::after{content:"";position:absolute;bottom:4px;width:5px;height:5px;border-radius:50%;background:var(--pri2)}
+.cal .c.td{background:var(--pri);color:#fff}.cal .c.td.ev::after{background:#fff}
+.dot{display:inline-block;padding:4px 10px;border-radius:99px;font-size:12px;font-weight:700}
+.pf{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:12px}
+.pf div{padding:14px;border-radius:14px;background:#f8faff}.pf small{color:var(--mut);font-weight:600;font-size:12px;text-transform:capitalize}.pf b{display:block;margin-top:3px;word-break:break-word}
+.empty{text-align:center;padding:36px 16px;color:var(--mut)}.empty i{font-style:normal;font-size:38px;display:block;margin-bottom:8px}
+.row{display:flex;align-items:center;gap:12px;margin:10px 0}.row span{width:110px;font-size:13px;font-weight:600;flex:none}.track{flex:1;height:12px;border-radius:9px;background:#edf1fb;overflow:hidden}.track i{display:block;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--pri),var(--pri2));width:0;transition:width 1s cubic-bezier(.2,.8,.2,1)}
+.row b{width:42px;text-align:right}
+.tabbar{display:none}
+@media(max-width:1100px){.grid{grid-template-columns:1fr}.stats{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:820px){
+ .lg{grid-template-columns:1fr}.lg-art{padding:26px}.lg-art h1{font-size:25px}.lg-form{padding:26px}.lg-art p{display:none}
+ #app{display:block}aside{display:none}
+ main{padding:16px 14px calc(96px + env(safe-area-inset-bottom));padding-top:max(16px,env(safe-area-inset-top))}
+ .hero{flex-direction:column-reverse;align-items:flex-start;padding:22px}.hero h2{font-size:23px}.hero .ring{width:104px;height:104px;align-self:flex-end;position:absolute;right:16px;top:16px}.hero .ring .v{font-size:22px}
+ .hero>div:first-child{padding-top:64px}
+ .tabbar{display:grid;grid-template-columns:repeat(6,1fr);position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom));padding:8px 6px;background:rgba(255,255,255,.88);backdrop-filter:blur(16px);border-radius:24px;box-shadow:0 14px 40px -10px rgba(20,33,61,.35);z-index:5}
+ .tabbar button{display:flex;flex-direction:column;align-items:center;gap:2px;font-size:10.5px;font-weight:700;color:var(--mut);padding:6px 0;border-radius:16px}
+ .tabbar button i{font-style:normal;font-size:19px}.tabbar button.on{color:var(--pri);background:#e8efff}
+ .top h1{font-size:19px}.pill span{display:none}.pill{padding:4px}
+ .st b{font-size:25px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+
+<section id="login">
+ <div class="lg">
+  <div class="lg-art">
+   <div><h1>Pantau perkembangan anak, kapan saja.</h1><p>Kehadiran, nilai, dan agenda kelas dalam satu layar yang mudah dibaca.</p></div>
+   <div class="chips"><span>Kehadiran</span><span>Nilai</span><span>Agenda kelas</span></div>
+  </div>
+  <form class="lg-form" id="f" autocomplete="off">
+   <h2>Masuk Orang Tua</h2><p class="sub">Gunakan NISN anak Anda.</p>
+   <label for="nisn">NISN</label><input id="nisn" inputmode="numeric" required placeholder="Contoh: 0012345678">
+   <label for="pw">Password</label><input id="pw" type="password" placeholder="Kosongkan jika belum diubah"><div class="hint">Password kosong berarti sama dengan NISN.</div>
+   <label for="cp">Kode captcha</label>
+   <div class="cap"><canvas id="cv" width="150" height="48" title="Ketuk untuk ganti"></canvas><input id="cp" required maxlength="5" placeholder="Ketik kode"></div>
+   <div class="err hide" id="err" role="alert"></div>
+   <button class="btn" id="go">Masuk</button>
+  </form>
+ </div>
+</section>
+
+<div id="app" class="hide">
+ <aside>
+  <div class="brand"><div class="logo">🎓</div>Portal Ortu</div>
+  <div class="kid"><b id="kn"></b><small id="kk"></small></div>
+  <nav id="nav"></nav>
+  <button class="out" onclick="logout()">⎋ &nbsp;Keluar</button>
+ </aside>
+ <main>
+  <div class="top"><h1 id="ttl"></h1><div class="pill"><div class="av" id="av"></div><span id="pn"></span></div></div>
+  <div id="view"></div>
+ </main>
+ <div class="tabbar" id="tb"></div>
+</div>
+
+<script>
+/* ===== anti-debug ringan (config.js boleh menimpa lewat window.CONFIG) ===== */
+const CFG=window.CONFIG||{};
+if(CFG.antiDebug!==false){
+ addEventListener('contextmenu',e=>e.preventDefault());
+ addEventListener('keydown',e=>{if(e.key==='F12'||(e.ctrlKey&&e.shiftKey&&/[ijc]/i.test(e.key))||(e.ctrlKey&&/u/i.test(e.key)))e.preventDefault()});
+}
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const TABS=[['home','🏠','Beranda'],['profil','👤','Profil'],['hadir','🗓️','Kehadiran'],['nilai','📈','Nilai'],['kal','📅','Kalender'],['cat','📝','Catatan']];
+let S=null,KAL=[],tab='home',cur=new Date(),code='';
+
+/* ===== captcha ===== */
+function newCaptcha(){
+ const ch='ABCDEFGHJKLMNPQRSTUVWXYZ23456789';code='';
+ for(let i=0;i<5;i++)code+=ch[Math.floor(Math.random()*ch.length)];
+ const c=$('#cv'),x=c.getContext('2d');x.clearRect(0,0,150,48);
+ const g=x.createLinearGradient(0,0,150,48);g.addColorStop(0,'#e0e9ff');g.addColorStop(1,'#f1e6ff');x.fillStyle=g;x.fillRect(0,0,150,48);
+ for(let i=0;i<6;i++){x.strokeStyle=`hsla(${Math.random()*360},60%,55%,.5)`;x.beginPath();x.moveTo(Math.random()*150,Math.random()*48);x.lineTo(Math.random()*150,Math.random()*48);x.stroke()}
+ x.font='800 26px sans-serif';x.textBaseline='middle';
+ [...code].forEach((t,i)=>{x.save();x.translate(14+i*26,25);x.rotate((Math.random()-.5)*.5);x.fillStyle=`hsl(${220+Math.random()*60},70%,35%)`;x.fillText(t,-8,0);x.restore()});
+ $('#cp').value='';
+}
+$('#cv').onclick=newCaptcha;
+
+/* ===== muat & dekripsi data ===== */
+function loadJS(url){
+ return new Promise((ok,no)=>{
+  const before=new Set(Object.getOwnPropertyNames(window));
+  const s=document.createElement('script');s.src=url+'?v='+Date.now();
+  s.onload=()=>{const nw=Object.getOwnPropertyNames(window).filter(k=>!before.has(k));s.remove();ok(nw)};
+  s.onerror=()=>{s.remove();no(new Error('404'))};
+  document.head.appendChild(s);
+ });
+}
+function b64utf8(s){const b=atob(s.replace(/\s/g,'').replace(/-/g,'+').replace(/_/g,'/'));return new TextDecoder().decode(Uint8Array.from(b,c=>c.charCodeAt(0)))}
+function decode(v){
+ const fn=[CFG.decrypt,window.decrypt,window.dekripsi,window.decryptData].find(f=>typeof f==='function');
+ if(typeof v==='string'){
+  if(fn){try{v=fn(v)}catch(e){}}
+  if(typeof v==='string'){
+   try{return JSON.parse(v)}catch(e){}
+   try{return JSON.parse(b64utf8(v))}catch(e){}
+  }
+ }
+ return v;
+}
+async function fetchVar(url,prefer){
+ const nw=await loadJS(url);
+ const names=[prefer,...nw].filter(Boolean);
+ for(const n of names){if(window[n]!==undefined){const d=decode(window[n]);try{delete window[n]}catch(e){}return d}}
+ throw new Error('kosong');
+}
+const pick=(o,ks)=>{for(const k of ks){const f=Object.keys(o||{}).find(x=>x.toLowerCase()===k);if(f!==undefined&&o[f]!=null&&o[f]!=='')return o[f]}return undefined};
+async function loadStudent(nisn){
+ const d=await fetchVar(`data/nisn/${nisn}.js`);
+ return Array.isArray(d)?d[0]:d;
+}
+async function loadKelas(k){
+ const f=String(k||'').trim();if(!f)return[];
+ try{
+  const d=await fetchVar(`data/kelas/${f}.js`,'kalender_'+f.replace(/[^A-Za-z0-9]/g,'_'));
+  return normCal(d);
+ }catch(e){return[]}
+}
+function normCal(d){
+ let a=[];
+ if(Array.isArray(d))a=d;else if(d&&typeof d==='object')a=Object.entries(d).map(([k,v])=>typeof v==='object'?{tanggal:k,...v}:{tanggal:k,judul:v});
+ return a.map(e=>{
+  const t=pick(e,['tanggal','date','tgl','start']);const dt=t?new Date(t):null;
+  return{d:dt&&!isNaN(dt)?dt:null,j:pick(e,['judul','kegiatan','title','nama','acara','keterangan'])||'Agenda',k:pick(e,['ket','keterangan','deskripsi','waktu','jam'])||''};
+ }).filter(e=>e.d).sort((a,b)=>a.d-b.d);
+}
+
+/* ===== sesi terenkripsi (AES-GCM) ===== */
+async function sk(){const h=await crypto.subtle.digest('SHA-256',new TextEncoder().encode((CFG.key||'portal-ortu')+location.origin));return crypto.subtle.importKey('raw',h,'AES-GCM',false,['encrypt','decrypt'])}
+async function saveSess(n){try{const iv=crypto.getRandomValues(new Uint8Array(12));const ct=new Uint8Array(await crypto.subtle.encrypt({name:'AES-GCM',iv},await sk(),new TextEncoder().encode(JSON.stringify({n,t:Date.now()}))));sessionStorage.setItem('ps',btoa(String.fromCharCode(...iv,...ct)))}catch(e){}}
+async function readSess(){try{const r=Uint8Array.from(atob(sessionStorage.getItem('ps')),c=>c.charCodeAt(0));const p=JSON.parse(new TextDecoder().decode(await crypto.subtle.decrypt({name:'AES-GCM',iv:r.slice(0,12)},await sk(),r.slice(12))));return Date.now()-p.t<864e5?p.n:null}catch(e){return null}}
+function logout(){try{sessionStorage.removeItem('ps')}catch(e){}S=null;$('#app').classList.add('hide');$('#login').classList.remove('hide');$('#pw').value='';newCaptcha()}
+
+/* ===== login ===== */
+function showErr(m){const e=$('#err');e.textContent=m;e.classList.remove('hide');newCaptcha()}
+$('#f').onsubmit=async ev=>{
+ ev.preventDefault();$('#err').classList.add('hide');
+ const nisn=$('#nisn').value.trim(),pw=$('#pw').value,btn=$('#go');
+ if($('#cp').value.trim().toUpperCase()!==code)return showErr('Kode captcha belum cocok. Coba kode yang baru.');
+ if(!/^\d{5,12}$/.test(nisn))return showErr('NISN harus berupa angka. Periksa kembali.');
+ btn.disabled=true;btn.textContent='Memeriksa…';
+ try{
+  let d;try{d=await loadStudent(nisn)}catch(e){btn.disabled=false;btn.textContent='Masuk';return showErr('NISN tidak ditemukan. Periksa kembali nomornya.')}
+  if(!d||typeof d!=='object'){btn.disabled=false;btn.textContent='Masuk';return showErr('Data siswa tidak dapat dibaca.')}
+  const real=String(pick(d,['password','pass','pw','sandi'])??nisn);
+  if(pw===''?real!==nisn&&real!=='':pw!==real){btn.disabled=false;btn.textContent='Masuk';return showErr('Password salah. Kosongkan jika belum pernah diubah.')}
+  await enter(d,nisn);saveSess(nisn);
+ }finally{btn.disabled=false;btn.textContent='Masuk'}
+};
+async function enter(d,nisn){
+ S=d;S._nisn=nisn;
+ KAL=await loadKelas(pick(d,['kelas','class','rombel']));
+ $('#login').classList.add('hide');$('#app').classList.remove('hide');
+ const nm=pick(d,['nama','name'])||'Siswa';
+ $('#kn').textContent=nm;$('#kk').textContent='Kelas '+(pick(d,['kelas','class','rombel'])||'-');
+ const ortu=pick(d,['ayah','nama ayah','nama_ayah','ortu','wali','ibu','nama ibu','nama_ibu'])||'Orang Tua';
+ $('#pn').textContent=ortu;$('#av').textContent=String(ortu)[0].toUpperCase();
+ const h=TABS.map(([k,i,l])=>`<button data-k="${k}"><i>${i}</i>${k==='home'||window.innerWidth>820?'':''}${l}</button>`);
+ $('#nav').innerHTML=h.join('');$('#tb').innerHTML=h.join('');
+ document.querySelectorAll('[data-k]').forEach(b=>b.onclick=()=>go(b.dataset.k));
+ go('home');
+}
+
+/* ===== normalisasi data siswa ===== */
+function attData(){
+ const a=pick(S,['absensi','kehadiran','hadir']);const r={h:0,s:0,i:0,a:0};if(!a)return null;
+ if(Array.isArray(a))a.forEach(x=>{const t=String(typeof x==='object'?pick(x,['status','ket','keterangan'])||'':x).toLowerCase()[0];if(t==='h')r.h++;else if(t==='s')r.s++;else if(t==='i')r.i++;else if(t==='a')r.a++});
+ else{r.h=+pick(a,['hadir','h'])||0;r.s=+pick(a,['sakit','s'])||0;r.i=+pick(a,['izin','i'])||0;r.a=+pick(a,['alpa','alpha','a'])||0}
+ const t=r.h+r.s+r.i+r.a;r.t=t;r.p=t?Math.round(r.h/t*100):null;return t?r:null;
+}
+function nilaiData(){
+ const n=pick(S,['nilai','rapor','mapel','grades']);if(!n)return[];
+ if(Array.isArray(n))return n.map(x=>typeof x==='object'?{n:pick(x,['mapel','nama','pelajaran','subject'])||'-',v:+pick(x,['nilai','skor','score','angka'])||0}:null).filter(Boolean);
+ return Object.entries(n).filter(([k,v])=>!isNaN(+v)).map(([k,v])=>({n:k,v:+v}));
+}
+function catData(){
+ const c=pick(S,['catatan','pelanggaran','prestasi','notes']);if(!c)return[];
+ return(Array.isArray(c)?c:[c]).map(x=>typeof x==='object'?Object.values(x).filter(v=>v!=='').join(' · '):String(x));
+}
+
+/* ===== tampilan ===== */
+const MON=['Januari','Februari','Maret','April','Mei','Juni','Juli','Agustus','September','Oktober','November','Desember'];
+const empty=(i,t)=>`<div class="empty"><i>${i}</i>${t}</div>`;
+function go(k){
+ tab=k;document.querySelectorAll('[data-k]').forEach(b=>b.classList.toggle('on',b.dataset.k===k));
+ const t=TABS.find(x=>x[0]===k);$('#ttl').textContent=k==='home'?'Ringkasan Anak':t[2];
+ $('#view').innerHTML=V[k]();scrollTo({top:0});
+ requestAnimationFrame(()=>{document.querySelectorAll('[data-h]').forEach(e=>e.style.height=e.dataset.h);document.querySelectorAll('[data-w]').forEach(e=>e.style.width=e.dataset.w);document.querySelectorAll('[data-n]').forEach(count)});
+ if(document.querySelector('#calbox'))bindCal();
+}
+function count(e){const to=+e.dataset.n,t0=performance.now();(function f(t){const p=Math.min(1,(t-t0)/900);e.textContent=Math.round(to*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)})(t0)}
+function greet(){const h=new Date().getHours();return h<11?'Selamat pagi':h<15?'Selamat siang':h<18?'Selamat sore':'Selamat malam'}
+function ring(p){const r=54,c=2*Math.PI*r;return`<div class="ring"><svg viewBox="0 0 130 130"><circle cx="65" cy="65" r="${r}" fill="none" stroke="rgba(255,255,255,.25)" stroke-width="12"/><circle cx="65" cy="65" r="${r}" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" stroke-dasharray="${c}" stroke-dashoffset="${p==null?c:c*(1-p/100)}" style="transition:stroke-dashoffset 1.2s"/></svg><div class="v"><div>${p==null?'–':p+'%'}<small>hadir</small></div></div></div>`}
+function agenda(n){
+ const now=new Date();now.setHours(0,0,0,0);const up=KAL.filter(e=>e.d>=now).slice(0,n);
+ return up.length?`<div class="list">${up.map(e=>`<div class="it"><div class="d">${e.d.getDate()}<small>${MON[e.d.getMonth()].slice(0,3)}</small></div><div><b>${esc(e.j)}</b>${e.k?`<span>${esc(e.k)}</span>`:''}</div></div>`).join('')}</div>`:empty('🌤️','Belum ada agenda mendatang.');
+}
+function calCard(){return`<div class="card" id="calbox"><div class="cal-h"><button id="pv" aria-label="Bulan sebelumnya">‹</button><span id="cm"></span><button id="nx" aria-label="Bulan berikutnya">›</button></div><div class="cal" id="cg"></div></div>`}
+function bindCal(){
+ const draw=()=>{
+  const y=cur.getFullYear(),m=cur.getMonth(),f=new Date(y,m,1).getDay(),n=new Date(y,m+1,0).getDate(),td=new Date();
+  $('#cm').textContent=MON[m]+' '+y;
+  let h=['M','S','S','R','K','J','S'].map(x=>`<div class="w">${x}</div>`).join('')+'<div></div>'.repeat(f);
+  for(let d=1;d<=n;d++){const ev=KAL.some(e=>e.d.getFullYear()===y&&e.d.getMonth()===m&&e.d.getDate()===d);const is=td.getFullYear()===y&&td.getMonth()===m&&td.getDate()===d;h+=`<div class="c${ev?' ev':''}${is?' td':''}">${d}</div>`}
+  $('#cg').innerHTML=h;
+ };
+ $('#pv').onclick=()=>{cur=new Date(cur.getFullYear(),cur.getMonth()-1,1);draw()};
+ $('#nx').onclick=()=>{cur=new Date(cur.getFullYear(),cur.getMonth()+1,1);draw()};draw();
+}
+const V={
+ home(){
+  const a=attData(),n=nilaiData(),c=catData(),avg=n.length?Math.round(n.reduce((s,x)=>s+x.v,0)/n.length):null;
+  const nm=String(pick(S,['nama','name'])||'').split(' ')[0];
+  const mo=KAL.filter(e=>e.d.getMonth()===new Date().getMonth()&&e.d.getFullYear()===new Date().getFullYear()).length;
+  const st=(l,v,s,c,i)=>`<div class="st" style="--c:${c}"><span class="ic">${i}</span><small>${l}</small><b>${v==null?'–':`<span data-n="${v}">0</span>`}</b><span>${s}</span></div>`;
+  return`<div class="grid"><div class="col">
+  <div class="hero"><div><h2>${greet()}, Bapak/Ibu! 👋</h2><p>${esc(nm)} ${a?`hadir ${a.p}% di kelas.`:'siap dipantau hari ini.'} ${mo?`Ada ${mo} agenda kelas bulan ini.`:''}</p></div>${ring(a?a.p:null)}</div>
+  <div class="stats">${st('Kehadiran',a?a.p:null,a?a.h+' dari '+a.t+' hari':'Belum ada data','#16a34a','✅')}${st('Rata-rata nilai',avg,n.length+' mata pelajaran','#2563eb','📈')}${st('Agenda bulan ini',mo,'Kegiatan kelas','#7c3aed','📅')}${st('Catatan',c.length,'Dari sekolah','#f59e0b','📝')}</div>
+  <div class="card"><h3>Nilai per pelajaran <a onclick="go('nilai')">Lihat semua</a></h3>${bars(n.slice(0,7))}</div></div>
+  <div class="col">${calCard()}<div class="card"><h3>Agenda terdekat <a onclick="go('kal')">Semua</a></h3>${agenda(4)}</div></div></div>`;
+ },
+ profil(){
+  const skip=/pass|pw|sandi|^_/i,ents=Object.entries(S).filter(([k,v])=>!skip.test(k)&&v!==''&&typeof v!=='object');
+  return`<div class="card"><h3>Data siswa</h3><div class="pf">${ents.map(([k,v])=>`<div><small>${esc(k.replace(/[_-]/g,' '))}</small><b>${esc(v)}</b></div>`).join('')}</div></div>`;
+ },
+ hadir(){
+  const a=attData();if(!a)return`<div class="card">${empty('🗓️','Data kehadiran belum tersedia untuk anak Anda.')}</div>`;
+  const r=(l,v,c)=>`<div class="row"><span>${l}</span><div class="track"><i style="background:${c}" data-w="${a.t?v/a.t*100:0}%"></i></div><b>${v}</b></div>`;
+  return`<div class="card"><h3>Rekap kehadiran <span class="dot" style="background:#dcfce7;color:#166534">${a.p}% hadir</span></h3>${r('Hadir',a.h,'#16a34a')}${r('Sakit',a.s,'#f59e0b')}${r('Izin',a.i,'#3b82f6')}${r('Alpa',a.a,'#ef4444')}</div>`;
+ },
+ nilai(){const n=nilaiData();return`<div class="card"><h3>Nilai per pelajaran</h3>${n.length?bars(n)+`<div style="margin-top:18px">${n.map(x=>`<div class="row"><span style="width:150px">${esc(x.n)}</span><div class="track"><i data-w="${Math.min(100,x.v)}%"></i></div><b>${x.v}</b></div>`).join('')}</div>`:empty('📈','Nilai belum tersedia untuk anak Anda.')}</div>`},
+ kal(){return`<div class="grid"><div class="col">${calCard()}</div><div class="col"><div class="card"><h3>Agenda kelas ${esc(pick(S,['kelas'])||'')}</h3>${agenda(12)}</div></div></div>`},
+ cat(){const c=catData();return`<div class="card"><h3>Catatan dari sekolah</h3>${c.length?`<div class="list">${c.map(x=>`<div class="it"><div class="d">📌</div><div><b>${esc(x)}</b></div></div>`).join('')}</div>`:empty('🎉','Tidak ada catatan. Semuanya baik-baik saja.')}</div>`}
+};
+function bars(n){
+ if(!n.length)return empty('📈','Nilai belum tersedia untuk anak Anda.');
+ return`<div class="bars">${n.map(x=>`<div class="bar"><b>${x.v}</b><div style="height:0" data-h="${Math.max(4,Math.min(100,x.v))}%"></div><em title="${esc(x.n)}">${esc(x.n)}</em></div>`).join('')}</div>`;
+}
+
+/* ===== mulai ===== */
+newCaptcha();
+(async()=>{const n=await readSess();if(n){try{await enter(await loadStudent(n),n)}catch(e){}}})();
+</script>
+</body>
+</html>
