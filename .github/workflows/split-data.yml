@@ -1,0 +1,49 @@
+name: Split Data (NISN & Kelas)
+
+# Jalan otomatis setiap kali dsgan.js atau kalgan.js berubah (misal dari Apps Script),
+# atau bisa dijalankan manual lewat tab "Actions" di GitHub.
+on:
+  push:
+    paths:
+      - 'dsgan.js'
+      - 'kalgan.js'
+  workflow_dispatch:
+
+# Kalau Apps Script mengirim data berkali-kali, proses dijalankan satu per satu
+concurrency:
+  group: split-data
+  cancel-in-progress: false
+
+jobs:
+  split:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Split dsgan.js -> data/nisn/*.js
+        run: node scripts/split-dsgan.js dsgan.js data/nisn
+
+      - name: Split kalgan.js -> data/kelas/*.js
+        run: node scripts/split-kalgan.js kalgan.js data/kelas
+
+      - name: Commit & push hasil split
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/nisn data/kelas
+          if git diff --staged --quiet; then
+            echo "Tidak ada perubahan data."
+          else
+            # Tanpa [skip ci] supaya Cloudflare Pages ikut deploy ulang membawa data terbaru
+            git commit -m "Auto: pecah data nisn & kelas"
+            git pull --rebase
+            git push
+          fi
