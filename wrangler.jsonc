@@ -1,0 +1,16 @@
+{
+  // GANTI "name" agar SAMA PERSIS dengan nama proyek di Cloudflare (Workers & Pages > proyek kamu)
+  "name": "ortu",
+  "main": "worker/index.js",
+  "compatibility_date": "2025-01-01",
+  // build otomatis dijalankan saat `wrangler deploy` (jadi kolom Build command di dashboard boleh kosong)
+  "build": { "command": "npm run build" },
+  "assets": {
+    "directory": "./dist",
+    "binding": "ASSETS",
+    // hanya rute ini yang melewati proteksi; file lain disajikan langsung
+    "run_worker_first": ["/", "/index.html", "/app.*", "/config.js", "/data/*"]
+  },
+  // decoy = kirim data sampah ke scraper | block = 403 | off = matikan proteksi
+  "vars": { "PROTECT_MODE": "decoy" }
+}

@@ -5,7 +5,8 @@
 ```
 src/index.src.html     <- SATU-SATUNYA sumber HTML/CSS/JS. Edit di sini.
 build.mjs              <- build: obfuscate -> dist/ (+ _headers, _routes.json, config.js terenkripsi)
-functions/_middleware.js <- proteksi di edge Cloudflare (anti-scrape, anti-hotlink, decoy)
+edge/guard.js + worker/index.js <- proteksi di edge Cloudflare (anti-scrape, anti-hotlink, decoy)
+wrangler.jsonc         <- konfigurasi deploy (build, assets, rute proteksi)
 config.js              <- gasUrl (teks biasa di repo; di dist otomatis terenkripsi)
 domains.txt            <- domain yang boleh menjalankan aplikasi (kunci domain)
 dsgan.js, kalgan.js    <- sumber data dari Apps Script (TIDAK ikut ke dist)
@@ -17,24 +18,21 @@ data/nisn, data/kelas  <- hasil split otomatis (data/nisn terenkripsi)
 Yang ikut dipublikasikan hanya isi `dist/`: `index.html` kecil, `app.<hash>.js`
 (ter-obfuscate), `config.js` (terenkripsi), `data/`, `_headers`, `_routes.json`.
 
-## Deploy ke Cloudflare Pages (sekali saja)
+## Deploy ke Cloudflare (Workers + Static Assets, alur "Workers Builds")
 
-1. Cloudflare Dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pilih repo ini.
-2. Isi:
-   - Framework preset: **None**
-   - Build command: `npm run build`
-   - Build output directory: `dist`
-   - Environment variable: `NODE_VERSION` = `20`
-3. Isi **domains.txt** dengan domain final (mis. `.domainkamu.com` dan `namaproyek.pages.dev`), commit.
+1. Dashboard → **Workers & Pages → Create → Import a repository** → pilih repo ini.
+2. **Nama proyek harus sama dengan `"name"` di `wrangler.jsonc`** (ubah salah satunya).
+3. Build command boleh kosong (build sudah dijalankan oleh `wrangler.jsonc`), atau isi `npm run build`.
+   Deploy command: `npx wrangler deploy` (bawaan).
+4. Isi `domains.txt` dengan domain final (mis. `.domainkamu.com` dan `namaproyek.workers.dev`), commit.
    Tanpa ini kunci domain nonaktif (build memberi peringatan).
-4. (Opsional) Variable `PROTECT_MODE`: `decoy` (default, kirim data sampah ke scraper),
-   `block` (403), atau `off` (matikan proteksi middleware kalau ada masalah).
-5. **Settings → Build → Build watch paths** (pengganti `ignoreCommand` Vercel), isi:
-   `src/*, build.mjs, package.json, config.js, data/*, functions/*, domains.txt`
-6. Push → Cloudflare membangun otomatis. Workflow GitHub Actions tetap memecah data
-   saat `dsgan.js`/`kalgan.js` berubah, lalu commit-nya memicu deploy baru.
+5. Mode proteksi diatur di `wrangler.jsonc` → `vars.PROTECT_MODE`: `decoy` | `block` | `off`.
+6. Pengganti `ignoreCommand` Vercel: **Settings → Build → Build watch paths**:
+   `src/*, build.mjs, package.json, config.js, data/*, edge/*, worker/*, wrangler.jsonc, domains.txt`
+7. Workflow GitHub Actions tetap memecah data saat `dsgan.js`/`kalgan.js` berubah; commit-nya memicu deploy baru.
 
-Deploy manual (opsional): `npm install && npm run deploy`.
+Kalau memakai **Cloudflare Pages** (bukan Workers): build command `npm run build`, output `dist`,
+folder `functions/` otomatis dipakai.
 
 ## Pengaturan Cloudflare yang disarankan (di dashboard domain)
 
