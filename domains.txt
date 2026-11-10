@@ -1,0 +1,6 @@
+# Domain yang BOLEH menjalankan aplikasi ini (satu per baris).
+# Kalau kode disalin ke domain lain, aplikasi tidak akan jalan.
+# Awalan titik = domain itu + semua subdomainnya.
+# Contoh (hapus tanda # dan ganti dengan domain kamu):
+# .domainkamu.com
+# portal-ortu.pages.dev
