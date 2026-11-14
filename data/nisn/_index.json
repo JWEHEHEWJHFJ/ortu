@@ -1,0 +1,4142 @@
+{
+  "12345": {
+    "file": "3bb2e27f031da95774132ddd34e95559.js",
+    "semester": "GANJIL",
+    "nama": "ARDAN",
+    "kelas": "X.3"
+  },
+  "266715": {
+    "file": "da7d482579c9c1f0dde33c3023625ccd.js",
+    "semester": "GANJIL",
+    "nama": "AINUN MAKMUR",
+    "kelas": "X.1"
+  },
+  "266749": {
+    "file": "75701f671f68dd25ffb235fc54610389.js",
+    "semester": "GANJIL",
+    "nama": "CITRA QIRAAH MAULUD FIRASA",
+    "kelas": "X.8"
+  },
+  "266764": {
+    "file": "c54547bed560684f7cc66afb2cb5cd1a.js",
+    "semester": "GANJIL",
+    "nama": "HAIKAL FAIZ",
+    "kelas": "X.2"
+  },
+  "266780": {
+    "file": "1f0c857a1fd420bd4c5317b3d89b4905.js",
+    "semester": "GANJIL",
+    "nama": "JUMAATI",
+    "kelas": "X.5"
+  },
+  "266784": {
+    "file": "5e4557558102d50028ccd9b9214d902d.js",
+    "semester": "GANJIL",
+    "nama": "KHAIRUL NIZAM",
+    "kelas": "X.7"
+  },
+  "266798": {
+    "file": "c4dfe149bff01ed6178c5d741903e26d.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ABID",
+    "kelas": "X.6"
+  },
+  "266803": {
+    "file": "6d49a139bf876da15fa4bccd5444c442.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AQIL ISHAQ",
+    "kelas": "X.1"
+  },
+  "266804": {
+    "file": "5173d952b44c739e6b945c66e6ef6c01.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ARIF",
+    "kelas": "X.5"
+  },
+  "266950": {
+    "file": "7e7de1aa2ce3c9dace5fb4d3e5f51d71.js",
+    "semester": "GANJIL",
+    "nama": "SURYA ADITYA BASRI",
+    "kelas": "X.8"
+  },
+  "266962": {
+    "file": "3f7d7b781fbfa114ff1b315e22d72900.js",
+    "semester": "GANJIL",
+    "nama": "MUH. SAPUTRA",
+    "kelas": "X.3"
+  },
+  "92460027": {
+    "file": "846a7f191f8e380e536e39c2bf91b555.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD RISAL",
+    "kelas": "XI.6"
+  },
+  "95498277": {
+    "file": "e9d26a8cdfb4f9670937a437fad790cd.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FYTRAH RAMADHAN RUSLAN",
+    "kelas": "XI.7"
+  },
+  "97394766": {
+    "file": "924a15026be26f0b26b068a3a788602e.js",
+    "semester": "GANJIL",
+    "nama": "SRI WAHYUNI",
+    "kelas": "XI.1"
+  },
+  "101297878": {
+    "file": "3ed99e92c22da1ccad3048046c0aa8b0.js",
+    "semester": "GANJIL",
+    "nama": "NURFAINNA",
+    "kelas": "X.3"
+  },
+  "101461790": {
+    "file": "cb656fb05d3e9b6693b94d43cbc97678.js",
+    "semester": "GANJIL",
+    "nama": "NUR AZISA",
+    "kelas": "X.4"
+  },
+  "103961411": {
+    "file": "6ac58a97d4bdfcd6da9bc7a314af8326.js",
+    "semester": "GANJIL",
+    "nama": "FARHAN NURDIN",
+    "kelas": "XI.4"
+  },
+  "109895093": {
+    "file": "356d7be14de32f95b3980a963e6f4580.js",
+    "semester": "GANJIL",
+    "nama": "AKSAR HIDAYAT",
+    "kelas": "XI.3"
+  },
+  "112638019": {
+    "file": "e95e96458c0fc3e05ad720e29dab3e40.js",
+    "semester": "GANJIL",
+    "nama": "SYUHAILA",
+    "kelas": "X.7"
+  },
+  "115216546": {
+    "file": "5f0e18921969a6f6be2509dccaaaeff1.js",
+    "semester": "GANJIL",
+    "nama": "SRI MULIANI NURENG",
+    "kelas": "X.8"
+  },
+  "118731171": {
+    "file": "ef1e1352b903aa20f4648a702ead0d30.js",
+    "semester": "GANJIL",
+    "nama": "NUR SAKINAH",
+    "kelas": "X.5"
+  },
+  "3077427560": {
+    "file": "b92900529b0edeb18690a5e083f9b40f.js",
+    "semester": "GANJIL",
+    "nama": "NURFASIRAH",
+    "kelas": "XII.6"
+  },
+  "3085200752": {
+    "file": "f6e84db0da0003adc311732aa1ade778.js",
+    "semester": "GANJIL",
+    "nama": "RASYA NOOR",
+    "kelas": "XII.4"
+  },
+  "3085626606": {
+    "file": "6aea92e31ac25aa29f3f56ece6ab9a80.js",
+    "semester": "GANJIL",
+    "nama": "NURUL AL AIDA",
+    "kelas": "XII.4"
+  },
+  "3085685944": {
+    "file": "31645a61a043e7b8398782d1a5eef06a.js",
+    "semester": "GANJIL",
+    "nama": "SAIPUL",
+    "kelas": "X.8"
+  },
+  "3085913408": {
+    "file": "9b7e6c71cc087eed42a4ab3f99f5e091.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FAUZAN",
+    "kelas": "XII.6"
+  },
+  "3088079014": {
+    "file": "583b66529ef9dfd9954fcb6ed75dd269.js",
+    "semester": "GANJIL",
+    "nama": "DIMAS PRATAMA",
+    "kelas": "XII.5"
+  },
+  "3088088491": {
+    "file": "05aa3481d915647bb68a4173e0dd510d.js",
+    "semester": "GANJIL",
+    "nama": "NURHALISA",
+    "kelas": "XI.4"
+  },
+  "3088651654": {
+    "file": "5414e0e325b45451fa502bd9d3a3fedd.js",
+    "semester": "GANJIL",
+    "nama": "M.AZZAY AL GAFALI UMAR",
+    "kelas": "XII.3"
+  },
+  "3088848152": {
+    "file": "3dd4f474ef7a051baca867b971f29a65.js",
+    "semester": "GANJIL",
+    "nama": "SRI MULYANI",
+    "kelas": "XII.1"
+  },
+  "3090358142": {
+    "file": "d2a37b081af64476a4862bc3194518ea.js",
+    "semester": "GANJIL",
+    "nama": "MISRAN",
+    "kelas": "XII.1"
+  },
+  "3090938788": {
+    "file": "6025c527c4c1d29c6262e220eb18262a.js",
+    "semester": "GANJIL",
+    "nama": "MUH. YUSUF",
+    "kelas": "XI.6"
+  },
+  "3090951683": {
+    "file": "385a6cbdf5b18c7483ed036bd0d78740.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD REGA ABRAM",
+    "kelas": "XI.2"
+  },
+  "3090961369": {
+    "file": "9c9ca4d11312b9ca0ea5a19b51157161.js",
+    "semester": "GANJIL",
+    "nama": "ALFIAN ARAS",
+    "kelas": "XI.5"
+  },
+  "3091471051": {
+    "file": "68e5c8dd3ad0660fb9ab8588f3f31753.js",
+    "semester": "GANJIL",
+    "nama": "NURJANNA",
+    "kelas": "XI.2"
+  },
+  "3091494481": {
+    "file": "b389f666199decee1a5846751d03367c.js",
+    "semester": "GANJIL",
+    "nama": "NUR HELDA",
+    "kelas": "XI.6"
+  },
+  "3091692313": {
+    "file": "07436611a8ecd7f139259d5a2367a9f9.js",
+    "semester": "GANJIL",
+    "nama": "ASLAN",
+    "kelas": "XII.1"
+  },
+  "3092376057": {
+    "file": "bad962627eafb4ccc7266c48dd39b6cb.js",
+    "semester": "GANJIL",
+    "nama": "CHINDY ANGGREANI",
+    "kelas": "XII.1"
+  },
+  "3092404924": {
+    "file": "0374aad1d6fa97519b50d1e77cffdf16.js",
+    "semester": "GANJIL",
+    "nama": "ALIFAH YASMIN",
+    "kelas": "XII.1"
+  },
+  "3092651351": {
+    "file": "c6448d674e6ba968448d074ce5df4473.js",
+    "semester": "GANJIL",
+    "nama": "ALIAH MUKHBITA",
+    "kelas": "XII.1"
+  },
+  "3093263088": {
+    "file": "f3c3d7a3a3fc93d849a6d205b422d8ad.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD FANDI",
+    "kelas": "XII.5"
+  },
+  "3093417183": {
+    "file": "8ead54a12360d46c384b27108e6429ee.js",
+    "semester": "GANJIL",
+    "nama": "REZKY AULIA",
+    "kelas": "XII.4"
+  },
+  "3094057563": {
+    "file": "7a5da4e722a354ee03dedd0a06854ba1.js",
+    "semester": "GANJIL",
+    "nama": "RANI",
+    "kelas": "XI.6"
+  },
+  "3094639786": {
+    "file": "a29f7f98a746a7e01f069fb89d053a0a.js",
+    "semester": "GANJIL",
+    "nama": "MUH.SAFRIL",
+    "kelas": "X.5"
+  },
+  "3095393957": {
+    "file": "fcbf2a38856c771a5ef8babbe2975f0e.js",
+    "semester": "GANJIL",
+    "nama": "NUR ARISAH",
+    "kelas": "XI.7"
+  },
+  "3096600267": {
+    "file": "4773a8e310bd49690b7065e9cfb9dd78.js",
+    "semester": "GANJIL",
+    "nama": "DYNA OCTHAVIA",
+    "kelas": "XI.2"
+  },
+  "3097125988": {
+    "file": "8323a42f54ccce692551086bb7e7904b.js",
+    "semester": "GANJIL",
+    "nama": "BAYU HIDAYAT",
+    "kelas": "XII.1"
+  },
+  "3097416685": {
+    "file": "ff1af0d95b54f01169f8e764cf59c3be.js",
+    "semester": "GANJIL",
+    "nama": "RISMAYANTI",
+    "kelas": "XII.3"
+  },
+  "3097776542": {
+    "file": "79fb2c0cd82e986c4db934a0d4b51aee.js",
+    "semester": "GANJIL",
+    "nama": "MUH.AIDIL AKBAR",
+    "kelas": "XI.1"
+  },
+  "3097990679": {
+    "file": "bbd53f2c489aeb496600ef539b182428.js",
+    "semester": "GANJIL",
+    "nama": "NURUL FIFI NATASYA MUH. YAMIN",
+    "kelas": "XI.3"
+  },
+  "3098495979": {
+    "file": "7f23baefede3d0d493875084d8e5e4a4.js",
+    "semester": "GANJIL",
+    "nama": "NUR HIDAYAH",
+    "kelas": "XI.7"
+  },
+  "3098982847": {
+    "file": "b90429725877932dfe99ce7b2ee16af9.js",
+    "semester": "GANJIL",
+    "nama": "NUR RAHZIQAH",
+    "kelas": "XII.3"
+  },
+  "3099280920": {
+    "file": "b063e978275464fff4f5e417e8257c84.js",
+    "semester": "GANJIL",
+    "nama": "RIFQI ALFIAN. Q",
+    "kelas": "XII.4"
+  },
+  "3099412957": {
+    "file": "4d8872c664d9fddd3184cf62407309f9.js",
+    "semester": "GANJIL",
+    "nama": "MITRA AULIA. H",
+    "kelas": "XI.5"
+  },
+  "3099475192": {
+    "file": "7149ba270899e3ffff336973b17977ca.js",
+    "semester": "GANJIL",
+    "nama": "AKBAR GIFFARIL",
+    "kelas": "XI.4"
+  },
+  "3099795596": {
+    "file": "e0ff4ddbef42699e2fe9c936851e610a.js",
+    "semester": "GANJIL",
+    "nama": "M. IQRAM DARWIS",
+    "kelas": "XII.4"
+  },
+  "3099810087": {
+    "file": "2060005c03d6a6e2c0b01f242764af73.js",
+    "semester": "GANJIL",
+    "nama": "AZRIFA ALMAQHFIRA SYAMSUL",
+    "kelas": "XII.5"
+  },
+  "3100016581": {
+    "file": "fd4453d409d013b4f58dff7496067af5.js",
+    "semester": "GANJIL",
+    "nama": "SALMAN AMMAR. M",
+    "kelas": "XI.1"
+  },
+  "3100154158": {
+    "file": "336cb549561fc4a5b1a0d196112a798c.js",
+    "semester": "GANJIL",
+    "nama": "SAYRA",
+    "kelas": "X.3"
+  },
+  "3100193738": {
+    "file": "1837480a4505ccaa3363fbc98131bb1d.js",
+    "semester": "GANJIL",
+    "nama": "SELFIANI",
+    "kelas": "X.8"
+  },
+  "3100501444": {
+    "file": "ec1e599de0f88bee884dc04a6543a7e2.js",
+    "semester": "GANJIL",
+    "nama": "YAZIR ARAFAT",
+    "kelas": "X.6"
+  },
+  "3100758766": {
+    "file": "d5a4b9b2d6dba575d81fb760d5563ba1.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SAZILI",
+    "kelas": "X.1"
+  },
+  "3100991255": {
+    "file": "fabf9b7846121ab07803e96cb4bcf2f0.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ZAKY",
+    "kelas": "X.1"
+  },
+  "3101611646": {
+    "file": "c310361561b89ce977973e85428c1295.js",
+    "semester": "GANJIL",
+    "nama": "ZAHRA",
+    "kelas": "X.6"
+  },
+  "3101758295": {
+    "file": "e34be2dac03f9b58c65f5d2252def831.js",
+    "semester": "GANJIL",
+    "nama": "MUH. IQBAL",
+    "kelas": "XI.2"
+  },
+  "3101898170": {
+    "file": "1e9b3658326a054e7404056e635d2815.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD AL - HABSYI",
+    "kelas": "XI.7"
+  },
+  "3101957407": {
+    "file": "0cf220a42a2c7858bb0215bbbdd3991d.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ARIFANDI",
+    "kelas": "XI.6"
+  },
+  "3102075357": {
+    "file": "50e39c1bf2a0974c7198669f750bc65b.js",
+    "semester": "GANJIL",
+    "nama": "ASRIANI",
+    "kelas": "X.8"
+  },
+  "3102322385": {
+    "file": "a1f8e4d286504a1e664b18b9e2afd9ab.js",
+    "semester": "GANJIL",
+    "nama": "MUH. NASWAN ALFIAN",
+    "kelas": "X.6"
+  },
+  "3102428813": {
+    "file": "17c7849bea8ac3f61b903c1ec9b8a702.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FATIH FARHAT",
+    "kelas": "X.6"
+  },
+  "3103058344": {
+    "file": "a4d4376a59dd992d23e06ee6bc06362a.js",
+    "semester": "GANJIL",
+    "nama": "MISNA",
+    "kelas": "XI.2"
+  },
+  "3103070727": {
+    "file": "54e2bbaa0a7d6dc6c3be10b9dd693f58.js",
+    "semester": "GANJIL",
+    "nama": "MARIANI",
+    "kelas": "X.5"
+  },
+  "3103083142": {
+    "file": "4eeeb7110cd500619856966e70ee3c31.js",
+    "semester": "GANJIL",
+    "nama": "NOR AZLINA RUSDI",
+    "kelas": "X.1"
+  },
+  "3103527343": {
+    "file": "bb4720b7b34e4ddc40d5a6f1d7783e94.js",
+    "semester": "GANJIL",
+    "nama": "FITRIANA",
+    "kelas": "X.5"
+  },
+  "3104163412": {
+    "file": "ad9a246372e286869bd2026b02f6b5d9.js",
+    "semester": "GANJIL",
+    "nama": "ASWAN FADIL",
+    "kelas": "X.6"
+  },
+  "3104273302": {
+    "file": "ff75e2a9e33d82486259f62805ffc408.js",
+    "semester": "GANJIL",
+    "nama": "NUR HALIMA",
+    "kelas": "X.8"
+  },
+  "3104441865": {
+    "file": "c6b3cd177cded3ba56042b1d5dcf6c81.js",
+    "semester": "GANJIL",
+    "nama": "NAFIZAH NUR AFNI",
+    "kelas": "XI.3"
+  },
+  "3104569047": {
+    "file": "c5d24cb15b5e172dab5beb6dbf3856d6.js",
+    "semester": "GANJIL",
+    "nama": "NURUL SAKARIA",
+    "kelas": "XI.5"
+  },
+  "3104826758": {
+    "file": "5a1c71ddc74d3f0c9f2d86dec300d0d1.js",
+    "semester": "GANJIL",
+    "nama": "ATIQA ZALFA",
+    "kelas": "XI.2"
+  },
+  "3105328971": {
+    "file": "803f75afe0b767653cffea6054553823.js",
+    "semester": "GANJIL",
+    "nama": "AMELIA",
+    "kelas": "XI.5"
+  },
+  "3105503871": {
+    "file": "fd0a2891ba5ad594efca951e2139991c.js",
+    "semester": "GANJIL",
+    "nama": "MAHIRA AZHARA",
+    "kelas": "XI.7"
+  },
+  "3105616974": {
+    "file": "1e5d29f933d09db2e965370858690839.js",
+    "semester": "GANJIL",
+    "nama": "AWALUDDIN",
+    "kelas": "X.5"
+  },
+  "3106048573": {
+    "file": "27cfc3be557567ac1186c1b0ca3cfc8a.js",
+    "semester": "GANJIL",
+    "nama": "MUTMAINNA",
+    "kelas": "X.6"
+  },
+  "3106314539": {
+    "file": "177bb7eb5d0c163772f7b989044b2c48.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYARIF",
+    "kelas": "XI.4"
+  },
+  "3106431197": {
+    "file": "9ac8cd087b2ecba62e9fc07972c0e024.js",
+    "semester": "GANJIL",
+    "nama": "NUR ZAKIA",
+    "kelas": "X.2"
+  },
+  "3107050520": {
+    "file": "6a4be3e5f8c361175100364dd7e4e2ef.js",
+    "semester": "GANJIL",
+    "nama": "WAQIFA AZZAHRA",
+    "kelas": "X.2"
+  },
+  "3107058476": {
+    "file": "3cccd209f74670025fb40f4716c14939.js",
+    "semester": "GANJIL",
+    "nama": "NAISYLA PUTRY",
+    "kelas": "X.6"
+  },
+  "3107086108": {
+    "file": "ae48520469cf021492cba0d5a3545d36.js",
+    "semester": "GANJIL",
+    "nama": "CAHYANI",
+    "kelas": "X.4"
+  },
+  "3107232488": {
+    "file": "203cf1304252e4df02c38f27742a8f61.js",
+    "semester": "GANJIL",
+    "nama": "ALIF ADRIAN",
+    "kelas": "X.6"
+  },
+  "3108553807": {
+    "file": "748077fd4b72e95c4e28af33889dee8a.js",
+    "semester": "GANJIL",
+    "nama": "NORIZZAH MELANI",
+    "kelas": "XI.5"
+  },
+  "3108664481": {
+    "file": "f87f43e468c56c4e652035d2a585399b.js",
+    "semester": "GANJIL",
+    "nama": "MUH. RAYYAN MUMTAZD",
+    "kelas": "XI.6"
+  },
+  "3109001852": {
+    "file": "aebaba1e1acb7a9cb252a5a5f284cea1.js",
+    "semester": "GANJIL",
+    "nama": "SHAFIRA SANDRA",
+    "kelas": "X.5"
+  },
+  "3109226668": {
+    "file": "a7b36c3244208e6f4e31e7fe38ca9f0b.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD NUR SYAFIQ SYAMSUL",
+    "kelas": "XI.4"
+  },
+  "3109600343": {
+    "file": "1912cd65d82fd7e7715b091c4a8729c0.js",
+    "semester": "GANJIL",
+    "nama": "IKHRAM",
+    "kelas": "XI.5"
+  },
+  "3109605920": {
+    "file": "b93010f3aa8ccec380fd682dbed173b6.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI MAHYUNI NASRINA",
+    "kelas": "X.2"
+  },
+  "3109704271": {
+    "file": "c2ff95d36e124759f0788b3c480838f3.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ALDIANSYAH",
+    "kelas": "X.5"
+  },
+  "3109714407": {
+    "file": "4418083589b6a5ade7b9370deec18a31.js",
+    "semester": "GANJIL",
+    "nama": "SALWA",
+    "kelas": "X.3"
+  },
+  "3110460753": {
+    "file": "f49c6e01c6806c7759764394a3c1fb22.js",
+    "semester": "GANJIL",
+    "nama": "SITTI KHADIJAH IRWAN",
+    "kelas": "X.3"
+  },
+  "3110639550": {
+    "file": "a678ed857a0b650c54a3e31f06298ff1.js",
+    "semester": "GANJIL",
+    "nama": "ATIFAH DEBY PURWANTI",
+    "kelas": "X.2"
+  },
+  "3111711191": {
+    "file": "22610db03b9c6318773db9b0f2f248d0.js",
+    "semester": "GANJIL",
+    "nama": "DEWA APRILLIO",
+    "kelas": "X.6"
+  },
+  "3112103451": {
+    "file": "3be316498e87bec101cb0859abc4e430.js",
+    "semester": "GANJIL",
+    "nama": "NURUL SYAHIRA",
+    "kelas": "X.7"
+  },
+  "3113213905": {
+    "file": "92908a236250eb5cf3dafc92c9cef098.js",
+    "semester": "GANJIL",
+    "nama": "ASHRAF HAKIM",
+    "kelas": "X.2"
+  },
+  "3114088394": {
+    "file": "d407cf7e212b3c858b3c195236561294.js",
+    "semester": "GANJIL",
+    "nama": "MUH. SAHRIL SAPUTRA",
+    "kelas": "X.2"
+  },
+  "3114541838": {
+    "file": "6b01a658d1654f8c061145a757a5bbbe.js",
+    "semester": "GANJIL",
+    "nama": "HUMAERA",
+    "kelas": "X.7"
+  },
+  "3115007525": {
+    "file": "3c63161360564502c8643538582a2c67.js",
+    "semester": "GANJIL",
+    "nama": "NUR ZULAIKA FATIHA",
+    "kelas": "X.5"
+  },
+  "3115146623": {
+    "file": "e956c99006a993084c8d360f8d31b1de.js",
+    "semester": "GANJIL",
+    "nama": "NUR AZIZAH",
+    "kelas": "X.5"
+  },
+  "3115416020": {
+    "file": "c1617549a1e606366e3f30ebad965ac2.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAFIKAH",
+    "kelas": "XI.4"
+  },
+  "3116112430": {
+    "file": "2775831ff4c0e0cd5cd7f0155fc8f14f.js",
+    "semester": "GANJIL",
+    "nama": "NAJMA TUL AMRUH",
+    "kelas": "X.6"
+  },
+  "3116463041": {
+    "file": "a5016b84b1ea3e127cc07671be590ed2.js",
+    "semester": "GANJIL",
+    "nama": "AIMAN NASRULLAH",
+    "kelas": "X.1"
+  },
+  "3116517131": {
+    "file": "928b350a572c56e925a303cb0dcfc0bc.js",
+    "semester": "GANJIL",
+    "nama": "NURUL SYUHADAH",
+    "kelas": "X.4"
+  },
+  "3116550933": {
+    "file": "dd721a568d027ece2e42ab5c129a14b4.js",
+    "semester": "GANJIL",
+    "nama": "NUR'AINI",
+    "kelas": "X.5"
+  },
+  "3117838396": {
+    "file": "2db435f75bbb7300311b58b738e6befb.js",
+    "semester": "GANJIL",
+    "nama": "MUH.MUKAMMIL NUR",
+    "kelas": "X.2"
+  },
+  "3118445126": {
+    "file": "0b100acf97973be4b7490a9044db6e6a.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD NUR RASYA MASKUR",
+    "kelas": "X.2"
+  },
+  "3118552230": {
+    "file": "586121c85e7c495774313e740967e03b.js",
+    "semester": "GANJIL",
+    "nama": "NUR HIKMA",
+    "kelas": "X.7"
+  },
+  "3118940651": {
+    "file": "26048cf169def5e0f0c9ac2f72320121.js",
+    "semester": "GANJIL",
+    "nama": "A. NUR ANGRENI PUTRI",
+    "kelas": "X.4"
+  },
+  "3119121314": {
+    "file": "1fe97e5ec85a2efcc3174a035dd652f1.js",
+    "semester": "GANJIL",
+    "nama": "NURLIANITA",
+    "kelas": "X.4"
+  },
+  "3119375249": {
+    "file": "b6b133bc650a1a4ec27cd6bb4a8aa7f4.js",
+    "semester": "GANJIL",
+    "nama": "NOOR AFIZA",
+    "kelas": "X.4"
+  },
+  "3119589932": {
+    "file": "0a1064d535b89153de710df938c98213.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD FIQRI",
+    "kelas": "X.1"
+  },
+  "3119997451": {
+    "file": "1a79118ff84d8789ea1336572e6556cd.js",
+    "semester": "GANJIL",
+    "nama": "SUSI JULIANA MURSALIM",
+    "kelas": "X.6"
+  },
+  "0107886737": {
+    "file": "4a80ccd7111fa71b149a4b968ebaf01c.js",
+    "semester": "GANJIL",
+    "nama": "A. ANISA",
+    "kelas": "X.1"
+  },
+  "0114567221": {
+    "file": "f5991d1d316b04625ccd2385c9c14b0e.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD RAFLI",
+    "kelas": "X.1"
+  },
+  "0104511584": {
+    "file": "8ee4e15cbedd46fe69c67ed891731fbf.js",
+    "semester": "GANJIL",
+    "nama": "AINUN ANUGRAH ADHA",
+    "kelas": "X.1"
+  },
+  "0119417446": {
+    "file": "a5a03eb1f9d12824ef0084564711bfe1.js",
+    "semester": "GANJIL",
+    "nama": "AIRIN NURANNISYAH",
+    "kelas": "X.1"
+  },
+  "0119100203": {
+    "file": "5003561559f3b4a59825402d6a105ac8.js",
+    "semester": "GANJIL",
+    "nama": "AKHLAQUL KARIMAH",
+    "kelas": "X.1"
+  },
+  "0107246879": {
+    "file": "d52333dd281e7493dfa138ffa5e0bfb6.js",
+    "semester": "GANJIL",
+    "nama": "ANDI AYATUL HUSNA AL-BAHARI",
+    "kelas": "X.1"
+  },
+  "0104459487": {
+    "file": "83c6d9088fda7d7d1d6cefe80151809c.js",
+    "semester": "GANJIL",
+    "nama": "AQMAR HIDAYATULLAH",
+    "kelas": "X.1"
+  },
+  "0117204188": {
+    "file": "13ed96c98580bb8701dfa82eb07474da.js",
+    "semester": "GANJIL",
+    "nama": "ATIRA",
+    "kelas": "X.1"
+  },
+  "011628060": {
+    "file": "9776c532787fb97fa9dc8b3e3276cc2b.js",
+    "semester": "GANJIL",
+    "nama": "FATIHATUL WIQAYA",
+    "kelas": "X.1"
+  },
+  "0104284535": {
+    "file": "bd0cc5be2330583d5f4d6525216d07f9.js",
+    "semester": "GANJIL",
+    "nama": "HANIFAH ALYYAH",
+    "kelas": "X.1"
+  },
+  "0111955594": {
+    "file": "8e601da477cc960c2625387f9a8a629c.js",
+    "semester": "GANJIL",
+    "nama": "HAYATUL HUSNA",
+    "kelas": "X.1"
+  },
+  "0111313456": {
+    "file": "0bbdf2e8943084d6834081c6d85f4c4f.js",
+    "semester": "GANJIL",
+    "nama": "IKRAAM MAULANA",
+    "kelas": "X.1"
+  },
+  "0104144572": {
+    "file": "dda40cbf66b24c4d1b9269e5ebcf07e7.js",
+    "semester": "GANJIL",
+    "nama": "IQBAL",
+    "kelas": "X.1"
+  },
+  "0104971305": {
+    "file": "bbc0b7b74f027d8772c6e95b7bf57471.js",
+    "semester": "GANJIL",
+    "nama": "MUH ALIF",
+    "kelas": "X.1"
+  },
+  "0111664008": {
+    "file": "22746ce92d2d17fdcc553839412cfacf.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AKBAR",
+    "kelas": "X.1"
+  },
+  "0109797112": {
+    "file": "75e075cc3947d995f671746cdb5ee758.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FARHAN FAUZAN S",
+    "kelas": "X.1"
+  },
+  "0112384531": {
+    "file": "3bcb6c20c365529d3f2f46bc955bb316.js",
+    "semester": "GANJIL",
+    "nama": "NABILA FARAH",
+    "kelas": "X.1"
+  },
+  "0115874363": {
+    "file": "14865452bed3ae73e0d5ac86af44a8e6.js",
+    "semester": "GANJIL",
+    "nama": "NASMA",
+    "kelas": "X.1"
+  },
+  "0119982262": {
+    "file": "e6e87d1e81627704761fc5ef1cc5f6a1.js",
+    "semester": "GANJIL",
+    "nama": "NUR AYNI ZAKIA",
+    "kelas": "X.1"
+  },
+  "0115014371": {
+    "file": "44a8e014203066200206bb47a0d8527b.js",
+    "semester": "GANJIL",
+    "nama": "NUR FAHIRA",
+    "kelas": "X.1"
+  },
+  "0105011581": {
+    "file": "fbb3f4c4ea17ff8ed58f7fdf6a496d26.js",
+    "semester": "GANJIL",
+    "nama": "NURUL MAULIDA",
+    "kelas": "X.1"
+  },
+  "0099717676": {
+    "file": "c471ad864c6d9e2a93af46275c2616de.js",
+    "semester": "GANJIL",
+    "nama": "NURUL SYAZWA NABILA",
+    "kelas": "X.1"
+  },
+  "0106651252": {
+    "file": "45abc547964a5cd1941a5643c6b480b0.js",
+    "semester": "GANJIL",
+    "nama": "RISTY AMIRAH KALILA DEEBA",
+    "kelas": "X.1"
+  },
+  "0107564489": {
+    "file": "901d6d66a75efc1a532c4503fc0d4ffc.js",
+    "semester": "GANJIL",
+    "nama": "SITI ASYA",
+    "kelas": "X.1"
+  },
+  "0118156246": {
+    "file": "9f306426118fe2139c0e3d5f1b34b046.js",
+    "semester": "GANJIL",
+    "nama": "SITTI KHADIJAH",
+    "kelas": "X.1"
+  },
+  "0104463375": {
+    "file": "814e84c6df5fcc50af5135afab404b6d.js",
+    "semester": "GANJIL",
+    "nama": "ZULKARNAIN",
+    "kelas": "X.1"
+  },
+  "0104935272": {
+    "file": "1df887a0b8e6cf0aebe4cd789e35a7bf.js",
+    "semester": "GANJIL",
+    "nama": "ABD HAFID",
+    "kelas": "X.2"
+  },
+  "0106567925": {
+    "file": "2c544e2a4dcf02aeeee3cfae74dad013.js",
+    "semester": "GANJIL",
+    "nama": "ARGEA RAMADANI",
+    "kelas": "X.2"
+  },
+  "0106693774": {
+    "file": "49dd6224e9d10c675e660cf3dbf88366.js",
+    "semester": "GANJIL",
+    "nama": "HASBI MN",
+    "kelas": "X.2"
+  },
+  "0113417154": {
+    "file": "3e98440fd544aeb16a140db81d312aa3.js",
+    "semester": "GANJIL",
+    "nama": "INAYAH NURQIRANIH",
+    "kelas": "X.2"
+  },
+  "0101423127": {
+    "file": "77415614eb58804e58f5e91c3d729493.js",
+    "semester": "GANJIL",
+    "nama": "IRWANDI",
+    "kelas": "X.2"
+  },
+  "0118246440": {
+    "file": "6577413fa8a4b875c32a61688355ba8a.js",
+    "semester": "GANJIL",
+    "nama": "KHAYRUNNISA",
+    "kelas": "X.2"
+  },
+  "0096122627": {
+    "file": "2df7ada29cff8218a25c7120564ac521.js",
+    "semester": "GANJIL",
+    "nama": "MOHAMMAD ROSYAM BIN HAROT",
+    "kelas": "X.2"
+  },
+  "0117706366": {
+    "file": "728d4044f4140d6593af1914f89fd915.js",
+    "semester": "GANJIL",
+    "nama": "MUH AQRAM",
+    "kelas": "X.2"
+  },
+  "0119243449": {
+    "file": "acf671c4019009fb4e14b561b0b04b4c.js",
+    "semester": "GANJIL",
+    "nama": "MUH RIFKI AIDIL",
+    "kelas": "X.2"
+  },
+  "0105594796": {
+    "file": "6d351b8b076af612531f6462e6b922b5.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FIKRAM",
+    "kelas": "X.2"
+  },
+  "0103095718": {
+    "file": "ea2b62d2d567f8f82faf08fb81cdf517.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ADY PUTRA",
+    "kelas": "X.2"
+  },
+  "0112094689": {
+    "file": "786931316ae908143aed370ee6192579.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD AIMAN",
+    "kelas": "X.2"
+  },
+  "0101404753": {
+    "file": "518a1579d49ff5c4373d6081909a38cd.js",
+    "semester": "GANJIL",
+    "nama": "NUR ASYIFA",
+    "kelas": "X.2"
+  },
+  "0113533862": {
+    "file": "3e9f73627b6c7aeb447d7dd6cadbe3bf.js",
+    "semester": "GANJIL",
+    "nama": "NUR NADIA M",
+    "kelas": "X.2"
+  },
+  "0118689474": {
+    "file": "9faf3aab8a376f3604616a63ec6ad8f2.js",
+    "semester": "GANJIL",
+    "nama": "NUR RAMADHANI HAS",
+    "kelas": "X.2"
+  },
+  "0105191243": {
+    "file": "7ea6ee3e37e00a3bb18f7502f8314ab1.js",
+    "semester": "GANJIL",
+    "nama": "NUR SHAFINA",
+    "kelas": "X.2"
+  },
+  "0112226565": {
+    "file": "215e236898d896eaf589129b1f3e1070.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI NABILA",
+    "kelas": "X.2"
+  },
+  "0102259758": {
+    "file": "7787e9587fa3a1976f3c21e59510763b.js",
+    "semester": "GANJIL",
+    "nama": "RAHMA FADILLA",
+    "kelas": "X.2"
+  },
+  "0101529263": {
+    "file": "ed36baf41b4f3b1f6552202b4537910b.js",
+    "semester": "GANJIL",
+    "nama": "RINA HARYANI.S",
+    "kelas": "X.2"
+  },
+  "0109941948": {
+    "file": "1cb72e8a45f72ee6fc9e4ca6a553b769.js",
+    "semester": "GANJIL",
+    "nama": "SALSABILA RAMADHANI",
+    "kelas": "X.2"
+  },
+  "0117542695": {
+    "file": "25762067dc5b139d08d07c2e19318045.js",
+    "semester": "GANJIL",
+    "nama": "SINTA DEVI",
+    "kelas": "X.2"
+  },
+  "0105021235": {
+    "file": "e0e65bb00f50d0e48eac95535d33f24b.js",
+    "semester": "GANJIL",
+    "nama": "SITI JUMAERA.T",
+    "kelas": "X.2"
+  },
+  "0102565120": {
+    "file": "0796d77602d3f6159363b72d3e28e292.js",
+    "semester": "GANJIL",
+    "nama": "ST. APRATUL.QAYYUM",
+    "kelas": "X.2"
+  },
+  "0101249537": {
+    "file": "73547e5c6c9c92b9851b1fdbc3b15619.js",
+    "semester": "GANJIL",
+    "nama": "UMMU KULSTUM FAUZIYYAH YUSUF",
+    "kelas": "X.2"
+  },
+  "0114095066": {
+    "file": "8d68470ff7f0dc765e811db3db9c58d5.js",
+    "semester": "GANJIL",
+    "nama": "WILDA NASIR",
+    "kelas": "X.2"
+  },
+  "0103455951": {
+    "file": "377e588c374ffc5742dee60cf3b3cdcd.js",
+    "semester": "GANJIL",
+    "nama": "AINUN RAMADANI",
+    "kelas": "X.3"
+  },
+  "0102617421": {
+    "file": "57324d1ddeb7d0b330c48c3fbd01d7c2.js",
+    "semester": "GANJIL",
+    "nama": "ARMAN",
+    "kelas": "X.3"
+  },
+  "0116549635": {
+    "file": "51bfa56c1e1091c376ba53a59733d860.js",
+    "semester": "GANJIL",
+    "nama": "AVNER ADHEREZKHY",
+    "kelas": "X.3"
+  },
+  "0102201762": {
+    "file": "423a75f4439259df6051db38b7f3e905.js",
+    "semester": "GANJIL",
+    "nama": "AYU WANDIRA",
+    "kelas": "X.3"
+  },
+  "0106481377": {
+    "file": "0d16a9600260f7bda5804c15274efe89.js",
+    "semester": "GANJIL",
+    "nama": "BUNGA DEA",
+    "kelas": "X.3"
+  },
+  "0118696654": {
+    "file": "78139a36e12cebf790d2155514918030.js",
+    "semester": "GANJIL",
+    "nama": "CHELSA ALIA PUTRI",
+    "kelas": "X.3"
+  },
+  "0102620157": {
+    "file": "e8b1d5d3be9bef19d297496863fc5e35.js",
+    "semester": "GANJIL",
+    "nama": "DESVITA AULIA",
+    "kelas": "X.3"
+  },
+  "0103192242": {
+    "file": "d50dcd11cdd9b2cbdfc9cc38edae969a.js",
+    "semester": "GANJIL",
+    "nama": "FADLAN.S",
+    "kelas": "X.3"
+  },
+  "0095113095": {
+    "file": "6e3fe28332fffc43fed1b3296a4653ad.js",
+    "semester": "GANJIL",
+    "nama": "HASRIANI",
+    "kelas": "X.3"
+  },
+  "0104408869": {
+    "file": "1eccf57c3da866bb6688faf2c77b8f08.js",
+    "semester": "GANJIL",
+    "nama": "JUMAHIRA",
+    "kelas": "X.3"
+  },
+  "0116765472": {
+    "file": "c0b74965d92a6788d0f5dbc6de50bf12.js",
+    "semester": "GANJIL",
+    "nama": "KHADIJAH AZIZAH",
+    "kelas": "X.3"
+  },
+  "0117963457": {
+    "file": "a880cf5fd9dfb6cd6446a54513415a40.js",
+    "semester": "GANJIL",
+    "nama": "KHAIRUNISA SALSABILA HERY",
+    "kelas": "X.3"
+  },
+  "0113808156": {
+    "file": "d8d481e4897e5ccf7de99d2c0d935786.js",
+    "semester": "GANJIL",
+    "nama": "MUH SYAM",
+    "kelas": "X.3"
+  },
+  "0105693539": {
+    "file": "58e8d2a9bf9b1d84f49920e586b96141.js",
+    "semester": "GANJIL",
+    "nama": "MUH. WAHYU",
+    "kelas": "X.3"
+  },
+  "0112328224": {
+    "file": "b0ff3d180e02ceb71f1f3bcc24f63faf.js",
+    "semester": "GANJIL",
+    "nama": "MUH.RIFQI ANUGRAH",
+    "kelas": "X.3"
+  },
+  "0114132916": {
+    "file": "43206089e3c38e2d979923476a1d8e0d.js",
+    "semester": "GANJIL",
+    "nama": "MUH.SATRIA.GUNAWAN",
+    "kelas": "X.3"
+  },
+  "0119301126": {
+    "file": "597f26ec7d39c6702c2e5cfafe7c2d16.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ARFAH",
+    "kelas": "X.3"
+  },
+  "0104878148": {
+    "file": "7f60c767d21984fee2efbf26e7a73155.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FATIR ANUGRAH",
+    "kelas": "X.3"
+  },
+  "0115756802": {
+    "file": "7953c32d3d6b4d6e1fc861b9b9fe8d76.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD IDLAN HAKIMI",
+    "kelas": "X.3"
+  },
+  "0108511614": {
+    "file": "2dc3bff283828c53de6a288c7109daa0.js",
+    "semester": "GANJIL",
+    "nama": "NABIL ALGHANI",
+    "kelas": "X.3"
+  },
+  "0109401648": {
+    "file": "dc31984a0e8e434f2d89dfaedf264907.js",
+    "semester": "GANJIL",
+    "nama": "NADILA",
+    "kelas": "X.3"
+  },
+  "0117738423": {
+    "file": "e6e370f3901241e3f40b4d617fdee5bd.js",
+    "semester": "GANJIL",
+    "nama": "NASRIL ILHAQ",
+    "kelas": "X.3"
+  },
+  "0119458706": {
+    "file": "25c8a93a766b3d9afe6c167ff802c749.js",
+    "semester": "GANJIL",
+    "nama": "NUR AINDAH",
+    "kelas": "X.3"
+  },
+  "0104667969": {
+    "file": "acfd92c6ea71e94967aa2e5cb3b2b00f.js",
+    "semester": "GANJIL",
+    "nama": "NUR FAISA",
+    "kelas": "X.3"
+  },
+  "0114885851": {
+    "file": "8caa6ce3ead73ba5df12f0acc5349aef.js",
+    "semester": "GANJIL",
+    "nama": "NURFATIHA",
+    "kelas": "X.3"
+  },
+  "0101446880": {
+    "file": "670b0e330e80b07421621c8416ab707c.js",
+    "semester": "GANJIL",
+    "nama": "RANGGA AQSAN MALIK",
+    "kelas": "X.3"
+  },
+  "0111196498": {
+    "file": "bd0e7e2dd76dc8edd278300a51700dfd.js",
+    "semester": "GANJIL",
+    "nama": "REVAN SAPUTRA",
+    "kelas": "X.3"
+  },
+  "0102985778": {
+    "file": "a7e9af5026137c58a3723a7cff52c409.js",
+    "semester": "GANJIL",
+    "nama": "SAKINA",
+    "kelas": "X.3"
+  },
+  "0108509065": {
+    "file": "58ab8e4f410fd7c7e430d8a77f4f6031.js",
+    "semester": "GANJIL",
+    "nama": "SARPINA",
+    "kelas": "X.3"
+  },
+  "0114107238": {
+    "file": "aefc2917fc29d662b7e7b98d1979f86b.js",
+    "semester": "GANJIL",
+    "nama": "A.NINDY NURASIFAH",
+    "kelas": "X.4"
+  },
+  "0104659982": {
+    "file": "317c8105230a2bac62ae923fe3014875.js",
+    "semester": "GANJIL",
+    "nama": "ASHRIANI KADIR",
+    "kelas": "X.4"
+  },
+  "0118853018": {
+    "file": "64b01f7e50255112b29abd1ddf83880a.js",
+    "semester": "GANJIL",
+    "nama": "BELLA SAFIRA",
+    "kelas": "X.4"
+  },
+  "0105559326": {
+    "file": "d6f6816c238aaa9aba3217084736666a.js",
+    "semester": "GANJIL",
+    "nama": "FIRMAN",
+    "kelas": "X.4"
+  },
+  "0116148053": {
+    "file": "b8ccaa9ef3f147adae1143958b9e95c7.js",
+    "semester": "GANJIL",
+    "nama": "HERIYANTI",
+    "kelas": "X.4"
+  },
+  "0089264355": {
+    "file": "a6c555d97da89724816d8ead1436bcca.js",
+    "semester": "GANJIL",
+    "nama": "MUH. RAHUL B",
+    "kelas": "X.4"
+  },
+  "0112609757": {
+    "file": "a279ddb7d3c7f8274d8b4213f97ab75c.js",
+    "semester": "GANJIL",
+    "nama": "MUH. RISKI",
+    "kelas": "X.4"
+  },
+  "0105697198": {
+    "file": "d74028ef3af02c21a99b76403df50e6f.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ZHAFRAN. ARWAN",
+    "kelas": "X.4"
+  },
+  "0111487993": {
+    "file": "c683036d10c57f4e430f1e26ea64aee3.js",
+    "semester": "GANJIL",
+    "nama": "MUH.YUSUF",
+    "kelas": "X.4"
+  },
+  "0106613736": {
+    "file": "a2eccd3b5afe3b07cb560c63e17e6bd5.js",
+    "semester": "GANJIL",
+    "nama": "MUH.ZULKIFLI",
+    "kelas": "X.4"
+  },
+  "0109173794": {
+    "file": "bb6594dcf14b081aa6cddbf13bb90efe.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALIF",
+    "kelas": "X.4"
+  },
+  "0112670646": {
+    "file": "fae06556d83aa252fe2ccd9e30a48b88.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FIKRI",
+    "kelas": "X.4"
+  },
+  "0107551816": {
+    "file": "56eb684cf51d18c9d42cdf2e920f5a0e.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD MIFDHAL.M",
+    "kelas": "X.4"
+  },
+  "0093982150": {
+    "file": "1511e96cdc10002d02360a823f6e172f.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYAHRIZAN",
+    "kelas": "X.4"
+  },
+  "0103752479": {
+    "file": "d27977fbafe392cf84a8c6bd800cd7b3.js",
+    "semester": "GANJIL",
+    "nama": "MULIATI",
+    "kelas": "X.4"
+  },
+  "0107437229": {
+    "file": "dc448b889d52d61510296d8b93936e41.js",
+    "semester": "GANJIL",
+    "nama": "NAURA ATIKAH",
+    "kelas": "X.4"
+  },
+  "0101713694": {
+    "file": "ca7296bdd5a40ff1c0ec861ad2a7c7ee.js",
+    "semester": "GANJIL",
+    "nama": "NUR ALIA FATIMA",
+    "kelas": "X.4"
+  },
+  "0111846425": {
+    "file": "60de0fb84c79c5c0a2ebf202b5a97bc8.js",
+    "semester": "GANJIL",
+    "nama": "NUR AZIZAH",
+    "kelas": "X.4"
+  },
+  "0115249008": {
+    "file": "af36a8d824eea8d498a92cc355156cf7.js",
+    "semester": "GANJIL",
+    "nama": "REYZAH AFRIANSYAH",
+    "kelas": "X.4"
+  },
+  "0111131310": {
+    "file": "a1aa238da948cc1fcd7921e883ac0eb2.js",
+    "semester": "GANJIL",
+    "nama": "SALWA ARLI",
+    "kelas": "X.4"
+  },
+  "0112599890": {
+    "file": "90149a352f9ab50281f3e10f18bd355e.js",
+    "semester": "GANJIL",
+    "nama": "SITI FAHRIYANI",
+    "kelas": "X.4"
+  },
+  "0046677004": {
+    "file": "4dcb48490096af77bbc8464830b6696f.js",
+    "semester": "GANJIL",
+    "nama": "SRI ARIANARTI",
+    "kelas": "X.4"
+  },
+  "0114288570": {
+    "file": "de3abc1fd27b91015094665104f4506e.js",
+    "semester": "GANJIL",
+    "nama": "SUCI RAHMADHANI",
+    "kelas": "X.4"
+  },
+  "0106685534": {
+    "file": "506f1390e322f4047838be32c080960c.js",
+    "semester": "GANJIL",
+    "nama": "SUL AYU RAMADHANI",
+    "kelas": "X.4"
+  },
+  "0116840941": {
+    "file": "2fe97ffa5126e592e16e4d24128678d1.js",
+    "semester": "GANJIL",
+    "nama": "YORDANIEL ANDONY",
+    "kelas": "X.4"
+  },
+  "0109815345": {
+    "file": "778ecbf0a63f005f1494ee754fb633f5.js",
+    "semester": "GANJIL",
+    "nama": "ABDUL GANI",
+    "kelas": "X.5"
+  },
+  "0118253242": {
+    "file": "8e689ccc8131570e560056d9ebb04849.js",
+    "semester": "GANJIL",
+    "nama": "AFDAL",
+    "kelas": "X.5"
+  },
+  "0114298606": {
+    "file": "29952aa99a669bf3e24714287fd35bae.js",
+    "semester": "GANJIL",
+    "nama": "AINUN CHAIRUN NISA",
+    "kelas": "X.5"
+  },
+  "0118989313": {
+    "file": "6e918e420d6047cbc5f9acbeff2c86e6.js",
+    "semester": "GANJIL",
+    "nama": "AIRAH FRIANDA PUTRI",
+    "kelas": "X.5"
+  },
+  "0112072647": {
+    "file": "7f1bc84877a4448b3ca9799cdb1aff01.js",
+    "semester": "GANJIL",
+    "nama": "CAHYA HILYA SYABANI",
+    "kelas": "X.5"
+  },
+  "0117048776": {
+    "file": "cd729c0e26c96ee38051d14770b0a475.js",
+    "semester": "GANJIL",
+    "nama": "IQRA ABDILAH",
+    "kelas": "X.5"
+  },
+  "0095814782": {
+    "file": "66a6e0c6c2a60c8c9eff681aae30b26a.js",
+    "semester": "GANJIL",
+    "nama": "IRWAN",
+    "kelas": "X.5"
+  },
+  "0112796662": {
+    "file": "e54319df1ccc8489b3257881dbce06e1.js",
+    "semester": "GANJIL",
+    "nama": "KEYSA",
+    "kelas": "X.5"
+  },
+  "0117179964": {
+    "file": "ec779656a52c61be47ac4cd0fc91528e.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ASRAB",
+    "kelas": "X.5"
+  },
+  "0116111421": {
+    "file": "f2c94c71a46fcce71f95b579a7afdf6c.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD JASRIL",
+    "kelas": "X.5"
+  },
+  "0108757639": {
+    "file": "2445eb1da62193ea1da92a0d8b038344.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD. FADIL. M",
+    "kelas": "X.5"
+  },
+  "0111573112": {
+    "file": "7fb4df8ed69c4769e0ffb627af8defa4.js",
+    "semester": "GANJIL",
+    "nama": "NAILAH ADELIA",
+    "kelas": "X.5"
+  },
+  "0119967686": {
+    "file": "c489615699b34c8713f573673860cea5.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAHIRAH",
+    "kelas": "X.5"
+  },
+  "0114201216": {
+    "file": "ff4950c5766b36840f7f8d76177820a2.js",
+    "semester": "GANJIL",
+    "nama": "NUR.ANNISA.S",
+    "kelas": "X.5"
+  },
+  "0112109691": {
+    "file": "ff07da19fee8a0508cdb2283a54fa188.js",
+    "semester": "GANJIL",
+    "nama": "NURAMELIA RAMADHANI",
+    "kelas": "X.5"
+  },
+  "0116749686": {
+    "file": "a7d71861fdc91ce893fcd492dda81dd4.js",
+    "semester": "GANJIL",
+    "nama": "NURUL HAFIZA",
+    "kelas": "X.5"
+  },
+  "0118362204": {
+    "file": "b32eef3700ac8ba01c3a176df4e935d4.js",
+    "semester": "GANJIL",
+    "nama": "RESKI AULIA",
+    "kelas": "X.5"
+  },
+  "0102230059": {
+    "file": "2180f9ba4bef764b501df6621dd1d53d.js",
+    "semester": "GANJIL",
+    "nama": "SAIPUL AHMAD",
+    "kelas": "X.5"
+  },
+  "0114726657": {
+    "file": "a9dc9e84b8e583b73fb7e2611e29e3cd.js",
+    "semester": "GANJIL",
+    "nama": "SARIYANI",
+    "kelas": "X.5"
+  },
+  "0109253401": {
+    "file": "76d8a11790e152cb3e5357acaf981777.js",
+    "semester": "GANJIL",
+    "nama": "TIARA",
+    "kelas": "X.5"
+  },
+  "0101935609": {
+    "file": "4327406b878b6765679e70511961fa95.js",
+    "semester": "GANJIL",
+    "nama": "A. ASIPA ANDUNG",
+    "kelas": "X.6"
+  },
+  "0115287294": {
+    "file": "b0a193a298687b2f64ce455cc1c1b6c1.js",
+    "semester": "GANJIL",
+    "nama": "ADITYA",
+    "kelas": "X.6"
+  },
+  "0117785414": {
+    "file": "40d167ad0213f48f2d5401d331fc3508.js",
+    "semester": "GANJIL",
+    "nama": "ALSA SALSABILLA",
+    "kelas": "X.6"
+  },
+  "0109902779": {
+    "file": "27314f8a35206fc565e1e57eaf1580ba.js",
+    "semester": "GANJIL",
+    "nama": "ANDIN",
+    "kelas": "X.6"
+  },
+  "0107630865": {
+    "file": "ca927a58e0797981eeda39ca5b13c10e.js",
+    "semester": "GANJIL",
+    "nama": "FARIKHA UMNIYATUL MUNA",
+    "kelas": "X.6"
+  },
+  "0112500588": {
+    "file": "af30d5a910d7dfa2dc56b98fb158a7c1.js",
+    "semester": "GANJIL",
+    "nama": "FATIMAH AZZAHRAH",
+    "kelas": "X.6"
+  },
+  "0102062543": {
+    "file": "9854ceb3ee9b5c21f1d39e8e38df68a6.js",
+    "semester": "GANJIL",
+    "nama": "JUM RAHMADANI",
+    "kelas": "X.6"
+  },
+  "0119076652": {
+    "file": "7c9f804278c10af6f2f58718e40eec98.js",
+    "semester": "GANJIL",
+    "nama": "KIRANI",
+    "kelas": "X.6"
+  },
+  "0109876866": {
+    "file": "963fa1206476d3e7e3da7ebbad44fc03.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ARYA RAMADITYA",
+    "kelas": "X.6"
+  },
+  "0113943052": {
+    "file": "5ccadb0951555c686c635135d604763f.js",
+    "semester": "GANJIL",
+    "nama": "MUH.YASIR",
+    "kelas": "X.6"
+  },
+  "0102232272": {
+    "file": "6d006350a7a4da566401adac56b1a208.js",
+    "semester": "GANJIL",
+    "nama": "MUH.ZULKIFLI",
+    "kelas": "X.6"
+  },
+  "0114019504": {
+    "file": "6d4fd0b42e2cbbcfd27326612fa719df.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SAIPUL",
+    "kelas": "X.6"
+  },
+  "0116993445": {
+    "file": "8bf9926b893573ac1ea7faf18f22968f.js",
+    "semester": "GANJIL",
+    "nama": "NASRI ILHAM",
+    "kelas": "X.6"
+  },
+  "0108142455": {
+    "file": "8f21d3ee2c461bbbc275fc68c0ccce35.js",
+    "semester": "GANJIL",
+    "nama": "NASYILA",
+    "kelas": "X.6"
+  },
+  "0119949593": {
+    "file": "902bfee24fe63bed8890dd5310dd08ec.js",
+    "semester": "GANJIL",
+    "nama": "NUR AMELIA",
+    "kelas": "X.6"
+  },
+  "0112623987": {
+    "file": "63994eb1e50902e66b6a9f9e58ab0fe7.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAHIRA",
+    "kelas": "X.6"
+  },
+  "0114526266": {
+    "file": "c29d0802c5629d71f6d049f7887b77b1.js",
+    "semester": "GANJIL",
+    "nama": "RAHMATULLAH",
+    "kelas": "X.6"
+  },
+  "0091291923": {
+    "file": "e7d952813383b7752a42c52e6d5a6ae9.js",
+    "semester": "GANJIL",
+    "nama": "SRI RESKY AMALIA",
+    "kelas": "X.6"
+  },
+  "0114941603": {
+    "file": "a8040c99d0e252e84d9693b7d8fd9766.js",
+    "semester": "GANJIL",
+    "nama": "ST.KHADIJAH",
+    "kelas": "X.6"
+  },
+  "0118993061": {
+    "file": "e1e921fb1c9125dc916d43d38392ce59.js",
+    "semester": "GANJIL",
+    "nama": "SUCIATI MUSTAPA",
+    "kelas": "X.6"
+  },
+  "0112190946": {
+    "file": "b221c1e1cdb7a52ae9e3d3b13114405e.js",
+    "semester": "GANJIL",
+    "nama": "ZHAFIRAH HAMZAH",
+    "kelas": "X.6"
+  },
+  "0111464034": {
+    "file": "34784bad5d0b0c73a639a4ff290c8700.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD RIDHO YUNANI",
+    "kelas": "X.7"
+  },
+  "0113822033": {
+    "file": "e5e2c2d428725b4828553ebaa680ed8f.js",
+    "semester": "GANJIL",
+    "nama": "ANDIRA",
+    "kelas": "X.7"
+  },
+  "0111083683": {
+    "file": "6d7971db299b84c18c8523c90813e145.js",
+    "semester": "GANJIL",
+    "nama": "ASYAM ABDILLAH",
+    "kelas": "X.7"
+  },
+  "0098354579": {
+    "file": "2f2b0a99a4056638240ec7e17c0c00b5.js",
+    "semester": "GANJIL",
+    "nama": "DEWI RAHMAH",
+    "kelas": "X.7"
+  },
+  "0104079054": {
+    "file": "01255782747de6495e5bbcb77f39f356.js",
+    "semester": "GANJIL",
+    "nama": "FARHAN",
+    "kelas": "X.7"
+  },
+  "0105775751": {
+    "file": "d1974505c7dc20b8c324f0f87923a656.js",
+    "semester": "GANJIL",
+    "nama": "FARIS NAUFAL",
+    "kelas": "X.7"
+  },
+  "0105103988": {
+    "file": "4f46935f8466bc61f2066822bdea7c6b.js",
+    "semester": "GANJIL",
+    "nama": "GEISHA",
+    "kelas": "X.7"
+  },
+  "0102751525": {
+    "file": "4d99fd14f0e1011073aa4cdee7fd934a.js",
+    "semester": "GANJIL",
+    "nama": "IRMAYANTI",
+    "kelas": "X.7"
+  },
+  "0106337403": {
+    "file": "7500d093357bbf330f8870880a41d632.js",
+    "semester": "GANJIL",
+    "nama": "KIKI AULIA ISMAIL",
+    "kelas": "X.7"
+  },
+  "0109605664": {
+    "file": "2ac0f9100f8ebc5a7073f3bb75a8f113.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FADLAN",
+    "kelas": "X.7"
+  },
+  "0104047984": {
+    "file": "1922f7656be52a796e1348e65f50033d.js",
+    "semester": "GANJIL",
+    "nama": "MUH.FADHIL.M",
+    "kelas": "X.7"
+  },
+  "0108088505": {
+    "file": "ac0ad78d06e4a7686e9fb36f4daeaae6.js",
+    "semester": "GANJIL",
+    "nama": "MUH.FAHRI ASRI",
+    "kelas": "X.7"
+  },
+  "0112596763": {
+    "file": "5ae550b83ec33e74c0d1cd444832dea7.js",
+    "semester": "GANJIL",
+    "nama": "MUH.YASIN BUSRAH",
+    "kelas": "X.7"
+  },
+  "0116686126": {
+    "file": "c99c191b9289ad14c5c2ed0e70a9ac53.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD AL FATIR",
+    "kelas": "X.7"
+  },
+  "0111242946": {
+    "file": "88795ab69b7bf814c0d35a8dc62224ad.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ASSIDDIQIE AL FIRDAUS",
+    "kelas": "X.7"
+  },
+  "0115592864": {
+    "file": "933d5bc1822e53c51062420512638225.js",
+    "semester": "GANJIL",
+    "nama": "NADILA NATRA",
+    "kelas": "X.7"
+  },
+  "0117809707": {
+    "file": "e0b0bd0800e68a80e979166668169cde.js",
+    "semester": "GANJIL",
+    "nama": "NAZWA AULIA AZ-ZAHRA",
+    "kelas": "X.7"
+  },
+  "0111926843": {
+    "file": "b6a8c98d9463fc78f8b859e832d84b55.js",
+    "semester": "GANJIL",
+    "nama": "NUR ALYA",
+    "kelas": "X.7"
+  },
+  "0114752991": {
+    "file": "b061fb9e6dbd149643a644d05cfc66af.js",
+    "semester": "GANJIL",
+    "nama": "NUR FATIMAH",
+    "kelas": "X.7"
+  },
+  "01010268959": {
+    "file": "0651946b2c3ffb15051a0f56af1ca4dd.js",
+    "semester": "GANJIL",
+    "nama": "NUR JANNAH",
+    "kelas": "X.7"
+  },
+  "0119063002": {
+    "file": "bb2fd6d58326a00e66360a16d3c357cf.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAKILA",
+    "kelas": "X.7"
+  },
+  "0102914595": {
+    "file": "a46cb158b035aee43a48fd7cc7339586.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAZ WANI",
+    "kelas": "X.7"
+  },
+  "0109632027": {
+    "file": "b7709b84297ca29376a1e4ef5ccecdb9.js",
+    "semester": "GANJIL",
+    "nama": "NUR UMMAIRAH",
+    "kelas": "X.7"
+  },
+  "0112836858": {
+    "file": "cd4f18a2cb8f3762f01588fad8c93372.js",
+    "semester": "GANJIL",
+    "nama": "NUR WAHIDA",
+    "kelas": "X.7"
+  },
+  "0116781991": {
+    "file": "d410bb066e021b18f078b6ab9e75e26f.js",
+    "semester": "GANJIL",
+    "nama": "NURFATIN SYAHIRA",
+    "kelas": "X.7"
+  },
+  "0112015300": {
+    "file": "e6ac8e138c843f7a566509ae23e5db23.js",
+    "semester": "GANJIL",
+    "nama": "RADIANFAL ALFIAN R YANDEDAY",
+    "kelas": "X.7"
+  },
+  "0117935399": {
+    "file": "84236a3cae0344f337acec34a7291549.js",
+    "semester": "GANJIL",
+    "nama": "SALSABILAH",
+    "kelas": "X.7"
+  },
+  "0119846158": {
+    "file": "066f5838d49ba4e37b4b4a08e28ef392.js",
+    "semester": "GANJIL",
+    "nama": "SITTI FATIMAH",
+    "kelas": "X.7"
+  },
+  "0118644119": {
+    "file": "f557510ded512f8b5acc71a357d80194.js",
+    "semester": "GANJIL",
+    "nama": "ABD RASID",
+    "kelas": "X.8"
+  },
+  "0116117137": {
+    "file": "2dbb640fb3632a1cde8379658f07ede8.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD RENALDI S",
+    "kelas": "X.8"
+  },
+  "0104370269": {
+    "file": "a175fe47de20d6b626380bbe3ee0de68.js",
+    "semester": "GANJIL",
+    "nama": "ALFIYYAH NABILAH TAHIR",
+    "kelas": "X.8"
+  },
+  "0111585954": {
+    "file": "43397543937bf3f5c4906163be734b19.js",
+    "semester": "GANJIL",
+    "nama": "AMELIA",
+    "kelas": "X.8"
+  },
+  "0106557802": {
+    "file": "a671c135679d5201a4d43bccc573df85.js",
+    "semester": "GANJIL",
+    "nama": "ANDIKA",
+    "kelas": "X.8"
+  },
+  "0105932201": {
+    "file": "36dfdeda5f956f737aefad8ca1236467.js",
+    "semester": "GANJIL",
+    "nama": "ARINA ALHIDAYAH",
+    "kelas": "X.8"
+  },
+  "0115912992": {
+    "file": "9bd41a59a16cc5e9a7be58fa7bb5f2aa.js",
+    "semester": "GANJIL",
+    "nama": "AYU NINGSIH",
+    "kelas": "X.8"
+  },
+  "0107462762": {
+    "file": "c123ef26fd7169fa35d5a3d3d90b22a4.js",
+    "semester": "GANJIL",
+    "nama": "AYU WIDIYA",
+    "kelas": "X.8"
+  },
+  "0118570161": {
+    "file": "a8137aec6c8097962ea6d20f79759125.js",
+    "semester": "GANJIL",
+    "nama": "ELYA AZZHRA",
+    "kelas": "X.8"
+  },
+  "0106100622": {
+    "file": "1d8d30cc7bbc9ad79fc0364bfe4855ba.js",
+    "semester": "GANJIL",
+    "nama": "FIQRI RAMADHAN",
+    "kelas": "X.8"
+  },
+  "0105575796": {
+    "file": "e5e1ae12fcd4ce75b0c6b1c6261085d5.js",
+    "semester": "GANJIL",
+    "nama": "HENRA SETIYAWAN",
+    "kelas": "X.8"
+  },
+  "0114629092": {
+    "file": "83fa634e701a5fd3a189b256d1597b81.js",
+    "semester": "GANJIL",
+    "nama": "M.NAZRIL ILHAM",
+    "kelas": "X.8"
+  },
+  "0111571141": {
+    "file": "3c0ac8cf9f13fbaeb6f4295acabf81ca.js",
+    "semester": "GANJIL",
+    "nama": "MUH ANSWAR",
+    "kelas": "X.8"
+  },
+  "0117536030": {
+    "file": "b5366e1c2504b25896476f4de174aac6.js",
+    "semester": "GANJIL",
+    "nama": "MUH SAFI'I",
+    "kelas": "X.8"
+  },
+  "0103773236": {
+    "file": "6a0fbeb13708255f7ff6911126b9c7ab.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AL GAZALI",
+    "kelas": "X.8"
+  },
+  "0115268898": {
+    "file": "af4522829d4628759028be798e1e5ac4.js",
+    "semester": "GANJIL",
+    "nama": "MUH.ZUL JALALI WAL IQRA",
+    "kelas": "X.8"
+  },
+  "0108290671": {
+    "file": "73148c70c892b11eb64ed9e8b65217ed.js",
+    "semester": "GANJIL",
+    "nama": "NAZRIL",
+    "kelas": "X.8"
+  },
+  "0115216546": {
+    "file": "7ea28bcbffd2d3ed85aa96aeaf78cd5d.js",
+    "semester": "GANJIL",
+    "nama": "NUR AULIA",
+    "kelas": "X.8"
+  },
+  "0117662018": {
+    "file": "f54286964828be2503234d37d52fdf2e.js",
+    "semester": "GANJIL",
+    "nama": "NUR AZIZA",
+    "kelas": "X.8"
+  },
+  "0105441326": {
+    "file": "7e2f65a0fbad01705038e99ebf28b68e.js",
+    "semester": "GANJIL",
+    "nama": "NURHALISHA",
+    "kelas": "X.8"
+  },
+  "0098143839": {
+    "file": "d86ba2690b1bc7ff938447b1eefc4de5.js",
+    "semester": "GANJIL",
+    "nama": "NURSUHANA",
+    "kelas": "X.8"
+  },
+  "0112715113": {
+    "file": "1a8b8507677ba340bc7825983c525621.js",
+    "semester": "GANJIL",
+    "nama": "NURUL NATASYA",
+    "kelas": "X.8"
+  },
+  "0105906258": {
+    "file": "7ab396e86fa3622c4d39a0a3d58dc3f9.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI ADHELIA NORIS",
+    "kelas": "X.8"
+  },
+  "0106445655": {
+    "file": "edfd17618a2518d1775d7840259dc7f4.js",
+    "semester": "GANJIL",
+    "nama": "REZKIANA",
+    "kelas": "X.8"
+  },
+  "0105270657": {
+    "file": "b7406a0c2d5dd520775c759379a2b679.js",
+    "semester": "GANJIL",
+    "nama": "SAKTIAWAN",
+    "kelas": "X.8"
+  },
+  "0091401973": {
+    "file": "72186e9093b248e2ab6dfb68a8ad31c4.js",
+    "semester": "GANJIL",
+    "nama": "AMIRUL HADI TUWO",
+    "kelas": "XI.1"
+  },
+  "0102427467": {
+    "file": "ea665509daf198c500be2490c108434c.js",
+    "semester": "GANJIL",
+    "nama": "DELVI",
+    "kelas": "XI.1"
+  },
+  "0102167380": {
+    "file": "0539a9979a04c997082bc3b351f241f8.js",
+    "semester": "GANJIL",
+    "nama": "FARHANA ANAS",
+    "kelas": "XI.1"
+  },
+  "0104215594": {
+    "file": "ce0cf20cdfec6ee32ec9bbaf0c073f50.js",
+    "semester": "GANJIL",
+    "nama": "INAYAH ZAHRA AULIYA",
+    "kelas": "XI.1"
+  },
+  "0092605824": {
+    "file": "b28048a5d06c3e0f797a043831d288d7.js",
+    "semester": "GANJIL",
+    "nama": "JIHAN NUR AFIFA",
+    "kelas": "XI.1"
+  },
+  "0109230498": {
+    "file": "2062ef80562b50d583a370d2f7f9fe09.js",
+    "semester": "GANJIL",
+    "nama": "KHAIRAH NAJWA LENGKANG",
+    "kelas": "XI.1"
+  },
+  "0094843455": {
+    "file": "d1f739659f3f0176e3582185aad84fa0.js",
+    "semester": "GANJIL",
+    "nama": "LULU LATIFA A.PALLAJARANG",
+    "kelas": "XI.1"
+  },
+  "0103457367": {
+    "file": "12630f9077bc1ee7c92cc6f91f47901f.js",
+    "semester": "GANJIL",
+    "nama": "MIFTA ARIYIN MALLARANGI",
+    "kelas": "XI.1"
+  },
+  "0109956563": {
+    "file": "4f0c87c5ad59c677ee33ff46788ef5b9.js",
+    "semester": "GANJIL",
+    "nama": "MUH. HAJAR ASWADT",
+    "kelas": "XI.1"
+  },
+  "0103730660": {
+    "file": "97838fdb52540b3dc65b18bd4873920a.js",
+    "semester": "GANJIL",
+    "nama": "MUH. PAHRUL",
+    "kelas": "XI.1"
+  },
+  "0108812038": {
+    "file": "865839d1a43947e48e48828ab1255a53.js",
+    "semester": "GANJIL",
+    "nama": "MUH. RASYA",
+    "kelas": "XI.1"
+  },
+  "0092609087": {
+    "file": "fc00f80b8f34602f9f283b18ffa65279.js",
+    "semester": "GANJIL",
+    "nama": "MUH. SATRIA MAHAPUTRA",
+    "kelas": "XI.1"
+  },
+  "0095352110": {
+    "file": "00881e86818a3aa1ea3de2eebae21ccc.js",
+    "semester": "GANJIL",
+    "nama": "MUH. YUSUF RAHMAN AHMAD",
+    "kelas": "XI.1"
+  },
+  "0095937605": {
+    "file": "beaa1c235a02bd11f0ff38a2765587a4.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ADAM ASHRAF",
+    "kelas": "XI.1"
+  },
+  "0098013765": {
+    "file": "3f3c6b6825ada575ea1096b7c7f54d28.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ADLAN JASWADI",
+    "kelas": "XI.1"
+  },
+  "0096085526": {
+    "file": "0bbbf6549e3c7d1df9c94b0055d54640.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ARDAN SAPUTRA",
+    "kelas": "XI.1"
+  },
+  "0107483898": {
+    "file": "fa673e06c4fef05aea75561122b5883a.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FADHIL FAITH",
+    "kelas": "XI.1"
+  },
+  "0102655925": {
+    "file": "d755d9d0444923374aac7239ee1570c4.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FADHIL IBRAHIM",
+    "kelas": "XI.1"
+  },
+  "0089444113": {
+    "file": "721ccdd6a6fad6ffbe78cfcfd68e6cc6.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD HILMI KHADZIM",
+    "kelas": "XI.1"
+  },
+  "0095921382": {
+    "file": "25c0d011947c482644c0716df58cb06c.js",
+    "semester": "GANJIL",
+    "nama": "NANDA AULIA",
+    "kelas": "XI.1"
+  },
+  "0104177542": {
+    "file": "f799aeed0cd6ade84685afae4f65443d.js",
+    "semester": "GANJIL",
+    "nama": "NAURAH AFIFAH",
+    "kelas": "XI.1"
+  },
+  "0108355551": {
+    "file": "e0a32dd18f00b474153016caf2106601.js",
+    "semester": "GANJIL",
+    "nama": "NUR APNI ARIS",
+    "kelas": "XI.1"
+  },
+  "0105479191": {
+    "file": "0744b784abf3201c4a569448953775a5.js",
+    "semester": "GANJIL",
+    "nama": "NUR ASMIRA",
+    "kelas": "XI.1"
+  },
+  "0104671961": {
+    "file": "166cc7fae09d3b12bd65bf223e61af78.js",
+    "semester": "GANJIL",
+    "nama": "PAJAR SIDIK",
+    "kelas": "XI.1"
+  },
+  "0101880425": {
+    "file": "e835afaa932a74fbe95be3f1c062b433.js",
+    "semester": "GANJIL",
+    "nama": "PUPUT ANGRENI",
+    "kelas": "XI.1"
+  },
+  "0107489089": {
+    "file": "a3d141c8571da496edfcba6c1f4cffe1.js",
+    "semester": "GANJIL",
+    "nama": "RANGGA YUDHA PRATAMA",
+    "kelas": "XI.1"
+  },
+  "0103186324": {
+    "file": "bcc3fd60508d403341184ca5316b983d.js",
+    "semester": "GANJIL",
+    "nama": "SITI KOMARIAH",
+    "kelas": "XI.1"
+  },
+  "0107605804": {
+    "file": "493e223a7bce56a81748cda2a5433c53.js",
+    "semester": "GANJIL",
+    "nama": "SYAFIRA BT AHMAD",
+    "kelas": "XI.1"
+  },
+  "0109065216": {
+    "file": "0b6f9bf452748e038d97c8a701525576.js",
+    "semester": "GANJIL",
+    "nama": "SYAHRATUL SYTA",
+    "kelas": "XI.1"
+  },
+  "0105307559": {
+    "file": "0a0638b852be27d43e7867b9dc472c1c.js",
+    "semester": "GANJIL",
+    "nama": "SYAZWANA AZZAHRA",
+    "kelas": "XI.1"
+  },
+  "0101717234": {
+    "file": "57175325e63c0864caa0b358af31e198.js",
+    "semester": "GANJIL",
+    "nama": "FAHRI MAUHLIDAN",
+    "kelas": "XI.1"
+  },
+  "0096231929": {
+    "file": "728c692bdb4011589ec626e2a0e4a6fc.js",
+    "semester": "GANJIL",
+    "nama": "ALDY SAPUTRA",
+    "kelas": "XI.2"
+  },
+  "0103714827": {
+    "file": "f2f232787833077b8d4ea1578f92c2fc.js",
+    "semester": "GANJIL",
+    "nama": "ANDINI",
+    "kelas": "XI.2"
+  },
+  "0106715431": {
+    "file": "3001876b13d2cfb17088cfeed995d28e.js",
+    "semester": "GANJIL",
+    "nama": "ANISA ZAHRANI",
+    "kelas": "XI.2"
+  },
+  "0084605599": {
+    "file": "0d84b7e894624f4f938b314d5638d699.js",
+    "semester": "GANJIL",
+    "nama": "ARIEL. M",
+    "kelas": "XI.2"
+  },
+  "0107480370": {
+    "file": "7da48a80fada2f3ae69e3513e460c2a8.js",
+    "semester": "GANJIL",
+    "nama": "ATIMATUL ZAHRA",
+    "kelas": "XI.2"
+  },
+  "0095031001": {
+    "file": "c0d6e63c37d6167c5d5ff5fb1bfc2b76.js",
+    "semester": "GANJIL",
+    "nama": "AULIA NUR AHRAENI",
+    "kelas": "XI.2"
+  },
+  "0097228766": {
+    "file": "48bd3ff91bd69f92006c22d988614bc8.js",
+    "semester": "GANJIL",
+    "nama": "DAFA AL FAHREZA SAHRIR",
+    "kelas": "XI.2"
+  },
+  "0093866142": {
+    "file": "7852a254eed2ae0e1eb4b25f6693ee80.js",
+    "semester": "GANJIL",
+    "nama": "FAJARUDDIN",
+    "kelas": "XI.2"
+  },
+  "0106371241": {
+    "file": "a4729f5bd2c49667eb32d6b80ccf68bc.js",
+    "semester": "GANJIL",
+    "nama": "M. PATIR MUBARAK",
+    "kelas": "XI.2"
+  },
+  "0106185404": {
+    "file": "c15c406a003f886a9c733cfcab0c4c7e.js",
+    "semester": "GANJIL",
+    "nama": "MIFTAHHUL JANNAH",
+    "kelas": "XI.2"
+  },
+  "0108907740": {
+    "file": "3c41997191c41b26bc449ec403cff8fb.js",
+    "semester": "GANJIL",
+    "nama": "MIFTAHUL JANNAH",
+    "kelas": "XI.2"
+  },
+  "0102379998": {
+    "file": "266235bc62ef7c3e723b36d9660082a1.js",
+    "semester": "GANJIL",
+    "nama": "MIFTAHUL KHAYRUNNISA",
+    "kelas": "XI.2"
+  },
+  "0103316602": {
+    "file": "06d0d223980301e249748cb757072422.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AKMAL",
+    "kelas": "XI.2"
+  },
+  "0102493042": {
+    "file": "ad1653a8281efe0422698c738824f209.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AZRIY AZRAN",
+    "kelas": "XI.2"
+  },
+  "0104498452": {
+    "file": "eebd84505c40a689499a800b84e21c35.js",
+    "semester": "GANJIL",
+    "nama": "MUH. SANDY",
+    "kelas": "XI.2"
+  },
+  "0093103303": {
+    "file": "fd055415dccd04982bc5cdd0225f2d84.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAUZAN ILHAM",
+    "kelas": "XI.2"
+  },
+  "0092999944": {
+    "file": "d9670f4cb621532047db7ea468f2fa2b.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD HIDAYATULLAH",
+    "kelas": "XI.2"
+  },
+  "0091306673": {
+    "file": "6e2f34bc5d9c2fbc9635b78a201c67b0.js",
+    "semester": "GANJIL",
+    "nama": "NUR AENI",
+    "kelas": "XI.2"
+  },
+  "0103173882": {
+    "file": "5666534f80f3754e1b76d8282735584e.js",
+    "semester": "GANJIL",
+    "nama": "NUR AISYA",
+    "kelas": "XI.2"
+  },
+  "0099394367": {
+    "file": "e30b73f45b1637f52485a640e2ba4724.js",
+    "semester": "GANJIL",
+    "nama": "NUR ASYA",
+    "kelas": "XI.2"
+  },
+  "0103503402": {
+    "file": "18e1c546a574b493821738e17038afeb.js",
+    "semester": "GANJIL",
+    "nama": "NUR FADHILAH RAMADHANI",
+    "kelas": "XI.2"
+  },
+  "0095712134": {
+    "file": "f13138d998ba045765001d30b70f73ab.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAHIDAH",
+    "kelas": "XI.2"
+  },
+  "0098552367": {
+    "file": "fea3ccd135ad157aa21ce6998c3cc67e.js",
+    "semester": "GANJIL",
+    "nama": "NURFADILLA",
+    "kelas": "XI.2"
+  },
+  "0094744422": {
+    "file": "7a3f15c87a3953dbc50f58947d0d0866.js",
+    "semester": "GANJIL",
+    "nama": "NURHIKMA",
+    "kelas": "XI.2"
+  },
+  "0106743627": {
+    "file": "f6e3d4bfa0cfc6f1742fbf680b2f8437.js",
+    "semester": "GANJIL",
+    "nama": "SYAHRA NUR AISYAH",
+    "kelas": "XI.2"
+  },
+  "0099012327": {
+    "file": "fbbb496265d21de70b0eb3709687bbc0.js",
+    "semester": "GANJIL",
+    "nama": "MICHAEL DELANO",
+    "kelas": "XI.2"
+  },
+  "0106549292": {
+    "file": "34b1de5474414756570e8f514cff52d9.js",
+    "semester": "GANJIL",
+    "nama": "ABDUL RAHMAN",
+    "kelas": "XI.3"
+  },
+  "0108699117": {
+    "file": "5402dbfb05900bd4644ee33626b8bcd1.js",
+    "semester": "GANJIL",
+    "nama": "AIDIL RUSLI TANRO",
+    "kelas": "XI.3"
+  },
+  "0092058932": {
+    "file": "f7019dbf3d9fd1ffdfb323efc5e7b087.js",
+    "semester": "GANJIL",
+    "nama": "ALWI SYAMSUL",
+    "kelas": "XI.3"
+  },
+  "0093829548": {
+    "file": "d47e6ec7bf912e02fae15182a8d2a97c.js",
+    "semester": "GANJIL",
+    "nama": "ARDIANA",
+    "kelas": "XI.3"
+  },
+  "0102794481": {
+    "file": "a6dcb99c956b0575615a36a13a3de275.js",
+    "semester": "GANJIL",
+    "nama": "ARSY SYARIF",
+    "kelas": "XI.3"
+  },
+  "0091799250": {
+    "file": "40c80133e3f60516db96c220227aecd6.js",
+    "semester": "GANJIL",
+    "nama": "AUREL ANASTASYA",
+    "kelas": "XI.3"
+  },
+  "0093228603": {
+    "file": "7d1e64d68ab9fd43eeeda2651406e0b8.js",
+    "semester": "GANJIL",
+    "nama": "FAUZIA",
+    "kelas": "XI.3"
+  },
+  "0095887640": {
+    "file": "a2d7d2f6039e4a5a23d5c4f5624fa041.js",
+    "semester": "GANJIL",
+    "nama": "HAFIZAH AWALIYA",
+    "kelas": "XI.3"
+  },
+  "0099126043": {
+    "file": "8d1421d3c12d25b9fa92ec3eba138151.js",
+    "semester": "GANJIL",
+    "nama": "HASMA. H",
+    "kelas": "XI.3"
+  },
+  "0093831590": {
+    "file": "a76416e03731a7813cdb5422d044279d.js",
+    "semester": "GANJIL",
+    "nama": "ILDI SYAMDI",
+    "kelas": "XI.3"
+  },
+  "0092888217": {
+    "file": "53f820c4a4b88d619e28aaa3304994ce.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FAHRY RAMADHAN",
+    "kelas": "XI.3"
+  },
+  "0096263130": {
+    "file": "1433382c479eff022f495444e21e6616.js",
+    "semester": "GANJIL",
+    "nama": "MUH. MASDAR USMAN",
+    "kelas": "XI.3"
+  },
+  "0099220839": {
+    "file": "fc700a9a528f01226c52c24c51736d4b.js",
+    "semester": "GANJIL",
+    "nama": "MUH. RAFLY",
+    "kelas": "XI.3"
+  },
+  "0106316280": {
+    "file": "7e4959067b05f8f1797e804f94168179.js",
+    "semester": "GANJIL",
+    "nama": "MUH.FIRDAUS.D",
+    "kelas": "XI.3"
+  },
+  "0091746957": {
+    "file": "fa09846e06fb48e0190e067cbac86668.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD RAIHAN BADO",
+    "kelas": "XI.3"
+  },
+  "0096585904": {
+    "file": "6eb1ae6d5b74236813387d926db477d4.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD REIHAN",
+    "kelas": "XI.3"
+  },
+  "0102748809": {
+    "file": "9cbbc5e7a06be2c7a58203a8d2a39fb1.js",
+    "semester": "GANJIL",
+    "nama": "NUR AISYA",
+    "kelas": "XI.3"
+  },
+  "0101523405": {
+    "file": "9950547192239d86729fa696f48d6e26.js",
+    "semester": "GANJIL",
+    "nama": "NUR FAIZAH",
+    "kelas": "XI.3"
+  },
+  "0083633117": {
+    "file": "3ddc5ae7875941e0d7fa849fa1e0a4e8.js",
+    "semester": "GANJIL",
+    "nama": "NUR GALBI",
+    "kelas": "XI.3"
+  },
+  "0105332970": {
+    "file": "f4a8b6340c50f0228771f0c49dd6e00f.js",
+    "semester": "GANJIL",
+    "nama": "NUR PAIZA",
+    "kelas": "XI.3"
+  },
+  "0104422342": {
+    "file": "d10086d7446208bee0241815fa7c4a65.js",
+    "semester": "GANJIL",
+    "nama": "SITTI NURVASHYLA",
+    "kelas": "XI.3"
+  },
+  "0101336033": {
+    "file": "a457e92aeb31ace1f3255d02abb231ff.js",
+    "semester": "GANJIL",
+    "nama": "NUR ZIDA SYAHIRAH",
+    "kelas": "XI.3"
+  },
+  "0104035768": {
+    "file": "28f83134319a91227b9daf7b98af9d66.js",
+    "semester": "GANJIL",
+    "nama": "NURUL AUREL KHUMAIRAH",
+    "kelas": "XI.3"
+  },
+  "0092876159": {
+    "file": "616e3d089b6ea2f7c5fb335bd8b1371d.js",
+    "semester": "GANJIL",
+    "nama": "RAHMAT",
+    "kelas": "XI.3"
+  },
+  "0104930092": {
+    "file": "e664c2a1b8402bb4d3c1856b54c9209d.js",
+    "semester": "GANJIL",
+    "nama": "RAMA SAPUTRA",
+    "kelas": "XI.3"
+  },
+  "0096274884": {
+    "file": "019ab3074135a4c6d6e4afe68b9abc71.js",
+    "semester": "GANJIL",
+    "nama": "RIAN",
+    "kelas": "XI.3"
+  },
+  "0092347597": {
+    "file": "32c99e580541c1954d5703eecdd24951.js",
+    "semester": "GANJIL",
+    "nama": "RIFKY",
+    "kelas": "XI.3"
+  },
+  "0092118079": {
+    "file": "7f32e0e15dda16679cc509f3e3fa30a1.js",
+    "semester": "GANJIL",
+    "nama": "SETI NUR",
+    "kelas": "XI.3"
+  },
+  "0095645216": {
+    "file": "f344f142e3c6c4b3569fa87e8931e18c.js",
+    "semester": "GANJIL",
+    "nama": "SRI HINAYAH",
+    "kelas": "XI.3"
+  },
+  "0094441455": {
+    "file": "732d2bf6394eb01988aa92861aa2d0aa.js",
+    "semester": "GANJIL",
+    "nama": "ZAFITRA RAMADHANI",
+    "kelas": "XI.3"
+  },
+  "0103799767": {
+    "file": "11e5954b94f1efc8f6d070ff596ac9ce.js",
+    "semester": "GANJIL",
+    "nama": "ZULFIKAR",
+    "kelas": "XI.3"
+  },
+  "0109890096": {
+    "file": "0c9484a216c13b21faebb3f66a87e54c.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALIF",
+    "kelas": "XI.3"
+  },
+  "0106782429": {
+    "file": "f29d9b0959b5e32abd2e49ef36e954dd.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD CHAIRIL",
+    "kelas": "XI.4"
+  },
+  "0098141477": {
+    "file": "e3258a0be98532e21d2ea5d8e0bb1fe1.js",
+    "semester": "GANJIL",
+    "nama": "AGUS PRASETYO.B",
+    "kelas": "XI.4"
+  },
+  "0095336699": {
+    "file": "82ca4cde1fbb53eeb8d29f8f5cb337f9.js",
+    "semester": "GANJIL",
+    "nama": "AKBAR ARIFIN",
+    "kelas": "XI.4"
+  },
+  "0102867716": {
+    "file": "2c5a6815bb436d840965a7c4ded1a7b8.js",
+    "semester": "GANJIL",
+    "nama": "ALWIYAH",
+    "kelas": "XI.4"
+  },
+  "0091569010": {
+    "file": "03738c45dec04a3abc838b3f7feb1795.js",
+    "semester": "GANJIL",
+    "nama": "AMIRAH",
+    "kelas": "XI.4"
+  },
+  "0097782487": {
+    "file": "2ff7d01af68459b5694091f814bc6579.js",
+    "semester": "GANJIL",
+    "nama": "ASLAM MAULANA",
+    "kelas": "XI.4"
+  },
+  "0104121154": {
+    "file": "28845c5a7f99e4328097dfe2f4c011df.js",
+    "semester": "GANJIL",
+    "nama": "ASRAM",
+    "kelas": "XI.4"
+  },
+  "0094865478": {
+    "file": "3a49d85dbb268735ae2e0233dd14b01d.js",
+    "semester": "GANJIL",
+    "nama": "FIKI",
+    "kelas": "XI.4"
+  },
+  "0095723609": {
+    "file": "0dfb7c297958aeba8213d52db821fa68.js",
+    "semester": "GANJIL",
+    "nama": "KASMAWATI",
+    "kelas": "XI.4"
+  },
+  "0104866347": {
+    "file": "052ba38bcc891ac92e7f75add74ac514.js",
+    "semester": "GANJIL",
+    "nama": "KHAERUNNISA",
+    "kelas": "XI.4"
+  },
+  "0106817712": {
+    "file": "034435496aa4579451324a09df97fbf0.js",
+    "semester": "GANJIL",
+    "nama": "KHUSNUL KHATIMA",
+    "kelas": "XI.4"
+  },
+  "0101311525": {
+    "file": "8cb21570d210973a9e6d7725c685a2e6.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ALFIAN",
+    "kelas": "XI.4"
+  },
+  "0097860457": {
+    "file": "9a9e4d5be77fba8d84a3dd6a520e4b0c.js",
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL",
+    "kelas": "XI.4"
+  },
+  "0104699338": {
+    "file": "06777ea1db95b4137a4f895e84227610.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ISRA",
+    "kelas": "XI.4"
+  },
+  "0107877317": {
+    "file": "cacbbe560686a9b626054d2da59eb8fc.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALI IMRAN",
+    "kelas": "XI.4"
+  },
+  "0097286797": {
+    "file": "7c0af14fdfd0371da8746001b979f0bc.js",
+    "semester": "GANJIL",
+    "nama": "MUHRIMA",
+    "kelas": "XI.4"
+  },
+  "0108486796": {
+    "file": "22263bf2e5de2f96bb0dffad34d11326.js",
+    "semester": "GANJIL",
+    "nama": "NUR AINI BT FARID",
+    "kelas": "XI.4"
+  },
+  "0105087855": {
+    "file": "ffe5c53d2f03df30a3580e5c93a153bb.js",
+    "semester": "GANJIL",
+    "nama": "NUR ATASYA",
+    "kelas": "XI.4"
+  },
+  "0104614609": {
+    "file": "30995f62d9cce98d90e4f444387c2dad.js",
+    "semester": "GANJIL",
+    "nama": "NUR AZIZAH",
+    "kelas": "XI.4"
+  },
+  "0102878794": {
+    "file": "9816327ba72869fd792cbf1bb5d4ee11.js",
+    "semester": "GANJIL",
+    "nama": "NUR ZYAKILAH REGINA PUTRI",
+    "kelas": "XI.4"
+  },
+  "0109882849": {
+    "file": "58828c29c3c273c6e9c21aeff5ad2eb7.js",
+    "semester": "GANJIL",
+    "nama": "NURUL SYUHADA",
+    "kelas": "XI.4"
+  },
+  "0094670285": {
+    "file": "df8338f7e332c25e64a8bd7d63640b6a.js",
+    "semester": "GANJIL",
+    "nama": "RAHMAT HIDAYAT",
+    "kelas": "XI.4"
+  },
+  "0095932045": {
+    "file": "a6b709ebf77c0892caaf9ab81ee30297.js",
+    "semester": "GANJIL",
+    "nama": "SASKI AMALIYAH",
+    "kelas": "XI.4"
+  },
+  "0109743988": {
+    "file": "f4713873c28ef74ce4d78272472d095b.js",
+    "semester": "GANJIL",
+    "nama": "SHAQILA PUTERI MAHARANI",
+    "kelas": "XI.4"
+  },
+  "0103555751": {
+    "file": "bf4bcf5fb51788795f2947ceb5c711b5.js",
+    "semester": "GANJIL",
+    "nama": "NUR SYAFIKA",
+    "kelas": "XI.4"
+  },
+  "0091809707": {
+    "file": "3e4012dc66023903b41e5ee5b8366f86.js",
+    "semester": "GANJIL",
+    "nama": "SRI ALYA ALI",
+    "kelas": "XI.4"
+  },
+  "0094873722": {
+    "file": "39133a5f965c112daacc52194a898dd6.js",
+    "semester": "GANJIL",
+    "nama": "TYA RAHMITA",
+    "kelas": "XI.4"
+  },
+  "0106024786": {
+    "file": "88aa3b212c0a1b790392ad0533e1e1aa.js",
+    "semester": "GANJIL",
+    "nama": "ZHINY VELICA NAJLA AILYA",
+    "kelas": "XI.4"
+  },
+  "0098240006": {
+    "file": "3e9df251143c189178c9110d5df10d6e.js",
+    "semester": "GANJIL",
+    "nama": "AFA SYERA ASILA",
+    "kelas": "XI.5"
+  },
+  "0104215724": {
+    "file": "81de2c691614038aa7143ef3eee957b7.js",
+    "semester": "GANJIL",
+    "nama": "AHLIM ADIFAN",
+    "kelas": "XI.5"
+  },
+  "0094196811": {
+    "file": "384fe653f7dd41379055da754cb44c2b.js",
+    "semester": "GANJIL",
+    "nama": "ANDI AIZAH HANONO",
+    "kelas": "XI.5"
+  },
+  "0109908567": {
+    "file": "6adf51ea1c4009cc24ee6c050850c029.js",
+    "semester": "GANJIL",
+    "nama": "ASYIFAH KALILA SAHIR",
+    "kelas": "XI.5"
+  },
+  "0104100099": {
+    "file": "b496f5aeab33a952971bf191c75900d5.js",
+    "semester": "GANJIL",
+    "nama": "AYIRUL",
+    "kelas": "XI.5"
+  },
+  "0101900531": {
+    "file": "675777501b307c8b08292b3d66d00194.js",
+    "semester": "GANJIL",
+    "nama": "AYUNI MUFIDAH",
+    "kelas": "XI.5"
+  },
+  "0098067395": {
+    "file": "c36798fc6f5aa6fa5322bb078939daf2.js",
+    "semester": "GANJIL",
+    "nama": "DIA CANTIKA LUTHFIAH",
+    "kelas": "XI.5"
+  },
+  "0108542052": {
+    "file": "fcf7ca74cb89c5bf426654dc42c98069.js",
+    "semester": "GANJIL",
+    "nama": "DIZA ADILA FITRI",
+    "kelas": "XI.5"
+  },
+  "0097757736": {
+    "file": "eece68ba11f9aae582f1acaa23c4757c.js",
+    "semester": "GANJIL",
+    "nama": "IFFAH FARAH NABILA",
+    "kelas": "XI.5"
+  },
+  "0096005418": {
+    "file": "704bd7c9bd43d53fa866988352a865e3.js",
+    "semester": "GANJIL",
+    "nama": "JULIANA",
+    "kelas": "XI.5"
+  },
+  "0091885926": {
+    "file": "015a24220d3aff1ea862e3eaa882aa91.js",
+    "semester": "GANJIL",
+    "nama": "KEVIN KAMARUDDING",
+    "kelas": "XI.5"
+  },
+  "0101631672": {
+    "file": "30d104b86a18fb5967663c0241f520b1.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ADHIT SAPUTRA",
+    "kelas": "XI.5"
+  },
+  "0095730612": {
+    "file": "f3c893af5ab2e065d1f7bcb2e2dac799.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FADIL",
+    "kelas": "XI.5"
+  },
+  "0101594631": {
+    "file": "15c165a910a343966b061ff65ad48d7e.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ILHAM",
+    "kelas": "XI.5"
+  },
+  "0097287243": {
+    "file": "584a554f6f8bf9486cc9812e85787b9e.js",
+    "semester": "GANJIL",
+    "nama": "MUH. LUTFHI",
+    "kelas": "XI.5"
+  },
+  "0094338383": {
+    "file": "a7cfbb3eeb7642de04b68ea5bad8b2a8.js",
+    "semester": "GANJIL",
+    "nama": "MUH.RISAL",
+    "kelas": "XI.5"
+  },
+  "0096384118": {
+    "file": "a1eb7346f51a3bc19736668f4c8659e1.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAUZI ILHAM",
+    "kelas": "XI.5"
+  },
+  "0105201888": {
+    "file": "4cd7298a68eb9dec7f3077c0d5bc66f1.js",
+    "semester": "GANJIL",
+    "nama": "NASRIL ILHAM RAMADHAN",
+    "kelas": "XI.5"
+  },
+  "0092778831": {
+    "file": "3cfad5436bda04a43071ffe2e69358f4.js",
+    "semester": "GANJIL",
+    "nama": "NILAM CAHYA",
+    "kelas": "XI.5"
+  },
+  "0092204373": {
+    "file": "c983b9cf1e881a4f8b65a71e656d5c8d.js",
+    "semester": "GANJIL",
+    "nama": "NURUL SHAFA",
+    "kelas": "XI.5"
+  },
+  "0096718389": {
+    "file": "477b9c82455d51a38d9132b369a9c827.js",
+    "semester": "GANJIL",
+    "nama": "PUAN MAHARANI",
+    "kelas": "XI.5"
+  },
+  "0106957218": {
+    "file": "5b88b99750b259b4b11c66b04eb00600.js",
+    "semester": "GANJIL",
+    "nama": "RAHMAT",
+    "kelas": "XI.5"
+  },
+  "0101625305": {
+    "file": "93a57619727b9b096e3f45a527ca066a.js",
+    "semester": "GANJIL",
+    "nama": "RARA RAHMADANI",
+    "kelas": "XI.5"
+  },
+  "0094083155": {
+    "file": "5f768bee1a3d9be14d9c99460bd8c405.js",
+    "semester": "GANJIL",
+    "nama": "RESKI AMALIA",
+    "kelas": "XI.5"
+  },
+  "0108531734": {
+    "file": "2b59d9d6c9d12e9a3e12db50e1f104a6.js",
+    "semester": "GANJIL",
+    "nama": "SINAR MUSTIKA",
+    "kelas": "XI.5"
+  },
+  "0102580691": {
+    "file": "308aa62044b20a087f14530e85c602be.js",
+    "semester": "GANJIL",
+    "nama": "SITI AMINAH",
+    "kelas": "XI.5"
+  },
+  "0101007640": {
+    "file": "79827e77573dc7997f1484c827b34b5e.js",
+    "semester": "GANJIL",
+    "nama": "SITI NUR AISYA",
+    "kelas": "XI.5"
+  },
+  "0104645972": {
+    "file": "3dc204c8302697d4727171f9cfcb7f95.js",
+    "semester": "GANJIL",
+    "nama": "SYAHRANI",
+    "kelas": "XI.5"
+  },
+  "0107751124": {
+    "file": "83fa554620ac99be9bf3a1dc1d00b23a.js",
+    "semester": "GANJIL",
+    "nama": "ANISA UMAR",
+    "kelas": "XI.6"
+  },
+  "0099864617": {
+    "file": "dfca0ae21f45dbb85d30c01c516246bb.js",
+    "semester": "GANJIL",
+    "nama": "ARIL",
+    "kelas": "XI.6"
+  },
+  "0098970396": {
+    "file": "886ad6a7bcb874e24a79748a4fd2f02c.js",
+    "semester": "GANJIL",
+    "nama": "AURA SYIPA",
+    "kelas": "XI.6"
+  },
+  "0106511673": {
+    "file": "755eb164515e37fcf0c5de3fcc4dbca8.js",
+    "semester": "GANJIL",
+    "nama": "FATHIR DWI PUTRA",
+    "kelas": "XI.6"
+  },
+  "0109988487": {
+    "file": "c819ec2a97ca5313dc1fa279660d7285.js",
+    "semester": "GANJIL",
+    "nama": "HENDRA ADITYA SAPUTRA",
+    "kelas": "XI.6"
+  },
+  "0096968965": {
+    "file": "9226521566b1491db5fcc34222d07449.js",
+    "semester": "GANJIL",
+    "nama": "INDRA KURNIAWAN",
+    "kelas": "XI.6"
+  },
+  "0094539642": {
+    "file": "0166ed77b8f2138fa5ea753e58d15bac.js",
+    "semester": "GANJIL",
+    "nama": "LISMA",
+    "kelas": "XI.6"
+  },
+  "0104262842": {
+    "file": "0e562e8d77165f8ba04f52472dd952b4.js",
+    "semester": "GANJIL",
+    "nama": "MAWAR PAIRI'",
+    "kelas": "XI.6"
+  },
+  "0102394932": {
+    "file": "4cedc513584285c05db02ab828178d9e.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FAHRI",
+    "kelas": "XI.6"
+  },
+  "0092855611": {
+    "file": "5a5424f844fccb849ff9d75cb1f53686.js",
+    "semester": "GANJIL",
+    "nama": "MUH. IKHSAN RAMADHAN",
+    "kelas": "XI.6"
+  },
+  "0108436647": {
+    "file": "0cbfba63533a7e72e61b1ba2097da9c3.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ILHAM RIANTO",
+    "kelas": "XI.6"
+  },
+  "0093940960": {
+    "file": "dff1d0e1790d2e45675b1af844e9a749.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAHRI",
+    "kelas": "XI.6"
+  },
+  "0092011300": {
+    "file": "3b4d7aa992186e5ba4c273359cda4114.js",
+    "semester": "GANJIL",
+    "nama": "MUSLIMA",
+    "kelas": "XI.6"
+  },
+  "076052576": {
+    "file": "a44f6df7adffcfc5a1e31d7b92f3deba.js",
+    "semester": "GANJIL",
+    "nama": "NASRIANI",
+    "kelas": "XI.6"
+  },
+  "0094572583": {
+    "file": "adce5070008acde610a7f5b5746ecfe6.js",
+    "semester": "GANJIL",
+    "nama": "NIRWANA",
+    "kelas": "XI.6"
+  },
+  "0092791514": {
+    "file": "c9edde5c42df3ba109591bcb6392dbf0.js",
+    "semester": "GANJIL",
+    "nama": "NUR FADYLAWATI",
+    "kelas": "XI.6"
+  },
+  "0092057149": {
+    "file": "d63b93a1298a4435af6134ae41488839.js",
+    "semester": "GANJIL",
+    "nama": "NUR HIKMAWATI",
+    "kelas": "XI.6"
+  },
+  "0098284072": {
+    "file": "31fea873e811dafd1ebc18bd98fbb78f.js",
+    "semester": "GANJIL",
+    "nama": "NURHIDAYAH",
+    "kelas": "XI.6"
+  },
+  "0101962933": {
+    "file": "fe99ce7ea6db774f41b33436f65fdc94.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI DAMAYANTI",
+    "kelas": "XI.6"
+  },
+  "0093130818": {
+    "file": "0cd4920c2632e07ac457a3b8cf685a84.js",
+    "semester": "GANJIL",
+    "nama": "RAHIMA",
+    "kelas": "XI.6"
+  },
+  "0105249445": {
+    "file": "911bf846a77264afd4068bde22f38d6e.js",
+    "semester": "GANJIL",
+    "nama": "SHINTIAH",
+    "kelas": "XI.6"
+  },
+  "0102252548": {
+    "file": "f65760e3994d23990e7f187985581bf8.js",
+    "semester": "GANJIL",
+    "nama": "SILFA DAMAYANTI",
+    "kelas": "XI.6"
+  },
+  "0093133613": {
+    "file": "00b10d7b58b4580cc5d16598a51d480c.js",
+    "semester": "GANJIL",
+    "nama": "SITI NOOR AENI",
+    "kelas": "XI.6"
+  },
+  "0109815633": {
+    "file": "53539add352f72f09d0741d28a8c13fe.js",
+    "semester": "GANJIL",
+    "nama": "SUCI RAHMADANI",
+    "kelas": "XI.6"
+  },
+  "0096556928": {
+    "file": "a426344c6099b0a4ca31f725d8633a11.js",
+    "semester": "GANJIL",
+    "nama": "SULTAN",
+    "kelas": "XI.6"
+  },
+  "0091039731": {
+    "file": "ba64f0217fd5a6fd52329b2134701199.js",
+    "semester": "GANJIL",
+    "nama": "USMAN THALIB",
+    "kelas": "XI.6"
+  },
+  "0102738436": {
+    "file": "d751946d20e58f0d20f6d269b57cdecf.js",
+    "semester": "GANJIL",
+    "nama": "WANDA",
+    "kelas": "XI.6"
+  },
+  "0108735016": {
+    "file": "a6439c6a6fb25e4e230547b0a5b51663.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD SYAMSANULLAH",
+    "kelas": "XI.7"
+  },
+  "0091211516": {
+    "file": "b03a02fb30b38d490bb29efcc947306f.js",
+    "semester": "GANJIL",
+    "nama": "AISYAH ZAHRAH",
+    "kelas": "XI.7"
+  },
+  "0092442767": {
+    "file": "5b5c19a10b1f5e60658a947d2a8a4d3d.js",
+    "semester": "GANJIL",
+    "nama": "AJID ARAMAY",
+    "kelas": "XI.7"
+  },
+  "0102958950": {
+    "file": "b09fdddfe3d13b6e3051d9692af3f5c7.js",
+    "semester": "GANJIL",
+    "nama": "ANISA MUKTI",
+    "kelas": "XI.7"
+  },
+  "0107751795": {
+    "file": "bcc0f9b43631f71e8780a3c70cfbb7c2.js",
+    "semester": "GANJIL",
+    "nama": "AYU RAHMA HASHAR",
+    "kelas": "XI.7"
+  },
+  "0091952125": {
+    "file": "c5d7fc2833fc41c6d1dfc7fa4a4c68ea.js",
+    "semester": "GANJIL",
+    "nama": "INDAH",
+    "kelas": "XI.7"
+  },
+  "0105929106": {
+    "file": "48b9119943f9ea5705e1c8b1e6151cd7.js",
+    "semester": "GANJIL",
+    "nama": "IRIANI",
+    "kelas": "XI.7"
+  },
+  "0085339352": {
+    "file": "16559ff5a4d8b2f9da95468a5821ca0b.js",
+    "semester": "GANJIL",
+    "nama": "IRMA",
+    "kelas": "XI.7"
+  },
+  "0053735329": {
+    "file": "001b7bb2e3466cf044bf2b2f015e2c71.js",
+    "semester": "GANJIL",
+    "nama": "JUWANDA",
+    "kelas": "XI.7"
+  },
+  "0102901095": {
+    "file": "7a2c7719e1d8fdc3734e5c412e82aff6.js",
+    "semester": "GANJIL",
+    "nama": "KELVIN ERWIJAYA",
+    "kelas": "XI.7"
+  },
+  "0106873544": {
+    "file": "ea218ec48b81c6949a1995643b1b0f68.js",
+    "semester": "GANJIL",
+    "nama": "KIKI ALFIAH KADIR",
+    "kelas": "XI.7"
+  },
+  "0095147634": {
+    "file": "b72ffa43471d81412617a0a2eb4028f8.js",
+    "semester": "GANJIL",
+    "nama": "MUH. ASHRAF HAIQAL",
+    "kelas": "XI.7"
+  },
+  "0095673718": {
+    "file": "96d4c22775a7272cce2ddff70b1aae5c.js",
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL",
+    "kelas": "XI.7"
+  },
+  "0108759643": {
+    "file": "2cbe0d7d34f7f5e33a430ad4e7a1091e.js",
+    "semester": "GANJIL",
+    "nama": "MUH. SYAHRUL",
+    "kelas": "XI.7"
+  },
+  "0109856014": {
+    "file": "2164455360899264b6846bca16e7b655.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ALFIQRI",
+    "kelas": "XI.7"
+  },
+  "0102533117": {
+    "file": "017cd20bf7ff7757d654e03d250ec06e.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYAHREZA",
+    "kelas": "XI.7"
+  },
+  "0104726021": {
+    "file": "33f3d7ff08efb4d96f9770f273dee5dc.js",
+    "semester": "GANJIL",
+    "nama": "MUQRIMAH TUN NISYA",
+    "kelas": "XI.7"
+  },
+  "0106641574": {
+    "file": "2728b3329132ac892f8a973d928c8b9e.js",
+    "semester": "GANJIL",
+    "nama": "NAJIRA",
+    "kelas": "XI.7"
+  },
+  "0094387076": {
+    "file": "96e51322186a564a071a13cbfc69535b.js",
+    "semester": "GANJIL",
+    "nama": "NASILA",
+    "kelas": "XI.7"
+  },
+  "0094603381": {
+    "file": "32de1c939bfcda8ce35eb8c37e0b081c.js",
+    "semester": "GANJIL",
+    "nama": "NUR ALYAH USMAN",
+    "kelas": "XI.7"
+  },
+  "0106975413": {
+    "file": "07ddb87a42c93449022d6c76a7c31fed.js",
+    "semester": "GANJIL",
+    "nama": "NUR KHALIZAH. D",
+    "kelas": "XI.7"
+  },
+  "0102346082": {
+    "file": "c542f9740b9dfe0ffb2bd7314679f66e.js",
+    "semester": "GANJIL",
+    "nama": "NURAMELIA",
+    "kelas": "XI.7"
+  },
+  "0106402073": {
+    "file": "276405d60762831bde5a613d0d0b1b9d.js",
+    "semester": "GANJIL",
+    "nama": "NURHAFIZAH ABBAS",
+    "kelas": "XI.7"
+  },
+  "0101614382": {
+    "file": "3fcbda0088fb2903df2e4b8e916eb7f5.js",
+    "semester": "GANJIL",
+    "nama": "NURLELA YUNITA",
+    "kelas": "XI.7"
+  },
+  "0103754217": {
+    "file": "b42b9227a0bbc6785e526544d9a781bf.js",
+    "semester": "GANJIL",
+    "nama": "NURUL AZKIAH",
+    "kelas": "XI.7"
+  },
+  "0099585933": {
+    "file": "2c4ab3761211bc4cce8caadaafd9463f.js",
+    "semester": "GANJIL",
+    "nama": "PATIMA AL AMIN",
+    "kelas": "XI.7"
+  },
+  "0103689698": {
+    "file": "539efda3fa88ca7b9847437d74d99d01.js",
+    "semester": "GANJIL",
+    "nama": "PUTRA ABYAN",
+    "kelas": "XI.7"
+  },
+  "0106332699": {
+    "file": "4895619ab5bcd1751cf00c1c75884cb4.js",
+    "semester": "GANJIL",
+    "nama": "REHAN TRI PUTRA WAWAN",
+    "kelas": "XI.7"
+  },
+  "0102831134": {
+    "file": "6dd7e50163fc1c4881f09f3d531072ac.js",
+    "semester": "GANJIL",
+    "nama": "URWA ASRA MIRAJE",
+    "kelas": "XI.7"
+  },
+  "0087363555": {
+    "file": "489b9a56a45ced7f3ce124ea3c55d033.js",
+    "semester": "GANJIL",
+    "nama": "YANTI",
+    "kelas": "XI.7"
+  },
+  "0082319839": {
+    "file": "44ac60af408c8b7652ea33e8c7ee7cda.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD FAUZAN",
+    "kelas": "XII.1"
+  },
+  "0091910951": {
+    "file": "fabf77af5aa06f8b51da892b4ab95e10.js",
+    "semester": "GANJIL",
+    "nama": "ALIF ANUGRA",
+    "kelas": "XII.1"
+  },
+  "0082513050": {
+    "file": "8807fd52074f4d51e2268b3dab3272c1.js",
+    "semester": "GANJIL",
+    "nama": "ASRULLAH",
+    "kelas": "XII.1"
+  },
+  "0095650465": {
+    "file": "f8a18d4e2360eecb1a7ee50cefe5bca4.js",
+    "semester": "GANJIL",
+    "nama": "AURA TRI SULTAN",
+    "kelas": "XII.1"
+  },
+  "0093073275": {
+    "file": "180b6132ecd89f394b069bd5e8203d7a.js",
+    "semester": "GANJIL",
+    "nama": "CITRA THAMRIN",
+    "kelas": "XII.1"
+  },
+  "0098969830": {
+    "file": "49c5456dcab548a7c33dc43845208a39.js",
+    "semester": "GANJIL",
+    "nama": "DINDA ANGRENI",
+    "kelas": "XII.1"
+  },
+  "0099825823": {
+    "file": "28f6858fe1646a422de92affe2224e19.js",
+    "semester": "GANJIL",
+    "nama": "HAFZA AULIA NINGSI M.",
+    "kelas": "XII.1"
+  },
+  "0072608407": {
+    "file": "77a789e28827938a69be8b15e376eccc.js",
+    "semester": "GANJIL",
+    "nama": "HALIAH AMANAH",
+    "kelas": "XII.1"
+  },
+  "0098366116": {
+    "file": "03e227949bbeb86be90931bce19e0d00.js",
+    "semester": "GANJIL",
+    "nama": "KASMAWATI",
+    "kelas": "XII.1"
+  },
+  "0088782946": {
+    "file": "cfae5374916e165a2c8344029f4d5dd4.js",
+    "semester": "GANJIL",
+    "nama": "NASRULLAH",
+    "kelas": "XII.1"
+  },
+  "0084234560": {
+    "file": "53716fd3e868023490b833c1496ee18f.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AFDAL APRILANSYAH",
+    "kelas": "XII.1"
+  },
+  "0096668744": {
+    "file": "1656f34670a8446ab8ee620e196b314c.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AKBAR",
+    "kelas": "XII.1"
+  },
+  "0082801247": {
+    "file": "8935a79fe15fe1deb7cd6c9b1192ee0b.js",
+    "semester": "GANJIL",
+    "nama": "MUH. DANIS ISMAIL",
+    "kelas": "XII.1"
+  },
+  "0084733166": {
+    "file": "8ae1ddb7da6a451d9094c7d3cd876249.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FAREL",
+    "kelas": "XII.1"
+  },
+  "0096711159": {
+    "file": "78db6b2b427d1e91b0934dcdbc263fc4.js",
+    "semester": "GANJIL",
+    "nama": "MUH. RIZKY ALFATTAH",
+    "kelas": "XII.1"
+  },
+  "0093690319": {
+    "file": "3f04084937bf6a7f288e83268bb70591.js",
+    "semester": "GANJIL",
+    "nama": "NAJWA AZISA",
+    "kelas": "XII.1"
+  },
+  "0098346157": {
+    "file": "37fa9820406db8e963f89dd7df9453e4.js",
+    "semester": "GANJIL",
+    "nama": "NUR HALISA S.",
+    "kelas": "XII.1"
+  },
+  "0093369401": {
+    "file": "59499014ee355bc38f3e21d5b0ce8b1e.js",
+    "semester": "GANJIL",
+    "nama": "NUR JANNA",
+    "kelas": "XII.1"
+  },
+  "0095424994": {
+    "file": "f9a931169f8098eacc2c1157ed940bf1.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI AISYAH",
+    "kelas": "XII.1"
+  },
+  "0093777287": {
+    "file": "88ac0094dbaa240ec5832d3455b410b9.js",
+    "semester": "GANJIL",
+    "nama": "RASTI AZIS",
+    "kelas": "XII.1"
+  },
+  "0093977088": {
+    "file": "4f188a73b489083e498233816bbf7920.js",
+    "semester": "GANJIL",
+    "nama": "RESKY YULIANI",
+    "kelas": "XII.1"
+  },
+  "0092698459": {
+    "file": "714930d5b4be307591b857398b0e965c.js",
+    "semester": "GANJIL",
+    "nama": "REZA ISMAIL",
+    "kelas": "XII.1"
+  },
+  "0081381340": {
+    "file": "5b295a53357394e1e7da1e1acb2ac582.js",
+    "semester": "GANJIL",
+    "nama": "RIZKI JAYA",
+    "kelas": "XII.1"
+  },
+  "0095961511": {
+    "file": "77d28c646b157608b9baea1f9bad3863.js",
+    "semester": "GANJIL",
+    "nama": "SUKMA",
+    "kelas": "XII.1"
+  },
+  "0086498048": {
+    "file": "27de0d2ff5f599e69e98d8b057a359ec.js",
+    "semester": "GANJIL",
+    "nama": "YULAIKA PUTRI",
+    "kelas": "XII.1"
+  },
+  "0082977000": {
+    "file": "8014ded96595c7f7570146c8c82d5999.js",
+    "semester": "GANJIL",
+    "nama": "AFGAN ZENESAH",
+    "kelas": "XII.2"
+  },
+  "0099557393": {
+    "file": "7aedced504921d1bd19c7fbabf948b0a.js",
+    "semester": "GANJIL",
+    "nama": "ANITA NOVIANTI A.",
+    "kelas": "XII.2"
+  },
+  "0099861229": {
+    "file": "845ba2ab29627b78a6bafd01b3d80af9.js",
+    "semester": "GANJIL",
+    "nama": "AL FURQAM ARSAP",
+    "kelas": "XII.2"
+  },
+  "0092881664": {
+    "file": "795f1eb7401d50dc67b255a2fee5d0ed.js",
+    "semester": "GANJIL",
+    "nama": "ARJUANSA",
+    "kelas": "XII.2"
+  },
+  "0081840979": {
+    "file": "190bd599ecc5c7003540e6d551b818ba.js",
+    "semester": "GANJIL",
+    "nama": "AYU RESKI SABRINA",
+    "kelas": "XII.2"
+  },
+  "0095278314": {
+    "file": "be7d5b7a4a3b47d8aefaa88e40c7cf03.js",
+    "semester": "GANJIL",
+    "nama": "AZZAH DZALLIFAH HASAN",
+    "kelas": "XII.2"
+  },
+  "0086857053": {
+    "file": "5f6182a48c2fd7e1006442561f00366d.js",
+    "semester": "GANJIL",
+    "nama": "DEVI SRIYANTI",
+    "kelas": "XII.2"
+  },
+  "0093752623": {
+    "file": "01a4e6bcd0f0545ba845b9758b962777.js",
+    "semester": "GANJIL",
+    "nama": "FEBY FEBRIAH",
+    "kelas": "XII.2"
+  },
+  "0085869214": {
+    "file": "23177cae842d5fabe9acb6c8f84bb802.js",
+    "semester": "GANJIL",
+    "nama": "FITRA DAYANTI",
+    "kelas": "XII.2"
+  },
+  "0095892625": {
+    "file": "e118ab26d65088940cae036870d91f28.js",
+    "semester": "GANJIL",
+    "nama": "IKSAN",
+    "kelas": "XII.2"
+  },
+  "0099403060": {
+    "file": "0dfa0111a61f43e32532b56bac4789eb.js",
+    "semester": "GANJIL",
+    "nama": "INTAN",
+    "kelas": "XII.2"
+  },
+  "0091070099": {
+    "file": "1d969a52821bc4861c35b66db3e156da.js",
+    "semester": "GANJIL",
+    "nama": "KRISTIANO AGUNG RANTE TASAK",
+    "kelas": "XII.2"
+  },
+  "0099323798": {
+    "file": "b0fbf35b3f56c5646cd1b5f9373910dd.js",
+    "semester": "GANJIL",
+    "nama": "M. QAUSAR SAHUR",
+    "kelas": "XII.2"
+  },
+  "0096444885": {
+    "file": "ba2981be156846e144395b4485fb9d9d.js",
+    "semester": "GANJIL",
+    "nama": "M. TAUFIQ HERNAN",
+    "kelas": "XII.2"
+  },
+  "0092570456": {
+    "file": "6a5ef85ab946a14423a40e282a1a063f.js",
+    "semester": "GANJIL",
+    "nama": "MARSYA PUTRI",
+    "kelas": "XII.2"
+  },
+  "0097075312": {
+    "file": "431b92f901cd531e2783f0e7db59c6d7.js",
+    "semester": "GANJIL",
+    "nama": "MELATI",
+    "kelas": "XII.2"
+  },
+  "0096998235": {
+    "file": "84264b13f7cc8981a680cc85d3ecfd7c.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FARID",
+    "kelas": "XII.2"
+  },
+  "0099123976": {
+    "file": "f574d9fbe71f29201ad82586f8a999cc.js",
+    "semester": "GANJIL",
+    "nama": "MUH. MUHAIMIN",
+    "kelas": "XII.2"
+  },
+  "0095623594": {
+    "file": "4a046f998b937b9357927ae7770cecc0.js",
+    "semester": "GANJIL",
+    "nama": "MUH.FAUZAN THAHIR",
+    "kelas": "XII.2"
+  },
+  "0085740505": {
+    "file": "7413d5506c00f887f94ce2eaf4bcd8b2.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SAHRIL",
+    "kelas": "XII.2"
+  },
+  "0093650065": {
+    "file": "3461890c0f416f70e1288d7258c0a325.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD SYAIFUL",
+    "kelas": "XII.2"
+  },
+  "0091315521": {
+    "file": "29dfbd00a6f295bed6ce0c16ffdc565c.js",
+    "semester": "GANJIL",
+    "nama": "NABIL RAHMATULLAH",
+    "kelas": "XII.2"
+  },
+  "0091005720": {
+    "file": "2b7e73571d79fd79109585958bc120ca.js",
+    "semester": "GANJIL",
+    "nama": "NUR HIKMA",
+    "kelas": "XII.2"
+  },
+  "0097132418": {
+    "file": "13441def9053986ff763051cded4fb41.js",
+    "semester": "GANJIL",
+    "nama": "NURHALIZAH",
+    "kelas": "XII.2"
+  },
+  "0084714959": {
+    "file": "960527689fb476c43400998a6ddffa7b.js",
+    "semester": "GANJIL",
+    "nama": "NURUL UMAIRA IZATI SAMIMI",
+    "kelas": "XII.2"
+  },
+  "0098373608": {
+    "file": "6e9efe6b7ca7ad05aa879f8ef5f90cf2.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI AMALIAH",
+    "kelas": "XII.2"
+  },
+  "0096852570": {
+    "file": "e9bb4f4ff7586f03e7ed693fcc627ee4.js",
+    "semester": "GANJIL",
+    "nama": "QUMAIRAH",
+    "kelas": "XII.2"
+  },
+  "0094182798": {
+    "file": "b9d54e2e9dd81a9b3a22136c6c41d632.js",
+    "semester": "GANJIL",
+    "nama": "REHAN",
+    "kelas": "XII.2"
+  },
+  "0088500775": {
+    "file": "039020a2a0ad536cfd7a0edc1ebc5188.js",
+    "semester": "GANJIL",
+    "nama": "RESTU ADITYA",
+    "kelas": "XII.2"
+  },
+  "0099235291": {
+    "file": "f99aef0c9d6a5f66eacdfda27b51dafd.js",
+    "semester": "GANJIL",
+    "nama": "RISMA. S",
+    "kelas": "XII.2"
+  },
+  "0093939017": {
+    "file": "de343b6dc8478ae3d6e684d4c7c06083.js",
+    "semester": "GANJIL",
+    "nama": "SAHMYRANDA WANDINI",
+    "kelas": "XII.2"
+  },
+  "0092089197": {
+    "file": "375bbd1b33e985b027db327e6c74316c.js",
+    "semester": "GANJIL",
+    "nama": "WAHYU ANUGERAH",
+    "kelas": "XII.2"
+  },
+  "0095745305": {
+    "file": "20731f0e46d26d870e8e72c25290d677.js",
+    "semester": "GANJIL",
+    "nama": "A.NAZRIL IHRAM",
+    "kelas": "XII.3"
+  },
+  "0086622136": {
+    "file": "ad1ef09f50949ca23738ecda2eb6d2e2.js",
+    "semester": "GANJIL",
+    "nama": "A. MUH.ABD.RAHMAN",
+    "kelas": "XII.3"
+  },
+  "0091413550": {
+    "file": "d5590b0c31d4e595727d0d25c245a623.js",
+    "semester": "GANJIL",
+    "nama": "ADRIAN",
+    "kelas": "XII.3"
+  },
+  "0097858861": {
+    "file": "bdc2174cdeaa6e8073869a89363cf24b.js",
+    "semester": "GANJIL",
+    "nama": "ALIF ARMANSYAH",
+    "kelas": "XII.3"
+  },
+  "0064151712": {
+    "file": "875b7d9e454e962a3468b8c4902e0c24.js",
+    "semester": "GANJIL",
+    "nama": "ANIS SURAYA",
+    "kelas": "XII.3"
+  },
+  "0085322657": {
+    "file": "767b1bcd635912ac1591d01344541e40.js",
+    "semester": "GANJIL",
+    "nama": "BAIM",
+    "kelas": "XII.3"
+  },
+  "0095449422": {
+    "file": "7f8ab8ef1196cea7ae0a7e4b7287994d.js",
+    "semester": "GANJIL",
+    "nama": "DEWI",
+    "kelas": "XII.3"
+  },
+  "0098867216": {
+    "file": "4575102749c7d05eac0d5fb5b7f43dfb.js",
+    "semester": "GANJIL",
+    "nama": "ISA SAPUTRI",
+    "kelas": "XII.3"
+  },
+  "0097820457": {
+    "file": "9884af6bfea90067a349d71b3075f03d.js",
+    "semester": "GANJIL",
+    "nama": "MAHARANI KAMALUDDIN",
+    "kelas": "XII.3"
+  },
+  "0098527970": {
+    "file": "94174527b45f4de80abba99d2c3d9cf1.js",
+    "semester": "GANJIL",
+    "nama": "MUH AGUNG HIDAYAT",
+    "kelas": "XII.3"
+  },
+  "0095023715": {
+    "file": "82e1496d9ba611ba5d2a3fec48a25a86.js",
+    "semester": "GANJIL",
+    "nama": "MUH. LUTHFY SALMAN",
+    "kelas": "XII.3"
+  },
+  "0098206808": {
+    "file": "b2ea0c77ed89e80d60505ad2c6820eff.js",
+    "semester": "GANJIL",
+    "nama": "MUH. WAFIQ MAGSURA",
+    "kelas": "XII.3"
+  },
+  "0094455256": {
+    "file": "156ee6a8a286a5bfcbad30b5371db847.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ASSIDIQ",
+    "kelas": "XII.3"
+  },
+  "0082735698": {
+    "file": "252b490b23432f21200ccbc0b4b56427.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FIRMAN",
+    "kelas": "XII.3"
+  },
+  "0098610825": {
+    "file": "0d03af05fa41b169fbb46689419f03b9.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD HASBI AS SHIDIQ",
+    "kelas": "XII.3"
+  },
+  "0084205521": {
+    "file": "7973a85f708946e33e925e5559d571bf.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD IKHWAN SAFIE",
+    "kelas": "XII.3"
+  },
+  "0097865625": {
+    "file": "8b445f131cd6cbb05de9d1e303aabf03.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD WILDAM",
+    "kelas": "XII.3"
+  },
+  "0096459817": {
+    "file": "f45bda1b1bd65f53b8f45f2aa8de2ce6.js",
+    "semester": "GANJIL",
+    "nama": "NAURAH KAMILAH ASYAM",
+    "kelas": "XII.3"
+  },
+  "0081975860": {
+    "file": "b316ffdeec5ea7f24cb3759fbd52621b.js",
+    "semester": "GANJIL",
+    "nama": "NAZHAR",
+    "kelas": "XII.3"
+  },
+  "0088235530": {
+    "file": "5f6cf1b51d6dfe31189fc27ae058364d.js",
+    "semester": "GANJIL",
+    "nama": "NUR FASILA",
+    "kelas": "XII.3"
+  },
+  "0092545077": {
+    "file": "690d8053c9b96617ee997413c5a1d09b.js",
+    "semester": "GANJIL",
+    "nama": "NUR WIDYANINGSIH",
+    "kelas": "XII.3"
+  },
+  "0092336386": {
+    "file": "11ee832f54b85716e87c28a83054b88c.js",
+    "semester": "GANJIL",
+    "nama": "NURAINI",
+    "kelas": "XII.3"
+  },
+  "0094724021": {
+    "file": "403d59954bb95dc3c9541927754d5e9e.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI AUREL RAMADHANI",
+    "kelas": "XII.3"
+  },
+  "0081207664": {
+    "file": "823b4e0076a66d5174a797fabdf284ff.js",
+    "semester": "GANJIL",
+    "nama": "RAHMANIAR.H",
+    "kelas": "XII.3"
+  },
+  "0099124362": {
+    "file": "d3f7e7d9a5d56bd5bc906b23f9258ccd.js",
+    "semester": "GANJIL",
+    "nama": "RIFQAH JAMAL",
+    "kelas": "XII.3"
+  },
+  "0096803886": {
+    "file": "456989b3c1e51f08fa4593d45c5eb8d3.js",
+    "semester": "GANJIL",
+    "nama": "SALSABILA ISLAMIYAH",
+    "kelas": "XII.3"
+  },
+  "0087652144": {
+    "file": "69bb3476da50bb3ef5443e6fe4502065.js",
+    "semester": "GANJIL",
+    "nama": "SHIREN ANDREA SAGITA",
+    "kelas": "XII.3"
+  },
+  "0098140407": {
+    "file": "901742f51a56b2a74f2c7c7d00f8d07e.js",
+    "semester": "GANJIL",
+    "nama": "SRI SYARIFAINI",
+    "kelas": "XII.3"
+  },
+  "0082011209": {
+    "file": "b3c4b1665809a43a925439b2ddff5eb3.js",
+    "semester": "GANJIL",
+    "nama": "SYAFIKA KIRANIA",
+    "kelas": "XII.3"
+  },
+  "0097745301": {
+    "file": "c052aef3046cfed2998af0945bf7321d.js",
+    "semester": "GANJIL",
+    "nama": "ZAHRA SAFRIANI",
+    "kelas": "XII.3"
+  },
+  "0092175768": {
+    "file": "1487f8fe9503aa377ae9702a37c34981.js",
+    "semester": "GANJIL",
+    "nama": "RAFI MAHDI",
+    "kelas": "XII.3"
+  },
+  "0081351356": {
+    "file": "586e639e90f068fa1cd3d4897260c97f.js",
+    "semester": "GANJIL",
+    "nama": "A. NANDA JIHAN PERMATASARI",
+    "kelas": "XII.4"
+  },
+  "0087065316": {
+    "file": "b928ed94036461f9f645dcf1608f155a.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD FHARIEL",
+    "kelas": "XII.4"
+  },
+  "0084291268": {
+    "file": "1921d5bfc234d6bd1f81e02229382749.js",
+    "semester": "GANJIL",
+    "nama": "AISYA KURMA RAMADHANI",
+    "kelas": "XII.4"
+  },
+  "0097637467": {
+    "file": "c25127786763563a0437cb661b19185a.js",
+    "semester": "GANJIL",
+    "nama": "ALFIAN MASRY",
+    "kelas": "XII.4"
+  },
+  "0082887020": {
+    "file": "2d307a98c000ce7d63bc11584e3e233c.js",
+    "semester": "GANJIL",
+    "nama": "ASLAM SYA",
+    "kelas": "XII.4"
+  },
+  "0081903268": {
+    "file": "aa62a96fb0b6be4375cefd3407ee5351.js",
+    "semester": "GANJIL",
+    "nama": "AYATI SUARDI",
+    "kelas": "XII.4"
+  },
+  "0098877333": {
+    "file": "5d34f2a3e61f8546b229fac1a8f2e7b3.js",
+    "semester": "GANJIL",
+    "nama": "BAYU DWI SETIAWAN",
+    "kelas": "XII.4"
+  },
+  "0084185950": {
+    "file": "2e00f84fb9849bc95406bbb287d660f3.js",
+    "semester": "GANJIL",
+    "nama": "BRIGITA ALMARIO",
+    "kelas": "XII.4"
+  },
+  "0082780549": {
+    "file": "b234d4dfef08fc3061873aa32a6b9695.js",
+    "semester": "GANJIL",
+    "nama": "HASRIANI YUVITA HAMID",
+    "kelas": "XII.4"
+  },
+  "0098999775": {
+    "file": "0540b80f017396739857a2e38bf37c18.js",
+    "semester": "GANJIL",
+    "nama": "IBNU ATTAMIMI AL FIRDAUS",
+    "kelas": "XII.4"
+  },
+  "0098676266": {
+    "file": "f407517ffe67bc59d7d107b2aa95f355.js",
+    "semester": "GANJIL",
+    "nama": "IRFAN IS",
+    "kelas": "XII.4"
+  },
+  "0098080432": {
+    "file": "651fd619ad20b0f8618d27274a63bf91.js",
+    "semester": "GANJIL",
+    "nama": "KARTIKA MAULIA APRIANTI",
+    "kelas": "XII.4"
+  },
+  "0092622462": {
+    "file": "a575257df80f47740b168c005f05d50e.js",
+    "semester": "GANJIL",
+    "nama": "KHALIL",
+    "kelas": "XII.4"
+  },
+  "0098956635": {
+    "file": "ee26e6c416802302966d448d198b9693.js",
+    "semester": "GANJIL",
+    "nama": "MANOHARA RHATU ODELIA",
+    "kelas": "XII.4"
+  },
+  "0093157706": {
+    "file": "9f54d1243654d10dacaad342fd5b8356.js",
+    "semester": "GANJIL",
+    "nama": "MUH. AL FARIQ RUSLI",
+    "kelas": "XII.4"
+  },
+  "0081267240": {
+    "file": "6371bc9e20521bc9ff2cf2c2f831fa9d.js",
+    "semester": "GANJIL",
+    "nama": "MUH. HARDI",
+    "kelas": "XII.4"
+  },
+  "0096237093": {
+    "file": "5aea1a858add924b145b4da0fe78912c.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD RISKI",
+    "kelas": "XII.4"
+  },
+  "0098986391": {
+    "file": "2a0fcdfa528e41a8a2707c00dec53b25.js",
+    "semester": "GANJIL",
+    "nama": "NATASYA",
+    "kelas": "XII.4"
+  },
+  "0093248858": {
+    "file": "5440423fa3cf3052a09b0b2712a83f14.js",
+    "semester": "GANJIL",
+    "nama": "NUR ASSYIFA SYAHIRA",
+    "kelas": "XII.4"
+  },
+  "0087013785": {
+    "file": "b36984b3b2693dc8abf7d8f7f6ad83e0.js",
+    "semester": "GANJIL",
+    "nama": "NUR FAUZIAH W.",
+    "kelas": "XII.4"
+  },
+  "0094687537": {
+    "file": "a8d9c3f102cfa6be4100ae7ca2e946a6.js",
+    "semester": "GANJIL",
+    "nama": "NUR SALIANA",
+    "kelas": "XII.4"
+  },
+  "0093033771": {
+    "file": "5a50c0f1d7c426d0929fe6f17279e790.js",
+    "semester": "GANJIL",
+    "nama": "NUR SOFHIYA",
+    "kelas": "XII.4"
+  },
+  "0095577250": {
+    "file": "c6c9d84bc6456027c3bccb1328015c33.js",
+    "semester": "GANJIL",
+    "nama": "NURALYA SYAFIQAH",
+    "kelas": "XII.4"
+  },
+  "0087600232": {
+    "file": "2252bafc31af14f4f28de6c41d4344e1.js",
+    "semester": "GANJIL",
+    "nama": "SAFIRA ORIZA",
+    "kelas": "XII.4"
+  },
+  "0081220752": {
+    "file": "0f2d03527eee96463018a8090b6a4c79.js",
+    "semester": "GANJIL",
+    "nama": "SATRIANI",
+    "kelas": "XII.4"
+  },
+  "0099667547": {
+    "file": "be6bdcaefb2b052022be8017506888ad.js",
+    "semester": "GANJIL",
+    "nama": "SITTI NURUL AISYAH",
+    "kelas": "XII.4"
+  },
+  "0095718517": {
+    "file": "c55b2674f02e4dcacfb10d59911cb35d.js",
+    "semester": "GANJIL",
+    "nama": "SUBUHAN",
+    "kelas": "XII.4"
+  },
+  "0096416467": {
+    "file": "20002773f75ac689b69af488e072686d.js",
+    "semester": "GANJIL",
+    "nama": "SYAWAL",
+    "kelas": "XII.4"
+  },
+  "0092622577": {
+    "file": "46a9fe3a64b3dfd4e07cb6f6d3acd2b0.js",
+    "semester": "GANJIL",
+    "nama": "WILDA BURTI",
+    "kelas": "XII.4"
+  },
+  "0092275605": {
+    "file": "43d4e232f802122422fa56ea947158d9.js",
+    "semester": "GANJIL",
+    "nama": "ZHICA NUR ARIQAH",
+    "kelas": "XII.4"
+  },
+  "0097704528": {
+    "file": "903ed21e5963b273b4857a2da83850ff.js",
+    "semester": "GANJIL",
+    "nama": "AHMAD ALFIN",
+    "kelas": "XII.5"
+  },
+  "0098936568": {
+    "file": "9206d4f2422be5edd9a6c2cf549250b7.js",
+    "semester": "GANJIL",
+    "nama": "AURA MEY HURAIRA. S",
+    "kelas": "XII.5"
+  },
+  "0098115477": {
+    "file": "805704c956e0b07841470e99cb8b60e7.js",
+    "semester": "GANJIL",
+    "nama": "FARHAN IRAWAN",
+    "kelas": "XII.5"
+  },
+  "0096979793": {
+    "file": "0a8690edfe9065406ea4be97cc33b03d.js",
+    "semester": "GANJIL",
+    "nama": "FINZA NURARIFANAZUA",
+    "kelas": "XII.5"
+  },
+  "0097864326": {
+    "file": "e471165dcf9ffc8fb4b61510173427ab.js",
+    "semester": "GANJIL",
+    "nama": "INDAH ATTAYA ALTAFUNIZAH",
+    "kelas": "XII.5"
+  },
+  "0089123160": {
+    "file": "d622dd9e9810e0923cdcac98a05a748f.js",
+    "semester": "GANJIL",
+    "nama": "JUMRIATI",
+    "kelas": "XII.5"
+  },
+  "0094936840": {
+    "file": "bb8cc4dadaedadac036cbb57a0f6bca0.js",
+    "semester": "GANJIL",
+    "nama": "MAHRANI",
+    "kelas": "XII.5"
+  },
+  "0092707497": {
+    "file": "549f1827e8ce00587c4518b500e293e3.js",
+    "semester": "GANJIL",
+    "nama": "MAHSYA NUR FADILAH",
+    "kelas": "XII.5"
+  },
+  "0097768144": {
+    "file": "6337cbc0d46712a49a24949722d07899.js",
+    "semester": "GANJIL",
+    "nama": "MUH. DAVA BANGSAWAN SAH",
+    "kelas": "XII.5"
+  },
+  "0089646185": {
+    "file": "273ce00dae524d1b8c5baef92e70e509.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FADLI",
+    "kelas": "XII.5"
+  },
+  "0098640318": {
+    "file": "020416eb6db9b663009fc5cee636513f.js",
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL",
+    "kelas": "XII.5"
+  },
+  "0084830584": {
+    "file": "b6de32f646f7a6d04127fddec6c9c252.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD FAREL",
+    "kelas": "XII.5"
+  },
+  "0083443152": {
+    "file": "083e18e41da725149a141729869e9a22.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD YASSIN",
+    "kelas": "XII.5"
+  },
+  "0097197817": {
+    "file": "049055b22fd278fbd80441dbd782a64f.js",
+    "semester": "GANJIL",
+    "nama": "NUR HIKMAH HIDAYAH",
+    "kelas": "XII.5"
+  },
+  "0082990694": {
+    "file": "21f9ab0ce570064062739d90395127c1.js",
+    "semester": "GANJIL",
+    "nama": "NUR OKTAVIA",
+    "kelas": "XII.5"
+  },
+  "0096590847": {
+    "file": "2dd7bffbd7a3d360f847406830d2243c.js",
+    "semester": "GANJIL",
+    "nama": "NURHALISA L.",
+    "kelas": "XII.5"
+  },
+  "0091472584": {
+    "file": "e7ca10c4d5bbeebaf1df1265d47df30e.js",
+    "semester": "GANJIL",
+    "nama": "NURUL ALISA",
+    "kelas": "XII.5"
+  },
+  "0094680956": {
+    "file": "37e0ed6c83ed3181b5957c7e2ad25e7e.js",
+    "semester": "GANJIL",
+    "nama": "NURUL FADILLAH ARIEF",
+    "kelas": "XII.5"
+  },
+  "0092115167": {
+    "file": "8095630ad3adfe7bd3cc601a170868ea.js",
+    "semester": "GANJIL",
+    "nama": "PUTRI NAJURA NURHIDAYA",
+    "kelas": "XII.5"
+  },
+  "0096835843": {
+    "file": "245b8bb7d04a14ace29436f231233265.js",
+    "semester": "GANJIL",
+    "nama": "RASMAYANTI",
+    "kelas": "XII.5"
+  },
+  "0097266898": {
+    "file": "487ed9b20948de61085b0aa3dc5a320b.js",
+    "semester": "GANJIL",
+    "nama": "RASNI",
+    "kelas": "XII.5"
+  },
+  "0084010700": {
+    "file": "7cbf0c3945d33304ab890368af134bc4.js",
+    "semester": "GANJIL",
+    "nama": "RESTU SEPTRIASA N",
+    "kelas": "XII.5"
+  },
+  "0097181345": {
+    "file": "6467a8e32ecce6634cb951b0962f1b35.js",
+    "semester": "GANJIL",
+    "nama": "RIRIN ALFIAN",
+    "kelas": "XII.5"
+  },
+  "0095650738": {
+    "file": "bbb665ebbaf3206656530c39214c37c4.js",
+    "semester": "GANJIL",
+    "nama": "SABRINA. A",
+    "kelas": "XII.5"
+  },
+  "0075986269": {
+    "file": "93cb0717cb68818733f2e0f55aaf3452.js",
+    "semester": "GANJIL",
+    "nama": "SARIPUDIN",
+    "kelas": "XII.5"
+  },
+  "0093781414": {
+    "file": "3d139694460ac444c88361f19db82959.js",
+    "semester": "GANJIL",
+    "nama": "ZULJALALI",
+    "kelas": "XII.5"
+  },
+  "0095687097": {
+    "file": "ea886dec1f7845d9de75cacb32799a33.js",
+    "semester": "GANJIL",
+    "nama": "NUR AZIRA",
+    "kelas": "XII.5"
+  },
+  "0086384403": {
+    "file": "b082d26f36c7088300f6492dce54f260.js",
+    "semester": "GANJIL",
+    "nama": "ALWIRA CAHYA PUTRI",
+    "kelas": "XII.6"
+  },
+  "0087934958": {
+    "file": "ee6b7e49fa9756d6cfaf354dd45841fd.js",
+    "semester": "GANJIL",
+    "nama": "AQILA MUTMAINNA",
+    "kelas": "XII.6"
+  },
+  "0087077685": {
+    "file": "589910a70adeb428d2b1a5a42d4128e5.js",
+    "semester": "GANJIL",
+    "nama": "ASLAN",
+    "kelas": "XII.6"
+  },
+  "0099430284": {
+    "file": "fff02406baa7d8b8ba2185ac1afe024f.js",
+    "semester": "GANJIL",
+    "nama": "ASPHY AZ-ZAHRA",
+    "kelas": "XII.6"
+  },
+  "0096444595": {
+    "file": "0ee4e96c1e58dc3643f52fd5a3c7bb44.js",
+    "semester": "GANJIL",
+    "nama": "FHYA ASYARAH",
+    "kelas": "XII.6"
+  },
+  "0083471656": {
+    "file": "4c2ed3c4978f8caa8a7f04662fba8b02.js",
+    "semester": "GANJIL",
+    "nama": "HAERUL",
+    "kelas": "XII.6"
+  },
+  "0085419206": {
+    "file": "107917b1886a9dd99367ca995687daf9.js",
+    "semester": "GANJIL",
+    "nama": "INDAR WAHYUNI",
+    "kelas": "XII.6"
+  },
+  "0095849885": {
+    "file": "e1ec145fa747bebeb9f3765311f1f364.js",
+    "semester": "GANJIL",
+    "nama": "KARMILA",
+    "kelas": "XII.6"
+  },
+  "0084729936": {
+    "file": "00c56118ff973fba5e2ac7a3e28f0293.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FAIZ AKSAN",
+    "kelas": "XII.6"
+  },
+  "0096719937": {
+    "file": "f3d4155e71c96da4668f1e9695d0f7e5.js",
+    "semester": "GANJIL",
+    "nama": "MUH. FAUZAN TANRATU",
+    "kelas": "XII.6"
+  },
+  "0092969241": {
+    "file": "63c53550da41be7cf03099701370e0eb.js",
+    "semester": "GANJIL",
+    "nama": "MUH. HAIKAL BIN HERMAN",
+    "kelas": "XII.6"
+  },
+  "0094603256": {
+    "file": "1561f0fd4b015189616045221642b086.js",
+    "semester": "GANJIL",
+    "nama": "MUH. NASYWAN",
+    "kelas": "XII.6"
+  },
+  "0086772664": {
+    "file": "a889775043c67823000dc916a7a48422.js",
+    "semester": "GANJIL",
+    "nama": "MUH.FAWZAAN USMAN",
+    "kelas": "XII.6"
+  },
+  "0097567415": {
+    "file": "dc7b6ea416aefdb4801f76b4265828d8.js",
+    "semester": "GANJIL",
+    "nama": "NASRULLAH ARSAN",
+    "kelas": "XII.6"
+  },
+  "0096726433": {
+    "file": "9a1bfe17e8a7ec969be1eee9ac8744f3.js",
+    "semester": "GANJIL",
+    "nama": "NUR ALEEYA ASYIKIN",
+    "kelas": "XII.6"
+  },
+  "0094682693": {
+    "file": "764cc51b879305d7b885cafdbee5fb17.js",
+    "semester": "GANJIL",
+    "nama": "NUR ASVIRA",
+    "kelas": "XII.6"
+  },
+  "0097602355": {
+    "file": "82f3509c4b63ce3f52b6ed418578abf5.js",
+    "semester": "GANJIL",
+    "nama": "NUR AURELIA. S",
+    "kelas": "XII.6"
+  },
+  "0060137986": {
+    "file": "17f9f0caa816715e57646cdafa9b5ec5.js",
+    "semester": "GANJIL",
+    "nama": "OLIFIA APRILYANA",
+    "kelas": "XII.6"
+  },
+  "0097762899": {
+    "file": "46e269736a270914d15ffe9fb82d52ad.js",
+    "semester": "GANJIL",
+    "nama": "RAHSYA SALELA",
+    "kelas": "XII.6"
+  },
+  "0097341943": {
+    "file": "9b27d2ce956298ba060e95a14ac497bd.js",
+    "semester": "GANJIL",
+    "nama": "REHAN",
+    "kelas": "XII.6"
+  },
+  "0091171407": {
+    "file": "1ea50e65a103468a0bd10f2757e5509a.js",
+    "semester": "GANJIL",
+    "nama": "RISKY",
+    "kelas": "XII.6"
+  },
+  "0087765718": {
+    "file": "66936123d524f5d057707891317b38cb.js",
+    "semester": "GANJIL",
+    "nama": "TIARA",
+    "kelas": "XII.6"
+  },
+  "0097375856": {
+    "file": "dc2697701fe97aa8d67aa5a484b05ba2.js",
+    "semester": "GANJIL",
+    "nama": "AFIFAH",
+    "kelas": "XII.6"
+  },
+  "0095994256": {
+    "file": "0c6bb25404eec732f803b9a937086fe4.js",
+    "semester": "GANJIL",
+    "nama": "MUH. DENIS",
+    "kelas": "XII.6"
+  },
+  "0084185564": {
+    "file": "1aeee9ad0454f00a6f0bd971717a1c15.js",
+    "semester": "GANJIL",
+    "nama": "MUHAMMAD ILHAM SAPUTRA",
+    "kelas": "XII.6"
+  }
+}
