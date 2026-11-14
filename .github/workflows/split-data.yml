@@ -1,12 +1,17 @@
 name: Split Data (NISN & Kelas)
 
 # Jalan otomatis setiap kali dsgan.js atau kalgan.js berubah (misal dari Apps Script),
-# atau bisa dijalankan manual lewat tab "Actions" di GitHub.
+# setiap kali skrip pemecah berubah, atau saat src/index.src.html berubah
+# (key enkripsi & nama file data diturunkan dari _SP5P_KEY di sana).
+# Bisa juga dijalankan manual lewat tab "Actions" di GitHub.
+# Catatan: workflow ini berjalan di GitHub, TIDAK memakai kuota "Requests today" Cloudflare.
 on:
   push:
     paths:
       - 'dsgan.js'
       - 'kalgan.js'
+      - 'scripts/**'
+      - 'src/index.src.html'
   workflow_dispatch:
 
 # Kalau Apps Script mengirim data berkali-kali, proses dijalankan satu per satu
@@ -38,7 +43,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/nisn data/kelas
+          # -A supaya file lama yang dihapus split-dsgan.js (nama NISN mentah) ikut terhapus di repo
+          git add -A data/nisn data/kelas
           if git diff --staged --quiet; then
             echo "Tidak ada perubahan data."
           else
