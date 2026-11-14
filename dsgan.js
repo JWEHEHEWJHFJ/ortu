@@ -1,4 +1,5 @@
 
+// Terakhir dikirim dari Apps Script: 15/11/2026 06.11.57 WITA (GANJIL)
 window.SISWA_DATA = {
   "GANJIL": {
     "12345": {
