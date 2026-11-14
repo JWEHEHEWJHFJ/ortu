@@ -11,6 +11,18 @@
 
 const _SP5P_KEY = "sp5p_enc_2025_sman5pinrang_secure!";
 
+// SATU-SATUNYA path yang menjalankan Worker Cloudflare (= 1 hitungan "Requests today"
+// setiap aplikasi dibuka). Harus sama dengan CFG_PATH di edge/paths.mjs.
+const _SP5P_CFG_PATH = "/sp5p-cfg.js";
+
+// Nama file data siswa = hash dari NISN (bukan NISN mentah), supaya file di /data/nisn/
+// tidak bisa ditebak walau kini disajikan sebagai static asset (tanpa Worker).
+// Harus sama persis dengan fileId() di scripts/sp5p-crypto.cjs.
+async function _sp5p_fileId(nisn) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(_SP5P_KEY + "|nisn|" + nisn));
+  return Array.from(new Uint8Array(h)).map(x => x.toString(16).padStart(2, "0")).join("").slice(0, 32);
+}
+
 
 async function _sp5p_keystream(ptLen) {
   const keyHash  = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(_SP5P_KEY));
@@ -42,8 +54,8 @@ async function _sp5p_dec(b64) {
 
 const _sp5p_loadData = async (nisn) => {
   try {
-    // Username (NISN) menjadi acuan file: data/nisn/{NISN}.js
-    const fileName = `data/nisn/${encodeURIComponent(nisn)}.js`;
+    // File data: /data/nisn/{hash NISN}.js  (static asset, tidak dihitung "Requests today")
+    const fileName = `/data/nisn/${await _sp5p_fileId(nisn)}.js`;
     const res = await fetch(fileName);
     if (!res.ok) throw new Error("HTTP " + res.status);
     const js = await res.text();
@@ -115,7 +127,15 @@ const _sp5p_loadData = async (nisn) => {
       const el = document.getElementById('sp5p-lock-timer');
       if (remaining <= 0) {
         try { localStorage.removeItem(LOCK_KEY); } catch(e) {}
-        location.reload();
+        // TIDAK reload otomatis: reload = aplikasi dibuka lagi = +1 "Requests today",
+        // padahal bisa jadi tab ini sedang tidak dilihat siapa pun. Tunggu pengguna menekan tombol.
+        if (el) {
+          el.innerHTML = '<button type="button" id="sp5p-lock-retry" style="margin-top:8px;padding:10px 22px;' +
+            'border:0;border-radius:10px;background:#00b4d8;color:#0a1628;font-weight:700;font-size:16px;cursor:pointer;">' +
+            'Buka kembali</button>';
+          const btn = document.getElementById('sp5p-lock-retry');
+          if (btn) btn.onclick = () => location.reload();
+        }
         return;
       }
       if (el) el.textContent = _fmt(remaining);
@@ -162,30 +182,66 @@ const _sp5p_loadData = async (nisn) => {
   });
 })();
 
-// ── Fetch + decrypt config.js (no-cache, tidak terlihat di F12 Sources) ──
-const _sp5p_loadConfig = async () => {
+// ── Config (gasUrl) — SATU-SATUNYA permintaan yang menjalankan Worker Cloudflare ──
+// • Diminta tepat 1x per halaman dibuka (cache: no-store), lalu disimpan di closure
+//   (tidak di window). Logout / hapus data TIDAK memintanya ulang.
+// • Baru dikirim saat halaman benar-benar terlihat: prerender/prefetch browser dan tab
+//   latar yang belum pernah dibuka tidak ikut terhitung di "Requests today".
+let _sp5p_cfgPromise = null;
+let _sp5p_cfgRetried = false;
+
+const _sp5p_whenActive = () => new Promise((resolve) => {
+  const ok = () => !document.prerendering && document.visibilityState === "visible";
+  if (ok()) return resolve();
+  const check = () => {
+    if (!ok()) return;
+    document.removeEventListener("visibilitychange", check);
+    document.removeEventListener("prerenderingchange", check);
+    resolve();
+  };
+  document.addEventListener("visibilitychange", check);
+  document.addEventListener("prerenderingchange", check);
+});
+
+const _sp5p_fetchConfig = async () => {
   try {
-    const res = await fetch("config.js");
-    if (!res.ok) return;
+    const res = await fetch(_SP5P_CFG_PATH, { cache: "no-store", credentials: "same-origin" });
+    if (!res.ok) return {};
     const js = await res.text();
     const marker = 'window.__CFG="';
     const idx    = js.indexOf(marker);
-    if (idx !== -1) {
-      const b64   = js.substring(idx + marker.length, js.indexOf('"', idx + marker.length));
-      const plain = await _sp5p_dec(b64);
-      if (plain) window.CONFIG = JSON.parse(plain);
-    } else if (js.indexOf("window.CONFIG") !== -1) {
-      // Fallback format lama (plaintext)
-      window.CONFIG = (new Function(js + "; return window.CONFIG;"))();
-    }
-    try { delete window.__CFG; } catch(e) { window.__CFG = undefined; }
-  } catch(e) { window.CONFIG = {}; }
+    if (idx === -1) return {};
+    const b64   = js.substring(idx + marker.length, js.indexOf('"', idx + marker.length));
+    const plain = await _sp5p_dec(b64);
+    const cfg   = plain ? JSON.parse(plain) : {};   // decoy -> JSON.parse gagal -> {}
+    return (cfg && typeof cfg === "object") ? cfg : {};
+  } catch(e) { return {}; }
+};
+
+// Memoized: dipanggil berkali-kali pun hanya 1 request.
+const _sp5p_loadConfig = () => {
+  if (!_sp5p_cfgPromise) {
+    _sp5p_cfgPromise = _sp5p_whenActive().then(_sp5p_fetchConfig);
+  }
+  return _sp5p_cfgPromise;
+};
+
+// Dipakai fitur ganti password. Hanya meminta ulang kalau pemuatan pertama gagal
+// (maksimal 1x), supaya gasUrl tetap didapat walau jaringan sempat putus.
+const _sp5p_getConfig = async () => {
+  const cfg = await _sp5p_loadConfig();
+  if (!cfg.gasUrl && !_sp5p_cfgRetried) {
+    _sp5p_cfgRetried = true;
+    _sp5p_cfgPromise = null;
+    return _sp5p_loadConfig();
+  }
+  return cfg;
 };
 
 const _sp5p_loadKelasKalender = async (kelas) => {
   try {
     // Kalender kini per-kelas (bukan per-semester): data/kelas/{kelas}.js
-    const fileName = `data/kelas/${encodeURIComponent(kelas)}.js`;
+    const fileName = `/data/kelas/${encodeURIComponent(kelas)}.js`;
     const res = await fetch(fileName);
     if (!res.ok) { window.KALENDER_DATA = null; return false; }
     const js = await res.text();
@@ -215,10 +271,11 @@ const _sp5p_loadKelasKalender = async (kelas) => {
 
 window._sp5p_loadData            = _sp5p_loadData;
 window._sp5p_loadConfig          = _sp5p_loadConfig;
+window._sp5p_getConfig           = _sp5p_getConfig;
 window._sp5p_loadKelasKalender   = _sp5p_loadKelasKalender;
 
 // Data siswa (per NISN) & kalender (per kelas) baru diketahui setelah proses
-// login, jadi saat halaman dimuat cukup siapkan config global saja.
+// login, jadi saat halaman dimuat cukup siapkan config saja (1 request ke Worker).
 window._sp5pReady = _sp5p_loadConfig();
 
 // (Auto-reload 5 menit dihapus: boros request & membuat siswa terlempar ke halaman login.
@@ -2884,7 +2941,7 @@ _idbGet(BG_IDB_KEY).then(cached => {
     const defaultSemester = (currentMonth >= 1 && currentMonth <= 6) ? 'GENAP' : 'GANJIL';
     const selectedSemester  = ref(defaultSemester);
     const showGenapOption   = computed(() => currentMonth >= 1 && currentMonth <= 6);
-    // Catatan: data siswa (data/nisn/{nisn}.js) & kalender (data/kelas/{kelas}.js)
+    // Catatan: data siswa (data/nisn/{hash NISN}.js) & kalender (data/kelas/{kelas}.js)
     // sekarang dimuat sekali saat login (butuh NISN & kelas), bukan lagi
     // dimuat ulang setiap kali dropdown semester berubah.
     const STORE_KEY = 'sp5p_session';
@@ -3035,13 +3092,11 @@ _idbGet(BG_IDB_KEY).then(cached => {
           abList: [], nlList: []
         };
 
-        // Hapus data sensitif & reload config baru dari server.
-        // Data siswa & kalender tidak di-reload di sini karena NISN/kelas
-        // belum diketahui lagi setelah logout — akan dimuat ulang saat login berikutnya.
+        // Hapus data sensitif. Config TIDAK diminta ulang (dulu +1 request ke Worker
+        // setiap hapus data); config sudah tersimpan di closure sejak halaman dibuka.
+        // Data siswa & kalender akan dimuat ulang saat login berikutnya.
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
-        try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
         try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
-        window._sp5pReady = window._sp5p_loadConfig();
         generateCaptcha();
 
       } catch (e) {
@@ -3079,10 +3134,9 @@ _idbGet(BG_IDB_KEY).then(cached => {
           abList: [], nlList: []
         };
 
+        // Config TIDAK diminta ulang saat logout (dulu +1 request ke Worker setiap logout).
         try { delete window.SISWA_DATA;    } catch(e) { window.SISWA_DATA    = null; }
         try { delete window.KALENDER_DATA; } catch(e) { window.KALENDER_DATA = null; }
-        try { delete window.CONFIG;        } catch(e) { window.CONFIG        = {};   }
-        window._sp5pReady = window._sp5p_loadConfig();
 
         generateCaptcha();
         window.scrollTo({ top: 0, behavior: 'instant' });
@@ -3121,8 +3175,8 @@ _idbGet(BG_IDB_KEY).then(cached => {
         pwMsgType.value = 'err'; return;
       }
 
-      // ── Ambil gasUrl dari config.js ─────────────────────────────────
-      const gasUrl = (window.CONFIG || {}).gasUrl || '';
+      // ── Ambil gasUrl dari config (sudah dimuat 1x saat halaman dibuka) ──
+      const gasUrl = ((await window._sp5p_getConfig()) || {}).gasUrl || '';
 
       if (!gasUrl) {
         // Tidak ada gasUrl → simpan lokal saja (mode offline)
@@ -3309,7 +3363,15 @@ _idbGet(BG_IDB_KEY).then(cached => {
       URL.revokeObjectURL(url);
     };
 
+    // Tekan Enter di kolom input memicu login 2x sekaligus: submit form (klik tombol
+    // type="submit") + @keyup.enter. Dulu ini membuat data siswa & kalender diunduh 2x
+    // (= +2 hitungan Worker). Panggilan kedua yang datang hampir bersamaan diabaikan.
+    let _lastLoginAt = 0;
     const login = async () => {
+      const _now = Date.now();
+      if (loading.value || _now - _lastLoginAt < 800) return;
+      _lastLoginAt = _now;
+
       if (!nisnInput.value || !passwordInput.value) {
         errorMessage.value = 'NISN dan Password harus diisi';
         return;
@@ -3330,15 +3392,15 @@ _idbGet(BG_IDB_KEY).then(cached => {
       errorMessage.value = '';
 
       try {
-        // ── Pastikan config.js sudah ter-load ──────
-        // window._sp5pReady adalah Promise yang dimulai saat halaman load.
+        // ── Pastikan config sudah ter-load ──────
+        // window._sp5pReady adalah Promise yang dimulai saat halaman load (tidak request ulang).
         await window._sp5pReady;
 
         const nisnStr  = nisnInput.value.toString().trim();
         const semester = selectedSemester.value || 'GANJIL';
 
         // ── Muat data siswa berdasarkan NISN (username) ──
-        // Username jadi acuan file: data/nisn/{NISN}.js
+        // Username jadi acuan file: data/nisn/{hash NISN}.js (lihat _sp5p_fileId)
         const ok = await window._sp5p_loadData(nisnStr);
         if (!ok || !window.SISWA_DATA) {
           loading.value = false;

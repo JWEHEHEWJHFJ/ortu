@@ -1,29 +1,30 @@
-// edge/guard.js — logika proteksi bersama.
+// edge/guard.js — logika yang berjalan di edge Cloudflare.
 // Dipakai oleh worker/index.js (Workers + Static Assets) dan functions/_middleware.js (Pages).
-// Jalan di edge Cloudflare SEBELUM file dikirim.
 //
-// Tujuan: mempersulit pencurian kode/data.
-//  - Hanya browser yang memuat halaman DARI domain ini yang boleh mengambil
-//    app.<hash>.js, config.js, dan data/*.
-//  - curl, wget, scraper, hotlink dari situs lain, atau membuka URL file langsung
-//    di address bar -> tidak dapat file asli, melainkan DECOY (sampah acak).
+// HEMAT REQUEST: Worker HANYA dipanggil untuk CFG_PATH (lihat edge/paths.mjs).
+// index.html, app.<hash>.js, data/*, favicon, dll. disajikan sebagai static asset
+// (gratis & tidak dihitung di "Requests today"). Jadi 1 kali buka aplikasi = 1 request.
+//
+// Proteksi di CFG_PATH: hanya fetch() dari halaman di domain ini yang mendapat
+// config asli. curl/scraper/hotlink/buka langsung di address bar -> DECOY (sampah acak)
+// atau 403, tergantung PROTECT_MODE.
 //
 // Env var opsional (vars di wrangler.jsonc atau dashboard):
 //   PROTECT_MODE = decoy (default) | block (403) | off (matikan proteksi)
 //
 // BATAS JUJUR: header Sec-Fetch-* / Referer bisa dipalsukan oleh orang yang paham,
-// dan browser tetap harus menerima kode agar bisa menjalankannya (DevTools/Network
-// bisa melihatnya). Ini penghalang berlapis, bukan perlindungan mutlak.
+// dan browser tetap harus menerima kode agar bisa menjalankannya. Ini penghalang
+// berlapis, bukan perlindungan mutlak.
+import { CFG_PATH } from './paths.mjs';
+// Dibuat otomatis oleh build.mjs dari config.js (sudah terenkripsi). Tidak di-commit.
+import CFG_BODY from './config.gen.js';
 
 const BAD_UA =
   /(curl|wget|httrack|python|aiohttp|httpx|scrapy|go-http|java\/|libwww|perl|ruby|php\/|node-fetch|axios|undici|headless|phantom|selenium|puppeteer|playwright|crawler|spider|scan|nikto|sqlmap|postman|insomnia|webcopier|offline|teleport|sitesucker)/i;
 
-// path -> sec-fetch-dest yang wajib (script untuk <script src>, empty untuk fetch())
-const RULES = [
-  { re: /^\/app\.[a-f0-9]+\.js$/, dest: 'script', kind: 'app' },
-  { re: /^\/config\.js$/, dest: 'empty', kind: 'cfg' },
-  { re: /^\/data\//, dest: 'empty', kind: 'data' },
-];
+const NO_STORE = 'no-store, max-age=0';
+
+export const isConfigPath = (pathname) => pathname === CFG_PATH;
 
 const rand = (n) => {
   const a = new Uint8Array(n);
@@ -33,41 +34,37 @@ const rand = (n) => {
   return btoa(s);
 };
 
-function decoy(kind) {
-  let body;
-  if (kind === 'app') {
-    body = `(function(){var _0x${rand(6).replace(/[^a-z0-9]/gi, '')}=["${rand(1800)}"];})();`;
-  } else if (kind === 'cfg') {
-    body = `window.__CFG="${rand(160)}";`;
-  } else {
-    body = `window.__SP5P="${rand(4200)}";`;
-  }
-  return new Response(body, {
-    status: 200,
+function jsResponse(body, request, status = 200) {
+  return new Response(request.method === 'HEAD' ? null : body, {
+    status,
     headers: {
       'Content-Type': 'application/javascript; charset=utf-8',
-      'Cache-Control': 'no-store',
+      // no-store: setiap kali halaman dibuka, config diminta ulang -> tepat 1 hitungan per buka
+      'Cache-Control': NO_STORE,
+      'Cross-Origin-Resource-Policy': 'same-origin', // blokir hotlink lintas situs
+      'X-Content-Type-Options': 'nosniff',
       'X-Robots-Tag': 'noindex, nofollow',
     },
   });
 }
 
-function deny(mode, kind) {
+function deny(mode, request) {
   if (mode === 'block') {
     return new Response('Forbidden', {
       status: 403,
-      headers: { 'Cache-Control': 'no-store', 'Content-Type': 'text/plain; charset=utf-8' },
+      headers: { 'Cache-Control': NO_STORE, 'Content-Type': 'text/plain; charset=utf-8' },
     });
   }
-  return decoy(kind);
+  // decoy: bentuknya mirip config asli, isinya acak
+  return jsResponse(`window.__CFG="${rand(160)}";\n`, request);
 }
 
-function fromOwnPage(request, url, wantDest) {
+// Harus fetch() same-origin dari halaman ini (Sec-Fetch-Dest: empty).
+function fromOwnPage(request, url) {
   const h = request.headers;
   const site = h.get('sec-fetch-site');
   if (site) {
-    // Browser modern: harus permintaan same-origin dengan tujuan yang benar
-    return site === 'same-origin' && h.get('sec-fetch-dest') === wantDest;
+    return site === 'same-origin' && h.get('sec-fetch-dest') === 'empty';
   }
   // Browser lama tanpa Sec-Fetch-*: wajib Referer/Origin dari domain yang sama
   const ref = h.get('referer') || h.get('origin') || '';
@@ -78,37 +75,29 @@ function fromOwnPage(request, url, wantDest) {
   }
 }
 
-export async function guard({ request, next, env }) {
-  const mode = String((env && env.PROTECT_MODE) || 'decoy').toLowerCase();
-  if (mode === 'off') return next();
-
-  const url = new URL(request.url);
-  const path = url.pathname;
-  const ua = request.headers.get('user-agent') || '';
-
+export function serveConfig(request, env) {
   if (request.method !== 'GET' && request.method !== 'HEAD') {
     return new Response('Method Not Allowed', { status: 405, headers: { Allow: 'GET, HEAD' } });
   }
-
-  // Halaman utama: tolak alat scraping & UA kosong
-  if (path === '/' || path === '/index.html') {
-    if (!ua || BAD_UA.test(ua)) {
-      return new Response('Forbidden', { status: 403, headers: { 'Cache-Control': 'no-store' } });
-    }
-    return next();
+  const mode = String((env && env.PROTECT_MODE) || 'decoy').toLowerCase();
+  if (mode !== 'off') {
+    const url = new URL(request.url);
+    const ua = request.headers.get('user-agent') || '';
+    if (!ua || BAD_UA.test(ua) || !fromOwnPage(request, url)) return deny(mode, request);
   }
+  if (!CFG_BODY) return new Response('Not Found', { status: 404, headers: { 'Cache-Control': NO_STORE } });
+  return jsResponse(CFG_BODY, request);
+}
 
-  const rule = RULES.find((r) => r.re.test(path));
-  if (!rule) return next();
-
-  if (!ua || BAD_UA.test(ua) || !fromOwnPage(request, url, rule.dest)) {
-    return deny(mode, rule.kind);
-  }
-
-  const res = await next();
-  const out = new Response(res.body, res);
-  out.headers.set('Cross-Origin-Resource-Policy', 'same-origin'); // blokir hotlink lintas situs
-  out.headers.set('X-Content-Type-Options', 'nosniff');
-  out.headers.set('X-Robots-Tag', 'noindex, nofollow');
-  return out;
+// Untuk path yang tidak ada di dist/ dan bukan navigasi browser (biasanya bot/scanner).
+// Dijawab secepat mungkin tanpa membaca apa pun.
+export function notFound() {
+  return new Response('Not Found', {
+    status: 404,
+    headers: {
+      'Content-Type': 'text/plain; charset=utf-8',
+      'Cache-Control': 'public, max-age=86400',
+      'X-Robots-Tag': 'noindex, nofollow',
+    },
+  });
 }

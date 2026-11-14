@@ -51,4 +51,15 @@ function decrypt(b64, key) {
   return pt.toString('utf8');
 }
 
-module.exports = { readKey, encrypt, decrypt };
+/**
+ * Nama file data siswa: data/nisn/<fileId>.js (bukan lagi <nisn>.js).
+ * fileId = 32 karakter hex pertama dari SHA-256(key + "|nisn|" + nisn).
+ * HARUS sama persis dengan _sp5p_fileId() di src/index.src.html.
+ * Tujuannya: file data tidak bisa ditebak dari NISN, walaupun /data/* kini
+ * disajikan sebagai static asset (tanpa Worker, tidak dihitung "Requests today").
+ */
+function fileId(nisn, key) {
+  return crypto.createHash('sha256').update(key + '|nisn|' + String(nisn), 'utf8').digest('hex').slice(0, 32);
+}
+
+module.exports = { readKey, encrypt, decrypt, fileId };

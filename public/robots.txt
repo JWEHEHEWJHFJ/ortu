@@ -1,0 +1,5 @@
+# Portal ini privat: jangan diindeks.
+# File ini sengaja ada sebagai static asset supaya crawler yang meminta /robots.txt
+# tidak memanggil Worker (tidak dihitung di "Requests today").
+User-agent: *
+Disallow: /
