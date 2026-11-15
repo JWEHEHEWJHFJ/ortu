@@ -3,6 +3,12 @@
  * Memecah dsgan.js (window.SISWA_DATA = { GANJIL:{...}, GENAP:{...} })
  * menjadi banyak file kecil, satu file per siswa, disimpan di data/nisn/<fileId>.js
  *
+ * Setiap kali dsgan.js dikirim ulang dari Apps Script (baris pertamanya berisi
+ * "// Terakhir dikirim dari Apps Script: ..."), waktu kirim itu ditulis di baris pertama
+ * SETIAP file data/nisn. Jadi setiap pengiriman dsgan.js membuat data/nisn ikut
+ * diperbarui, walaupun data siswanya sama. Tanpa baris itu, file hanya berubah kalau
+ * datanya berubah.
+ *
  * <fileId> = hash dari NISN (lihat fileId() di sp5p-crypto.cjs), BUKAN NISN mentah,
  * supaya file tidak bisa ditebak/dikumpulkan dengan mencoba-coba NISN.
  * Aplikasi menghitung hash yang sama saat login (_sp5p_fileId di src/index.src.html).
@@ -35,6 +41,12 @@ function main() {
   }
 
   const code = fs.readFileSync(SRC_FILE, 'utf8');
+
+  // Waktu kirim dari Apps Script (komentar di awal dsgan.js), kalau ada.
+  const m = code.slice(0, 1000).match(/^\s*\/\/\s*Terakhir dikirim dari Apps Script:\s*(.+?)\s*$/m);
+  const waktuKirim = m ? m[1] : '';
+  const kepala = `// Auto-generated dari ${path.basename(SRC_FILE)} - jangan edit manual` +
+                 (waktuKirim ? ` | dikirim ${waktuKirim}` : '') + '\n';
 
   // Jalankan file asli di sandbox supaya "window.SISWA_DATA = {...}" bisa dibaca
   // tanpa perlu ubah format aslinya.
@@ -79,7 +91,7 @@ function main() {
     if (!f.endsWith('.js')) continue;
     const p = path.join(OUT_DIR, f);
     const head = fs.readFileSync(p, 'utf8').slice(0, 200);
-    if (head.startsWith('window.__SP5P=') || head.includes('Auto-generated dari')) {
+    if (head.includes('window.__SP5P=') || head.includes('Auto-generated dari')) {
       fs.unlinkSync(p);
       removed++;
     }
@@ -88,10 +100,12 @@ function main() {
   let count = 0;
   for (const [nisn, bySemester] of perNisn) {
     // Bentuk setelah didekripsi di browser: { "<SEMESTER>": { "<nisn>": {...} }, ... }
+    // Baris pertama hanya komentar; aplikasi mencari penanda window.__SP5P="..." sehingga
+    // tidak terpengaruh.
     const fileContent = ENCRYPT
-      ? `window.__SP5P=${JSON.stringify(encrypt(JSON.stringify(bySemester), KEY))};\n`
-      : `// Auto-generated dari ${path.basename(SRC_FILE)} - jangan edit manual\n` +
-        `window.SISWA_DATA = ${JSON.stringify(bySemester, null, 2)};\n`;
+      ? (waktuKirim ? kepala : '') +
+        `window.__SP5P=${JSON.stringify(encrypt(JSON.stringify(bySemester), KEY))};\n`
+      : kepala + `window.SISWA_DATA = ${JSON.stringify(bySemester, null, 2)};\n`;
 
     fs.writeFileSync(path.join(OUT_DIR, `${fileId(nisn, KEY)}.js`), fileContent, 'utf8');
     count++;
@@ -101,6 +115,7 @@ function main() {
   fs.writeFileSync(path.join(OUT_DIR, '_index.json'), JSON.stringify(index, null, 2), 'utf8');
 
   console.log(`Selesai! ${count} file siswa dibuat di "${OUT_DIR}" (${removed} file lama dihapus).`);
+  console.log(waktuKirim ? `Waktu kirim dari Apps Script: ${waktuKirim}` : 'dsgan.js tanpa baris waktu kirim: file hanya berubah kalau datanya berubah.');
   console.log(`File ringkasan: ${path.join(OUT_DIR, '_index.json')}`);
 }
 
