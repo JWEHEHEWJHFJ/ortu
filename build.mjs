@@ -182,6 +182,8 @@ fs.writeFileSync(
 // index.html no-cache: browser selalu cek versi terbaru (balasan 304 dari static asset gratis),
 //   supaya setelah deploy tidak ada index.html lama yang menunjuk app.<hash>.js yang sudah dihapus
 //   (permintaan file yang hilang itu akan jatuh ke Worker dan ikut dihitung).
+// /data/* no-cache: setelah deploy, data siswa terbaru langsung terbaca saat login
+//   (dulu bisa tertahan cache browser sampai 5 menit). Cek ulang ke static asset gratis.
 fs.writeFileSync(path.join(OUT, '_headers'), `/*
   X-Content-Type-Options: nosniff
   X-Frame-Options: DENY
@@ -198,7 +200,7 @@ fs.writeFileSync(path.join(OUT, '_headers'), `/*
 /${jsName}
   Cache-Control: public, max-age=31536000, immutable
 /data/*
-  Cache-Control: public, max-age=300
+  Cache-Control: no-cache
   Cross-Origin-Resource-Policy: same-origin
 /favicon.ico
   Cache-Control: public, max-age=604800
