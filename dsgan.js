@@ -1,5 +1,5 @@
 
-// Terakhir dikirim dari Apps Script: 27/11/2026 02.09.50 WITA (GANJIL)
+// Terakhir dikirim dari Apps Script: 27/11/2026 10.50.07 WITA (GANJIL)
 window.SISWA_DATA = {
   "GANJIL": {
     "12345": {
@@ -12423,7 +12423,7 @@ window.SISWA_DATA = {
       "password": "",
       "rawSchedule": "08.50 - 10.10@Bahasa Inggris@Erwin S. S.Pd..M.Pd@*#10.10 - 11.30@Matematika Wajib@Al Farida. S.Pd.@*#######",
       "rawAttendanceData": "Pendidikan Jasmani Olahraga dan Kesehatan@Sriko. S.Pd@0@0@0@0@0@0#IPS (Sosiologi)@Yuliana. S.Pd.. M.Pd.@9@0@0@0@0@0#IPS (Geografi)@Zainuddin. S.Pd. M.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Maryam S. S. Pd@0@0@0@0@0@0#IPS (Sejarah)@Hatifa NB. S.Pd.@0@0@0@0@0@0#Pendidikan Agama Islam@Syamsinar. S.Pdl.. M.Pd@0@0@0@0@0@0#IPS (Ekonomi)@Agustina. SE@0@0@0@0@0@0#Informatika@Rafifah Salsabilah. S.Pd.@0@0@0@0@0@0#Matematika Wajib@Al Farida. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@Jumriani. S.Pd.. M.Pd@0@0@0@0@0@0#Seni Budaya@Hj. Suriati. S.Pd. MM@0@0@0@0@0@0#Coding@Rahmaniar. S.Pd.@0@0@0@0@0@0#IPA (KIMIA)@Jayadi. S.Pd.@10@0@0@0@1@0#IPA (Biologi)@Nurfadillah Ulfa. S.Pd.@7@0@0@0@0@0#Fisika Minat@Anwar. S.Pd.@0@0@0@0@0@0#Bahasa Inggris@Erwin S. S.Pd..M.Pd@8@0@0@0@0@0########",
-      "rawAssessmentData": "Pendidikan Jasmani Olahraga dan Kesehatan@Sriko. S.Pd@0@0@0@0@0@0#IPS (Sosiologi)@Yuliana. S.Pd.. M.Pd.@1@0@0@0@0@0#IPS (Geografi)@Zainuddin. S.Pd. M.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Maryam S. S. Pd@0@0@0@0@0@0#IPS (Sejarah)@Hatifa NB. S.Pd.@0@0@0@0@0@0#Pendidikan Agama Islam@Syamsinar. S.Pdl.. M.Pd@0@0@0@0@0@0#IPS (Ekonomi)@Agustina. SE@0@0@0@0@0@0#Informatika@Rafifah Salsabilah. S.Pd.@0@0@0@0@0@0#Matematika Wajib@Al Farida. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@Jumriani. S.Pd.. M.Pd@0@0@0@0@0@0#Seni Budaya@Hj. Suriati. S.Pd. MM@0@0@0@0@0@0#Coding@Rahmaniar. S.Pd.@0@0@0@0@0@0#IPA (KIMIA)@Jayadi. S.Pd.@2@96@1@0@0@0#IPA (Biologi)@Nurfadillah Ulfa. S.Pd.@2@100@1@0@0@0#Fisika Minat@Anwar. S.Pd.@0@0@0@0@0@0#Bahasa Inggris@Erwin S. S.Pd..M.Pd@0@0@0@0@0@0########",
+      "rawAssessmentData": "Pendidikan Jasmani Olahraga dan Kesehatan@Sriko. S.Pd@0@0@0@0@0@0#IPS (Sosiologi)@Yuliana. S.Pd.. M.Pd.@1@0@0@0@0@0#IPS (Geografi)@Zainuddin. S.Pd. M.Pd.@0@0@0@0@0@0#Pendidikan Kewarganegaraan@Maryam S. S. Pd@0@0@0@0@0@0#IPS (Sejarah)@Hatifa NB. S.Pd.@0@0@0@0@0@0#Pendidikan Agama Islam@Syamsinar. S.Pdl.. M.Pd@0@0@0@0@0@0#IPS (Ekonomi)@Agustina. SE@0@0@0@0@0@0#Informatika@Rafifah Salsabilah. S.Pd.@0@0@0@0@0@0#Matematika Wajib@Al Farida. S.Pd.@0@0@0@0@0@0#Bahasa Indonesia@Jumriani. S.Pd.. M.Pd@0@0@0@0@0@0#Seni Budaya@Hj. Suriati. S.Pd. MM@0@0@0@0@0@0#Coding@Rahmaniar. S.Pd.@0@0@0@0@0@0#IPA (KIMIA)@Jayadi. S.Pd.@2@190@2@0@0@0#IPA (Biologi)@Nurfadillah Ulfa. S.Pd.@2@100@1@0@0@0#Fisika Minat@Anwar. S.Pd.@0@0@0@0@0@0#Bahasa Inggris@Erwin S. S.Pd..M.Pd@0@0@0@0@0@0########",
       "rawNotesData": "Pendidikan Jasmani Olahraga dan Kesehatan@Sriko. S.Pd@N#-%IPS (Sosiologi)@Yuliana. S.Pd.. M.Pd.@N#-%IPS (Geografi)@Zainuddin. S.Pd. M.Pd.@N#-%Pendidikan Kewarganegaraan@Maryam S. S. Pd@N#-%IPS (Sejarah)@Hatifa NB. S.Pd.@N#-%Pendidikan Agama Islam@Syamsinar. S.Pdl.. M.Pd@N#-%IPS (Ekonomi)@Agustina. SE@N#-%Informatika@Rafifah Salsabilah. S.Pd.@N#-%Matematika Wajib@Al Farida. S.Pd.@N#-%Bahasa Indonesia@Jumriani. S.Pd.. M.Pd@N#-%Seni Budaya@Hj. Suriati. S.Pd. MM@N#-%Coding@Rahmaniar. S.Pd.@N#-%IPA (KIMIA)@Jayadi. S.Pd.@N#-%IPA (Biologi)@Nurfadillah Ulfa. S.Pd.@N#-%Fisika Minat@Anwar. S.Pd.@N#-%Bahasa Inggris@Erwin S. S.Pd..M.Pd@16 Oktober 2026#Ex 1. Very good and fluence, good prononciation. Ex 2: Excellent. Ex3 Speaking Daily: excellent%%%%%%%%",
       "nilaiAmbang": "65",
       "nama": "NURFATIHA",
@@ -12468,7 +12468,7 @@ window.SISWA_DATA = {
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
-        "Membuat Rangkuman Perkembangan Teori Atom@Konfigurasi elektron@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,T@/n@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+        "Membuat Rangkuman Perkembangan Teori Atom@Konfigurasi elektron@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,T@T@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
         "Tugas presentase buat klipping@Tugas menghafal keanekaragaman hayati@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,/n@T@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
         "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@,@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
